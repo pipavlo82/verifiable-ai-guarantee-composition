@@ -1,0 +1,170 @@
+[
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": null,
+    "core_negative": false,
+    "expected": "VERIFIED",
+    "file": "P00_valid.json",
+    "id": "P00_valid"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G1",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N01_wrong_provenance.json",
+    "id": "N01_wrong_provenance"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G2",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N02_wrong_model_version.json",
+    "id": "N02_wrong_model_version"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G3",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N03_valid_proof_wrong_input.json",
+    "id": "N03_valid_proof_wrong_input"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G4",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N04_cross_subject.json",
+    "id": "N04_cross_subject"
+  },
+  {
+    "baseline_expected": "REFUTED",
+    "boundary": "G5",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N05_unauthentic_judgment.json",
+    "id": "N05_unauthentic_judgment"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G6",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N06_valid_judgment_wrong_action.json",
+    "id": "N06_valid_judgment_wrong_action"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G7",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N07_valid_receipt_wrong_execution.json",
+    "id": "N07_valid_receipt_wrong_execution"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G8",
+    "core_negative": true,
+    "expected": "REFUTED",
+    "file": "N08_replay.json",
+    "id": "N08_replay"
+  },
+  {
+    "baseline_expected": "UNVERIFIABLE",
+    "boundary": "G7",
+    "core_negative": true,
+    "expected": "UNVERIFIABLE",
+    "file": "N09_missing_dependency.json",
+    "id": "N09_missing_dependency"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G6",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N10_invalid_authority.json",
+    "id": "N10_invalid_authority"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G8",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N11_scope_amplification.json",
+    "id": "N11_scope_amplification"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G8",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N12_strength_amplification.json",
+    "id": "N12_strength_amplification"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G8",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N13_cross_domain.json",
+    "id": "N13_cross_domain"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G8",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N14_expired.json",
+    "id": "N14_expired"
+  },
+  {
+    "baseline_expected": "REFUTED",
+    "boundary": "G3",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N15_invalid_arithmetic.json",
+    "id": "N15_invalid_arithmetic"
+  },
+  {
+    "baseline_expected": "UNVERIFIABLE",
+    "boundary": "G3",
+    "core_negative": false,
+    "expected": "UNVERIFIABLE",
+    "file": "N16_missing_proof.json",
+    "id": "N16_missing_proof"
+  },
+  {
+    "baseline_expected": "UNVERIFIABLE",
+    "boundary": null,
+    "core_negative": false,
+    "expected": "UNVERIFIABLE",
+    "file": "N17_real_mode.json",
+    "id": "N17_real_mode"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G8",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N18_policy_mismatch.json",
+    "id": "N18_policy_mismatch"
+  },
+  {
+    "baseline_expected": "VERIFIED",
+    "boundary": "G7",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N19_receipt_proof_substitution.json",
+    "id": "N19_receipt_proof_substitution"
+  },
+  {
+    "baseline_expected": "REFUTED",
+    "boundary": "G2",
+    "core_negative": false,
+    "expected": "REFUTED",
+    "file": "N20_missing_plus_refuted.json",
+    "id": "N20_missing_plus_refuted"
+  }
+]

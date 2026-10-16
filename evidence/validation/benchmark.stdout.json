@@ -1,0 +1,45 @@
+{
+  "cases": 21,
+  "composition_minus_independent_ns": 35052.38095238095,
+  "limitation": "One local Python host, tiny synthetic fixtures, no cryptographic/runtime/network costs; not a security or upstream performance result.",
+  "machine": "AMD64",
+  "median_ratio": 1.237093677931381,
+  "medians": {
+    "composition": 182894.2857142857,
+    "independent": 147841.90476190476
+  },
+  "python": "3.12.14",
+  "repeats": 20,
+  "rounds": 11,
+  "samples": {
+    "composition": [
+      182894.2857142857,
+      175219.2857142857,
+      178218.80952380953,
+      179529.52380952382,
+      174756.42857142858,
+      185886.19047619047,
+      184191.19047619047,
+      179230.0,
+      186874.7619047619,
+      198116.19047619047,
+      197625.95238095237
+    ],
+    "independent": [
+      150700.7142857143,
+      145520.2380952381,
+      150212.14285714287,
+      152504.7619047619,
+      147841.90476190476,
+      145478.80952380953,
+      144139.2857142857,
+      151554.2857142857,
+      153120.95238095237,
+      144654.2857142857,
+      141900.7142857143
+    ]
+  },
+  "schema": "composition-benchmark-v0",
+  "system": "Windows",
+  "unit": "ns per packet"
+}

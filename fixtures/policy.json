@@ -1,0 +1,19 @@
+{
+  "authentic_judgments": {
+    "judge-A": [
+      "b64f27c142f6625c21a70c03a41f0716a16244955870c7bcecfaa0057135abf1",
+      "e7397c1a4f4bce15af32d7196901421cdc9ea0f16f5a039b700f9b5cdcf98f04"
+    ],
+    "judge-B": [
+      "23bd4cc5e49ae97e753cbd082f9136bf11ec67a49dd31f450461ec99026df6b8"
+    ]
+  },
+  "authorized_judges": [
+    "judge-A"
+  ],
+  "consumed_nonces": [
+    "nonce-used"
+  ],
+  "domain": "local-experiment",
+  "id": "composition-policy-v0"
+}

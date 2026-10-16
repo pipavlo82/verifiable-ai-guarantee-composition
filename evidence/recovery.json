@@ -1,0 +1,33 @@
+{
+  "artifact": "guarantee-composition-v0.zip",
+  "date": "2026-10-16",
+  "limitations": [
+    "Configured Downloads directory absent",
+    "Some old runtime/package subdirectories denied access, including elevated retry",
+    "Search absence is not proof that no copy exists elsewhere"
+  ],
+  "matches": 0,
+  "original_mutation_controls_verified": false,
+  "original_nine_cases_verified": false,
+  "original_sha256": null,
+  "original_tests_verified": false,
+  "reconstruction": true,
+  "search_pattern": "*guarantee*composition*.zip",
+  "search_receipts": {
+    "archive-search-elevated.stderr": {
+      "bytes": 3885,
+      "sha256": "986ce12156f93c16ebb5d37db003974727534cc881dbb5738768b9c5719e433b",
+      "storage": "local-only search receipt; may contain workstation paths"
+    },
+    "archive-search-elevated.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "storage": "local-only search receipt; may contain workstation paths"
+    }
+  },
+  "searched": [
+    "local Codex outputs recursively",
+    "configured Downloads path"
+  ],
+  "status": "NOT_LOCATED_IN_AVAILABLE_SEARCH"
+}

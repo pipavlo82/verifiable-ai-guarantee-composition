@@ -1,0 +1,133 @@
+{
+  "evidence": {
+    "judgment": {
+      "body": {
+        "domain": "local-experiment",
+        "issuer": "judge-B",
+        "mechanism": "synthetic-checksum-v0",
+        "not_after": 200,
+        "not_before": 100,
+        "payload": {
+          "action": "release",
+          "policy": "composition-policy-v0",
+          "verdict": "approve"
+        },
+        "role": "judgment",
+        "scope": [
+          "release"
+        ],
+        "strength": "SYNTHETIC",
+        "subject": "subject-A"
+      },
+      "fixture_checksum": "23bd4cc5e49ae97e753cbd082f9136bf11ec67a49dd31f450461ec99026df6b8"
+    },
+    "model": {
+      "body": {
+        "domain": "local-experiment",
+        "issuer": "fixture-producer",
+        "mechanism": "synthetic-checksum-v0",
+        "not_after": 200,
+        "not_before": 100,
+        "payload": {
+          "id": "square",
+          "operation": "x*x",
+          "version": 1
+        },
+        "role": "model",
+        "scope": [
+          "release"
+        ],
+        "strength": "SYNTHETIC",
+        "subject": "subject-A"
+      },
+      "fixture_checksum": "34907ebb318e7853acf0d87549f04e32d00452a8deb97c338d46e728ca7c8822"
+    },
+    "proof": {
+      "body": {
+        "domain": "local-experiment",
+        "issuer": "fixture-producer",
+        "mechanism": "synthetic-checksum-v0",
+        "not_after": 200,
+        "not_before": 100,
+        "payload": {
+          "input": 3,
+          "input_digest": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+          "model": "square",
+          "output": 9,
+          "version": 1
+        },
+        "role": "proof",
+        "scope": [
+          "release"
+        ],
+        "strength": "SYNTHETIC",
+        "subject": "subject-A"
+      },
+      "fixture_checksum": "3a1e4a481ad9531d0800178dadeeed812de909de8dee55c9d4db19c27e1e9c3f"
+    },
+    "provenance": {
+      "body": {
+        "domain": "local-experiment",
+        "issuer": "fixture-producer",
+        "mechanism": "synthetic-checksum-v0",
+        "not_after": 200,
+        "not_before": 100,
+        "payload": {
+          "input": 3,
+          "input_digest": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+          "raw": "3",
+          "transform": "identity-v0"
+        },
+        "role": "provenance",
+        "scope": [
+          "release"
+        ],
+        "strength": "SYNTHETIC",
+        "subject": "subject-A"
+      },
+      "fixture_checksum": "7fef61f8f215aace565f748fdb8f8de55810c65624f58b3a4ea8bbefe7306335"
+    },
+    "receipt": {
+      "body": {
+        "domain": "local-experiment",
+        "issuer": "fixture-producer",
+        "mechanism": "synthetic-checksum-v0",
+        "not_after": 200,
+        "not_before": 100,
+        "payload": {
+          "action": "release",
+          "completed": "recorded",
+          "execution": "run-A",
+          "output": 9,
+          "proof_digest": "3a1e4a481ad9531d0800178dadeeed812de909de8dee55c9d4db19c27e1e9c3f"
+        },
+        "role": "receipt",
+        "scope": [
+          "release"
+        ],
+        "strength": "SYNTHETIC",
+        "subject": "subject-A"
+      },
+      "fixture_checksum": "073f11132749b24d7670d7b370c1d5f45b9c2c2756a4b0e43da657a1b95bb9c7"
+    }
+  },
+  "mode": "synthetic",
+  "request": {
+    "action": "release",
+    "domain": "local-experiment",
+    "execution": "run-A",
+    "input_digest": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "model": "square",
+    "nonce": "nonce-new",
+    "output": 9,
+    "policy": "composition-policy-v0",
+    "scope": [
+      "release"
+    ],
+    "strength": "SYNTHETIC",
+    "subject": "subject-A",
+    "time": 150,
+    "version": 1
+  },
+  "schema": "composition-fixture-v0"
+}
