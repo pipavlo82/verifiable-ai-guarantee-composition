@@ -1,0 +1,87 @@
+{
+  "schema": "formal-v1-validation",
+  "python": "3.12.14",
+  "node": "v22.15.0",
+  "runs": [
+    {
+      "name": "tests-normal",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "dbc21b02b8eb19e27350413110d6e614db0ea426007a262a8dd1becd4a0a3750",
+      "passed": true,
+      "tests": 11
+    },
+    {
+      "name": "model-normal",
+      "exit": 0,
+      "stdout_sha256": "ac1a6b0fd8d71e6dd43d5e7475b73798acf4f30e63064a971ef28b595d9260f6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "tests-repeat",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "65631bce79111886c3f2efefb7818c13332f9d1c03c45bfb25be8ab0fa049453",
+      "passed": true,
+      "tests": 11
+    },
+    {
+      "name": "model-repeat",
+      "exit": 0,
+      "stdout_sha256": "ac1a6b0fd8d71e6dd43d5e7475b73798acf4f30e63064a971ef28b595d9260f6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "tests-optimized",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "de5fb2d3c037d566debcbcd9581281420673206f9b3af65fff141e1a78427433",
+      "passed": true,
+      "tests": 11
+    },
+    {
+      "name": "model-optimized",
+      "exit": 0,
+      "stdout_sha256": "ac1a6b0fd8d71e6dd43d5e7475b73798acf4f30e63064a971ef28b595d9260f6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "crypto-normal",
+      "exit": 0,
+      "stdout_sha256": "86587e1003a24e7da37fb77a40b5dd8510ba58b2587dc6b8c5083ab6bdf143c6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "crypto-repeat",
+      "exit": 0,
+      "stdout_sha256": "86587e1003a24e7da37fb77a40b5dd8510ba58b2587dc6b8c5083ab6bdf143c6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "mutations-normal",
+      "exit": 0,
+      "stdout_sha256": "a04edffef52098c528ed7432a3e71f38c6847ea92ebe62c903594c7c025daa2a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "mutations-optimized",
+      "exit": 0,
+      "stdout_sha256": "a04edffef52098c528ed7432a3e71f38c6847ea92ebe62c903594c7c025daa2a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    }
+  ],
+  "deterministic": true,
+  "committed_snapshots_match": {
+    "model.json": true,
+    "crypto.json": true,
+    "mutations.json": true
+  },
+  "passed": true
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "nostr-protocol/nips",
+    "commit": "a79e21d90fce5465b50ef385dd368bba99ec4a0b",
+    "path": "01.md",
+    "url": "https://raw.githubusercontent.com/nostr-protocol/nips/a79e21d90fce5465b50ef385dd368bba99ec4a0b/01.md",
+    "sha256": "6cd76682e7ec2d635f1f46b3660f621cdad1193d9174d316674b91f8d683af26",
+    "bytes": 13894,
+    "retrieved_at": "2026-10-16T15:43:09.648870+00:00"
+  },
+  {
+    "repository": "bitcoin/bips",
+    "commit": "927b6de9915c9262615a6399de51b200f81e5aa4",
+    "path": "bip-0340.mediawiki",
+    "url": "https://raw.githubusercontent.com/bitcoin/bips/927b6de9915c9262615a6399de51b200f81e5aa4/bip-0340.mediawiki",
+    "sha256": "17d64d6dc6bc97f4ecf178697bf810b92aa2a9e41ef13db809c25bc44a9b8109",
+    "bytes": 39995,
+    "retrieved_at": "2026-10-16T15:43:09.984929+00:00"
+  }
+]

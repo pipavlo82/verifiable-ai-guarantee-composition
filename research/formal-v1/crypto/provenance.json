@@ -1,0 +1,9 @@
+{
+  "source_url": "https://api.babyblueviper.com/ledger/19",
+  "source_response_sha256": "d44c8da1b814e94574e2c6c0e680de8e02e1e0cfdd672459fc56926f3e3b468d",
+  "capture_manifest": "../evidence/captures.json",
+  "extraction": "JSON property proof_event; content string preserved exactly. This file is not the raw HTTP response.",
+  "event_id": "ff7227c605828f94457f450bc44b4c1dbc11e8f6df27f38f55a4aeb75d0b284a",
+  "signer_identity_and_authorization": "NOT_ESTABLISHED",
+  "full_response_storage": "Local research capture; signed event only redistributed for offline replay."
+}

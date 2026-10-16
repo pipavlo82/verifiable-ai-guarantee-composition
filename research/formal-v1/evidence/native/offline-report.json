@@ -1,0 +1,28 @@
+{
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "mode": "offline",
+  "runs": [
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-p",
+        "zkie-ops",
+        "compose::tests::op_shard_matmul_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 101,
+      "test_executed": false,
+      "elapsed_seconds": 0.375,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e26d29c7d450bea847a0cd6f994fad4acda15947936121da637d64871e475ac4"
+    }
+  ],
+  "upstream_tracked_clean": true,
+  "passed": false,
+  "boundary": "Native local upstream library tests only. No portable proof capture, WYRIWE signature or end-to-end authorization verification."
+}
