@@ -1,5 +1,9 @@
 # V2 real-artifact experiment report
 
+Follow-up: the [survivor audit](V2_SURVIVOR_AUDIT.md) resolves the two original
+survivors as non-equivalent mutations with masked witnesses. The additive run kills
+both; the original results and frozen evidence below remain unchanged.
+
 ## Outcome and acceptance boundary
 
 The laboratory experiment is implemented and reproducible. **A complete external

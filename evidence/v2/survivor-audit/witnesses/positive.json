@@ -1,0 +1,97 @@
+{
+  "schema": "survivor-isolation-case-v1",
+  "purpose": "laboratory verifier input, no new execution claim",
+  "policy": "evidence/v2/survivor-audit/witnesses/policy.json",
+  "files": {
+    "raw_input": "evidence/v2/capture/a/raw-input.bin",
+    "input": "evidence/v2/capture/a/input.bin",
+    "weights": "evidence/v2/capture/a/weights.bin",
+    "output": "evidence/v2/capture/a/output.bin",
+    "proof": "evidence/v2/capture/a/proof.bin",
+    "model": "evidence/v2/capture/a/model.json",
+    "result": "evidence/v2/capture/a/delivered.bin",
+    "observation": "evidence/v2/capture/a/execution-observation.json"
+  },
+  "documents": {
+    "provenance": {
+      "type": "WyriweAttestation",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "registry": "0x0000000000000000000000000000000000000000",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "rawInputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "timestamp": 0
+      },
+      "signature": "0x88f7e08a1d6ee6ef59719f4fbf22ec624a2d807d9afe6c7d780d0754c8339f9966b6735f4044e21c54851bfbda19cd0def30ed9770570780b759c4079a2faec81b",
+      "signer": "0xf71efa4454c46faf637406377f48eca89d9d6bc0"
+    },
+    "judgment": {
+      "type": "LabJudgment",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "subject": "lab-subject-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "action": "materialize-matmul-output",
+        "scope": "public-matmul-recomputation",
+        "executionId": "lab-execution-a",
+        "policyHash": "0x937202e70786a92f4c63bc9e8f8f22a72121b10ebbf7e02c36bc385eba26e8c6",
+        "nonce": "lab-request-a"
+      },
+      "signature": "0x2b24b0f3e938030228dff96e8271c9b9bc5818cf933f2ae15b0d9ff7743c1eeb2417c50b0596c786dc08dbcad72d2d402abeb68da307d03bfcce4787e7363bef1c",
+      "signer": "0x9eceec62279e39e50f8f3943ae7799af017c4b16"
+    },
+    "receipt": {
+      "type": "LabReceipt",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "subject": "lab-subject-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "action": "materialize-matmul-output",
+        "scope": "public-matmul-recomputation",
+        "executionId": "lab-execution-a",
+        "policyHash": "0x937202e70786a92f4c63bc9e8f8f22a72121b10ebbf7e02c36bc385eba26e8c6",
+        "nonce": "lab-request-a",
+        "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819"
+      },
+      "signature": "0x716010fa5bc5153abeffc055a48e5fd6711319d9a525462fe6b91c9cbe97a0313635beccb80a77669204a8ca903607d3041e70c34a7ad8a31c1f7082f80631ee1b",
+      "signer": "0xa23666edfbadee8b378a08fae79f364ece3f7600"
+    }
+  },
+  "claim": {
+    "subject": "lab-subject-a",
+    "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+    "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+    "action": "materialize-matmul-output",
+    "scope": "public-matmul-recomputation",
+    "executionId": "lab-execution-a",
+    "policyHash": "0x937202e70786a92f4c63bc9e8f8f22a72121b10ebbf7e02c36bc385eba26e8c6",
+    "nonce": "lab-request-a",
+    "claimKind": "recompute-output"
+  },
+  "consumed_nonces": []
+}

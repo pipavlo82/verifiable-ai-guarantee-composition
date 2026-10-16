@@ -16,6 +16,12 @@ process. The generated keys are laboratory authorities, not external issuer keys
 
 ## Current results
 
+**Survivor follow-up:** both original survivors are non-equivalent mutations masked
+by additional failures in their original witnesses. Isolated cases now kill both;
+7 additional tests pass in normal/repeat/`-O`. The production verifier is unchanged.
+See the [audit and reproduction evidence](research/V2_SURVIVOR_AUDIT.md).
+The table below preserves the original v2 experiment's results.
+
 | Experiment | Observed result |
 | --- | --- |
 | Same-evidence v2 comparison | 26 scenarios: one narrow positive and 25 negative/unsupported claims |
@@ -30,7 +36,8 @@ process. The generated keys are laboratory authorities, not external issuer keys
 These numbers describe a controlled experiment against our deliberately incomplete
 component-only baseline. They do not estimate real deployment exploit rates or
 compare against upstream authorization software. The two surviving mutants are
-reported, not counted as kills. No security advantage is generalized beyond these
+retained in that original run, not retroactively counted as kills. The separate
+follow-up reports 2 KILLED and 0 SURVIVED. No security advantage is generalized beyond these
 specific witnesses. Full evidence is linked below.
 
 - [Completed v2 experimental report](research/V2_REAL_ARTIFACT_REPORT.md)
