@@ -1,0 +1,47 @@
+{
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "mode": "replay",
+  "runs": [
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-p",
+        "zkie-ops",
+        "compose::tests::op_shard_matmul_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "test_executed": true,
+      "elapsed_seconds": 0.43800000000192085,
+      "stdout_sha256": "36d26346de1a04be2bae9349a22171d7e6d4f2760ca8728fb6ff88724aba6bdf",
+      "stderr_sha256": "06c3639a672e2b2fb480a514fffaa8aecfbaacdee93b7c2d6cb0729a0e8419a6"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-p",
+        "zkie-ops",
+        "compose::tests::committed_projection_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "test_executed": true,
+      "elapsed_seconds": 0.5149999999994179,
+      "stdout_sha256": "38cbc89297af1c49a62158b6aa90f64d321d2cc2547521b8efefe1e13cdba1f0",
+      "stderr_sha256": "2ed555c7d2c3f1585ce7bfcab8ed9a7034b03f420b608c58f761cc9e3dbe7d9e"
+    }
+  ],
+  "upstream_tracked_clean": true,
+  "passed": true,
+  "boundary": "Native local upstream library tests only. No portable proof capture, WYRIWE signature or end-to-end authorization verification."
+}

@@ -1,0 +1,26 @@
+{
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "cargo_lock_sha256": "39d5c3aa1db18dd8eed58081118b13918bf0662239c58b96bd140f768cc7e72f",
+  "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+  "runs": [
+    {
+      "target": "compose::tests::op_shard_matmul_roundtrip",
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "36d26346de1a04be2bae9349a22171d7e6d4f2760ca8728fb6ff88724aba6bdf",
+      "stderr_sha256": "512431f9d94df61095fc4b6439034255eef731f22fb513d5d2623d9da5488c5d"
+    },
+    {
+      "target": "compose::tests::committed_projection_roundtrip",
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "38cbc89297af1c49a62158b6aa90f64d321d2cc2547521b8efefe1e13cdba1f0",
+      "stderr_sha256": "96521543c673027bb1e50e3b9f9b38d4dff4b47017b7201b3685473f9299de39"
+    }
+  ],
+  "clean_upstream": true,
+  "passed": true,
+  "portable_proof_capture": "NOT_IMPLEMENTED",
+  "end_to_end_authorization": "NOT_IMPLEMENTED"
+}

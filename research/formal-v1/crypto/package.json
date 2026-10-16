@@ -1,0 +1,13 @@
+{
+  "name": "composition-public-event-replay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "dependencies": {
+    "@noble/curves": "2.0.1"
+  }
+}

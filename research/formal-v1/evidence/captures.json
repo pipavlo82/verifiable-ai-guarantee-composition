@@ -1,0 +1,131 @@
+{
+  "captures": [
+    {
+      "id": "assume-guarantee-2014",
+      "url": "https://qav.cs.ox.ac.uk/papers/CJK14.pdf",
+      "retrieved_at": "2026-10-16T15:22:08.413997+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://qav.cs.ox.ac.uk/papers/CJK14.pdf",
+      "sha256": "2bcde00ed6a405c21aa90aa9a13927559ec28ecf228ddc1a0c1612dc5c3b9718",
+      "bytes": 437796
+    },
+    {
+      "id": "proof-carrying-authorization-2001",
+      "url": "https://www.cs.princeton.edu/techreports/2001/638.pdf",
+      "retrieved_at": "2026-10-16T15:22:08.413997+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://www.cs.princeton.edu/techreports/2001/638.pdf",
+      "sha256": "a9b5485b52d07e5b46566a3861a15476092685eba84eff8e498d21c1c2979f5b",
+      "bytes": 170883
+    },
+    {
+      "id": "rats-rfc9334",
+      "url": "https://www.rfc-editor.org/rfc/rfc9334.txt",
+      "retrieved_at": "2026-10-16T15:22:08.413997+00:00",
+      "http_status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9334.txt",
+      "sha256": "b80d035fb64a00a637d4888d2855772412246230913231301727ef78d4b00540",
+      "bytes": 121810
+    },
+    {
+      "id": "aex-2603.14283v1",
+      "url": "https://arxiv.org/html/2603.14283v1",
+      "retrieved_at": "2026-10-16T15:22:08.413997+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://arxiv.org/html/2603.14283v1",
+      "sha256": "1a24c4454632f05bbd5260f2034fc41edad61bed5ffc8792d33de68afbee044f",
+      "bytes": 374832
+    },
+    {
+      "id": "composable-attestation-2603.02451v1",
+      "url": "https://arxiv.org/html/2603.02451v1",
+      "retrieved_at": "2026-10-16T15:22:08.777217+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://arxiv.org/html/2603.02451v1",
+      "sha256": "bc4199f999e29a9a54a0d16becb5778a9b461bcbaed4c2ff3062309618c7023d",
+      "bytes": 201499
+    },
+    {
+      "id": "aac-provenance-binding-00",
+      "url": "https://www.ietf.org/archive/id/draft-rampalli-scitt-capsule-provenance-binding-00.txt",
+      "retrieved_at": "2026-10-16T15:22:08.808578+00:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "final_url": "https://www.ietf.org/archive/id/draft-rampalli-scitt-capsule-provenance-binding-00.txt",
+      "sha256": "00f11f8afa6e455190f403a990ccb827a26e5fe3d6195bdcd545883d2b85f560",
+      "bytes": 28687
+    },
+    {
+      "id": "ledger-19",
+      "url": "https://api.babyblueviper.com/ledger/19",
+      "retrieved_at": "2026-10-16T15:22:08.856048+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.babyblueviper.com/ledger/19",
+      "sha256": "d44c8da1b814e94574e2c6c0e680de8e02e1e0cfdd672459fc56926f3e3b468d",
+      "bytes": 17071,
+      "top_level_fields": [
+        "commitment_proof",
+        "created_at",
+        "entry",
+        "event_id",
+        "judgment_execution",
+        "ots_anchor",
+        "outcome_evidence",
+        "posted",
+        "posted_at",
+        "proof_event",
+        "pubkey_hex",
+        "record",
+        "relay_anchor",
+        "relays",
+        "type"
+      ],
+      "signature_verification": "NOT_PERFORMED"
+    },
+    {
+      "id": "ledger-19-commitment",
+      "url": "https://api.babyblueviper.com/ledger/19/commitment",
+      "retrieved_at": "2026-10-16T15:22:08.856048+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.babyblueviper.com/ledger/19/commitment",
+      "sha256": "bc7ac1e11a6c390290f0b2519e2b2929a4053b31cc622a72ed51ad69a1069aad",
+      "bytes": 6408,
+      "top_level_fields": [
+        "commitment_proof",
+        "entry",
+        "event_id",
+        "judgment_execution",
+        "outcome",
+        "proof_event",
+        "question"
+      ],
+      "signature_verification": "NOT_PERFORMED"
+    },
+    {
+      "id": "ledger-19-outcome",
+      "url": "https://api.babyblueviper.com/ledger/19/outcome",
+      "retrieved_at": "2026-10-16T15:22:08.950595+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.babyblueviper.com/ledger/19/outcome",
+      "sha256": "446f7d6432950a5c6b1865403c591342aa725bc2e22a6f384f8e3eb887d41bc7",
+      "bytes": 5153,
+      "top_level_fields": [
+        "commitment",
+        "entry",
+        "onchain_settlement",
+        "outcome_evidence"
+      ],
+      "signature_verification": "NOT_PERFORMED"
+    }
+  ],
+  "authorization": "Unauthenticated public GET only",
+  "paper_storage": "local reference only, not redistributed in repository"
+}

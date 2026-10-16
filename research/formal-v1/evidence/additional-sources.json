@@ -1,0 +1,50 @@
+[
+  {
+    "clone": "zkIE",
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "path": "Cargo.lock",
+    "sha256": "1091cec7f841955eca1d8a1f7ba213f872f09bf81b6ef08bc54afb7f15bb2277",
+    "bytes": 21650,
+    "git_blob": "6bdbee579221caadf193c3f7a059797f026d2f02"
+  },
+  {
+    "clone": "zkIE",
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "path": "Cargo.toml",
+    "sha256": "5e2f0ed7c48f36ca670162974c419ccf2591632b066db36a772c5c85a87a2470",
+    "bytes": 264,
+    "git_blob": "82efa4481ff8f345f0be7818c76f0cbe91a9e031"
+  },
+  {
+    "clone": "zkIE",
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "path": "crates/zkie-ops/Cargo.toml",
+    "sha256": "2bb164f12072a6d644d6ea8335e6f86f887e7e0052b8d6b0777b715a71ae4aec",
+    "bytes": 266,
+    "git_blob": "1eaed740ef412751878e996da76cd9d139ec9c76"
+  },
+  {
+    "clone": "zkIE",
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "path": "crates/zkie-core/src/common/field.rs",
+    "sha256": "5257ca003953bd4048eb9c8b8d487a35e000671cd242fa22a781800f2c7bc1a0",
+    "bytes": 1657,
+    "git_blob": "a02e6c9c37e1afafaafca86a304c9bf27cacd3e0"
+  },
+  {
+    "clone": "receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "package.json",
+    "sha256": "2d5349d0fa344f80eb607de8b6e570a8b8f760741e0b411349a142a04c2670c6",
+    "bytes": 794,
+    "git_blob": "2122cf53e01a33d81fedcdd298b19a87638ad85d"
+  },
+  {
+    "clone": "receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "package-lock.json",
+    "sha256": "699f2fc389c8d95ad0e5c7f2ef1b3566152b1f9e5123e2ab49cb5c9d59285023",
+    "bytes": 3390,
+    "git_blob": "a8bd9aa1577c8cbbbf9e5c7982aa989aa224fbe1"
+  }
+]
