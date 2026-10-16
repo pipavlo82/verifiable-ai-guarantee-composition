@@ -1,0 +1,43 @@
+{
+  "comparison": {
+    "baseline_false_authorizations": 18,
+    "baseline_refusals": 7,
+    "baseline_unverifiable": 3,
+    "composition_false_authorizations": 0,
+    "composition_refusals": 25,
+    "composition_unverifiable": 4,
+    "negative_cases": 25,
+    "passed": true,
+    "scenarios": 26
+  },
+  "end_to_end_external_success": false,
+  "executed_mutations": 20,
+  "implemented": [
+    "native retained proof verification",
+    "exact preimage Keccak commitments",
+    "actual laboratory EIP-712 signatures",
+    "narrow recomputation authorization",
+    "same-evidence comparison",
+    "source mutations"
+  ],
+  "mutation_counts": {
+    "CRASHED": 0,
+    "KILLED": 18,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 2,
+    "UNVERIFIABLE": 1
+  },
+  "not_implemented": [
+    "full external WYRIWE deployment conformance",
+    "independently observed chain domain",
+    "external admission of original bytes",
+    "upstream JudgmentExecutionAttestation profile",
+    "ReceiptOS production bridge",
+    "independent historical execution evidence",
+    "complete external real-chain positive",
+    "durable transactional replay service"
+  ],
+  "recommendation": "CONTINUE narrow research; HOLD end-to-end and novelty claims",
+  "schema": "v2-integration-status",
+  "unexecuted_integration_checks": 1
+}

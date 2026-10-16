@@ -1,0 +1,5848 @@
+{
+  "conditional_on_one_additional_verified_equality": {
+    "all_observed_minimal_bases_are_minimum": true,
+    "assignments": 256,
+    "candidate_edges": 8,
+    "inclusion_minimal_bases": [
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RP",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RP",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.RI",
+        "input.RP",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.RI",
+        "input.RP",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.RI"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.RI"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.RI"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.RP"
+      ]
+    ],
+    "minimum_cardinality": 5,
+    "native_premises": [
+      "model.PI"
+    ],
+    "oracle_evaluations": 65536,
+    "removal_countermodels": [
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      }
+    ],
+    "subsets": 256,
+    "sufficient_sets": 48
+  },
+  "cryptographic_verification": "NOT_PERFORMED",
+  "downstream_authorization": "NOT_ESTABLISHED",
+  "hypotheses": [
+    "sound native verifiers",
+    "trusted caller policy and authority",
+    "verified representation bridges",
+    "applicable scope/time/replay checks",
+    "authenticated subject and execution linkage"
+  ],
+  "mode": "ABSTRACT_EQUALITY_MODEL",
+  "noninjective_translation_counterexample": {
+    "left_hex": "33",
+    "left_sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "normalized_equal": true,
+    "raw_equal": false,
+    "right_hex": "303033",
+    "right_sha256": "88c0413bfef1d0570a8a6f9c780a8d2c9e90c4d107551d62bf3cec9ff1f5b634"
+  },
+  "novelty": "Application-specific candidate; no priority claim for equality closure, graph minimality or assume-guarantee reasoning.",
+  "schema": "composition-obligation-analysis-v1",
+  "without_cross_component_native_equalities": {
+    "all_observed_minimal_bases_are_minimum": true,
+    "assignments": 512,
+    "candidate_edges": 9,
+    "inclusion_minimal_bases": [
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RI",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RI",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RI",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RP",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RP",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.PI",
+        "input.RP",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.RI",
+        "input.RP",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.RI",
+        "input.RP",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RI",
+        "input.RI",
+        "input.RP",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.PI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RI",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.PI",
+        "input.RP",
+        "model.RI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.PI",
+        "model.RI"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.PI",
+        "model.RP"
+      ],
+      [
+        "action.RI",
+        "action.RP",
+        "input.RI",
+        "input.RP",
+        "model.RI",
+        "model.RP"
+      ]
+    ],
+    "minimum_cardinality": 6,
+    "native_premises": [],
+    "oracle_evaluations": 262144,
+    "removal_countermodels": [
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RI"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.PI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RI",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.PI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.PI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RI",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.PI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.PI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 1,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 1,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "action.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 1,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 1,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "input.RP"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 1,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 0,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RI"
+      },
+      {
+        "basis": [
+          "action.RI",
+          "action.RP",
+          "input.RI",
+          "input.RP",
+          "model.RI",
+          "model.RP"
+        ],
+        "countermodel": {
+          "executed_action": 0,
+          "inference_input": 0,
+          "inference_model": 0,
+          "judged_action": 0,
+          "provenance_input": 0,
+          "provenance_model": 1,
+          "requested_action": 0,
+          "requested_input": 0,
+          "requested_model": 0
+        },
+        "removed": "model.RP"
+      }
+    ],
+    "subsets": 512,
+    "sufficient_sets": 64
+  }
+}

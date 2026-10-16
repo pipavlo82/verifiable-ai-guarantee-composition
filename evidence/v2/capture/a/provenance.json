@@ -1,0 +1,20 @@
+{
+  "type": "WyriweAttestation",
+  "domain": {
+    "name": "ERC8004AttestationGateway",
+    "version": "1",
+    "chainId": 31337
+  },
+  "message": {
+    "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "registry": "0x0000000000000000000000000000000000000000",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "rawInputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+    "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+    "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+    "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+    "timestamp": 0
+  },
+  "signature": "0xee28ce98bae4f5416278f3ee0cf00487c9122e2ae4af988b76124447cc93743e346a2c197a9079453bdb69c6675cac31018f0719d3da75fd248f6727b5871d341b",
+  "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe"
+}

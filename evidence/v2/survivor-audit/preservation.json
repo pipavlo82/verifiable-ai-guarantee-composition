@@ -1,0 +1,24 @@
+{
+  "intentional_navigation_or_ci_changes": [
+    ".github/workflows/real-artifact-v2.yml",
+    "README.md",
+    "research/LIMITATIONS.md",
+    "research/RESULTS.md",
+    "research/V2_REAL_ARTIFACT_REPORT.md"
+  ],
+  "new_follow_up_counts": {
+    "KILLED": 2,
+    "SURVIVED": 0
+  },
+  "original_commit": "ba889271bef7cb3d2eed00067a12064689bfb627",
+  "original_inventory_files": 619,
+  "original_v2_mutation_counts_preserved": {
+    "KILLED": 18,
+    "SURVIVED": 2
+  },
+  "production_verifier_unchanged": true,
+  "protected_files": 496,
+  "protected_hashes_unchanged": true,
+  "schema": "survivor-preservation-v1",
+  "unchanged_original_files": 614
+}

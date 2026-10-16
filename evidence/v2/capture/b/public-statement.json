@@ -1,0 +1,92 @@
+{
+  "artifact_sha256": {
+    "input.bin": "44d9f79331213337438497daee9c1edc92db0dfd0026c8bacae3bf52a9b17bcd",
+    "model.json": "a8645f4c909745d4e90df6bac9c929960e665ef48f1379d7f689c42245604b8c",
+    "output.bin": "052817d86a7fbde2e285d5087162dadf7d8203db4fc4fca10286ae5ba9a6fd3a",
+    "proof.bin": "88a6e1949678eaeff228e60b598716f5a6acd2314f9b79bbfe69b354f0477dcf",
+    "weights.bin": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7"
+  },
+  "binds": [],
+  "bound": [],
+  "ch": [
+    16534182178803972889,
+    14722811300541494703,
+    15720688114959564164
+  ],
+  "claimed": 5462474676057242801,
+  "encoding": "canonical-u64-little-endian",
+  "field_modulus": 18446744069414584321,
+  "not_a_verifier": true,
+  "operator": {
+    "MatMul": {
+      "a": 0,
+      "b": 1,
+      "c": 2,
+      "k": 8,
+      "m": 4,
+      "n": 8
+    }
+  },
+  "schema": "native-public-statement-v2",
+  "security_scope": "public tensors; native verification plus full deterministic output recomputation; no zero-knowledge, succinctness or malicious-prover soundness claim",
+  "sumcheck_round_coefficients": [
+    7939607886866835406,
+    14118948977716544625,
+    12357798063436196006,
+    7519836145423692699,
+    15095897349702776800,
+    5222813322405685852,
+    10037085714467649697,
+    13990859277731414965,
+    5996968741901099939
+  ],
+  "sumcheck_terminal_evaluations": [
+    11372243700755280591,
+    6816377593032050396
+  ],
+  "tensor_claims": [
+    {
+      "evaluation": 11372243700755280591,
+      "point": [
+        16534182178803972889,
+        14722811300541494703,
+        15720688114959564164,
+        15861071541528814957,
+        16631356762655612391
+      ],
+      "tensor_id": 0
+    },
+    {
+      "evaluation": 6816377593032050396,
+      "point": [
+        7057643951856453020,
+        1174079300967681943,
+        12186943930361768136,
+        16534182178803972889,
+        14722811300541494703,
+        15720688114959564164
+      ],
+      "tensor_id": 1
+    },
+    {
+      "evaluation": 5462474676057242801,
+      "point": [
+        7057643951856453020,
+        1174079300967681943,
+        12186943930361768136,
+        15861071541528814957,
+        16631356762655612391
+      ],
+      "tensor_id": 2
+    }
+  ],
+  "u": [
+    15861071541528814957,
+    16631356762655612391
+  ],
+  "v": [
+    7057643951856453020,
+    1174079300967681943,
+    12186943930361768136
+  ]
+}

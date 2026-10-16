@@ -1,0 +1,12 @@
+[package]
+name = "composition-native-capture"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+zkie-core = { path = "../../../build/chain-v2/zkIE/crates/zkie-core" }
+zkie-ops = { path = "../../../build/chain-v2/zkIE/crates/zkie-ops" }
+
+[patch.crates-io]
+p3-merkle-tree = { path = "../../../build/chain-v2/zkIE/crates/zkie-core/vendor/p3-merkle-tree" }
