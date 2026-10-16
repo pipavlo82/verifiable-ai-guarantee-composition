@@ -1,0 +1,118 @@
+{
+  "schema": "v3-phase1-v2-replay",
+  "main": "18a5916098addf6447700ed95441125bfa7079c3",
+  "v2": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+  "runs": [
+    {
+      "name": "head",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout_sha256": "554f987a7f5b559ed0fde96d4ffc08235ae5e282d25be86b7cd09f18382b1870",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "ancestry",
+      "command": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "ea89871064e98a67b6ba01c836d498bee89aa437",
+        "origin/main"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "inventory-before",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "exit": 0,
+      "stdout_sha256": "054bb538196a69166f92c1a8280bda594a5cd401d2f74d7716753256224485b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "native",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v2/prepare.py",
+        "--cargo-home",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v1-20261016\\cargo-home"
+      ],
+      "exit": 0,
+      "stdout_sha256": "b93d8adf594f2ab3c4374ab1a4d6c735ad73634acaeaa096658f82ae547f5ae2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "v2",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v2/validate.py",
+        "--out",
+        "build/v3-phase1-original",
+        "--skip-benchmark"
+      ],
+      "exit": 0,
+      "stdout_sha256": "69465595b241807a22ee2bd8ee131239b8c796552e270bdb238cfdf54e046441",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "snapshot",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v2/check_snapshot.py",
+        "--out",
+        "build/v3-phase1-original"
+      ],
+      "exit": 0,
+      "stdout_sha256": "8ad0f9453a95d569fb7fbda74071de91689143e5d1241b9c078d26af896bab8e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "survivors",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v2/validate_survivors.py",
+        "--out",
+        "build/v3-phase1-survivors"
+      ],
+      "exit": 0,
+      "stdout_sha256": "750ecc110c0b06ef45bdcc1b577b8614dc2970d2f6efa0615ff612819c61e6aa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "inventory-after",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "exit": 0,
+      "stdout_sha256": "054bb538196a69166f92c1a8280bda594a5cd401d2f74d7716753256224485b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "clean",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "passed": true
+}

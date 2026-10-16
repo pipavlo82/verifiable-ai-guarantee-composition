@@ -3,6 +3,25 @@
 Independent experimental research by **pipavlo82** on the conditions under which
 component guarantees can justify a downstream authorization claim.
 
+## V3: public artifacts and explicit missing links
+
+**PARTIAL_CHAIN_VERIFIED — full external chain remains unestablished.** V3 adds
+three preserved externally published signatures checked by two implementations,
+retained native zkIE replay, an actual unsigned local replay receipt, typed claim
+dependency planning, 36 scenarios and 14 isolated killed mutations. The controlled
+baseline authorizes 21/32 negative or unsupported requests; composition authorizes
+0/32 and preserves 16 UNVERIFIABLE results. There are 19 v3 test methods per mode.
+
+Read the [v3 report](research/V3_REAL_CHAIN_REPORT.md),
+[paper draft](research/ACADEMIC_PAPER_DRAFT.md),
+[prior-art comparison](research/PRIOR_ART_ANALYSIS.md), and
+[exact blockers and acquisition plan](research/OPEN_PROOF_OBLIGATIONS.md).
+V3 is based on unmerged draft PR #2; its historical results below remain intact.
+No full-chain success, upstream vulnerability, general security guarantee or
+scientific novelty is claimed.
+
+## Preserved v2 report
+
 **V2 verifies genuine laboratory signatures and retained native zkIE proof artifacts.
 It does not establish a complete external WYRIWE -> zkIE -> judgment -> execution
 chain. Historical execution remains UNVERIFIABLE. No upstream vulnerability,

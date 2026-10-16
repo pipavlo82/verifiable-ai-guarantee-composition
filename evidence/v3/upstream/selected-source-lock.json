@@ -1,0 +1,154 @@
+[
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "LICENSE",
+    "sha256": "405d0af6743b62b00a440d519b85fd9c3f159ff85b3bcfcd8c683e6372b4a7aa",
+    "bytes": 424,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/LICENSE"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "bin/bip340.py",
+    "sha256": "0db64e2a29e6b387b605dc3c2266633dbd48816fdc14c181f791cd7fb2fa7325",
+    "bytes": 2230,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/bin/bip340.py"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "bin/crc_claim.py",
+    "sha256": "377f0d261a8cef159fd7c2b1b97cbbb2351db0783b6e33c0fb025ca659321335",
+    "bytes": 4598,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/bin/crc_claim.py"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "conformance/crc-claim-v0/fixtures/node1-nostr.cell.json",
+    "sha256": "3b38fd9c67afafe2f7747e973244885aacd95d8840c9aaee47f0bc18ec586b6a",
+    "bytes": 4163,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/conformance/crc-claim-v0/fixtures/node1-nostr.cell.json"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "conformance/crc-claim-v0/fixtures/node2-eip712.cell.json",
+    "sha256": "8533e4b344b70250ff5cf081f2116ebf831c7645fa6f8cfc4aa13370c3163568",
+    "bytes": 5204,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/conformance/crc-claim-v0/fixtures/node2-eip712.cell.json"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "conformance/crc-claim-v0/fixtures/golden-preimage.json",
+    "sha256": "b00dce8bb5f32c23f893b2e70b5dfd51ac49ea4a654e0178477cb7ac26ffadca",
+    "bytes": 410,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/conformance/crc-claim-v0/fixtures/golden-preimage.json"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "path": "conformance/crc-claim-v0/fixtures/ledger-236-entry.json",
+    "sha256": "8f7b9c2983b3cdf95b5d697af812c0d6ff32b40f211bcdcd104be63df6382051",
+    "bytes": 2742,
+    "preserved_path": "evidence/v3/upstream/recompute-kit/conformance/crc-claim-v0/fixtures/ledger-236-entry.json"
+  },
+  {
+    "repository": "trustless-ai/agent-ercs",
+    "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "path": "contracts/verify/ERC8299/IWyriweAttestation.sol",
+    "sha256": "00ab1f852536cf3d8532be7fa6d78f6c2fe5e2e511ff343ba6df8aa41b4f54bc",
+    "bytes": 3094,
+    "preserved_path": null
+  },
+  {
+    "repository": "trustless-ai/agent-ercs",
+    "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "path": "contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol",
+    "sha256": "ef689f54c87e41137b3b5ea6616e2ceb2738a40061123ea840c0d93e030d00c4",
+    "bytes": 5937,
+    "preserved_path": null
+  },
+  {
+    "repository": "trustless-ai/ccip-router",
+    "commit": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+    "path": "src/attestation/eip712.ts",
+    "sha256": "058b6d7786a0dbbf925baa98d7100157ca52f325217dfb986da4e8790fbc4f41",
+    "bytes": 2378,
+    "preserved_path": null
+  },
+  {
+    "repository": "trustless-ai/ccip-router",
+    "commit": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+    "path": "src/attestation/withWyriwe.ts",
+    "sha256": "a659018d7ecd41394e5436c9a780353db88dd28b8285fdbac74eff0ea064b4ba",
+    "bytes": 5296,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "package-lock.json",
+    "sha256": "699f2fc389c8d95ad0e5c7f2ef1b3566152b1f9e5123e2ab49cb5c9d59285023",
+    "bytes": 3390,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "src/adapters/crystal.mjs",
+    "sha256": "ed3b5d335b422dde119dcf01c62b5d926d45480ee0aa119c951619f4f0df23e0",
+    "bytes": 3495,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "src/adapters/native/process.mjs",
+    "sha256": "0cc7e4fa6a4b7b014ce4b9fc111d7a4dd42813358e60d560f3d231756b0d213c",
+    "bytes": 4373,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "src/adapters/native/crystal-bridge.ts",
+    "sha256": "966c4522b96ed28e499d781ec145aea43a51ace538c0a5f5ec8ff5e829d33162",
+    "bytes": 1069,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "provenance/native-sources.json",
+    "sha256": "c4ec85e4cc382488d1fd36e7861540f75c81a26a6e330ffc15b2a6615a5aefae",
+    "bytes": 8657,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "vendor/crystal/src/receiptos/canon/canonicalize.ts",
+    "sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+    "bytes": 491,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "vendor/crystal/src/receiptos/canon/receipt-root.ts",
+    "sha256": "519e532b155f3c1f4720337d09bc2a8503e4546682695e798b8597ad8d187bf0",
+    "bytes": 803,
+    "preserved_path": null
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "path": "vendor/crystal/src/receiptos/verify/verify-receipt.ts",
+    "sha256": "70dad3a005e0d09af6d3b4def8ab4c98e24d3ee9f19839d88894c42c5ac9da04",
+    "bytes": 1110,
+    "preserved_path": null
+  }
+]

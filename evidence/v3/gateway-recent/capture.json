@@ -1,0 +1,29 @@
+{
+  "schema": "public-capture-v3",
+  "requests": [
+    {
+      "id": "recent-router",
+      "url": "https://ccip-router-production.up.railway.app/records?namespace=agent-attestations%3Awyriwe&since=1782864000&limit=200",
+      "method": "GET",
+      "observed_at": "2026-10-16T23:11:19.348405+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://ccip-router-production.up.railway.app/records?namespace=agent-attestations%3Awyriwe&since=1782864000&limit=200",
+      "file": "recent-router.raw",
+      "sha256": "bcbd1a8fb1e8c1ac6abe2d272bb1d7be4a8d34d43a46362578a60f763c4f1282",
+      "bytes": 312770
+    },
+    {
+      "id": "recent-nas",
+      "url": "https://gateway.gen-plasma.com/records?namespace=agent-attestations%3Awyriwe&since=1782864000&limit=200",
+      "method": "GET",
+      "observed_at": "2026-10-16T23:11:19.653845+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://gateway.gen-plasma.com/records?namespace=agent-attestations%3Awyriwe&since=1782864000&limit=200",
+      "file": "recent-nas.raw",
+      "sha256": "939a20f213ec68ee8c3db94fb96b31bb7f54e511dd559e76019192ffb40d7b5f",
+      "bytes": 313418
+    }
+  ]
+}

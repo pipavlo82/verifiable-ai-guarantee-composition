@@ -1,0 +1,18 @@
+{
+  "requirements": {
+    "raw-input.bin": "Original admitted bytes, not a normalized reconstruction",
+    "sanitized-input.bin": "Exact transform output consumed by inference",
+    "transform.json": "Versioned deterministic transform/CID and executable source pin",
+    "wyriwe.json": "Complete signed EIP-712 schema and domain, timestamp, signer, commitments",
+    "authority.json": "Independent gateway/model/judgment/action policy with chain and block context",
+    "model.json": "Exact model, weights, circuit and native toolchain identifiers",
+    "weights.bin": "Native verifier weights",
+    "output.bin": "Native inference output",
+    "proof.bin": "Genuine producer-generated proof, exact serialization and public statement",
+    "judgment.json": "Signed subject, input, proof statement, action, policy and scope",
+    "execution.json": "Action/result receipt plus independently verifiable effect or mediation evidence",
+    "execution-witness.bin": "Raw external transaction/trace/admission witness, not an opaque hash only",
+    "historical-ledger-236.raw": "Optional historical CRC reproduction bytes matching the signed 6cb8... hash"
+  },
+  "warning": "No credentials or private keys belong in the bundle."
+}
