@@ -1,0 +1,113 @@
+{
+  "schema": "v2-source-lock",
+  "selection": "existing audited pins retained; not a claim of latest upstream branch",
+  "sources": [
+    {
+      "repository": "trustless-ai/zkIE",
+      "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+      "kind": "main-snapshot",
+      "files": [
+        {
+          "path": "Cargo.toml",
+          "sha256": "5e2f0ed7c48f36ca670162974c419ccf2591632b066db36a772c5c85a87a2470",
+          "git_blob": "82efa4481ff8f345f0be7818c76f0cbe91a9e031",
+          "bytes": 264
+        },
+        {
+          "path": "Cargo.lock",
+          "sha256": "1091cec7f841955eca1d8a1f7ba213f872f09bf81b6ef08bc54afb7f15bb2277",
+          "git_blob": "6bdbee579221caadf193c3f7a059797f026d2f02",
+          "bytes": 21650
+        },
+        {
+          "path": "crates/zkie-core/src/common/matmul.rs",
+          "sha256": "1df9d36df7d94e19689e5a40682e7f2d31d53e7e7469d0cdf53d1109281721e2",
+          "git_blob": "c052f7f9578b750936b53a2795397f4fcefefb13",
+          "bytes": 5813
+        },
+        {
+          "path": "crates/zkie-core/src/common/sumcheck.rs",
+          "sha256": "6480e035d46de973869966be0a53689f1d84bd701a10a6ae7f4a24695cc37029",
+          "git_blob": "1f912e29a67b103a3a39324b947d5a627440e1ed",
+          "bytes": 17605
+        },
+        {
+          "path": "crates/zkie-core/src/common/mle.rs",
+          "sha256": "93663bf4d7008d109cfa028734e1713b86d814602b7c82e4fd2d474be588a137",
+          "git_blob": "4028f6d6e75887a35f94fb769aa1bc20c3de0edc",
+          "bytes": 2750
+        },
+        {
+          "path": "crates/zkie-core/src/common/field.rs",
+          "sha256": "5257ca003953bd4048eb9c8b8d487a35e000671cd242fa22a781800f2c7bc1a0",
+          "git_blob": "a02e6c9c37e1afafaafca86a304c9bf27cacd3e0",
+          "bytes": 1657
+        },
+        {
+          "path": "crates/zkie-ops/src/compose.rs",
+          "sha256": "6d7431b3d8aacb94153f531cc99982d6c52a9c165a7eafd9d372297d11ff1cfa",
+          "git_blob": "310f5f0809c8461b339edc604e9f450e02e7a2fd",
+          "bytes": 125451
+        }
+      ]
+    },
+    {
+      "repository": "trustless-ai/recompute-kit",
+      "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+      "kind": "main-snapshot",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "0e76bd5c50ede1896b96b245c34284a366c72abd0bde9f5d481084c26ccedf95",
+          "git_blob": "442d378d7d88a55791fac011426538bfbb8a5d3d",
+          "bytes": 9998
+        }
+      ]
+    },
+    {
+      "repository": "trustless-ai/agent-ercs",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "kind": "main-snapshot",
+      "files": [
+        {
+          "path": "contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol",
+          "sha256": "ef689f54c87e41137b3b5ea6616e2ceb2738a40061123ea840c0d93e030d00c4",
+          "git_blob": "425e458d3bcbe75dc63d85c7f794a6a00d8f50d7",
+          "bytes": 5937
+        }
+      ]
+    },
+    {
+      "repository": "pipavlo82/receiptos-verify",
+      "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+      "kind": "main-snapshot",
+      "files": [
+        {
+          "path": "src/core/verify-v2.mjs",
+          "sha256": "1c3b876fe7309b16075bd07f61cfdaf0437cf3e06ea6b28f3c369325cc8c5a3c",
+          "git_blob": "1d08addfa69be969e33b635d547d4cd2ffcb3baf",
+          "bytes": 12351
+        },
+        {
+          "path": "schemas/bundle-v2.schema.json",
+          "sha256": "3c6305fd6fe4d92ca2bd5eea5b47e282c3f83d290f9e84eabd3ebbb67644fb73",
+          "git_blob": "1df334264bdc9b9978e77ef69c08c78e30367dcd",
+          "bytes": 4697
+        }
+      ]
+    },
+    {
+      "repository": "ethereum/ERCs",
+      "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+      "kind": "open-draft-pr-head",
+      "files": [
+        {
+          "path": "ERCS/erc-8299.md",
+          "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3",
+          "git_blob": "ead95e012a445a200682cc2dcd7f7583d73fda53",
+          "bytes": 50624
+        }
+      ]
+    }
+  ]
+}

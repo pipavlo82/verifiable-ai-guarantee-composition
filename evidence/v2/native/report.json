@@ -1,0 +1,67 @@
+{
+  "schema": "native-v2-build",
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v2-20261016\\repository\\research\\chain-v2\\native\\Cargo.toml",
+        "--offline"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7d3645b7f81e728f9b1b3231f21c15e9ef2969dea733951d4c4f176654570b8f"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v2-20261016\\repository\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::op_shard_matmul_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "36d26346de1a04be2bae9349a22171d7e6d4f2760ca8728fb6ff88724aba6bdf",
+      "stderr_sha256": "c244e96ae2d04a64ede8e99d7315f28598426926b7dc2cab78247872930150de"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v2-20261016\\repository\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::committed_projection_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "38cbc89297af1c49a62158b6aa90f64d321d2cc2547521b8efefe1e13cdba1f0",
+      "stderr_sha256": "e1399b3ec8bf30c4f40d0597e705b1a45ac8e6963d080d1854d515475c6c51b2"
+    }
+  ],
+  "source_clean": true,
+  "adapter_lock_sha256": "5144f1942d1ebc9e744d64807dd8897d602d8122ad483cf5c328851ac02042da",
+  "passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "action": "materialize-matmul-output",
+  "bytes": 256,
+  "executionId": "lab-execution-b",
+  "independent_historical_execution_proof": false,
+  "observation": "exclusive create, write, fsync, reopen and read bytes",
+  "observer": "capture.py on the generating host",
+  "result_sha256": "052817d86a7fbde2e285d5087162dadf7d8203db4fc4fca10286ae5ba9a6fd3a",
+  "schema": "local-observation-v2"
+}

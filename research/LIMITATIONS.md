@@ -1,3 +1,9 @@
+# Current v2 status
+
+V2 adds real laboratory crypto and retained native proofs, with explicit limits: offline declared domain, self-authorized research keys, no independently observed external admission or historical execution, public one-op arithmetic, no soundness/privacy theorem, no upstream judgment or ReceiptOS production bridge, no durable replay service, two surviving mutants, and no established novelty. Native full recomputation is part of verification. See [artifact boundaries](chain-v2/ARTIFACT_FORMATS.md). Earlier v0 limitations follow.
+
+---
+
 # Limitations
 
 - Original archive not located. No original SHA-256, original tests, original nine-case inventory or original mutation claims were verified. This is a fresh reconstruction.

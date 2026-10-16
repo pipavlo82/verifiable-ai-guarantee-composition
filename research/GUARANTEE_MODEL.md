@@ -1,3 +1,9 @@
+# Current v2 status
+
+The current typed G1-G8 model, assumptions, failure classifications and dependency graph are in [v2 formal model](chain-v2/FORMAL_MODEL.md). Its positive scope is public MatMul recomputation under a laboratory policy. External admission and historical execution remain UNVERIFIABLE. The earlier synthetic model below remains historical context.
+
+---
+
 # Guarantee model
 
 A guarantee descriptor is `(subject, scope, authority, evidence, dependencies, assumptions, verifier, failure)`. The table defines the research model and its limited v0 realization. These are not invented upstream promises. Every row inherits the trusted caller policy, correct local implementation/runtime, and synthetic-only assurance ceiling.

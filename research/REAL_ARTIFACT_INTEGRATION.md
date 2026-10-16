@@ -1,3 +1,9 @@
+# Current v2 status
+
+V2 partially implements retained native proof replay, genuine laboratory EIP-712 signatures, exact preimages and composition checks. The full external integration is still NOT IMPLEMENTED. The [v2 report](V2_REAL_ARTIFACT_REPORT.md) and [artifact formats](chain-v2/ARTIFACT_FORMATS.md) list completed and missing links without converting laboratory artifacts into external credentials. The table below is the original v0 roadmap.
+
+---
+
 # Real-artifact integration roadmap
 
 **Overall status: NOT IMPLEMENTED. No end-to-end cryptographic verification is claimed.** Current public source text is available; a coherent real artifact set binding one input/model/judgment/execution was not acquired or verified. No proof, signature, transaction or external receipt was fabricated. All future adapters must return UNVERIFIABLE on unsupported mechanisms or missing bytes.

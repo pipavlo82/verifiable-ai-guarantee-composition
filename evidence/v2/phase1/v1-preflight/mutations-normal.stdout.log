@@ -1,0 +1,49 @@
+{
+  "controls": [
+    {
+      "after": true,
+      "before": false,
+      "classification": "KILLED",
+      "name": "closure",
+      "positive_control": true
+    },
+    {
+      "after": "VERIFIED",
+      "before": "UNVERIFIABLE",
+      "classification": "KILLED",
+      "name": "representation",
+      "positive_control": "VERIFIED"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "exit": 1,
+      "name": "signature_verification",
+      "output_sha256": "6b028ab5bf8c58ccb4e8dd248e62a388145147ba8225f5f04129cd24e2e8c1e5",
+      "positive_control": "VERIFIED",
+      "target": "changed_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "exit": 1,
+      "name": "proposal_binding",
+      "output_sha256": "a4e4e1cd3d6e5402dfc4d14dcf3b56276ce5c74eaec4683de23ab63dfad8a6f9",
+      "positive_control": "VERIFIED",
+      "target": "wrong_proposal_same_authentic_event"
+    }
+  ],
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 4,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "passed": true,
+  "restored": true,
+  "schema": "formal-v1-mutations",
+  "scope": "Four implementation controls; 252 abstract removal countermodels are separate, not counted as source mutants."
+}
