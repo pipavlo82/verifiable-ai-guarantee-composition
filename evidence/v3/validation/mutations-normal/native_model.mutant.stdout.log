@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "wrong_model",
+      "passed": false,
+      "result": {
+        "additional_bindings": [
+          "native_model"
+        ],
+        "authorized": true,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "native_recomputation",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "native_model": "VERIFIED",
+          "native_proof": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "VERIFIED"
+      }
+    }
+  ],
+  "schema": "composition-v3-results",
+  "summary": {
+    "baseline_correct_refusals": 0,
+    "baseline_false_authorizations": 1,
+    "baseline_unverifiable": 0,
+    "composition_correct_refusals": 0,
+    "composition_false_authorizations": 1,
+    "composition_unverifiable": 0,
+    "negative_cases": 1,
+    "passed": false,
+    "scenarios": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "UNVERIFIABLE",
+  "acquired_hash_checked": [],
+  "missing": [
+    "manifest.json with file -> SHA-256 mapping",
+    "raw-input.bin",
+    "sanitized-input.bin",
+    "transform.json",
+    "wyriwe.json",
+    "authority.json",
+    "model.json",
+    "weights.bin",
+    "output.bin",
+    "proof.bin",
+    "judgment.json",
+    "execution.json",
+    "execution-witness.bin"
+  ],
+  "digest_mismatches": [],
+  "integration": "NOT IMPLEMENTED for new external bundles; authority, provenance admission, native statement linkage and execution semantics require independent review",
+  "full_chain_authorized": false
+}

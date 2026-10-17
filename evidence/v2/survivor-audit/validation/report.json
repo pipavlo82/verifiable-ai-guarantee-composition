@@ -1,0 +1,197 @@
+{
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 2,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+  },
+  "normal_repeat_optimized_equal": true,
+  "passed": true,
+  "red_controls": [
+    {
+      "boundary": "native_enforcement",
+      "exit": 1,
+      "red_assertion_failure_without_error": true
+    },
+    {
+      "boundary": "artifact_types",
+      "exit": 1,
+      "red_assertion_failure_without_error": true
+    }
+  ],
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v2_survivors",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-normal",
+      "stderr_sha256": "0fbaa2d156ac56d501b32f37bc105173ba421a6d611f9ede9e99ab9323c61c00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 7
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v2/audit_survivors.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v2-20261016\\repository\\build\\v2\\survivor-validation\\normal"
+      ],
+      "exit": 0,
+      "name": "audit-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "56e0924d6edc63aa5f326a74a381af70a46408370748b3be1c3314a2f21529a4"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v2_survivors",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-repeat",
+      "stderr_sha256": "99967f26d5e316029c38d97d34fd7e1b6f5efef645239413eaec5bc430574782",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 7
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v2/audit_survivors.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v2-20261016\\repository\\build\\v2\\survivor-validation\\repeat"
+      ],
+      "exit": 0,
+      "name": "audit-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "56e0924d6edc63aa5f326a74a381af70a46408370748b3be1c3314a2f21529a4"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v2_survivors",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-optimized",
+      "stderr_sha256": "383858ddf3c499c6535eed29031d95d91d2d09faa6565136f8abd9f552906881",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 7
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/v2/audit_survivors.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v2-20261016\\repository\\build\\v2\\survivor-validation\\optimized"
+      ],
+      "exit": 0,
+      "name": "audit-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "56e0924d6edc63aa5f326a74a381af70a46408370748b3be1c3314a2f21529a4"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v2_survivors",
+        "-k",
+        "test_native_rejection_is_isolated",
+        "-v"
+      ],
+      "exit": 1,
+      "name": "red-native_enforcement",
+      "stderr_sha256": "c5e1d22b5ffce3f835f5ed88b6651e15f0dd90ab01f11eeba267d657219ba4ce",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v2_survivors",
+        "-k",
+        "test_type_rejection_is_isolated",
+        "-v"
+      ],
+      "exit": 1,
+      "name": "red-artifact_types",
+      "stderr_sha256": "c3516643ddb71f2d45d66801a0a3ee92699b84ad47746d776342224d12c27ede",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v2_survivors",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-restored",
+      "stderr_sha256": "4a4f2a071d23a72801bbee73b0725bd35b738ac6e080a2f283cf6d5c50ddf35b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 7
+    }
+  ],
+  "schema": "survivor-validation-v1",
+  "snapshot_match": null,
+  "source_restored": true
+}

@@ -1,3 +1,13 @@
+# Current v2 status
+
+The [survivor follow-up](V2_SURVIVOR_AUDIT.md) adds 7 passing tests in each of
+normal/repeat/`-O` and kills the 2 original surviving mutants with isolated witnesses.
+It changes no verifier logic and does not rewrite the original counts below.
+
+Current v2 results: 26 scenarios, 20 tests in normal/repeat/-O, 18/25 negative false authorizations for our component-only control versus 0/25 for explicit composition; 18 killed and 2 surviving executed mutations. No complete external chain positive is claimed. The [v2 report](V2_REAL_ARTIFACT_REPORT.md) provides the full matrix, timings, raw evidence and limitations. Results below describe v0.
+
+---
+
 # Executed results
 
 Origin: RECONSTRUCTION. Environment: Python 3.12.14, Windows. Real integration: NOT IMPLEMENTED.

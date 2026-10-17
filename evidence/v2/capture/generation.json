@@ -1,0 +1,58 @@
+{
+  "chain_observation": null,
+  "external_issuer": false,
+  "historical_execution_independently_verified": false,
+  "native_binary_sha256": "b9baf228919a2264a54c35729ac30d8bb074c5517937f9bd47c8df0c02c8f7e7",
+  "node": "v22.15.0",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "command": [
+        "composition-native-capture",
+        "prove",
+        "input.bin",
+        "weights.bin",
+        "output.bin",
+        "proof.bin",
+        "424242"
+      ],
+      "proof_bytes": 380,
+      "prove_exit": 0,
+      "variant": "a",
+      "verifier_command": [
+        "composition-native-capture",
+        "verify",
+        "input.bin",
+        "weights.bin",
+        "output.bin",
+        "proof.bin"
+      ],
+      "verify_exit": 0
+    },
+    {
+      "command": [
+        "composition-native-capture",
+        "prove",
+        "input.bin",
+        "weights.bin",
+        "output.bin",
+        "proof.bin",
+        "424242"
+      ],
+      "proof_bytes": 380,
+      "prove_exit": 0,
+      "variant": "b",
+      "verifier_command": [
+        "composition-native-capture",
+        "verify",
+        "input.bin",
+        "weights.bin",
+        "output.bin",
+        "proof.bin"
+      ],
+      "verify_exit": 0
+    }
+  ],
+  "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "schema": "actual-laboratory-capture-v2"
+}

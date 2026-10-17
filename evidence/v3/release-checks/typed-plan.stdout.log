@@ -1,0 +1,489 @@
+{
+  "claim": "external_full_chain",
+  "contracts": {
+    "as_of": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "caller time context",
+      "dependencies": [],
+      "evidence": "cell and claim preimage as_of",
+      "id": "as_of",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "literal signed as_of equality",
+      "subject": "requested observation window",
+      "verification_contract": "exact match; no trusted clock or durable replay service"
+    },
+    "cell1_signature": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "BIP-340 public key",
+      "dependencies": [],
+      "evidence": "CC0 published node1 bytes",
+      "id": "cell1_signature",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "signed cell publication",
+      "subject": "Nostr CRC Cell",
+      "verification_contract": "NIP-01 plus BIP-340"
+    },
+    "cell2_signature": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "recovered secp256k1 key",
+      "dependencies": [],
+      "evidence": "CC0 published node2 bytes",
+      "id": "cell2_signature",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "signed cell publication",
+      "subject": "EIP-712 CRC Cell",
+      "verification_contract": "recompute evidence hash and EIP-712 digest, recover signer"
+    },
+    "cell_authority": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "relying-party key policy",
+      "dependencies": [],
+      "evidence": "explicit expected keys",
+      "id": "cell_authority",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "caller-selected acceptance",
+      "subject": "two declared cell issuers",
+      "verification_contract": "require both declared issuers match accepted keys"
+    },
+    "claim_agreement": {
+      "assumptions": [
+        "all dependencies verified within their scopes"
+      ],
+      "authority": "caller policy",
+      "dependencies": [
+        "judgment_signature",
+        "judgment_authority",
+        "cell1_signature",
+        "cell2_signature",
+        "cell_authority",
+        "decision_binding",
+        "claim_binding",
+        "judgment_scope",
+        "domain",
+        "as_of"
+      ],
+      "evidence": "dependency closure",
+      "id": "claim_agreement",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "claim_agreement",
+      "subject": "caller requested subject",
+      "verification_contract": "conjunction with REFUTED precedence over UNVERIFIABLE"
+    },
+    "claim_binding": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "caller request",
+      "dependencies": [],
+      "evidence": "exact claim preimages",
+      "id": "claim_binding",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "same claim preimage",
+      "subject": "two cells and requested claim",
+      "verification_contract": "recompute both IDs and compare request"
+    },
+    "decision_binding": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "signed source plus request",
+      "dependencies": [],
+      "evidence": "declared eight-field preimage",
+      "id": "decision_binding",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "exact decision reference",
+      "subject": "judgment and requested decision",
+      "verification_contract": "recompute decision reference and match both cells and request"
+    },
+    "domain": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "caller domain policy",
+      "dependencies": [],
+      "evidence": "signed domain name/version/chainId",
+      "id": "domain",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "declared off-chain domain",
+      "subject": "EIP-712 domain",
+      "verification_contract": "exact domain equality; not live chain proof"
+    },
+    "external_execution": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "independent mediation or settlement observer",
+      "dependencies": [],
+      "evidence": "outcome #236 HTTP404; no matching execution receipt",
+      "id": "external_execution",
+      "permitted_claims": [
+        "external_full_chain"
+      ],
+      "scope": "actual external occurrence",
+      "subject": "action and resulting effect",
+      "verification_contract": "UNVERIFIABLE; absence is not refutation"
+    },
+    "external_full_chain": {
+      "assumptions": [
+        "all dependencies verified within their scopes"
+      ],
+      "authority": "caller policy",
+      "dependencies": [
+        "claim_agreement",
+        "native_recomputation",
+        "local_receipt_binding",
+        "wyriwe_provenance",
+        "external_model_authority",
+        "inference_judgment_binding",
+        "external_execution"
+      ],
+      "evidence": "dependency closure",
+      "id": "external_full_chain",
+      "permitted_claims": [
+        "external_full_chain"
+      ],
+      "scope": "external_full_chain",
+      "subject": "caller requested subject",
+      "verification_contract": "conjunction with REFUTED precedence over UNVERIFIABLE"
+    },
+    "external_model_authority": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "external policy owner",
+      "dependencies": [],
+      "evidence": "missing signed delegation/registry policy",
+      "id": "external_model_authority",
+      "permitted_claims": [
+        "external_full_chain"
+      ],
+      "scope": "authorized model/version",
+      "subject": "model execution",
+      "verification_contract": "UNVERIFIABLE; native mathematical validity is insufficient"
+    },
+    "historical_cell_execution": {
+      "assumptions": [
+        "all dependencies verified within their scopes"
+      ],
+      "authority": "caller policy",
+      "dependencies": [
+        "claim_agreement",
+        "historical_input_bytes",
+        "historical_execution"
+      ],
+      "evidence": "dependency closure",
+      "id": "historical_cell_execution",
+      "permitted_claims": [
+        "historical_cell_execution"
+      ],
+      "scope": "historical_cell_execution",
+      "subject": "caller requested subject",
+      "verification_contract": "conjunction with REFUTED precedence over UNVERIFIABLE"
+    },
+    "historical_execution": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "independent execution observer",
+      "dependencies": [],
+      "evidence": "only reference hashes are available",
+      "id": "historical_execution",
+      "permitted_claims": [
+        "historical_cell_execution"
+      ],
+      "scope": "producer actually ran stated code",
+      "subject": "CRC producer execution",
+      "verification_contract": "UNVERIFIABLE; a signed result is not execution evidence"
+    },
+    "historical_input_bytes": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "external capture observer",
+      "dependencies": [],
+      "evidence": "6cb8... source bytes absent",
+      "id": "historical_input_bytes",
+      "permitted_claims": [
+        "historical_cell_execution"
+      ],
+      "scope": "historical exact-byte admission",
+      "subject": "original #236 capture",
+      "verification_contract": "UNVERIFIABLE until exact signed input commitment opens"
+    },
+    "inference_judgment_binding": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "signed judgment contract",
+      "dependencies": [],
+      "evidence": "public judgment does not reference this native statement",
+      "id": "inference_judgment_binding",
+      "permitted_claims": [
+        "external_full_chain"
+      ],
+      "scope": "same reviewed action/input",
+      "subject": "native proof and public judgment",
+      "verification_contract": "UNVERIFIABLE; do not invent a linkage"
+    },
+    "judgment_authority": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "relying-party key policy",
+      "dependencies": [],
+      "evidence": "pinned expected issuer key",
+      "id": "judgment_authority",
+      "permitted_claims": [
+        "judgment_publication",
+        "claim_agreement"
+      ],
+      "scope": "caller-selected acceptance",
+      "subject": "declared validator key",
+      "verification_contract": "match the declared key; signature dependency authenticates it"
+    },
+    "judgment_publication": {
+      "assumptions": [
+        "all dependencies verified within their scopes"
+      ],
+      "authority": "caller policy",
+      "dependencies": [
+        "judgment_signature",
+        "judgment_authority"
+      ],
+      "evidence": "dependency closure",
+      "id": "judgment_publication",
+      "permitted_claims": [
+        "judgment_publication"
+      ],
+      "scope": "judgment_publication",
+      "subject": "caller requested subject",
+      "verification_contract": "conjunction with REFUTED precedence over UNVERIFIABLE"
+    },
+    "judgment_scope": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "caller request",
+      "dependencies": [],
+      "evidence": "signed source and cell claim bodies",
+      "id": "judgment_scope",
+      "permitted_claims": [
+        "claim_agreement"
+      ],
+      "scope": "literal signed verdict only",
+      "subject": "requested verdict",
+      "verification_contract": "match requested verdict and source policy/class; no judgment correctness"
+    },
+    "judgment_signature": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "BIP-340 public key",
+      "dependencies": [],
+      "evidence": "exact live ledger proof_event",
+      "id": "judgment_signature",
+      "permitted_claims": [
+        "judgment_publication",
+        "claim_agreement"
+      ],
+      "scope": "authentic publication",
+      "subject": "NIP-01 event",
+      "verification_contract": "recompute id and verify BIP-340"
+    },
+    "local_receipt_binding": {
+      "assumptions": [
+        "all dependencies verified within their scopes"
+      ],
+      "authority": "caller policy",
+      "dependencies": [
+        "receipt_root",
+        "receipt_subject"
+      ],
+      "evidence": "dependency closure",
+      "id": "local_receipt_binding",
+      "permitted_claims": [
+        "local_receipt_binding"
+      ],
+      "scope": "local_receipt_binding",
+      "subject": "caller requested subject",
+      "verification_contract": "conjunction with REFUTED precedence over UNVERIFIABLE"
+    },
+    "native_model": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "caller model policy",
+      "dependencies": [],
+      "evidence": "v2 model.json bytes",
+      "id": "native_model",
+      "permitted_claims": [
+        "native_recomputation"
+      ],
+      "scope": "explicit pinned model selection",
+      "subject": "model manifest",
+      "verification_contract": "SHA-256 equality; no external model approval"
+    },
+    "native_proof": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "pinned native verifier",
+      "dependencies": [],
+      "evidence": "v2 exact input/weights/output/proof",
+      "id": "native_proof",
+      "permitted_claims": [
+        "native_recomputation"
+      ],
+      "scope": "public arithmetic recomputation",
+      "subject": "retained MatMul tuple",
+      "verification_contract": "run Rust verifier and recompute output"
+    },
+    "native_recomputation": {
+      "assumptions": [
+        "all dependencies verified within their scopes"
+      ],
+      "authority": "caller policy",
+      "dependencies": [
+        "native_proof",
+        "native_model"
+      ],
+      "evidence": "dependency closure",
+      "id": "native_recomputation",
+      "permitted_claims": [
+        "native_recomputation"
+      ],
+      "scope": "native_recomputation",
+      "subject": "caller requested subject",
+      "verification_contract": "conjunction with REFUTED precedence over UNVERIFIABLE"
+    },
+    "receipt_root": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "ReceiptOS native root verifier",
+      "dependencies": [],
+      "evidence": "actual preserved subprocess receipt",
+      "id": "receipt_root",
+      "permitted_claims": [
+        "local_receipt_binding"
+      ],
+      "scope": "integrity only",
+      "subject": "local observer receipt",
+      "verification_contract": "run pinned ReceiptOS/Crystal plus independent Python root recomputation"
+    },
+    "receipt_subject": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "caller request",
+      "dependencies": [],
+      "evidence": "receipt subject.proof_sha256",
+      "id": "receipt_subject",
+      "permitted_claims": [
+        "local_receipt_binding"
+      ],
+      "scope": "exact proof digest",
+      "subject": "requested replay subject",
+      "verification_contract": "match requested proof digest; no historical truth inference"
+    },
+    "wyriwe_provenance": {
+      "assumptions": [
+        "verifier integrity",
+        "collision resistance",
+        "explicit scoped trust; no truth from signatures"
+      ],
+      "authority": "authorized external gateway",
+      "dependencies": [],
+      "evidence": "no compatible complete artifact",
+      "id": "wyriwe_provenance",
+      "permitted_claims": [
+        "external_full_chain"
+      ],
+      "scope": "actual admitted bytes and transform",
+      "subject": "external input to native tuple",
+      "verification_contract": "UNVERIFIABLE; bounded public search is not proof of global absence"
+    }
+  },
+  "required": [
+    "judgment_signature",
+    "judgment_authority",
+    "cell1_signature",
+    "cell2_signature",
+    "cell_authority",
+    "decision_binding",
+    "claim_binding",
+    "judgment_scope",
+    "domain",
+    "as_of",
+    "native_proof",
+    "native_model",
+    "receipt_root",
+    "receipt_subject",
+    "wyriwe_provenance",
+    "external_model_authority",
+    "inference_judgment_binding",
+    "external_execution"
+  ]
+}

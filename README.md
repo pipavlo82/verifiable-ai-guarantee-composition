@@ -1,49 +1,85 @@
 # Verifiable AI Guarantee Composition
 
-Independent experimental research by **pipavlo82** on whether individually valid components can support an unauthorized downstream claim when their subjects, inputs, scopes or dependencies differ.
+Independent experimental research by **pipavlo82** on the conditions under which
+component guarantees can justify a downstream authorization claim.
 
-**This v0 is a reconstruction using synthetic evidence. It does not verify zkIE proofs, WYRIWE signatures, on-chain transactions, or real execution receipts. Real-artifact integration: NOT IMPLEMENTED. No upstream vulnerability or security certification is claimed. This is not an official Trustless AI specification.**
+## V3: public artifacts and explicit missing links
 
-The requested `guarantee-composition-v0.zip` was not located in available local searches. Its bytes, original nine cases, mutation controls and SHA-256 were not verified. See [recovery record](evidence/recovery.json). The nine core negative cases here are newly constructed; eleven supplementary controls make the limits explicit.
+**PARTIAL_CHAIN_VERIFIED — full external chain remains unestablished.** V3 adds
+three preserved externally published signatures checked by two implementations,
+retained native zkIE replay, an actual unsigned local replay receipt, typed claim
+dependency planning, 36 scenarios and 14 isolated killed mutations. The controlled
+baseline authorizes 21/32 negative or unsupported requests; composition authorizes
+0/32 and preserves 16 UNVERIFIABLE results. There are 19 v3 test methods per mode.
 
-## Reproduce offline
+Read the [v3 report](research/V3_REAL_CHAIN_REPORT.md),
+[paper draft](research/ACADEMIC_PAPER_DRAFT.md),
+[prior-art comparison](research/PRIOR_ART_ANALYSIS.md), and
+[exact blockers and acquisition plan](research/OPEN_PROOF_OBLIGATIONS.md).
+V3 is based on unmerged draft PR #2; its historical results below remain intact.
+No full-chain success, upstream vulnerability, general security guarantee or
+scientific novelty is claimed.
 
-Python 3.12+ standard library; no pip packages or network needed for the experiment.
+## Preserved v2 report
 
-```sh
-git clone https://github.com/pipavlo82/verifiable-ai-guarantee-composition.git
-cd verifiable-ai-guarantee-composition
-python -B tools/verify_artifacts.py
-python -B tools/validate.py --out build/replay
-```
+**V2 verifies genuine laboratory signatures and retained native zkIE proof artifacts.
+It does not establish a complete external WYRIWE -> zkIE -> judgment -> execution
+chain. Historical execution remains UNVERIFIABLE. No upstream vulnerability,
+security certification or scientific priority is claimed.**
 
-`validate.py` runs the complete normal/repeat/`-O` test matrix, deterministic normal/repeat/optimized experiment reports, eight real source mutations and restoration, fixture regeneration comparison, and a separate local timing sample. It saves raw stdout/stderr, return codes and a machine-readable report. It exits nonzero for failed checks or surviving/crashed/unapplied/unverifiable mutations. It compares deterministic results to committed evidence when present. Timing and unittest elapsed times are not deterministic artifacts.
+The positive claim is deliberately narrow: a pinned public matrix operation's
+output can be recomputed and is consistently referenced by laboratory attestations
+under an explicit caller policy. The source-controlled profile uses exact bytes,
+Keccak-256, real EIP-712/secp256k1 verification and a separate native proof verifier
+process. The generated keys are laboratory authorities, not external issuer keys.
 
-Individual commands:
+## Current results
 
-```sh
-python -B -m unittest discover -s tests -v
-python -B -O -m unittest discover -s tests -v
-python -B tools/experiment.py
-python -B tools/mutations.py
-python -B tools/benchmark.py
-```
+**Survivor follow-up:** both original survivors are non-equivalent mutations masked
+by additional failures in their original witnesses. Isolated cases now kill both;
+7 additional tests pass in normal/repeat/`-O`. The production verifier is unchanged.
+See the [audit and reproduction evidence](research/V2_SURVIVOR_AUDIT.md).
+The table below preserves the original v2 experiment's results.
 
-## What the experiment checks
+| Experiment | Observed result |
+| --- | --- |
+| Same-evidence v2 comparison | 26 scenarios: one narrow positive and 25 negative/unsupported claims |
+| Independent component baseline | 18/25 negative cases falsely authorized |
+| Explicit composition | 0/25 negative cases authorized; 4 UNVERIFIABLE classifications retained |
+| Python v2 tests | 20 pass in normal, repeated and optimized runs |
+| Executed source mutations | 18 KILLED, 2 SURVIVED, 0 CRASHED, 0 NOT_APPLIED |
+| Unavailable integration check | 1 UNVERIFIABLE, unexecuted; not counted as a mutation |
+| Native artifacts | Two retained 380-byte proofs; deserialized native verification and full output recomputation |
+| Signatures | Ten genuine laboratory artifacts; external EIP-712 known-answer recovery also checked |
 
-The toy inference is `y = x*x`. A publicly recomputable SHA-256 checksum detects byte changes; it is **not a signature**. A pinned public catalog stands in for judgment authenticity. Policy is separately selected by the verifier, not supplied by the evidence producer. All accepted conclusions are limited to `SYNTHETIC` under `composition-policy-v0`.
+These numbers describe a controlled experiment against our deliberately incomplete
+component-only baseline. They do not estimate real deployment exploit rates or
+compare against upstream authorization software. The two surviving mutants are
+retained in that original run, not retroactively counted as kills. The separate
+follow-up reports 2 KILLED and 0 SURVIVED. No security advantage is generalized beyond these
+specific witnesses. Full evidence is linked below.
 
-G1 input provenance; G2 model/version; G3 inference statement; G4 subject; G5 judgment authenticity; G6 judgment authorization; G7 execution receipt; G8 downstream authorization. `VERIFIED` means satisfied in this synthetic model. `REFUTED` means a checked relation contradicts the selected claim. `UNVERIFIABLE` means missing, unsupported or unusable evidence. No non-VERIFIED result authorizes anything.
+- [Completed v2 experimental report](research/V2_REAL_ARTIFACT_REPORT.md)
+- [Fresh-checkout reproduction](research/chain-v2/REPRODUCE.md)
+- [Exact formats and trust boundaries](research/chain-v2/ARTIFACT_FORMATS.md)
+- [Typed model and candidate propositions](research/chain-v2/FORMAL_MODEL.md)
+- [Machine-readable results](evidence/v2/validation/report.json), [mutation evidence](evidence/v2/validation/mutations-normal.stdout.log), [integration status](evidence/v2/status.json)
+- [Prior-art comparison](research/RELATED_WORK.md) and [paper outline](research/PAPER_OUTLINE.md)
 
-Strategy A checks components independently, including toy arithmetic and the fixture authenticity catalog. Strategy B adds explicit bindings and policy context over the **same input objects**. A is an intentionally weak experimental comparator, not a reconstruction of zkIE, WYRIWE or ReceiptOS behavior. B's finite-fixture results cannot establish production security.
+## Version history and provenance
 
-## Research and evidence
+V0 (`905767f8696afe4cee612c8248f9d5d76f81f81b`) was an explicitly labeled synthetic
+reconstruction: the requested original ZIP was unavailable and was never verified.
+Its 21 scenarios, 19 tests and 8 killed controls remain preserved.
 
-- [Research question](research/RESEARCH_QUESTION.md), [threat model](research/THREAT_MODEL.md)
-- [Guarantee model](research/GUARANTEE_MODEL.md), [composition rules](research/COMPOSITION_RULES.md)
-- [Source review](research/SOURCE_REVIEW.md), [source lock](sources.lock.json), [related work](research/RELATED_WORK.md)
-- [Results](research/RESULTS.md), [machine results](evidence/validation/experiment-normal.stdout.json), [mutations](evidence/validation/mutations-normal.stdout.json)
-- [Validation matrix and raw logs](evidence/validation/report.json), [artifact SHA-256 inventory](artifacts.sha256.json)
-- [Limitations](research/LIMITATIONS.md), [real-artifact roadmap](research/REAL_ARTIFACT_INTEGRATION.md), [paper outline](research/PAPER_OUTLINE.md)
+V1 (`ea89871064e98a67b6ba01c836d498bee89aa437`) added typed obligations, native library probes and an unrelated genuine
+public signature. It did not provide a coherent real chain. V1 is an ancestor of
+verified main `18a5916098addf6447700ed95441125bfa7079c3` (merge parents include the exact v1 SHA). Both main CI runs
+passed; a fresh public clone reproduced v0/v1 before v2 began. See the
+[phase-1 record](evidence/v2/phase1/report.json).
 
-MIT licensed original research implementation. Upstream sources are pinned references, not vendored dependencies. Existing upstream repositories and deployed systems are unchanged.
+V2 is developed on `research/real-artifact-composition-v2` from that main. Its
+experimental status is distinct from the frozen v0/v1 evidence. MIT covers our
+original code; upstream source is fetched at pinned commits, not copied into the
+repository. Dependency licenses remain applicable. No upstream repositories were
+modified, no external researchers were contacted, and no merge is authorized.

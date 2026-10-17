@@ -1,0 +1,11 @@
+{
+  "schema": "read-only-acquisition-v3",
+  "requests": [
+    {"id":"router-identity","url":"https://ccip-router-production.up.railway.app/identity"},
+    {"id":"router-records","url":"https://ccip-router-production.up.railway.app/records?namespace=agent-attestations%3Awyriwe&limit=2"},
+    {"id":"nas-identity","url":"https://gateway.gen-plasma.com/identity"},
+    {"id":"nas-records","url":"https://gateway.gen-plasma.com/records?namespace=agent-attestations%3Awyriwe&limit=2"}
+  ],
+  "execution": "python -B tools/v3/acquire.py --plan research/v3-acquisition-plan.json --out build/v3/new-capture",
+  "limits": "GET only, no new inference, signing, submission, transactions or payments. New destinations preserve prior observations. HTTP success does not establish truth, authenticity or authority."
+}

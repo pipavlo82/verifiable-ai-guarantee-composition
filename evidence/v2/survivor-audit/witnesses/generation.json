@@ -1,0 +1,18 @@
+{
+  "schema": "survivor-witness-generation-v1",
+  "base_commit": "ba889271bef7cb3d2eed00067a12064689bfb627",
+  "new_private_keys_persisted": false,
+  "policy_change": "only role public keys changed; same supported policy schema and semantics; claim policyHash recomputed",
+  "proof_change": {
+    "offset": 12,
+    "field": "claimed scalar",
+    "from": "7969739581823942374",
+    "to": "7969739581823942375",
+    "original_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+    "modified_sha256": "2393d093f86b4428ab9ffee293b72e476fca5084cfb7c461dc82435a656a3fee"
+  },
+  "unique_signatures_created": 6,
+  "source_observations": "reuse retained original local observation bytes; no new operation or chronology is asserted",
+  "type_witness": "LabReceipt genuinely signed by the judgment-role key; the policy still has distinct role keys",
+  "native_witness": "all signed digest references updated to the explicitly invalid proof; native verification must reject"
+}

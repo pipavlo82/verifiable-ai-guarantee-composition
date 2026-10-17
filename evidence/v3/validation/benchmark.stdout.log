@@ -1,0 +1,93 @@
+{
+  "includes": "fresh Node crypto subprocess startup and actual verification in both strategies",
+  "limitation": "single host, 12 paired samples, interleaved order; scheduling variance may exceed binding cost; no general performance claim",
+  "rows": [
+    {
+      "case": "positive_claim_agreement",
+      "median_difference_ns": 1020100.0,
+      "median_ratio": 1.0063976990610415,
+      "medians_ns": {
+        "component_only": 159447950.0,
+        "composition": 160468050.0
+      },
+      "samples_ns": {
+        "component_only": [
+          159993000,
+          159576100,
+          159319800,
+          158308800,
+          157462300,
+          159046500,
+          157096700,
+          159588500,
+          160358800,
+          159314900,
+          175367300,
+          162194700
+        ],
+        "composition": [
+          161511400,
+          160085900,
+          157242500,
+          159536500,
+          158590500,
+          161052300,
+          162391500,
+          157259600,
+          160434500,
+          160501600,
+          161599300,
+          163665400
+        ]
+      },
+      "statuses": {
+        "component_only": "VERIFIED",
+        "composition": "VERIFIED"
+      }
+    },
+    {
+      "case": "cross_subject",
+      "median_difference_ns": -1173750.0,
+      "median_ratio": 0.992735607683824,
+      "medians_ns": {
+        "component_only": 161575800.0,
+        "composition": 160402050.0
+      },
+      "samples_ns": {
+        "component_only": [
+          163422300,
+          158755700,
+          163378700,
+          158961800,
+          161940700,
+          178341200,
+          170485000,
+          160277600,
+          161210900,
+          158446200,
+          163798900,
+          157317200
+        ],
+        "composition": [
+          159133600,
+          158005600,
+          159307300,
+          166852700,
+          161934500,
+          169239400,
+          159668600,
+          161585700,
+          160420600,
+          160383500,
+          160434600,
+          158855800
+        ]
+      },
+      "statuses": {
+        "component_only": "VERIFIED",
+        "composition": "REFUTED"
+      }
+    }
+  ],
+  "schema": "v3-paired-benchmark"
+}

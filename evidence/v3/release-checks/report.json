@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "name": "acquisition-requirements",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v3/check_acquisition.py"
+      ],
+      "exit": 0,
+      "expected_exit": 0
+    },
+    {
+      "name": "missing-acquisition",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v3/check_acquisition.py",
+        "--bundle",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\v3\\acquisition-negative-control"
+      ],
+      "exit": 2,
+      "expected_exit": 2
+    },
+    {
+      "name": "contradictory-acquisition",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v3/check_acquisition.py",
+        "--bundle",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\v3\\acquisition-negative-control"
+      ],
+      "exit": 1,
+      "expected_exit": 1
+    },
+    {
+      "name": "typed-plan",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/v3/run.py",
+        "--plan",
+        "external_full_chain"
+      ],
+      "exit": 0,
+      "expected_exit": 0
+    },
+    {
+      "name": "v2-unchanged",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+        "--",
+        "src/v2",
+        "tests/v2",
+        "tools/v2",
+        "evidence/v2",
+        "research/chain-v2"
+      ],
+      "exit": 0,
+      "expected_exit": 0
+    },
+    {
+      "name": "diff-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "expected_exit": 0
+    }
+  ],
+  "v2_ci_runs": [
+    {
+      "id": 38969191207,
+      "head_sha": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969191207"
+    },
+    {
+      "id": 38969191208,
+      "head_sha": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969191208"
+    },
+    {
+      "id": 38969191251,
+      "head_sha": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969191251"
+    },
+    {
+      "id": 38969185220,
+      "head_sha": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969185220"
+    },
+    {
+      "id": 38969185272,
+      "head_sha": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969185272"
+    },
+    {
+      "id": 38969185327,
+      "head_sha": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969185327"
+    }
+  ]
+}

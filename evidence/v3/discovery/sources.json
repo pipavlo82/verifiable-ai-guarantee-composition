@@ -1,0 +1,72 @@
+[
+  {
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "commit_url": "https://github.com/trustless-ai/zkIE/commit/39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0"
+    },
+    "ref": "main",
+    "releases": 0,
+    "repository": "trustless-ai/zkIE",
+    "tree": "2edf23ffda3993603d3885dc4960f95a962c528b"
+  },
+  {
+    "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "commit_url": "https://github.com/trustless-ai/agent-ercs/commit/01283ca57305f915afb560d23359a27fd748eb5a",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0"
+    },
+    "ref": "main",
+    "releases": 0,
+    "repository": "trustless-ai/agent-ercs",
+    "tree": "89d9d25f99b926e944f37920103191893a563a5b"
+  },
+  {
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "commit_url": "https://github.com/trustless-ai/recompute-kit/commit/f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "spdx_id": "NOASSERTION",
+      "url": null
+    },
+    "ref": "main",
+    "releases": 0,
+    "repository": "trustless-ai/recompute-kit",
+    "tree": "13b16b6368e308fbbb4153d9f8852ae1a43a5720"
+  },
+  {
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "commit_url": "https://github.com/pipavlo82/receiptos-verify/commit/396143120f787d2f5534e92c0cf896c029a05775",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0"
+    },
+    "ref": "main",
+    "releases": 2,
+    "repository": "pipavlo82/receiptos-verify",
+    "tree": "4cbfcdcf323e18978268cab4c6870ae693a281b9"
+  },
+  {
+    "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "file": "ERCS/erc-8299.md",
+    "git_blob": "ead95e012a445a200682cc2dcd7f7583d73fda53",
+    "head_repository": "TMerlini/ERCs",
+    "ref": "pull/1810/head",
+    "repository": "ethereum/ERCs",
+    "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3",
+    "status": "open"
+  }
+]

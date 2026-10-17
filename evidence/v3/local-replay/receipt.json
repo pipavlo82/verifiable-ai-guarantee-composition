@@ -1,0 +1,67 @@
+{
+  "schema": "vagc.local-verification-receipt.v3",
+  "producer": "same-assistant-local-observer",
+  "authority": "local-host-observation-only",
+  "subject": {
+    "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+    "input_sha256": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+    "judgment_event_id": "ce953822d970b5786dd3474f43e159f80cdd08a81e254354449fb01c90a0c5a3"
+  },
+  "scope": [
+    "public-signature-replay",
+    "native-public-arithmetic-replay"
+  ],
+  "execution": [
+    {
+      "name": "crypto",
+      "command": [
+        "node",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\src\\v3\\public_crypto.mjs"
+      ],
+      "started_at": "2026-10-16T23:13:49.451354+00:00",
+      "finished_at": "2026-10-16T23:13:49.624112+00:00",
+      "exit": 0,
+      "stdout_sha256": "db841558518615e2be3734605bc65fff2de9ec8555f6f53f9e7fa74376388752",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "native",
+      "command": [
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\chain-v2\\cargo-target\\debug\\composition-native-capture.exe",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\evidence\\v2\\capture\\a\\input.bin",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\evidence\\v2\\capture\\a\\weights.bin",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\evidence\\v2\\capture\\a\\output.bin",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\evidence\\v2\\capture\\a\\proof.bin"
+      ],
+      "started_at": "2026-10-16T23:13:49.624112+00:00",
+      "finished_at": "2026-10-16T23:13:49.720748+00:00",
+      "exit": 0,
+      "stdout_sha256": "b545be95bdf853c7510f9bb0b227016a79a7d356acae0a13d773cccbceec67db",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "secondary",
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/secondary_crypto.py"
+      ],
+      "started_at": "2026-10-16T23:13:49.720748+00:00",
+      "finished_at": "2026-10-16T23:13:51.283857+00:00",
+      "exit": 0,
+      "stdout_sha256": "601e4f7af5aa681eba674467f975f57e83e64612f83a348f24daa2d80d4d5e1b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limitations": [
+    "unsigned observer report",
+    "no external execution claim",
+    "root integrity is not historical truth or authority"
+  ],
+  "anchor": {
+    "receipt_root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf"
+  }
+}
