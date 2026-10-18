@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\msi\Documents\Codex\vagc-v4\tools\v4\run.py", line 18, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "C:\Users\msi\Documents\Codex\vagc-v4\tools\v4\run.py", line 8, in main
+    for row in cases():
+               ^^^^^^^
+  File "C:\Users\msi\Documents\Codex\vagc-v4\src\v4\scenarios.py", line 34, in cases
+    omitted=copy.deepcopy(c);del omitted['catalog'][oid]
+                                 ~~~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'O12'

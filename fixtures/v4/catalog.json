@@ -1,0 +1,265 @@
+{
+  "O01": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume provenance signature under the separately declared scenario contract",
+    "dependencies": [],
+    "evidence_requirements": "provenance signature",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O01",
+    "scope": "local public MatMul replay only",
+    "source_specification": "WYRIWE 5.1",
+    "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "attestation_signature"
+  },
+  "O02": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume input weights output proof under the separately declared scenario contract",
+    "dependencies": [],
+    "evidence_requirements": "input weights output proof",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O02",
+    "scope": "local public MatMul replay only",
+    "source_specification": "zkIE pinned native public MatMul",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "native_proof"
+  },
+  "O03": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume raw bytes and signed rawInputHash under the separately declared scenario contract",
+    "dependencies": [
+      "O01"
+    ],
+    "evidence_requirements": "raw bytes and signed rawInputHash",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O03",
+    "scope": "local public MatMul replay only",
+    "source_specification": "WYRIWE 5.2 conditional; research policy requires availability",
+    "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "raw_preimage"
+  },
+  "O04": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume raw input identity spec and pipeline digest under the separately declared scenario contract",
+    "dependencies": [
+      "O01",
+      "O03"
+    ],
+    "evidence_requirements": "raw input identity spec and pipeline digest",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O04",
+    "scope": "local public MatMul replay only",
+    "source_specification": "WYRIWE 5.3-4 conditional; research replay policy",
+    "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "transform_replay"
+  },
+  "O05": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume requested input and every signed input under the separately declared scenario contract",
+    "dependencies": [
+      "O01",
+      "O02",
+      "O07",
+      "O09"
+    ],
+    "evidence_requirements": "requested input and every signed input",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O05",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research cross-artifact binding",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "input_binding"
+  },
+  "O06": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume model manifest weights and pinned model authorization under the separately declared scenario contract",
+    "dependencies": [
+      "O02"
+    ],
+    "evidence_requirements": "model manifest weights and pinned model authorization",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O06",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research model authorization",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "model_binding"
+  },
+  "O07": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume judgment signature exact proof subject action under the separately declared scenario contract",
+    "dependencies": [
+      "O02"
+    ],
+    "evidence_requirements": "judgment signature exact proof subject action",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O07",
+    "scope": "local public MatMul replay only",
+    "source_specification": "laboratory LabJudgment schema; not WYRIWE L4",
+    "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "judgment_inference"
+  },
+  "O08": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume trusted policy and recovered signer evidence under the separately declared scenario contract",
+    "dependencies": [
+      "O01"
+    ],
+    "evidence_requirements": "trusted policy and recovered signer evidence",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O08",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research laboratory authority; no on-chain identity",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "authority"
+  },
+  "O09": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume receipt signature and execution identifier under the separately declared scenario contract",
+    "dependencies": [
+      "O07"
+    ],
+    "evidence_requirements": "receipt signature and execution identifier",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O09",
+    "scope": "local public MatMul replay only",
+    "source_specification": "laboratory LabReceipt schema",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "receipt_binding"
+  },
+  "O10": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume preserved result and observation bytes under the separately declared scenario contract",
+    "dependencies": [
+      "O09"
+    ],
+    "evidence_requirements": "preserved result and observation bytes",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O10",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research integrity only, no historical execution claim",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "receipt_evidence"
+  },
+  "O11": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume policy bytes declared domain request nonce consumed snapshot under the separately declared scenario contract",
+    "dependencies": [
+      "O08"
+    ],
+    "evidence_requirements": "policy bytes declared domain request nonce consumed snapshot",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O11",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research context; WYRIWE timestamp is not replay protection",
+    "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "policy_domain_context"
+  },
+  "O12": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume claim policy and signed scope under the separately declared scenario contract",
+    "dependencies": [
+      "O07",
+      "O09"
+    ],
+    "evidence_requirements": "claim policy and signed scope",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O12",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research non-amplification",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "evidence_scope"
+  },
+  "O13": {
+    "applicable_policy": "v4-lab-policy/4",
+    "authority": "v4-lab-policy",
+    "claim_type": "scenario-selected laboratory replay",
+    "coverage_justification": "Required to consume requested actual and signed output digests under the separately declared scenario contract",
+    "dependencies": [
+      "O02",
+      "O07",
+      "O09"
+    ],
+    "evidence_requirements": "requested actual and signed output digests",
+    "failure_classification": {
+      "mismatch": "REFUTED",
+      "missing": "UNVERIFIABLE"
+    },
+    "obligation_id": "O13",
+    "scope": "local public MatMul replay only",
+    "source_specification": "research output assertion binding",
+    "source_version": "v4-research-profile-1",
+    "subject": "exact supplied request and its evidence",
+    "verification_procedure": "output_binding"
+  }
+}

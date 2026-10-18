@@ -1,0 +1,2153 @@
+{
+  "cases": 21,
+  "core_negatives": 9,
+  "origin": "RECONSTRUCTION",
+  "policy_sha256": "cb38691d0bd5dd122e68b514a601b3c60dd893b6766745c381b9ce08a2ac570d",
+  "real_integration": "NOT IMPLEMENTED",
+  "results": [
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      },
+      "core_negative": false,
+      "expected": "VERIFIED",
+      "id": "P00_valid",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "G1_REQUEST_INPUT_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N01_wrong_provenance",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "G2_MODEL_VERSION_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N02_wrong_model_version",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "G3_PROOF_STATEMENT_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N03_valid_proof_wrong_input",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "G4_SUBJECT_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N04_cross_subject",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "G5_FIXTURE_AUTHENTICITY_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N05_unauthentic_judgment",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "G5_FIXTURE_AUTHENTICITY_MISMATCH",
+            "status": "REFUTED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "G6_JUDGMENT_NOT_AUTHORIZED",
+            "status": "REFUTED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N06_valid_judgment_wrong_action",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "G7_EXECUTION_BINDING_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N07_valid_receipt_wrong_execution",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "G8_SCOPE_STRENGTH_REPLAY_OR_POLICY",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": true,
+      "expected": "REFUTED",
+      "id": "N08_replay",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "EVIDENCE_MISSING",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          },
+          "G8": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "UNVERIFIABLE"
+      },
+      "core_negative": true,
+      "expected": "UNVERIFIABLE",
+      "id": "N09_missing_dependency",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "EVIDENCE_MISSING",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "G6_JUDGMENT_NOT_AUTHORIZED",
+            "status": "REFUTED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N10_invalid_authority",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "G8_SCOPE_STRENGTH_REPLAY_OR_POLICY",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N11_scope_amplification",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "G8_SCOPE_STRENGTH_REPLAY_OR_POLICY",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N12_strength_amplification",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "G8_SCOPE_STRENGTH_REPLAY_OR_POLICY",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N13_cross_domain",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "G8_SCOPE_STRENGTH_REPLAY_OR_POLICY",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N14_expired",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "ARITHMETIC_MISMATCH",
+            "status": "REFUTED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G3": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G4": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G8": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N15_invalid_arithmetic",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "ARITHMETIC_MISMATCH",
+            "status": "REFUTED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "EVIDENCE_MISSING",
+            "status": "UNVERIFIABLE"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          },
+          "G3": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          },
+          "G4": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          },
+          "G8": {
+            "reason": "COMPONENT_DEPENDENCY_UNVERIFIABLE",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "UNVERIFIABLE"
+      },
+      "core_negative": false,
+      "expected": "UNVERIFIABLE",
+      "id": "N16_missing_proof",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "EVIDENCE_MISSING",
+            "status": "UNVERIFIABLE"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "composition": {
+        "components": {},
+        "guarantees": {},
+        "method": "composition",
+        "mode": "real",
+        "real_crypto_verified": false,
+        "reason": "REAL_ARTIFACT_INTEGRATION_NOT_IMPLEMENTED",
+        "schema": "composition-report-v0",
+        "status": "UNVERIFIABLE"
+      },
+      "core_negative": false,
+      "expected": "UNVERIFIABLE",
+      "id": "N17_real_mode",
+      "independent": {
+        "components": {},
+        "guarantees": {},
+        "method": "independent",
+        "mode": "real",
+        "real_crypto_verified": false,
+        "reason": "REAL_ARTIFACT_INTEGRATION_NOT_IMPLEMENTED",
+        "schema": "composition-report-v0",
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G8": {
+            "reason": "G8_SCOPE_STRENGTH_REPLAY_OR_POLICY",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N18_policy_mismatch",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G3": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G4": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "G7_EXECUTION_BINDING_MISMATCH",
+            "status": "REFUTED"
+          },
+          "G8": {
+            "reason": "GUARANTEE_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N19_receipt_proof_substitution",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "composition": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "ARITHMETIC_MISMATCH",
+            "status": "REFUTED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "EVIDENCE_MISSING",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantees": {
+          "G1": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G2": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G3": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G4": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G6": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "G7": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          },
+          "G8": {
+            "reason": "COMPONENT_DEPENDENCY_REFUTED",
+            "status": "REFUTED"
+          }
+        },
+        "method": "composition",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      },
+      "core_negative": false,
+      "expected": "REFUTED",
+      "id": "N20_missing_plus_refuted",
+      "independent": {
+        "components": {
+          "judgment": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "model": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "proof": {
+            "reason": "ARITHMETIC_MISMATCH",
+            "status": "REFUTED"
+          },
+          "provenance": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "reason": "EVIDENCE_MISSING",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantees": {
+          "G5": {
+            "reason": "CHECK_SATISFIED",
+            "status": "VERIFIED"
+          }
+        },
+        "method": "independent",
+        "mode": "synthetic",
+        "real_crypto_verified": false,
+        "reason": "SYNTHETIC_POLICY_EVALUATION_ONLY",
+        "schema": "composition-report-v0",
+        "status": "REFUTED"
+      }
+    }
+  ],
+  "schema": "composition-experiment-v0",
+  "totals": {
+    "composition": {
+      "correct_refusals": 20,
+      "false_authorizations": 0,
+      "oracle_matches": 21,
+      "refuted": 17,
+      "unverifiable": 3,
+      "verified": 1
+    },
+    "independent": {
+      "correct_refusals": 6,
+      "false_authorizations": 14,
+      "oracle_matches": 7,
+      "refuted": 3,
+      "unverifiable": 3,
+      "verified": 15
+    }
+  }
+}

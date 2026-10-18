@@ -1,0 +1,74 @@
+[
+  {
+    "repository": "trustless-ai/zkIE",
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "ref": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "kind": "implementation"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "ref": "main",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "kind": "implementation"
+  },
+  {
+    "repository": "trustless-ai/agent-ercs",
+    "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "ref": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "kind": "implementation"
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "ref": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "kind": "implementation"
+  },
+  {
+    "repository": "ethereum/ERCs",
+    "head_repository": "TMerlini/ERCs",
+    "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "ref": "pull/1810/head",
+    "path": "ERCS/erc-8299.md",
+    "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3",
+    "status": "open",
+    "kind": "proposal"
+  },
+  {
+    "repository": "ethereum/ERCs",
+    "head_repository": "JimmyShi22/ERCs",
+    "commit": "3f014d07a0ceac39fe6fb6dec0efdc30640a9653",
+    "ref": "pull/1771/head",
+    "path": "ERCS/erc-8274.md",
+    "sha256": "186b84f7d6d8b063814860b0624400e1055ad548c40c16c81ff3a54f327f17cf",
+    "status": "open",
+    "kind": "proposal"
+  }
+]

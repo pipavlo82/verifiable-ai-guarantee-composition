@@ -1,0 +1,9 @@
+{
+  "classification": "independently declared trusted specification inputs; adequacy assumed",
+  "files": {
+    "fixtures/v4/contracts/attestation.json": "5cab13da035e2b0a2e26fe28cf787809f336db0578b1aa7029977c7848e9f0cc",
+    "fixtures/v4/contracts/output.json": "5f6bc5438a6b61b62eca463cb7c34b2ae35a6cd4a0ee45d1ce4a76cb2813ec2b",
+    "fixtures/v4/contracts/provenance.json": "99042896c6798a8ec754761e7ebad81591496d371638d16a760c9d9864215b3e",
+    "fixtures/v4/contracts/replay.json": "d35e2f9fc963234880b524689ca9a53049551ae87aa87fb545df758fa67f11f5"
+  }
+}

@@ -1,0 +1,1 @@
+{"committed_results_match": {"experiment-normal": true, "mutations-normal": true}, "deterministic_experiment_bytes": true, "deterministic_mutation_bytes": true, "fixture_regeneration_identical": true, "optimized_parent": false, "passed": true, "python": "3.12.14", "schema": "composition-validation-v0", "system": "Windows"}

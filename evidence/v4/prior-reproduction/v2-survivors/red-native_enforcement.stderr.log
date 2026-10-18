@@ -1,0 +1,17 @@
+test_native_rejection_is_isolated (test_isolation.IsolatedWitnesses.test_native_rejection_is_isolated) ... FAIL
+
+======================================================================
+FAIL: test_native_rejection_is_isolated (test_isolation.IsolatedWitnesses.test_native_rejection_is_isolated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\msi\Documents\Codex\vagc-v4\tests\v2_survivors\test_isolation.py", line 9, in test_native_rejection_is_isolated
+    self.assertEqual(r['status'],'REFUTED')
+AssertionError: 'VERIFIED' != 'REFUTED'
+- VERIFIED
++ REFUTED
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.176s
+
+FAILED (failures=1)

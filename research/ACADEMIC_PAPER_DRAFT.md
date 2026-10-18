@@ -182,3 +182,59 @@ in [SOURCE_AND_ARTIFACT_AUDIT](v3/SOURCE_AND_ARTIFACT_AUDIT.md). Reproduction co
 are in [REPRODUCE](v3/REPRODUCE.md); raw evidence, command records and machine-readable
 reports are under `evidence/v3/`. This draft is for review, not a published
 peer-reviewed result or an official upstream specification.
+
+## V4 addendum: obligation coverage
+
+### Revised abstract and problem
+
+Individually valid components and passing declared checks can still omit a
+requirement of the intended scenario. We extend the artifact study with separately
+declared scenario contracts, an explicit coverage layer and 13 typed obligations.
+On 54 fixed scenarios, component-only, declared-obligation and contract-relative
+composition baselines falsely authorize 41, 21 and 0 of 50 unsupported requests,
+respectively. Four positive controls pass. Forty-four physical mutations are
+killed, distinguishing catalog-deletion alarms from unsafe admission after bypass.
+The study replays real laboratory EIP-712 signatures and a retained native public
+MatMul proof. It does not establish a complete external chain or global coverage.
+
+### Definitions, assumptions and candidate propositions
+
+Let R(S,P,q) be requirements supplied by a separately trusted scenario contract,
+K the declared catalog and E the evidence. Coverage checks inclusion, exact
+procedure/dependency/context agreement and closure; verification evaluates K on E;
+composition admits only the exact contract claim after all required statuses are
+VERIFIED. REFUTED and UNVERIFIABLE remain distinct. Requirements are not inferred
+from implemented checks. Contract adequacy and verifier soundness remain explicit
+assumptions. Relative omission detection follows by set inclusion; general
+guarantee-preservation and world-completeness statements are unproven candidates,
+not theorems established by tests. See v4/FORMAL_MODEL.md.
+
+### Method, results and counterexamples
+
+The same evidence is evaluated by all three baselines. Wrong-input proof bindings,
+different-inference judgments, omitted authority, unavailable dependencies, stale
+scenario revisions and scope overclaims have literal oracles and restored positive
+controls. Every obligation has negative and missing witnesses. Three modes produce
+identical semantic outputs. Node/noble and Python/eth-account check ten preserved
+laboratory signatures; Python also recomputes arithmetic. Normal/repeat/-O each
+pass 24 test methods. Thirteen catalog omissions are detected. Final mutation
+counts are 44 killed, zero survived/crashed; initial generator crashes remain a
+separate historical development report. Timing is finite and machine-specific.
+
+### Prior art and limits
+
+Coverage metrics, vacuity, requirements obstacle analysis, assume-guarantee
+reasoning, proof-carrying authentication, RATS and evidence-backed permission
+graphs substantially overlap this question. FAVA explicitly limits its guarantees
+to a formal abstraction, excluding upstream extraction completeness. No broad
+novelty claim is defensible from this study. A source-pinned heterogeneous-artifact
+coverage case study is the narrower candidate contribution; priority is unproven.
+See v4/PRIOR_ART.md for primary references and access limits.
+
+WYRIWE Section 5 conditional semantics are preserved separately from our stronger
+provenance replay policy. Current ERC-8274/agent-ercs version drift prevents a
+conformance claim. Observation categories remain exploratory and unordered.
+External admission, authority, exact proof/judgment linkage and execution
+occurrence remain missing. Future work requires independent contract elicitation,
+new held-out scenarios and real deployment artifacts, followed by independent
+academic review. No external researcher was contacted by this experiment.

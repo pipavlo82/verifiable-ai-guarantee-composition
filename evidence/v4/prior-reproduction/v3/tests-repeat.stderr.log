@@ -1,0 +1,24 @@
+test_actual_external_input_digests_not_backfilled (test_chain.RealChainTests.test_actual_external_input_digests_not_backfilled) ... ok
+test_aggregation_truth_table (test_chain.RealChainTests.test_aggregation_truth_table) ... ok
+test_all_declared_scenarios (test_chain.RealChainTests.test_all_declared_scenarios) ... ok
+test_canonicalization_rejects_unsupported_numbers (test_chain.RealChainTests.test_canonicalization_rejects_unsupported_numbers) ... ok
+test_duplicate_members_rejected (test_chain.RealChainTests.test_duplicate_members_rejected) ... ok
+test_equality_retains_known_contradiction (test_chain.RealChainTests.test_equality_retains_known_contradiction) ... ok
+test_graph_contracts_and_dependency_closure (test_chain.RealChainTests.test_graph_contracts_and_dependency_closure) ... ok
+test_historical_hash_pointer_does_not_prove_capture_or_execution (test_chain.RealChainTests.test_historical_hash_pointer_does_not_prove_capture_or_execution) ... ok
+test_missing_dependency_is_never_authorized (test_chain.RealChainTests.test_missing_dependency_is_never_authorized) ... ok
+test_missing_outcome_is_observed_404_not_refutation (test_chain.RealChainTests.test_missing_outcome_is_observed_404_not_refutation) ... ok
+test_mixed_missing_and_known_refutation (test_chain.RealChainTests.test_mixed_missing_and_known_refutation) ... ok
+test_planner_requires_cross_artifact_bindings (test_chain.RealChainTests.test_planner_requires_cross_artifact_bindings) ... ok
+test_policy_does_not_derive_expected_subject_from_evidence (test_chain.RealChainTests.test_policy_does_not_derive_expected_subject_from_evidence) ... ok
+test_receipt_integrity_does_not_supply_external_execution (test_chain.RealChainTests.test_receipt_integrity_does_not_supply_external_execution) ... ok
+test_required_counterexamples_are_isolated (test_chain.RealChainTests.test_required_counterexamples_are_isolated) ... ok
+test_signed_source_class_limit_is_preserved (test_chain.RealChainTests.test_signed_source_class_limit_is_preserved) ... ok
+test_unknown_claim_not_inferred (test_chain.RealChainTests.test_unknown_claim_not_inferred) ... ok
+test_unrelated_native_and_public_judgment_do_not_complete_chain (test_chain.RealChainTests.test_unrelated_native_and_public_judgment_do_not_complete_chain) ... ok
+test_valid_signature_wrong_requested_verdict (test_chain.RealChainTests.test_valid_signature_wrong_requested_verdict) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 8.187s
+
+OK

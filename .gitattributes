@@ -10,3 +10,5 @@ evidence/v3/local-replay/*.json -text
 evidence/v3/public/*.json -text
 evidence/v3/discovery/*.json -text
 evidence/v3/** -text -whitespace
+# V4 archived raw command output retains original bytes.
+evidence/v4/** -text -whitespace

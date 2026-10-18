@@ -1,0 +1,4193 @@
+{
+  "cases": [
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "name": "valid_recomputation",
+      "passed": true,
+      "result": {
+        "authorized": true,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "boundary": "claim_strength",
+      "expected": "UNVERIFIABLE",
+      "name": "complete_historical_chain_unavailable",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "historical-external-execution",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "UNVERIFIABLE"
+          }
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "boundary": "input_binding",
+      "expected": "REFUTED",
+      "name": "wrong_claim_input",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "REFUTED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "subject_binding",
+      "expected": "REFUTED",
+      "name": "cross_subject",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "REFUTED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "model_binding",
+      "expected": "REFUTED",
+      "name": "wrong_model_version",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "REFUTED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "proof_binding",
+      "expected": "REFUTED",
+      "name": "wrong_proof_reference",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "REFUTED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "action_binding",
+      "expected": "REFUTED",
+      "name": "valid_judgment_wrong_action",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0xce8281212b9b478805e26a36ccf4d365f14f2bf740c03b769370d0a27ac42482",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "REFUTED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "execution_binding",
+      "expected": "REFUTED",
+      "name": "valid_receipt_wrong_execution",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x0f48694c7363a422adda7aeaf9030ff15b5c4c045c7687cda5f15f17f807fd33",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "REFUTED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "authority",
+      "expected": "REFUTED",
+      "name": "invalid_authority_valid_signature",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0xcf8b93dd1d9740f6d102d4bc9cfccc0c5c0731b0",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "REFUTED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "domain",
+      "expected": "REFUTED",
+      "name": "cross_domain_valid_signature",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x8d9134b83eef8eca17da9ca3c2fbe09223cfc50faa4c2a090cde00aa779e9805",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "REFUTED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "replay",
+      "expected": "REFUTED",
+      "name": "replay",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "REFUTED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "scope",
+      "expected": "REFUTED",
+      "name": "scope_escalation",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "REFUTED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "policy_binding",
+      "expected": "REFUTED",
+      "name": "wrong_policy",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "REFUTED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "output_binding",
+      "expected": "REFUTED",
+      "name": "wrong_output_claim",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "REFUTED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "provenance_preimage",
+      "expected": "REFUTED",
+      "name": "raw_input_substitution",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x0944b25654ce0d80207592aaa8d405faeabd8eedef9d0d0b29bdd394391cab47",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0x6cc07deb337fb42edc1c1584fd26b13d312ce6af2bc879e460398cc4b607f15b",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "REFUTED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "receipt_evidence",
+      "expected": "REFUTED",
+      "name": "receipt_result_substitution",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0x0f5babe360c6d20f02fea801e7c0fb2ba5f5c48fad5599bd3eb34998b0ef2286",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "REFUTED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "name": "missing_judgment",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "UNVERIFIABLE",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "UNVERIFIABLE",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "reason": "missing signature artifact",
+              "status": "UNVERIFIABLE"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "name": "missing_input_bytes",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "UNVERIFIABLE",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "UNVERIFIABLE",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {},
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "name": "mixed_refutation_missing",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "UNVERIFIABLE",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "UNVERIFIABLE",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "reason": "missing signature artifact",
+              "status": "UNVERIFIABLE"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "REFUTED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "REFUTED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "UNVERIFIABLE"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "name": "invalid_signature",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "REFUTED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "REFUTED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "reason": "invalid signature encoding",
+              "status": "REFUTED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "REFUTED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "name": "invalid_provenance_signature",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "REFUTED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "REFUTED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "reason": "invalid signature encoding",
+              "status": "REFUTED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "REFUTED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "name": "invalid_receipt_signature",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "REFUTED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "REFUTED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "reason": "invalid signature encoding",
+              "status": "REFUTED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "REFUTED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": "artifact_types",
+      "expected": "REFUTED",
+      "name": "valid_receipt_used_as_judgment",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "REFUTED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "REFUTED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "name": "native_proof_wrong_input",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": false,
+        "baseline_status": "REFUTED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "REFUTED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x0944b25654ce0d80207592aaa8d405faeabd8eedef9d0d0b29bdd394391cab47",
+            "input": "0x6cc07deb337fb42edc1c1584fd26b13d312ce6af2bc879e460398cc4b607f15b",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0x6cc07deb337fb42edc1c1584fd26b13d312ce6af2bc879e460398cc4b607f15b",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 1,
+          "stderr": "",
+          "stdout": "{\"native_verified\":false,\"output_recomputed\":false,\"statement_bound\":false}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "REFUTED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "REFUTED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "REFUTED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "name": "valid_other_native_component",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "recompute-output",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x0944b25654ce0d80207592aaa8d405faeabd8eedef9d0d0b29bdd394391cab47",
+            "input": "0x6cc07deb337fb42edc1c1584fd26b13d312ce6af2bc879e460398cc4b607f15b",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0x0f5babe360c6d20f02fea801e7c0fb2ba5f5c48fad5599bd3eb34998b0ef2286",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x681171e1cc11fef74c5321a7a1634f21577eaff54a09eb40b8e937cb5c37eb7a",
+            "raw_input": "0x6cc07deb337fb42edc1c1584fd26b13d312ce6af2bc879e460398cc4b607f15b",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "REFUTED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "REFUTED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "REFUTED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "REFUTED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "REFUTED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "VERIFIED"
+          }
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "name": "unknown_claim_kind",
+      "passed": true,
+      "result": {
+        "authorized": false,
+        "baseline_authorized": true,
+        "baseline_status": "VERIFIED",
+        "claim_kind": "unknown",
+        "components": {
+          "inference": "VERIFIED",
+          "judgment": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "crypto": {
+          "hashes": {
+            "identity_pipeline": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "model": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "observation": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "output": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policy": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+            "proof": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "raw_input": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "result": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "weights": "0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12"
+          },
+          "known_answers": {
+            "ether_mail_recovery": true,
+            "keccak_empty": true
+          },
+          "signatures": {
+            "judgment": {
+              "digest": "0x3a001f17d6c0e869e29bc9ad89500604038d148c9c9dff344857349a9a96ff25",
+              "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d",
+              "status": "VERIFIED"
+            },
+            "provenance": {
+              "digest": "0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3",
+              "signer": "0xab54e064555a12d702e7dc8c1612c119806f3afe",
+              "status": "VERIFIED"
+            },
+            "receipt": {
+              "digest": "0x9e41d35cb18866afe1735a60ad11ddb7c0cdd95f55ff07b71593a305f4ddab74",
+              "signer": "0xe786039b00ad39b9c8e6dd3274467f14983750fd",
+              "status": "VERIFIED"
+            }
+          }
+        },
+        "native": {
+          "exit": 0,
+          "stderr": "",
+          "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+        },
+        "obligations": [
+          {
+            "name": "provenance_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "judgment_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_signature",
+            "reason": "ECDSA verification of this artifact, not truth or authorization",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "inference",
+            "reason": "deserialized proof passed native verifier and full output recomputation",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "provenance_preimage",
+            "reason": "exact retained raw bytes and identity transform commitment",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "input_binding",
+            "reason": "claim, provenance, native tensor, judgment and receipt consume identical bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "model_binding",
+            "reason": "pinned model bytes, weights, operator and upstream revision",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "subject_binding",
+            "reason": "declared local subject; no external identity registry claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "proof_binding",
+            "reason": "judgment and receipt reference the exact native proof bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "action_binding",
+            "reason": "valid judgment must concern the authorized action",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "authority",
+            "reason": "role-specific keys supplied by the relying party lab policy",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "execution_binding",
+            "reason": "receipt must name the requested execution; identity equality does not prove occurrence",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "output_binding",
+            "reason": "exact recomputed output statement across artifacts",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "receipt_evidence",
+            "reason": "preserved result and observation bytes, not a proof of historical execution",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "domain",
+            "reason": "offline chain domain equality; no RPC or on-chain event is inferred",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "scope",
+            "reason": "only the public MatMul recomputation claim is permitted",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "policy_binding",
+            "reason": "signed policy hash must match the independently selected policy bytes",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "replay",
+            "reason": "caller-provided consumed-nonce snapshot; not durable on-chain replay protection",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "artifact_types",
+            "reason": "laboratory schemas are explicit; no upstream judgment or ReceiptOS conformance claim",
+            "status": "VERIFIED"
+          },
+          {
+            "name": "claim_strength",
+            "reason": "external admission, historical execution, chain origin and task completion lack independent evidence",
+            "status": "UNVERIFIABLE"
+          }
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    }
+  ],
+  "schema": "real-artifact-comparison-v2",
+  "scope": "genuine laboratory crypto and public MatMul; historical external chain remains unavailable",
+  "summary": {
+    "baseline_false_authorizations": 18,
+    "baseline_refusals": 7,
+    "baseline_unverifiable": 3,
+    "composition_false_authorizations": 0,
+    "composition_refusals": 25,
+    "composition_unverifiable": 4,
+    "negative_cases": 25,
+    "passed": true,
+    "scenarios": 26
+  }
+}

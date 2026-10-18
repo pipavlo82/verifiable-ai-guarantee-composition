@@ -1,0 +1,61 @@
+{
+  "adequacy": "ASSUMED; structurally separate specification, not independently elicited by another researcher",
+  "authority": "reviewer-supplied local research policy, not an ERC authority",
+  "claim_type": "INPUT_PROVENANCE_ESTABLISHED",
+  "excluded_claims": [
+    "external input admission",
+    "factual judgment correctness",
+    "historical execution",
+    "task success",
+    "chain conformance"
+  ],
+  "requirements": {
+    "O01": {
+      "applicable_policy": "v4-lab-policy/4",
+      "authority": "v4-lab-policy",
+      "dependencies": [],
+      "scope": "local public MatMul replay only",
+      "verification_procedure": "attestation_signature"
+    },
+    "O03": {
+      "applicable_policy": "v4-lab-policy/4",
+      "authority": "v4-lab-policy",
+      "dependencies": [
+        "O01"
+      ],
+      "scope": "local public MatMul replay only",
+      "verification_procedure": "raw_preimage"
+    },
+    "O04": {
+      "applicable_policy": "v4-lab-policy/4",
+      "authority": "v4-lab-policy",
+      "dependencies": [
+        "O01",
+        "O03"
+      ],
+      "scope": "local public MatMul replay only",
+      "verification_procedure": "transform_replay"
+    },
+    "O08": {
+      "applicable_policy": "v4-lab-policy/4",
+      "authority": "v4-lab-policy",
+      "dependencies": [
+        "O01"
+      ],
+      "scope": "local public MatMul replay only",
+      "verification_procedure": "authority"
+    },
+    "O11": {
+      "applicable_policy": "v4-lab-policy/4",
+      "authority": "v4-lab-policy",
+      "dependencies": [
+        "O08"
+      ],
+      "scope": "local public MatMul replay only",
+      "verification_procedure": "policy_domain_context"
+    }
+  },
+  "revision": 1,
+  "scenario": "lab-provenance-v1",
+  "schema": "independently-declared-scenario-contract-v4"
+}

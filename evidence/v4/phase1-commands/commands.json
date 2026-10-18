@@ -1,0 +1,543 @@
+[
+  {
+    "name": "main",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/verifiable-ai-guarantee-composition/commits/main"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "a87751790988b4b1f67e31260ada750050acf7bf5b7f3a5df7da6c8dbcd2c8e4",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "pr2",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/verifiable-ai-guarantee-composition/pulls/2"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "bc5f48e0deb9c999f4fbcbfa10b5f0ba47c98e9958a73806a0e48bbe63fc6035",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "pr3",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/verifiable-ai-guarantee-composition/pulls/3"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "adde1dc17c4887df9c0b9091b74f33999c59a1c5cba89d2400fab45eef3f2b0e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "prior-ci",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/verifiable-ai-guarantee-composition/actions/runs?head_sha=98ffba16730030c797c47766e13a5314181ba2f6&per_page=30"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "8dd5e636b36c75718bf51958a215641d549cba1427a75bc8eff6d0f61f556764",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clone",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/pipavlo82/verifiable-ai-guarantee-composition",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "d072e6b81699c96a3f593304a69799156953d320439b125f985d14acfa927b9e"
+  },
+  {
+    "name": "fetch",
+    "command": [
+      "git",
+      "fetch",
+      "origin",
+      "main",
+      "pull/2/head:refs/remotes/origin/review-pr2",
+      "pull/3/head:refs/remotes/origin/review-pr3"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c5b24b664eaeb3c4fc7aaea773b601263ed3aed63398a16f2b4bfe8e5dfc48a5"
+  },
+  {
+    "name": "ancestry-main-v2",
+    "command": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "18a5916098addf6447700ed95441125bfa7079c3",
+      "653b8e92e56afb99797c04b1c616a6d7fb3555e9"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "ancestry-v2-v3",
+    "command": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "98ffba16730030c797c47766e13a5314181ba2f6"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v1-ancestry",
+    "command": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "ea89871064e98a67b6ba01c836d498bee89aa437",
+      "18a5916098addf6447700ed95441125bfa7079c3"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "branch",
+    "command": [
+      "git",
+      "checkout",
+      "-b",
+      "research/verification-obligation-coverage-v4",
+      "98ffba16730030c797c47766e13a5314181ba2f6"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "6398983df69175bb14f48b55f969587eb2a39e55a62dacb5a9fae137a43c4df1"
+  },
+  {
+    "name": "info-zkIE",
+    "command": [
+      "gh",
+      "api",
+      "repos/trustless-ai/zkIE"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "215c4d725647695d413d69f0c53a3f8b2f220c513c67340adba1ce42e38f1c28",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "head-zkIE",
+    "command": [
+      "gh",
+      "api",
+      "repos/trustless-ai/zkIE/commits/main"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "5e42062b55fd034084bc81229f46616397a141f0e67ecc883caf797a7be827ab",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clone-zkIE",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/zkIE",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\zkIE"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "fcf23449e9093f58a05f10b4db4c3049d6547bdb2387d0b94bb6ac14b3872626"
+  },
+  {
+    "name": "pin-zkIE",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "39d8df96877bc3bebf33c69b06907d792b3184b9"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\zkIE",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "3bb29bf9e89acc74b1b44e4fe21a26e160deaafc722f2c8771795cbde4370338"
+  },
+  {
+    "name": "info-recompute-kit",
+    "command": [
+      "gh",
+      "api",
+      "repos/trustless-ai/recompute-kit"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "1cbba5c55d1951e94031f803f795fdc77111548177487aedadc000156eaf2a83",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "head-recompute-kit",
+    "command": [
+      "gh",
+      "api",
+      "repos/trustless-ai/recompute-kit/commits/main"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "cc9312b088add4506324f375bed2c58dafe325d20a31fddcc3c2995cdf5ff62f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clone-recompute-kit",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/recompute-kit",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\recompute-kit"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "2dfd9a4d706e6b0dc478c24236b3c8c7dc1c5e55a4b8fa3cd3f7c6caff5ee467"
+  },
+  {
+    "name": "pin-recompute-kit",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\recompute-kit",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "3afecc815c32c76f71714219b3a2fc6f15e9145291e6c033aac982a7d960b2cd"
+  },
+  {
+    "name": "info-agent-ercs",
+    "command": [
+      "gh",
+      "api",
+      "repos/trustless-ai/agent-ercs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "b3a6165d3c12ddab52842aee6e052650c17b2347ddbef7b4272917f2c85875d5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "head-agent-ercs",
+    "command": [
+      "gh",
+      "api",
+      "repos/trustless-ai/agent-ercs/commits/main"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "74795ecd982c02bbc63a5c2e7d4260ad658bb4f39e6eb7c9d4af35fdc428b004",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clone-agent-ercs",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/agent-ercs",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\agent-ercs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "b9c20326a8806750a89aa571495836f33c45db53c1fe9800209e69068b279e50"
+  },
+  {
+    "name": "pin-agent-ercs",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "01283ca57305f915afb560d23359a27fd748eb5a"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\agent-ercs",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "f780e0ba62cbb23425f072d016107cc515290b0f530c63c411aabf9561f91b67"
+  },
+  {
+    "name": "info-receiptos-verify",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/receiptos-verify"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "b0709a1f89dbbe33eccdc093384263f9fbf9209ef01dd20384fc659a1a6f6bf7",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "head-receiptos-verify",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/receiptos-verify/commits/main"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "65d1b55beade5000db55083a9d6a1540ccfae48ed8ef7e72ec732e000f72a12b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clone-receiptos-verify",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/pipavlo82/receiptos-verify",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\receiptos-verify"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "1339fd294bda21d9a51c2d203fcdfdc62276684fd5368776a8d638df410203cb"
+  },
+  {
+    "name": "pin-receiptos-verify",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "396143120f787d2f5534e92c0cf896c029a05775"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\upstream\\receiptos-verify",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "68150299f0e9c0e200c2b976531dbca35c5b4ea5c427e5ccb5655c2f377ac602"
+  },
+  {
+    "name": "erc-pr-1810",
+    "command": [
+      "gh",
+      "api",
+      "repos/ethereum/ERCs/pulls/1810"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "be214daf387b7f4b08ffb5723fddd7ba13f5a89e3cd7599255e778e3b96e45a0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "erc-file-8299",
+    "command": [
+      "gh",
+      "api",
+      "repos/TMerlini/ERCs/contents/ERCS/erc-8299.md?ref=c0e13d17940a6eabe4d842e623fd0f871550ef7b"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "b2f32ec3c066d5a45bdc331bee81b6799dc763de34f0a9f3b2a921da8cb7f14c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "erc-pr-1771",
+    "command": [
+      "gh",
+      "api",
+      "repos/ethereum/ERCs/pulls/1771"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "e83d4b6e1b4e2881abb2fb702e6cefc88357f1b5767f6952dda26256a6066747",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "erc-file-8274",
+    "command": [
+      "gh",
+      "api",
+      "repos/JimmyShi22/ERCs/contents/ERCS/erc-8274.md?ref=3f014d07a0ceac39fe6fb6dec0efdc30640a9653"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0,
+    "stdout_sha256": "ff30538e38d58ef0279f9ebe6cdda60a9bebcbeaa8f1bb151dfad22eb23e3d31",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "inventory-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "tools/verify_artifacts.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "0eb706bac2e292ac6f418dab616d184ad18ebcd7d517446d1dab2ff0e08dbf67",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "prepare-prior",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v3/prepare.py",
+      "--online",
+      "--cargo-home",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v1-20261016\\cargo-home"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "f4e92cc291a9b402f46d703f9d280514e14e582f55bf92da983641825b07bb06",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v0",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/validate.py",
+      "--out",
+      "build/v4/phase1/v0"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "cb3616e11b9ea53bcd3af1ff66f80e930460d23fa76b896ffb8c00559236a96a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v1",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "research/formal-v1/validate.py",
+      "--out",
+      "build/v4/phase1/v1"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "d859fe60ac1ccca7b92c0526040b2dc6cf7db61b3c039df472b8e481a7d6e05b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v2",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v2/validate.py",
+      "--out",
+      "build/v4/phase1/v2",
+      "--skip-benchmark"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "ab808c531d0cc1eeb5e4e380cc537bc3b7fa05ebfcfbf28cdcbd9bedd41fa408",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v2-snapshot",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v2/check_snapshot.py",
+      "--out",
+      "build/v4/phase1/v2"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "8ad0f9453a95d569fb7fbda74071de91689143e5d1241b9c078d26af896bab8e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v2-survivors",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v2/validate_survivors.py",
+      "--out",
+      "build/v4/phase1/v2-survivors"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "a339bed210e326c0f282a2af53b6370755cc353cd627e74ddd90888d79d0d8fd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v3",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v3/validate.py",
+      "--out",
+      "build/v4/phase1/v3",
+      "--skip-benchmark"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "a594c64902907a773427f7503f8ec08cb3a4efa99863f31be175c4afb1a5be13",
+    "stderr_sha256": "fec3018abd731eb1a1f030c810f04ec82676fd615519bc2a029332e8907d2db4"
+  },
+  {
+    "name": "inventory-after",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "tools/verify_artifacts.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "0eb706bac2e292ac6f418dab616d184ad18ebcd7d517446d1dab2ff0e08dbf67",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clean",
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

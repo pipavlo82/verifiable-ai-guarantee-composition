@@ -1,0 +1,190 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-epoch v0.9.21
+   Compiling crossbeam-deque v0.8.8
+   Compiling autocfg v1.5.1
+   Compiling rayon-core v1.13.0
+   Compiling serde_core v1.0.229
+   Compiling either v1.18.0
+   Compiling serde v1.0.229
+   Compiling getrandom v0.4.3
+   Compiling rand_core v0.10.1
+   Compiling cfg-if v1.0.5
+   Compiling cpufeatures v0.3.1
+   Compiling paste v1.0.15
+   Compiling chacha20 v0.10.2
+   Compiling num-traits v0.2.19
+   Compiling pin-project-lite v0.2.17
+   Compiling tracing-core v0.1.36
+   Compiling itertools v0.15.0
+   Compiling scopeguard v1.2.0
+   Compiling windows_x86_64_msvc v0.52.6
+   Compiling windows-link v0.2.1
+   Compiling rustix v0.38.44
+   Compiling rand v0.10.3
+   Compiling lock_api v0.4.14
+   Compiling windows-sys v0.61.2
+   Compiling windows-targets v0.52.6
+   Compiling spin v0.12.3
+   Compiling thiserror v2.0.20
+   Compiling syn v3.0.6
+   Compiling syn v2.0.119
+   Compiling windows-sys v0.59.0
+   Compiling bitflags v2.13.2
+   Compiling num-integer v0.1.47
+   Compiling libm v0.2.16
+   Compiling num-bigint v0.5.1
+   Compiling once_cell v1.21.4
+   Compiling allocator-api2 v0.2.21
+   Compiling equivalent v1.0.2
+   Compiling foldhash v0.2.0
+   Compiling memmap2 v0.9.11
+   Compiling hashbrown v0.17.1
+   Compiling errno v0.3.14
+   Compiling home v0.5.12
+   Compiling rayon v1.12.0
+   Compiling which v4.4.2
+   Compiling zkie-core v0.1.0 (C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core)
+warning: unused import: `std::env`
+  --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\build.rs:10:5
+   |
+10 | use std::env;
+   |     ^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::path::PathBuf`
+  --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\build.rs:11:5
+   |
+11 | use std::path::PathBuf;
+   |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::process::Command`
+  --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\build.rs:12:5
+   |
+12 | use std::process::Command;
+   |     ^^^^^^^^^^^^^^^^^^^^^
+
+warning: `zkie-core` (build script) generated 3 warnings
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+   Compiling p3-maybe-rayon v0.7.0
+   Compiling tracing-attributes v0.1.31
+   Compiling p3-util v0.7.0
+   Compiling tracing v0.1.44
+   Compiling p3-field v0.7.0
+   Compiling p3-matrix v0.7.0
+   Compiling p3-symmetric v0.7.0
+   Compiling p3-challenger v0.7.0
+   Compiling p3-dft v0.7.0
+   Compiling p3-multilinear-util v0.7.0
+   Compiling p3-air v0.7.0
+   Compiling p3-mds v0.7.0
+   Compiling p3-zk-codes v0.7.0
+   Compiling p3-commit v0.7.0
+   Compiling p3-poseidon2 v0.7.0
+   Compiling p3-poseidon1 v0.7.0
+   Compiling p3-security v0.7.0
+   Compiling p3-merkle-tree v0.7.0 (C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\vendor\p3-merkle-tree)
+   Compiling p3-sumcheck v0.7.0
+   Compiling p3-goldilocks v0.7.0
+   Compiling p3-whir v0.7.0
+warning: unused import: `Field`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\src\common\logup_gkr.rs:3:28
+  |
+3 | use crate::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                            ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Field`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\src\common\same_poly.rs:4:28
+  |
+4 | use crate::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                            ^^^^^
+
+warning: unused variable: `claimed_sum`
+   --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\src\common\sumcheck.rs:242:5
+    |
+242 |     claimed_sum: Goldilocks, #[allow(unused_variables)]
+    |     ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_claimed_sum`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `claimed`
+   --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\src\common\sumcheck.rs:366:5
+    |
+366 |     claimed: Goldilocks,
+    |     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_claimed`
+
+warning: unused variable: `mles`
+  --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-core\src\common\logup_gkr.rs:65:13
+   |
+65 |         let mles: Vec<&[Goldilocks]> = vec![&eq, &next_num, &next_den, num_low, num_high, den_low, den_high];
+   |             ^^^^ help: if this is intentional, prefix it with an underscore: `_mles`
+
+   Compiling zkie-ops v0.1.0 (C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops)
+warning: unused import: `Field`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\projection.rs:6:32
+  |
+6 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Field`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\layer_norm_centered.rs:7:32
+  |
+7 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused import: `Field`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\layernorm_chain.rs:6:32
+  |
+6 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused import: `from_i64`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\layernorm_chain.rs:7:38
+  |
+7 | use zkie_core::common::fixed_point::{from_i64, to_i64};
+  |                                      ^^^^^^^^
+
+warning: unused import: `Field`
+  --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\softmax_scaled.rs:10:32
+   |
+10 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+   |                                ^^^^^
+
+warning: unused import: `Field`
+ --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\rms_norm.rs:7:32
+  |
+7 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused import: `Field`
+  --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\compose.rs:16:32
+   |
+16 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+   |                                ^^^^^
+
+warning: unused variable: `m`
+    --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\compose.rs:1009:48
+     |
+1009 |             Op::ScaleGate { x, gate, col, out, m, n, h, shift } => {
+     |                                                ^ help: try ignoring the field: `m: _`
+     |
+     = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `m`
+   --> C:\Users\msi\Documents\Codex\vagc-v4\build\chain-v2\zkIE\crates\zkie-ops\src\topk.rs:169:5
+    |
+169 |     m: usize,
+    |     ^ help: if this is intentional, prefix it with an underscore: `_m`
+
+warning: `zkie-ops` (lib) generated 9 warnings (run `cargo fix --lib -p zkie-ops` to apply 8 suggestions)
+warning: `zkie-core` (lib) generated 5 warnings (run `cargo fix --lib -p zkie-core` to apply 5 suggestions)
+   Compiling composition-native-capture v0.1.0 (C:\Users\msi\Documents\Codex\vagc-v4\research\chain-v2\native)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 29.76s

@@ -1,0 +1,233 @@
+{
+  "comparison": {
+    "baseline_correct_refusals": 11,
+    "baseline_false_authorizations": 21,
+    "baseline_unverifiable": 6,
+    "composition_correct_refusals": 32,
+    "composition_false_authorizations": 0,
+    "composition_unverifiable": 16,
+    "negative_cases": 32,
+    "passed": true,
+    "scenarios": 36
+  },
+  "determinism": {
+    "comparison": true,
+    "mutations": true,
+    "secondary": true
+  },
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+  },
+  "mutations": {
+    "CRASHED": 0,
+    "KILLED": 14,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "passed": true,
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/verify_sources.py"
+      ],
+      "exit": 0,
+      "name": "source-pins",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d8bea50dca3f20fb2185b3cb71e3debed8cefb3cfc7baed282601ceb5b90316d"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v3",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-normal",
+      "stderr_sha256": "56e538cfdb80c331a816e5eaa8402065c0e87a77ab71930a483930a1315e6352",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 19
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/run.py"
+      ],
+      "exit": 0,
+      "name": "comparison-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d66b8f64ed5b2ee482cd8387f015ed4a64e5fc66587a7ce517e3ecddeaf38239"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/secondary_crypto.py"
+      ],
+      "exit": 0,
+      "name": "secondary-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "601e4f7af5aa681eba674467f975f57e83e64612f83a348f24daa2d80d4d5e1b"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\phase1\\v3\\mutations-normal"
+      ],
+      "exit": 0,
+      "name": "mutations-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8f8de3f49390f28bf0489293cebc97301f3c8658e6afca8d9757f8ba832e23e2"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v3",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-repeat",
+      "stderr_sha256": "a2d2394c2b7ade7ecd8bafe20bcbb16a0928dd81b168d35b002a92ffc9e8a707",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 19
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/run.py"
+      ],
+      "exit": 0,
+      "name": "comparison-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d66b8f64ed5b2ee482cd8387f015ed4a64e5fc66587a7ce517e3ecddeaf38239"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/secondary_crypto.py"
+      ],
+      "exit": 0,
+      "name": "secondary-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "601e4f7af5aa681eba674467f975f57e83e64612f83a348f24daa2d80d4d5e1b"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/v3/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\phase1\\v3\\mutations-repeat"
+      ],
+      "exit": 0,
+      "name": "mutations-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8f8de3f49390f28bf0489293cebc97301f3c8658e6afca8d9757f8ba832e23e2"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v3",
+        "-v"
+      ],
+      "exit": 0,
+      "name": "tests-optimized",
+      "stderr_sha256": "dfe0c567eee612e0103a06999e8a6d3bc9935ae4a435d4b99cf5a3c5f6d2cd88",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 19
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/v3/run.py"
+      ],
+      "exit": 0,
+      "name": "comparison-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d66b8f64ed5b2ee482cd8387f015ed4a64e5fc66587a7ce517e3ecddeaf38239"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/v3/secondary_crypto.py"
+      ],
+      "exit": 0,
+      "name": "secondary-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "601e4f7af5aa681eba674467f975f57e83e64612f83a348f24daa2d80d4d5e1b"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/v3/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v4\\phase1\\v3\\mutations-optimized"
+      ],
+      "exit": 0,
+      "name": "mutations-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8f8de3f49390f28bf0489293cebc97301f3c8658e6afca8d9757f8ba832e23e2"
+    }
+  ],
+  "schema": "v3-validation",
+  "snapshot_match": true
+}

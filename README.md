@@ -3,6 +3,30 @@
 Independent experimental research by **pipavlo82** on the conditions under which
 component guarantees can justify a downstream authorization claim.
 
+## V4: scenario-relative obligation coverage
+
+V4 asks whether every implemented check can pass while a necessary requirement
+was never declared. It separates **coverage**, **verification** and **composition**
+using independently declared scenario contracts and a typed 13-obligation catalog.
+Coverage remains relative to the adequacy of those trusted contracts.
+
+The finite experiment has 54 scenarios, 24 tests per normal/repeat/Python -O run
+and 44 killed physical mutants, with zero final survivors or crashes. On the same
+50 negative/unsupported inputs, false authorizations are 41 for component-only,
+21 for declared obligations and 0 for scenario-contract coverage plus composition.
+All 13 omission controls are detected. Initial development crashes are preserved
+separately. Ten genuine laboratory signatures and the retained native proof are
+actually replayed; laboratory signatures are not external observations.
+
+Read the [results](research/v4/RESULTS.md), [formal model](research/v4/FORMAL_MODEL.md),
+[catalog](research/v4/OBLIGATION_CATALOG.md), [source pins](research/v4/SOURCES_AND_ARTIFACTS.md),
+[WYRIWE analysis](research/v4/WYRIWE_SECTION5_ANALYSIS.md),
+[ERC-8274 assessment](research/v4/ZKIE_ERC8274_MAPPING.md),
+[prior art](research/v4/PRIOR_ART.md) and [replay instructions](research/v4/REPRODUCE.md).
+The external chain remains **PARTIAL_CHAIN_VERIFIED**; no general completeness,
+scientific novelty, ERC-8274 deployment or upstream vulnerability is claimed.
+Draft branch depends on unmerged PR #3; no automatic merge.
+
 ## V3: public artifacts and explicit missing links
 
 **PARTIAL_CHAIN_VERIFIED — full external chain remains unestablished.** V3 adds

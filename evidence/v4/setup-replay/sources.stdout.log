@@ -1,0 +1,125 @@
+{
+  "checks": [
+    {
+      "head": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+      "passed": true,
+      "repository": "trustless-ai/zkIE"
+    },
+    {
+      "head": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "passed": true,
+      "repository": "trustless-ai/agent-ercs"
+    },
+    {
+      "head": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+      "passed": true,
+      "repository": "trustless-ai/recompute-kit"
+    },
+    {
+      "head": "396143120f787d2f5534e92c0cf896c029a05775",
+      "passed": true,
+      "repository": "pipavlo82/receiptos-verify"
+    },
+    {
+      "head": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "passed": true,
+      "repository": "trustless-ai/ccip-router"
+    },
+    {
+      "file": "LICENSE",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "bin/bip340.py",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "bin/crc_claim.py",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "conformance/crc-claim-v0/fixtures/node1-nostr.cell.json",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "conformance/crc-claim-v0/fixtures/node2-eip712.cell.json",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "conformance/crc-claim-v0/fixtures/golden-preimage.json",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "conformance/crc-claim-v0/fixtures/ledger-236-entry.json",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "contracts/verify/ERC8299/IWyriweAttestation.sol",
+      "passed": true,
+      "verification": "exact Git blob (review-only text)"
+    },
+    {
+      "file": "contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol",
+      "passed": true,
+      "verification": "exact Git blob (review-only text)"
+    },
+    {
+      "file": "src/attestation/eip712.ts",
+      "passed": true,
+      "verification": "exact Git blob (review-only text)"
+    },
+    {
+      "file": "src/attestation/withWyriwe.ts",
+      "passed": true,
+      "verification": "exact Git blob (review-only text)"
+    },
+    {
+      "file": "package-lock.json",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "src/adapters/crystal.mjs",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "src/adapters/native/process.mjs",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "src/adapters/native/crystal-bridge.ts",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "provenance/native-sources.json",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "vendor/crystal/src/receiptos/canon/canonicalize.ts",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "vendor/crystal/src/receiptos/canon/receipt-root.ts",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    },
+    {
+      "file": "vendor/crystal/src/receiptos/verify/verify-receipt.ts",
+      "passed": true,
+      "verification": "exact executed/preserved bytes"
+    }
+  ],
+  "passed": true
+}

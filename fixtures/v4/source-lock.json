@@ -1,0 +1,82 @@
+{
+  "base_main": "18a5916098addf6447700ed95441125bfa7079c3",
+  "base_pr2": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+  "base_pr3": "98ffba16730030c797c47766e13a5314181ba2f6",
+  "identity_source": "Exact Appendix C code block from pinned WYRIWE draft; not an IPFS fetch",
+  "identity_spec_sha256": "f5d5296de6c395b77199b0e153d42166a1793947f8720e340b5815adfe24bd78",
+  "schema": "v4-source-lock",
+  "sources": [
+    {
+      "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+      "kind": "implementation",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "node_id": "MDc6TGljZW5zZTI=",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0"
+      },
+      "ref": "main",
+      "repository": "trustless-ai/zkIE"
+    },
+    {
+      "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+      "kind": "implementation",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "node_id": "MDc6TGljZW5zZTA=",
+        "spdx_id": "NOASSERTION",
+        "url": null
+      },
+      "ref": "main",
+      "repository": "trustless-ai/recompute-kit"
+    },
+    {
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "kind": "implementation",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "node_id": "MDc6TGljZW5zZTI=",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0"
+      },
+      "ref": "main",
+      "repository": "trustless-ai/agent-ercs"
+    },
+    {
+      "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+      "kind": "implementation",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "node_id": "MDc6TGljZW5zZTI=",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0"
+      },
+      "ref": "main",
+      "repository": "pipavlo82/receiptos-verify"
+    },
+    {
+      "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+      "head_repository": "TMerlini/ERCs",
+      "kind": "proposal",
+      "path": "ERCS/erc-8299.md",
+      "ref": "pull/1810/head",
+      "repository": "ethereum/ERCs",
+      "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3",
+      "status": "open"
+    },
+    {
+      "commit": "3f014d07a0ceac39fe6fb6dec0efdc30640a9653",
+      "head_repository": "JimmyShi22/ERCs",
+      "kind": "proposal",
+      "path": "ERCS/erc-8274.md",
+      "ref": "pull/1771/head",
+      "repository": "ethereum/ERCs",
+      "sha256": "186b84f7d6d8b063814860b0624400e1055ad548c40c16c81ff3a54f327f17cf",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "native-v2-build",
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\research\\chain-v2\\native\\Cargo.toml"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ad099eb2fff29fd4d7d525324c5024c687a5458c0012b0cfba3d94c0f9dc7efb"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::op_shard_matmul_roundtrip",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "36d26346de1a04be2bae9349a22171d7e6d4f2760ca8728fb6ff88724aba6bdf",
+      "stderr_sha256": "7e487647c916fcdb5169f40e7e5f79a1b2655b0baa7f5ed742054c01fcd19abe"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::committed_projection_roundtrip",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "87541afd78463d20a022a64918de9d9fb6f6be2f493778058992bc6a14935ce4",
+      "stderr_sha256": "6f6bd88580e6cfa541a40aa7257e3062e9b951b7fd8d2309d4ac566b1fac97de"
+    }
+  ],
+  "source_clean": true,
+  "adapter_lock_sha256": "5144f1942d1ebc9e744d64807dd8897d602d8122ad483cf5c328851ac02042da",
+  "passed": true
+}
