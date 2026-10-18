@@ -1,0 +1,128 @@
+{
+  "catalog_restored": true,
+  "catalog_sha256": "bdc3fb800628c11d085e17849d10b47cea9b7c293e8ca303dad7ebe40a7b71e1",
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 6,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "mutations": [
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "CATALOG_DELETION_DETECTED",
+      "id": "O14-catalog",
+      "kind": "catalog",
+      "mutant": false,
+      "mutant_sha256": "f88e4b3ae3c05d7e26fc65882f63a4f6d5eb63054dd4dda3315598bec524d433",
+      "positive": "positive_output",
+      "positive_before": true,
+      "positive_mutant": false,
+      "positive_restored": true,
+      "replacement": null,
+      "restored": false,
+      "witness": "negative_O14_self_judged"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "O14-coverage",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "9bea631d26aebaeaee3a99b08b95f63a7c081193e3e9d25f623092c684abf0f3",
+      "positive": "positive_output",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    presence('O14')",
+        "to": "    pass # omitted presence enforcement"
+      },
+      "restored": false,
+      "witness": "omitted_O14"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "O14-verification",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "4aef2f0f6d187957fb99a9eb0d07f1e4f6702b0e2d3ef25ae517a4caf1af0f5c",
+      "positive": "positive_output",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    verify('O14')",
+        "to": "    force('O14')"
+      },
+      "restored": false,
+      "witness": "negative_O14_self_judged"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "claim-fields",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "3d489f974db3e8e26f42b050c00d986eb5fd716030612e38b94ef51ed093da08",
+      "positive": "positive_replay",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "claim_fields=check(not unconsumed) if determinate else U",
+        "to": "claim_fields=V"
+      },
+      "restored": false,
+      "witness": "unconsumed_output_under_replay"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-digest",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "795ddc5511db7b9ce3a2ea115794e8d833ea463dd5ca9cfda907998b590eee52",
+      "positive": "control_output_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "same_contract=b.get('contract_sha256')==contract_digest(contract)",
+        "to": "same_contract=True"
+      },
+      "restored": false,
+      "witness": "reused_under_other_contract"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-claim-type",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "7fd03491d616895a56b8e92a0cac21c6e1d55001a530d77e00101afff795905b",
+      "positive": "control_replay_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "same_claim=b.get('claim_type')==claim_type==contract.get('claim_type')",
+        "to": "same_claim=True"
+      },
+      "restored": false,
+      "witness": "reused_under_other_claim_type"
+    }
+  ],
+  "passed": true,
+  "schema": "v4.1-physical-mutations",
+  "source_restored": true,
+  "source_sha256": "adb3646bdc9b2fdc5720c68b0eb5f694236492c4cb0995d255b7f45738491801"
+}
