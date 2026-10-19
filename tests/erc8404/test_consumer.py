@@ -49,7 +49,7 @@ class ConsumerTests(unittest.TestCase):
         for raw in (b'{"x":1}',b'{"x":null,"x":false}',b'"\\ud800"',b'NaN'):
             with self.assertRaises(ValueError):strict(raw)
     def test_contract_preimage_required(self):
-        c=base();c['contract_bytes']=None
+        c=base();c['contract_bytes']=None;c['contract']=None
         self.assertEqual(decide(c)['status'],U)
     def test_profile_preimage_substitution(self):
         c=base();b=json.loads(base64.b64decode(c['bundle_bytes']));b['verificationProfile']['profileId']='other'

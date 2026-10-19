@@ -23,6 +23,12 @@ conditional on trusted contract selection/adequacy, correct cryptographic and
 Core verification, complete relevant evidence and the stated key-identity model.
 These are experimentally tested conditional propositions, not formal theorems.
 
+The corrected mutation inventory contains 16 killed controls and one surviving
+contract-preimage control. Baseline absence refuses authorization, but the single
+fallback mutation does not isolate that enforcement. Preserve this open coverage
+obligation in review; compatibility of the external consumer does not imply
+complete mutation coverage.
+
 Proceed to independent technical review of the external consumer and contract
 adequacy. Keep the publication as a Draft PR; no merge or upstream PR is part of
 this experiment.

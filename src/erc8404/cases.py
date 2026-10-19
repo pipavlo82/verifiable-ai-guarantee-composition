@@ -37,7 +37,7 @@ def cases():
         add('omitted_'+oid,c,target='coverage')
     c=base('self');c['catalog'].pop('O14');add('self_missing_O14',c,target='coverage')
     c=base();c['context']['contract_sha256']='ff'*32;add('wrong_contract_context',c,target='contract_commitment')
-    c=base();c['contract_bytes']=None;add('missing_contract_preimage',c,U,target='contract_preimage')
+    c=base();c['contract_bytes']=None;c['contract']=None;add('missing_contract_preimage',c,U,target='contract_preimage')
     for field,target,value in [('scenario','scenario','other-scenario'),('claimType','claim_type','EXTERNAL_TASK_SUCCESS'),('scope','scope','successful-execution')]:
         c=base();c['claim'][field]=value;add('wrong_'+target,c,target=target)
     c=base();c['claim']['outputHash']='0x'+'ff'*32;add('false_output_replay_only',c,target='field_policy')

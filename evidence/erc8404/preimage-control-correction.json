@@ -1,0 +1,14 @@
+{
+  "supersedes_summary_at_commit": "85a10c86746d7b10a359a60b05afe0fae04e450d",
+  "initial_evidence_preserved": true,
+  "preserved_files": 4094,
+  "reason": "The initial absent-byte-carrier witness retained the full parsed contract. Corrected actual-preimage-absence witness removes both carriers. Single fallback mutant still refuses and is SURVIVED, not KILLED. No global equivalence or full mutation coverage claim.",
+  "current_report": "evidence/erc8404/final-v2/report.json",
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 16,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 1,
+    "UNVERIFIABLE": 0
+  }
+}

@@ -18,6 +18,12 @@
 - S01/S05 cryptographic/domain checks are reused and tested, including a second
   signature implementation. The new mutation claims concern explicitly listed
   consumer boundaries, not exhaustive mutation coverage of cryptography or Core.
+- One contract-preimage mutation survives: when both raw carrier and parsed hint
+  are absent, changing the resolver to use the hint still yields no contract and
+  the consumer refuses. This is not certified mutation coverage of that boundary
+  or a proof of global equivalence. The initial published witness retained the
+  full parsed contract and measured mandatory-carrier policy instead of actual
+  preimage absence; its 17-kill report is preserved and superseded by 16/1.
 - Catalog completeness is relative to the independently supplied contract.
   Implementation and contract authorship are not institutionally independent.
 - A/B comparative modes intentionally lift narrower results into a broader

@@ -47,7 +47,10 @@ def main():
   status='CRASHED' if crashed else 'UNVERIFIABLE' if not controls or not isolated else 'KILLED' if m['authorized'] else 'SURVIVED'
   rows.append({'id':mid,'witness':w,'classification':status,'isolated':isolated,'before':b.get('status') if b else None,'mutant':m.get('status') if m else None,'restored':r.get('status') if r else None,'incorrect_authorization':m.get('authorized') if m else None,'source_sha256':hashlib.sha256(mutant.read_bytes()).hexdigest(),'replacement':{'from':old,'to':new}})
  counts={k:sum(r['classification']==k for r in rows) for k in ('KILLED','SURVIVED','CRASHED','NOT_APPLIED','UNVERIFIABLE')}
- report={'mutations':rows,'counts':counts,'source_unchanged':SOURCE.read_bytes()==original,'passed':all(r['classification']=='KILLED' for r in rows)}
+ expected={r['id']:('SURVIVED' if r['id']=='contract_preimage' else 'KILLED') for r in rows}
+ report={'mutations':rows,'counts':counts,'source_unchanged':SOURCE.read_bytes()==original,
+         'uncovered':['contract-preimage absence enforcement is not isolated by the single fallback mutation; refusal remains, no global equivalence claim'],
+         'passed':len(rows)==17 and all(r['classification']==expected[r['id']] for r in rows)}
  for path,data in [('report.json',report),('commands.json',commands)]: (out/path).write_text(json.dumps(data,indent=2,sort_keys=True)+'\n',encoding='utf-8',newline='\n')
  print(json.dumps(report,sort_keys=True,indent=2));return 0 if report['passed'] else 1
 if __name__=='__main__':raise SystemExit(main())

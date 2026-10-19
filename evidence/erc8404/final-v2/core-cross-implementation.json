@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "excluded_metadata": {
+    "python": "python-independent-rvr-v0",
+    "typescript": "typescript-independent-rvr-v0"
+  },
+  "all_other_fields_equal": true
+}

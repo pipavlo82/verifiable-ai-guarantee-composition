@@ -33,15 +33,27 @@ A and B are deliberately incomplete *downstream consumer policies*. No result
 here says that a narrower RVR receipt is defective or falsely verified.
 All four positive controls authorize their explicitly restricted scope.
 
-Mutation counts: {"CRASHED": 0, "KILLED": 17, "NOT_APPLIED": 0, "SURVIVED": 0, "UNVERIFIABLE": 0}.
+Corrected mutation counts: {"CRASHED": 0, "KILLED": 16, "NOT_APPLIED": 0, "SURVIVED": 1, "UNVERIFIABLE": 0}.
 Every claimed kill has an isolated baseline refusal, incorrect authorization
 under a physically modified source copy, restored refusal and restored positive
 control. Frozen Core is never mutated. No surviving mutant is hidden; no crash
 is counted as killed. This is the listed consumer-boundary inventory, not
 exhaustive crypto/Core coverage.
 
-64 preserved genuine laboratory signatures were recovered
-by the second eth-account implementation; a changed-message control is rejected.
+The current raw results are versioned under `evidence/erc8404/final-v2`.
+The initial publication at 85a10c86746d7b10a359a60b05afe0fae04e450d reported
+17 kills. Its evidence stays byte-identical at `evidence/erc8404/validation`.
+One witness removed contract_bytes but retained the full parsed contract, so its
+kill measured mandatory carrier admission rather than actual preimage absence.
+The corrected witness removes both. The fallback mutation then still returns no
+contract and authorization remains refused: SURVIVED. No unsupported authorization
+was observed for that mutant; no global equivalence or complete coverage is claimed.
+CI checks reproducibility of this explicit 16/1 inventory, not universal mutation
+adequacy. All 16 claimed kills retain isolated unsupported-authorization witnesses.
+
+64 preserved signed laboratory records (53 distinct complete signed documents)
+were checked by the second eth-account implementation; a changed-message control
+is rejected. Repeated records are not counted as independent signatures.
 Historical native proof verification is separate from RVR byte identity.
 The source bytes and the 13 vendored Core files remain identical; all 75 tracked
 upstream files match the initial inventory. The formal draft SHA-256 matches.
