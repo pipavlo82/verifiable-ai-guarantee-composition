@@ -1,0 +1,154 @@
+[
+  {
+    "name": "erc-pr-1980",
+    "command": [
+      "gh",
+      "api",
+      "repos/ethereum/ERCs/pulls/1980"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0
+  },
+  {
+    "name": "erc-file-8404",
+    "command": [
+      "gh",
+      "api",
+      "repos/pipavlo82/ERCs/contents/ERCS/erc-8404.md?ref=7a9e63a80bce04db53c6550103c1d41eca35f3d1"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0
+  },
+  {
+    "name": "erc-pr-2002",
+    "command": [
+      "gh",
+      "api",
+      "repos/ethereum/ERCs/pulls/2002"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0
+  },
+  {
+    "name": "erc-file-8412",
+    "command": [
+      "gh",
+      "api",
+      "repos/richard7463/ERCs/contents/ERCS/erc-8412.md?ref=ff9fbc7e2de497d3dec2595a90b262aecd576f5d"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an",
+    "exit": 0
+  },
+  {
+    "name": "prepare-prior",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v3/prepare.py",
+      "--online",
+      "--cargo-home",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v1-20261016\\cargo-home"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "v0",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/validate.py",
+      "--out",
+      "build/erc8404/phase1/v0"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "v1",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "research/formal-v1/validate.py",
+      "--out",
+      "build/erc8404/phase1/v1"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "v2",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v2/validate.py",
+      "--skip-benchmark",
+      "--out",
+      "build/erc8404/phase1/v2"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "v2-survivors",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v2/validate_survivors.py",
+      "--out",
+      "build/erc8404/phase1/v2-survivors"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "v3",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v3/validate.py",
+      "--skip-benchmark",
+      "--out",
+      "build/erc8404/phase1/v3"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "v4",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4/validate.py",
+      "--skip-benchmark",
+      "--out",
+      "build/erc8404/phase1/v4"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 0
+  },
+  {
+    "name": "inventory-after",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "tools/verify_artifacts.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404",
+    "exit": 1
+  }
+]

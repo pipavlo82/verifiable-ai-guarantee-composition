@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "REFUTED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      },
+      "expected": "REFUTED",
+      "name": "bad_cell1_signature",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "REFUTED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "REFUTED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "cell1_signature"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    }
+  ],
+  "schema": "composition-v3-results",
+  "summary": {
+    "baseline_correct_refusals": 1,
+    "baseline_false_authorizations": 0,
+    "baseline_unverifiable": 0,
+    "composition_correct_refusals": 1,
+    "composition_false_authorizations": 0,
+    "composition_unverifiable": 0,
+    "negative_cases": 1,
+    "passed": true,
+    "scenarios": 1
+  }
+}

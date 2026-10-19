@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "wrong_judgment_authority",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "REFUTED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "judgment_authority"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "REFUTED"
+      }
+    }
+  ],
+  "schema": "composition-v3-results",
+  "summary": {
+    "baseline_correct_refusals": 0,
+    "baseline_false_authorizations": 1,
+    "baseline_unverifiable": 0,
+    "composition_correct_refusals": 1,
+    "composition_false_authorizations": 0,
+    "composition_unverifiable": 0,
+    "negative_cases": 1,
+    "passed": true,
+    "scenarios": 1
+  }
+}

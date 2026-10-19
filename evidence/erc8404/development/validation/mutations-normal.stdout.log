@@ -1,0 +1,268 @@
+{
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 17,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "mutations": [
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "coverage",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['coverage'] = check(not missing)  # MUTATE: coverage",
+        "to": "    statuses['coverage'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "7c630111bda2c30b82454c0ae9e1fd70e4c0e2252af10ea2e8a348a49cb0be80",
+      "witness": "self_missing_O14"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "definitions",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['definitions'] = check(all(catalog.get(k) == v for k, v in required.items() if k in catalog))  # MUTATE: definitions",
+        "to": "    statuses['definitions'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "ae60647f158f8f7f22d662e9ab8945da533df4982cdeef1410add3d64d200d24",
+      "witness": "self_counterfeit_O14"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "contract_commitment",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['contract_commitment'] = check(same(digest, context.get('contract_sha256')))  # MUTATE: contract_commitment",
+        "to": "    statuses['contract_commitment'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "ce107695bbe85b24a5326504241140fcac95934f5e9d57f575158f65ed0bec1e",
+      "witness": "wrong_contract_context"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "scenario",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['scenario'] = check(same(claim.get('scenario'), contract.get('scenario')))  # MUTATE: scenario",
+        "to": "    statuses['scenario'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "33a9b8a188ef38bdba2ac496d81d4653f7a11bfc49f316d533ec292d7a14d751",
+      "witness": "wrong_scenario"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "claim_type",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['claim_type'] = check(same(claim.get('claimType'), contract.get('claim_type')))  # MUTATE: claim_type",
+        "to": "    statuses['claim_type'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "1a603094717821c35fa037c8570aa5e90f0035ba29840b20637e87d6b8d3d6b6",
+      "witness": "wrong_claim_type"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "scope",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['scope'] = check(same(claim.get('scope'), contract.get('scope')))  # MUTATE: scope",
+        "to": "    statuses['scope'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "66b6244e5c6105aa75bfe2f398e767db63661330d03e755b794740ddea22bbdc",
+      "witness": "wrong_scope"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "signed_contract",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['signed_contract'] = check(same('0x'+digest, msg('producer', 'policyHash'), msg('judgment', 'policyHash')))  # MUTATE: signed_contract",
+        "to": "    statuses['signed_contract'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "a9717671188de3bfc3d15750519783aa0bf6e95ea4a16231375dc4e3d16dc727",
+      "witness": "wrong_contract"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "field_policy",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['field_policy'] = check(not unconsumed or contract.get('unconsumed_policy') == 'LIST')  # MUTATE: field_policy",
+        "to": "    statuses['field_policy'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "61cbbdb931ca4a80b22da0b2912f79d9a7f49b1ee1a6ef851b1ec4eabcd5eede",
+      "witness": "false_output_replay_only"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "supported_contract",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses['supported_contract'] = check(contract.get('schema') == 'claim-aware.external.v1' and contract.get('claim_type') == 'REVIEWED_ARTIFACT_IDENTITY' and contract.get('scope') == 'artifact-byte-identity' and bool(required))  # MUTATE: supported_contract",
+        "to": "    statuses['supported_contract'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "d471b02d04539f5882501b38023c678c2daf85782c53cd2fc1382c4cd425878e",
+      "witness": "unsupported_contract_claim"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "O14",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses.update(verification)",
+        "to": "    statuses.update(verification)\n    statuses['O14'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "a3a203ba3f56d3e509d00882fa06fb1a7a824c91f9eb87e7c8555a412f0418d6",
+      "witness": "self_judgment"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "S02",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses.update(verification)",
+        "to": "    statuses.update(verification)\n    statuses['S02'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "522d4179cd7932bc7ddc12e2ac5b0c624b9f465abce6361777e2cff7fa0b756a",
+      "witness": "wrong_artifact"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "S03",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses.update(verification)",
+        "to": "    statuses.update(verification)\n    statuses['S03'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "5bd46869ccca019a14f4b2d7792581a05afedbbd36ed5cc7fe20590d2fe88485",
+      "witness": "wrong_subject"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "S04",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses.update(verification)",
+        "to": "    statuses.update(verification)\n    statuses['S04'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "8a3181db4165f1bf4df7da83d211450374416f830865b8466d67bbfc7de86550",
+      "witness": "unauthorized"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "S06",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses.update(verification)",
+        "to": "    statuses.update(verification)\n    statuses['S06'] = V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "74b1bef1440aa0cbb0a6840fa4b2215b37e9790404be79e9e625a8ab85e1f4fd",
+      "witness": "wrong_action"
+    },
+    {
+      "before": "UNVERIFIABLE",
+      "classification": "KILLED",
+      "id": "contract_preimage",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    if raw is None: return None  # MUTATE: contract_preimage",
+        "to": "    if raw is None: return case['contract']"
+      },
+      "restored": "UNVERIFIABLE",
+      "source_sha256": "dbc4890b0c11cd13b5d4703b07f59987f5952c41089f23208bd539795bac46b3",
+      "witness": "missing_contract_preimage"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "receipt",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    statuses = {'receipt': core['consumer_status']}",
+        "to": "    statuses = {'receipt': V}"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "6a4b9243f4e60088d0388a124c62347dcb84330b60be0ad71fe822a5a4569adf",
+      "witness": "contradictory_receipt_projection"
+    },
+    {
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "id": "reuse",
+      "incorrect_authorization": true,
+      "isolated": true,
+      "mutant": "VERIFIED",
+      "replacement": {
+        "from": "    return check(record == fresh['authorization_scope'])  # MUTATE: reuse",
+        "to": "    return V"
+      },
+      "restored": "REFUTED",
+      "source_sha256": "d9cdef5b6c10799a1c2d6d806a5b628f7c4bcfdfed35b8b266b06558919809a0",
+      "witness": "reuse"
+    }
+  ],
+  "passed": true,
+  "source_unchanged": true
+}

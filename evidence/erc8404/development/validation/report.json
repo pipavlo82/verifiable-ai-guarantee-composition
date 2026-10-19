@@ -1,0 +1,285 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/integrity.py"
+      ],
+      "elapsed_seconds": 1.935219800012419,
+      "exit": 0,
+      "name": "integrity-before",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "09391ddddc954708012075072c0cdccbad736cc6b765bc0519c2530060e5a9e2"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.2951234999927692,
+      "exit": 0,
+      "name": "core-python",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/erc8404",
+        "-v"
+      ],
+      "elapsed_seconds": 13.344608099985635,
+      "exit": 0,
+      "name": "tests-normal",
+      "stderr_sha256": "efbe6fc157b100d4913ccfacb2ec7c3555e7fb62b84eb2e7578bcdde87d47c1c",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 16
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/run.py"
+      ],
+      "elapsed_seconds": 17.439383999997517,
+      "exit": 0,
+      "name": "comparison-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a727270e9cb64c9ef044d3935b1fe2375efb3025055f5f1fa1eed7b478acdf4e"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/secondary.py"
+      ],
+      "elapsed_seconds": 2.4258982000174,
+      "exit": 0,
+      "name": "secondary-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a8af291f5ddaf1e1a2e5fcff50d7a2df06fdf510953fae3fbf9e3ec0420beb2d"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\validation\\mutations-normal"
+      ],
+      "elapsed_seconds": 36.76446999999462,
+      "exit": 0,
+      "name": "mutations-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c7173fd5aa09abd3e7a61f5cfdab59ad2962757a2d9520a77ee3077fa7ce92e1"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/erc8404",
+        "-v"
+      ],
+      "elapsed_seconds": 13.396609299990814,
+      "exit": 0,
+      "name": "tests-repeat",
+      "stderr_sha256": "4d889ae7eda17b1d8fe96b9c58b82e04970789f88d8d478cad856923b356679a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 16
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/run.py"
+      ],
+      "elapsed_seconds": 17.35451400000602,
+      "exit": 0,
+      "name": "comparison-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a727270e9cb64c9ef044d3935b1fe2375efb3025055f5f1fa1eed7b478acdf4e"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/secondary.py"
+      ],
+      "elapsed_seconds": 2.223235899989959,
+      "exit": 0,
+      "name": "secondary-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d8e97eed6151c7477f6dfabefc70095b162c5132009ac5112220e86eae2a332e"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\validation\\mutations-repeat"
+      ],
+      "elapsed_seconds": 35.91875720000826,
+      "exit": 0,
+      "name": "mutations-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c7173fd5aa09abd3e7a61f5cfdab59ad2962757a2d9520a77ee3077fa7ce92e1"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/erc8404",
+        "-v"
+      ],
+      "elapsed_seconds": 15.380445900023915,
+      "exit": 0,
+      "name": "tests-optimized",
+      "stderr_sha256": "aede724aa351a974910d7e3ae644510989f3a04a32c21b320a1b2509a4bd29a6",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 16
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/erc8404/run.py"
+      ],
+      "elapsed_seconds": 18.364792900014436,
+      "exit": 0,
+      "name": "comparison-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a727270e9cb64c9ef044d3935b1fe2375efb3025055f5f1fa1eed7b478acdf4e"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/erc8404/secondary.py"
+      ],
+      "elapsed_seconds": 3.4511046999832615,
+      "exit": 0,
+      "name": "secondary-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7ca8766557c8de3c341b1f03c54c73f833311c5003fa124e2a8747c62f59605e"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/erc8404/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\validation\\mutations-optimized"
+      ],
+      "elapsed_seconds": 47.467118800006574,
+      "exit": 0,
+      "name": "mutations-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c7173fd5aa09abd3e7a61f5cfdab59ad2962757a2d9520a77ee3077fa7ce92e1"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/erc8404/integrity.py"
+      ],
+      "elapsed_seconds": 1.866467299987562,
+      "exit": 0,
+      "name": "integrity-after",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "09391ddddc954708012075072c0cdccbad736cc6b765bc0519c2530060e5a9e2"
+    }
+  ],
+  "comparison": {
+    "A": {
+      "correct_refusals": 3,
+      "incorrect_downstream_authorizations": 35,
+      "missing_obligation_detected": 0,
+      "positive_authorizations": 4,
+      "unverifiable": 1
+    },
+    "B": {
+      "correct_refusals": 20,
+      "incorrect_downstream_authorizations": 18,
+      "missing_obligation_detected": 0,
+      "positive_authorizations": 4,
+      "unverifiable": 7
+    },
+    "C": {
+      "correct_refusals": 38,
+      "incorrect_downstream_authorizations": 0,
+      "missing_obligation_detected": 8,
+      "positive_authorizations": 4,
+      "unverifiable": 6
+    }
+  },
+  "determinism": {
+    "comparison": true,
+    "mutations": true,
+    "secondary": false
+  },
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "mutations": {
+    "CRASHED": 0,
+    "KILLED": 17,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "passed": false,
+  "scenarios": 42
+}

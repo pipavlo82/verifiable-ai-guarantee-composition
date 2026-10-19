@@ -1,0 +1,141 @@
+{
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 8,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "method": "one predicate removed per compiled isolated copy",
+  "mutants": [
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G1",
+      "killed_by": [
+        "N01_wrong_provenance"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(e[\"provenance\"][\"payload\"][\"input_digest\"] == r[\"input_digest\"], \"G1_REQUEST_INPUT_MISMATCH\")  # MUTATE:G1",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N01_wrong_provenance"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G2",
+      "killed_by": [
+        "N02_wrong_model_version"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict((model[\"id\"], model[\"version\"]) == (r[\"model\"], r[\"version\"]) == (proof[\"model\"], proof[\"version\"]), \"G2_MODEL_VERSION_MISMATCH\")  # MUTATE:G2",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N02_wrong_model_version"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G3",
+      "killed_by": [
+        "N03_valid_proof_wrong_input"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(proof[\"input_digest\"] == e[\"provenance\"][\"payload\"][\"input_digest\"] and proof[\"output\"] == r[\"output\"], \"G3_PROOF_STATEMENT_MISMATCH\")  # MUTATE:G3",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N03_valid_proof_wrong_input"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G4",
+      "killed_by": [
+        "N04_cross_subject"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(all(b[\"subject\"] == r[\"subject\"] for b in e.values()), \"G4_SUBJECT_MISMATCH\")  # MUTATE:G4",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N04_cross_subject"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G5",
+      "killed_by": [
+        "N05_unauthentic_judgment"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(digest(j) in p[\"authentic_judgments\"].get(j[\"issuer\"], []), \"G5_FIXTURE_AUTHENTICITY_MISMATCH\")  # MUTATE:G5",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N05_unauthentic_judgment"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G6",
+      "killed_by": [
+        "N06_valid_judgment_wrong_action",
+        "N10_invalid_authority"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(j[\"issuer\"] in p[\"authorized_judges\"] and j[\"payload\"][\"action\"] == r[\"action\"] and j[\"payload\"][\"policy\"] == p[\"id\"], \"G6_JUDGMENT_NOT_AUTHORIZED\")  # MUTATE:G6",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N06_valid_judgment_wrong_action"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G7",
+      "killed_by": [
+        "N07_valid_receipt_wrong_execution",
+        "N19_receipt_proof_substitution"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(receipt[\"execution\"] == r[\"execution\"] and receipt[\"action\"] == r[\"action\"] and receipt[\"output\"] == r[\"output\"] and receipt[\"proof_digest\"] == digest(e[\"proof\"]), \"G7_EXECUTION_BINDING_MISMATCH\")  # MUTATE:G7",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N07_valid_receipt_wrong_execution"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "classification": "KILLED",
+      "error": null,
+      "guarantee": "G8",
+      "killed_by": [
+        "N08_replay",
+        "N11_scope_amplification",
+        "N12_strength_amplification",
+        "N13_cross_domain",
+        "N14_expired",
+        "N18_policy_mismatch"
+      ],
+      "positive_after": "VERIFIED",
+      "removed_source": "return verdict(scope_ok and strength_ok and domain_ok and time_ok and r[\"nonce\"] not in p[\"consumed_nonces\"] and r[\"policy\"] == p[\"id\"], \"G8_SCOPE_STRENGTH_REPLAY_OR_POLICY\")  # MUTATE:G8",
+      "restored": "REFUTED",
+      "restored_full_matrix_green": true,
+      "target": "N08_replay"
+    }
+  ],
+  "original_bytes_unchanged": true,
+  "schema": "composition-mutations-v0"
+}

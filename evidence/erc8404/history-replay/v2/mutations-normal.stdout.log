@@ -1,0 +1,299 @@
+{
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 18,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 2,
+    "UNVERIFIABLE": 1
+  },
+  "mutations": [
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "provenance_preimage",
+      "mutant_source_sha256": "f0937ee4988d580e864bc02cad614441ac75d87b29e750b77fa693f3774d813e",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('provenance_preimage',raw_ok,",
+        "to": "add('provenance_preimage',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "raw_input_substitution"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "input_binding",
+      "mutant_source_sha256": "dfda46cc095d310f4cf08ad5d25621a024d835ffea2cde1b7c59caf29605d534",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('input_binding',input_ok,",
+        "to": "add('input_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "wrong_claim_input"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "model_binding",
+      "mutant_source_sha256": "7f1c71932da9c53d96089b1e3479dfaa1118a8aa36bd2fb813f7f54e2e214f09",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('model_binding',model_ok,",
+        "to": "add('model_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "wrong_model_version"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "subject_binding",
+      "mutant_source_sha256": "c32795d1a509443cd5c82a1978113d78f7305b7c2a16c0f84d0d15fe76652b3d",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('subject_binding',subject_ok,",
+        "to": "add('subject_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "cross_subject"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "proof_binding",
+      "mutant_source_sha256": "6ec6af8b3a7918dd5fcc6b2552a5cb5b60883eb35105c4e02731d04a1c12ded6",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('proof_binding',proof_ok,",
+        "to": "add('proof_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "wrong_proof_reference"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "action_binding",
+      "mutant_source_sha256": "eaf669463e2a0b9cd8a0dd3da47ff35ad11bcb5f537fb52881dd9789e35ba541",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('action_binding',action_ok,",
+        "to": "add('action_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "valid_judgment_wrong_action"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "authority",
+      "mutant_source_sha256": "a7dc5b2e4ca61cde503229aefcd7989916d4d421084261b734924513cc6d7666",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('authority',authority_ok,",
+        "to": "add('authority',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "invalid_authority_valid_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "execution_binding",
+      "mutant_source_sha256": "f73d0b37f1062baea4b5211b149275530da6ab9e73dbe910a672ae0aef47fd67",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('execution_binding',execution_ok,",
+        "to": "add('execution_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "valid_receipt_wrong_execution"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "output_binding",
+      "mutant_source_sha256": "f19d2613d1d266ea3bb0a85b06dfab886490d083a04cca936a2194447dfd8994",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('output_binding',output_ok,",
+        "to": "add('output_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "wrong_output_claim"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "receipt_evidence",
+      "mutant_source_sha256": "05ac7f85839d8a8173cf93bcd31bb6ee10302a40302aa42e26f3d92db3dd0679",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('receipt_evidence',result_ok,",
+        "to": "add('receipt_evidence',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "receipt_result_substitution"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "domain",
+      "mutant_source_sha256": "2d858b7d1ee844d75838ce64794271b37045230fde26e3b247decdfb619d0a0f",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('domain',domain_ok,",
+        "to": "add('domain',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "cross_domain_valid_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "scope",
+      "mutant_source_sha256": "5c9aa868312789f7d5dd61f3aa3411eb7eacbb76063d60d027f389c83d06f045",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('scope',scope_ok,",
+        "to": "add('scope',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "scope_escalation"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "policy_binding",
+      "mutant_source_sha256": "d86c34d77148672b6918321e08dae01b9aea95889eb703f5f3618739abc38786",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('policy_binding',policy_ok,",
+        "to": "add('policy_binding',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "wrong_policy"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "replay",
+      "mutant_source_sha256": "0a0fc29fa748c3e9e000e3e6c931d89c9eab9d086a17db73479ec36ad22aedf8",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('replay',replay_ok,",
+        "to": "add('replay',True,"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "replay"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "UNVERIFIABLE",
+      "boundary": "claim_strength",
+      "mutant_source_sha256": "d10575501e5172265c751db42fccc534414f047f26379960d0feb6a0c64c4fe6",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('claim_strength',historical_ok,",
+        "to": "add('claim_strength',True,"
+      },
+      "restored": "UNVERIFIABLE",
+      "status": "KILLED",
+      "witness": "complete_historical_chain_unavailable"
+    },
+    {
+      "after": "REFUTED",
+      "before": "REFUTED",
+      "boundary": "artifact_types",
+      "mutant_source_sha256": "96a62435250a26ae42fe91b9f468ad1ba21ae0bf9330b13d9a609b97cac9ff27",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "add('artifact_types',profile_ok,",
+        "to": "add('artifact_types',True,"
+      },
+      "restored": "REFUTED",
+      "status": "SURVIVED",
+      "witness": "valid_receipt_used_as_judgment"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "judgment_signature",
+      "mutant_source_sha256": "3b474ae35a368679c913a19d0c9a42f75cce37e0de3843a83ebe616f91038122",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "Status(components[role]),'ECDSA",
+        "to": "(Status.VERIFIED if role=='judgment' else Status(components[role])),'ECDSA"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "invalid_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "provenance_signature",
+      "mutant_source_sha256": "2b4544a99e3dbc5bc696967d6a38921c1b0dc6833e7beac033dea254ed840f79",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "Status(components[role]),'ECDSA",
+        "to": "(Status.VERIFIED if role=='provenance' else Status(components[role])),'ECDSA"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "invalid_provenance_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "receipt_signature",
+      "mutant_source_sha256": "586be3fa73d00fe104309c5d5f47ea609bc0e09c2b18591420c6ac16974d9666",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "Status(components[role]),'ECDSA",
+        "to": "(Status.VERIFIED if role=='receipt' else Status(components[role])),'ECDSA"
+      },
+      "restored": "REFUTED",
+      "status": "KILLED",
+      "witness": "invalid_receipt_signature"
+    },
+    {
+      "after": "REFUTED",
+      "before": "REFUTED",
+      "boundary": "native_enforcement",
+      "mutant_source_sha256": "c25ff4efd51b31cea502e60f296988553598aa33c484edef3347a9715d9fc306",
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "Obligation('inference',native_status,",
+        "to": "Obligation('inference',Status.VERIFIED,"
+      },
+      "restored": "REFUTED",
+      "status": "SURVIVED",
+      "witness": "native_proof_wrong_input"
+    },
+    {
+      "boundary": "historical_execution_verifier",
+      "executed": false,
+      "reason": "no external execution artifact/verifier available; not implemented, not counted as an executed mutation",
+      "status": "UNVERIFIABLE"
+    }
+  ],
+  "source_restored": true,
+  "source_sha256": "71ad471dcb2f322da56eea20060e9a5c8f0930bb87f7e0549b8cfaf2939ba69c"
+}

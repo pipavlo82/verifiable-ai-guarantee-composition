@@ -1,0 +1,13 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+import {ROOT,sign,address,secp256k1} from '../../src/v2/crypto.mjs';
+const out=path.join(ROOT,'fixtures/erc8404/lab');const name='statement_scope';
+const canon=x=>x===null||typeof x!=='object'?JSON.stringify(x):Array.isArray(x)?'['+x.map(canon).join(',')+']':'{'+Object.keys(x).sort().map(k=>JSON.stringify(k)+':'+canon(x[k])).join(',')+'}';
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const keys=Object.fromEntries(['producer','judgment'].map(r=>[r,secp256k1.utils.randomSecretKey()]));
+const b=JSON.parse(fs.readFileSync(path.join(out,'independent.json')));const c=b.contract;
+c.authorized=Object.fromEntries(Object.entries(keys).map(([r,k])=>[r,address(secp256k1.getPublicKey(k))]));
+const raw=Buffer.from(canon(c)),digest=sha(raw);b.contract_bytes=raw.toString('base64');b.context.contract_sha256=digest;
+for(const r of ['producer','judgment'])b.documents[r]=sign('LabJudgment',{...b.documents[r].message,policyHash:'0x'+digest},keys[r],c.domain);
+b.variants={wrong_scope:sign('LabJudgment',{...b.documents.judgment.message,scope:'different-scope'},keys.judgment,c.domain)};
+const dest=path.join(out,name+'.json');if(fs.existsSync(dest))throw Error('exists');fs.writeFileSync(dest,JSON.stringify(b,null,2)+'\n');fs.writeFileSync(path.join(out,name+'.contract.json'),raw);
+console.log(JSON.stringify({scope_control:true,keys_saved:false}));

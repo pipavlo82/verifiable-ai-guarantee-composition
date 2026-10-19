@@ -1,0 +1,10 @@
+{
+  "kind": "CONTROLLED_LABORATORY_SIGNATURES",
+  "producer": "local experimental fixture generator",
+  "external_observation": false,
+  "private_keys_persisted": false,
+  "artifact_source": "evidence/v2/capture/a/proof.bin",
+  "artifact_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+  "signed_statement": "byte identity and declared review only; no inference verification or execution assertion",
+  "schema": "LabJudgment reused as explicitly declared lab carrier; not WYRIWE L4"
+}

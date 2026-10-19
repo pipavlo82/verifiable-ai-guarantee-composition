@@ -1,0 +1,47 @@
+{
+  "current_commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+  "modified_by_this_experiment": false,
+  "preexisting_differences": [
+    {
+      "current_sha256": "d963e6126d066c621865e8b86f6fda3fd89a4c6c31c0f7afa495aca3d01c56ad",
+      "path": "conformance/rvr-v0/README.md",
+      "rc2_sha256": "f4aef3d1ae319064a72efe889278d6e2691e6f4980c62ef94e463a09fc71dd7d"
+    },
+    {
+      "current_sha256": "03505efc8ee993f118fad2c71f706870d25de0da61a393a1f18f7b310bded235",
+      "path": "conformance/rvr-v0/adapter.py",
+      "rc2_sha256": "b2bbc75caa7b5548fda2b050dfc9561ea551f518aba26f563f91a03ae06839c1"
+    },
+    {
+      "current_sha256": "368955fae7a1c1153822e4e58ac9807f69eaddf4e91740eaf231f374154b3e58",
+      "path": "conformance/rvr-v0/adapter.ts",
+      "rc2_sha256": "e90c8e86313c6814b76b17cd016f320f5d89f6b21c146f83f0538b54996f14d0"
+    },
+    {
+      "current_sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce",
+      "path": "conformance/rvr-v0/expected.json",
+      "rc2_sha256": "3a1fa57b8b63fb68823f8c51141b237ef5b0f2a83a6d92a68591821e9cea44ac"
+    },
+    {
+      "current_sha256": "7559d380bf3ddd228b135f9f785b40dba063d0ededcb61ba156f1bb3ad3211f8",
+      "path": "conformance/rvr-v0/manifest.json",
+      "rc2_sha256": "bc1f1d4d97b5446db299e8ef5c1bc8b9a0d09166e8ef907019b415da9b1dc737"
+    },
+    {
+      "current_sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f",
+      "path": "conformance/rvr-v0/vectors.json",
+      "rc2_sha256": "fb5aabb9571850663c0a008daa5fb1720cf34fa71cbbab81ee09a4d4fc4e31c8"
+    },
+    {
+      "current_sha256": "23cac7eb86aca7a8cc0422985f598b67dd3fe758bd2321f6bcbc5ab2f1c2d8ab",
+      "path": "conformance/rvr-v0/verification-profile.json",
+      "rc2_sha256": "667164d69fbecf354b56822f1520b2c7b876fda542085f3b3b36f3e9b73994fa"
+    },
+    {
+      "current_sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+      "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+      "rc2_sha256": "ed6f02fa669cf6dfd2f5875692e360cc7b39a4a44bd90d3c36f8940b287b9c52"
+    }
+  ],
+  "rc2_commit": "f4476754c92e0bea549474722108ec60ded1385a"
+}

@@ -1,5 +1,14 @@
 # Verifiable AI Guarantee Composition
 
+Experimental ERC-8404 compatibility research is available in
+[research/erc8404/RECOMMENDATION.md](research/erc8404/RECOMMENDATION.md).
+It adds an external claim-aware consumer with scenario-dependent checker
+independence and explicit authorization scope. ERC-8404 Core and historical
+v0-v4 evidence remain unchanged. See the
+[compatibility matrix](research/erc8404/COMPATIBILITY_MATRIX.md),
+[profile](research/erc8404/CLAIM_AWARE_PROFILE.md) and
+[results](research/erc8404/EXPERIMENT_RESULTS.md).
+
 Independent experimental research by **pipavlo82** on the conditions under which
 component guarantees can justify a downstream authorization claim.
 

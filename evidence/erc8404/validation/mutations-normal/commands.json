@@ -1,0 +1,1090 @@
+[
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "self_missing_O14"
+    ],
+    "exit": 0,
+    "mutation": "coverage",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\coverage.py",
+      "--witness",
+      "self_missing_O14"
+    ],
+    "exit": 0,
+    "mutation": "coverage",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "self_missing_O14"
+    ],
+    "exit": 0,
+    "mutation": "coverage",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "coverage",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "self_counterfeit_O14"
+    ],
+    "exit": 0,
+    "mutation": "definitions",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\definitions.py",
+      "--witness",
+      "self_counterfeit_O14"
+    ],
+    "exit": 0,
+    "mutation": "definitions",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "self_counterfeit_O14"
+    ],
+    "exit": 0,
+    "mutation": "definitions",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "definitions",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_contract_context"
+    ],
+    "exit": 0,
+    "mutation": "contract_commitment",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\contract_commitment.py",
+      "--witness",
+      "wrong_contract_context"
+    ],
+    "exit": 0,
+    "mutation": "contract_commitment",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_contract_context"
+    ],
+    "exit": 0,
+    "mutation": "contract_commitment",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "contract_commitment",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_scenario"
+    ],
+    "exit": 0,
+    "mutation": "scenario",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\scenario.py",
+      "--witness",
+      "wrong_scenario"
+    ],
+    "exit": 0,
+    "mutation": "scenario",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_scenario"
+    ],
+    "exit": 0,
+    "mutation": "scenario",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "scenario",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_claim_type"
+    ],
+    "exit": 0,
+    "mutation": "claim_type",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\claim_type.py",
+      "--witness",
+      "wrong_claim_type"
+    ],
+    "exit": 0,
+    "mutation": "claim_type",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_claim_type"
+    ],
+    "exit": 0,
+    "mutation": "claim_type",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "claim_type",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_scope"
+    ],
+    "exit": 0,
+    "mutation": "scope",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\scope.py",
+      "--witness",
+      "wrong_scope"
+    ],
+    "exit": 0,
+    "mutation": "scope",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_scope"
+    ],
+    "exit": 0,
+    "mutation": "scope",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "scope",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_contract"
+    ],
+    "exit": 0,
+    "mutation": "signed_contract",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\signed_contract.py",
+      "--witness",
+      "wrong_contract"
+    ],
+    "exit": 0,
+    "mutation": "signed_contract",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_contract"
+    ],
+    "exit": 0,
+    "mutation": "signed_contract",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "signed_contract",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "false_output_replay_only"
+    ],
+    "exit": 0,
+    "mutation": "field_policy",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\field_policy.py",
+      "--witness",
+      "false_output_replay_only"
+    ],
+    "exit": 0,
+    "mutation": "field_policy",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "false_output_replay_only"
+    ],
+    "exit": 0,
+    "mutation": "field_policy",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "field_policy",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "unsupported_contract_claim"
+    ],
+    "exit": 0,
+    "mutation": "supported_contract",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\supported_contract.py",
+      "--witness",
+      "unsupported_contract_claim"
+    ],
+    "exit": 0,
+    "mutation": "supported_contract",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "unsupported_contract_claim"
+    ],
+    "exit": 0,
+    "mutation": "supported_contract",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "supported_contract",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "self_judgment"
+    ],
+    "exit": 0,
+    "mutation": "O14",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\O14.py",
+      "--witness",
+      "self_judgment"
+    ],
+    "exit": 0,
+    "mutation": "O14",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "self_judgment"
+    ],
+    "exit": 0,
+    "mutation": "O14",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "O14",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_artifact"
+    ],
+    "exit": 0,
+    "mutation": "S02",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\S02.py",
+      "--witness",
+      "wrong_artifact"
+    ],
+    "exit": 0,
+    "mutation": "S02",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_artifact"
+    ],
+    "exit": 0,
+    "mutation": "S02",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "S02",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_subject"
+    ],
+    "exit": 0,
+    "mutation": "S03",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\S03.py",
+      "--witness",
+      "wrong_subject"
+    ],
+    "exit": 0,
+    "mutation": "S03",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_subject"
+    ],
+    "exit": 0,
+    "mutation": "S03",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "S03",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "unauthorized_without_separation"
+    ],
+    "exit": 0,
+    "mutation": "S04",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\S04.py",
+      "--witness",
+      "unauthorized_without_separation"
+    ],
+    "exit": 0,
+    "mutation": "S04",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "unauthorized_without_separation"
+    ],
+    "exit": 0,
+    "mutation": "S04",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "S04",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_action"
+    ],
+    "exit": 0,
+    "mutation": "S06",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\S06.py",
+      "--witness",
+      "wrong_action"
+    ],
+    "exit": 0,
+    "mutation": "S06",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "wrong_action"
+    ],
+    "exit": 0,
+    "mutation": "S06",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "S06",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "missing_contract_preimage"
+    ],
+    "exit": 0,
+    "mutation": "contract_preimage",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\contract_preimage.py",
+      "--witness",
+      "missing_contract_preimage"
+    ],
+    "exit": 0,
+    "mutation": "contract_preimage",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "missing_contract_preimage"
+    ],
+    "exit": 0,
+    "mutation": "contract_preimage",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "contract_preimage",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "contradictory_receipt_projection"
+    ],
+    "exit": 0,
+    "mutation": "receipt",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\receipt.py",
+      "--witness",
+      "contradictory_receipt_projection"
+    ],
+    "exit": 0,
+    "mutation": "receipt",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "contradictory_receipt_projection"
+    ],
+    "exit": 0,
+    "mutation": "receipt",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "receipt",
+    "phase": "positive"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "reuse"
+    ],
+    "exit": 0,
+    "mutation": "reuse",
+    "phase": "before"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\reuse.py",
+      "--witness",
+      "reuse"
+    ],
+    "exit": 0,
+    "mutation": "reuse",
+    "phase": "mutant"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "reuse"
+    ],
+    "exit": 0,
+    "mutation": "reuse",
+    "phase": "restored"
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/erc8404/mutations.py",
+      "--worker",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-erc8404\\build\\erc8404\\final-validation\\mutations-normal\\baseline.py",
+      "--witness",
+      "positive"
+    ],
+    "exit": 0,
+    "mutation": "reuse",
+    "phase": "positive"
+  }
+]

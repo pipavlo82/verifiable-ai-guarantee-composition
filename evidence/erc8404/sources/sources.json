@@ -1,0 +1,68 @@
+[
+  {
+    "repository": "pipavlo82/recomputable-verification-receipts",
+    "commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+    "ref": "main",
+    "kind": "implementation"
+  },
+  {
+    "repository": "trustless-ai/zkIE",
+    "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "ref": "main",
+    "kind": "implementation"
+  },
+  {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "ref": "main",
+    "kind": "implementation"
+  },
+  {
+    "repository": "trustless-ai/agent-ercs",
+    "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "ref": "main",
+    "kind": "implementation"
+  },
+  {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+    "ref": "main",
+    "kind": "implementation"
+  },
+  {
+    "repository": "ethereum/ERCs",
+    "head_repository": "TMerlini/ERCs",
+    "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+    "path": "ERCS/erc-8299.md",
+    "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3",
+    "pr": 1810,
+    "kind": "proposal"
+  },
+  {
+    "repository": "ethereum/ERCs",
+    "head_repository": "JimmyShi22/ERCs",
+    "commit": "3f014d07a0ceac39fe6fb6dec0efdc30640a9653",
+    "path": "ERCS/erc-8274.md",
+    "sha256": "186b84f7d6d8b063814860b0624400e1055ad548c40c16c81ff3a54f327f17cf",
+    "pr": 1771,
+    "kind": "proposal"
+  },
+  {
+    "repository": "ethereum/ERCs",
+    "head_repository": "pipavlo82/ERCs",
+    "commit": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+    "path": "ERCS/erc-8404.md",
+    "sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
+    "pr": 1980,
+    "kind": "proposal"
+  },
+  {
+    "repository": "ethereum/ERCs",
+    "head_repository": "richard7463/ERCs",
+    "commit": "ff9fbc7e2de497d3dec2595a90b262aecd576f5d",
+    "path": "ERCS/erc-8412.md",
+    "sha256": "9b6acca653cf426851917bc3981ca3edae8744c847cb054b59d6689ec0b08530",
+    "pr": 2002,
+    "kind": "proposal"
+  }
+]

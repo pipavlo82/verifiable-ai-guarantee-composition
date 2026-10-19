@@ -1,0 +1,12 @@
+{
+  "all_signatures_recovered": true,
+  "altered_message_rejected": true,
+  "invalid_signature_rejected": true,
+  "keccak_raw_matches": true,
+  "missing_evidence": "UNVERIFIABLE",
+  "passed": true,
+  "python_matmul_recomputed": true,
+  "schema": "v4-second-implementation",
+  "scope": "eth-account/eth-keys signatures and Python arithmetic; same machine and artifacts; no independent human review or second native proof verifier",
+  "signature_count": 10
+}

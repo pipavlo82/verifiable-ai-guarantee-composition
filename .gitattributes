@@ -1,4 +1,6 @@
 * text=auto eol=lf
+evidence/erc8404/** -text -whitespace
+fixtures/erc8404/** -text -whitespace
 # Preserve captured subprocess output byte-for-byte, including platform line endings.
 evidence/v2/**/*.log -text -whitespace
 evidence/v2/**/*.stdout.json -text -whitespace

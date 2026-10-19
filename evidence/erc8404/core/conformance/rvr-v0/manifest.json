@@ -1,0 +1,53 @@
+{
+  "schema": "rvr.conformance-manifest.v0",
+  "hashAlgorithm": "sha256-lowercase-hex",
+  "memberCount": 11,
+  "members": [
+    {
+      "path": "conformance/rvr-v0/README.md",
+      "sha256": "d963e6126d066c621865e8b86f6fda3fd89a4c6c31c0f7afa495aca3d01c56ad"
+    },
+    {
+      "path": "conformance/rvr-v0/adapter.py",
+      "sha256": "03505efc8ee993f118fad2c71f706870d25de0da61a393a1f18f7b310bded235"
+    },
+    {
+      "path": "conformance/rvr-v0/adapter.ts",
+      "sha256": "368955fae7a1c1153822e4e58ac9807f69eaddf4e91740eaf231f374154b3e58"
+    },
+    {
+      "path": "conformance/rvr-v0/expected.json",
+      "sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce"
+    },
+    {
+      "path": "conformance/rvr-v0/mutants.json",
+      "sha256": "d5d16cc53ec0d9be53968d7ffc01fe019cb8b2630390c04431f6ee9f54edf847"
+    },
+    {
+      "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+      "sha256": "ecded96c5f58f7057e2c5c0b6d9789942a9a7bf600f4a453387e99f8406e7baf"
+    },
+    {
+      "path": "conformance/rvr-v0/rvr.schema.json",
+      "sha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae"
+    },
+    {
+      "path": "conformance/rvr-v0/vectors.json",
+      "sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f"
+    },
+    {
+      "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+      "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1"
+    },
+    {
+      "path": "conformance/rvr-v0/verification-profile.json",
+      "sha256": "23cac7eb86aca7a8cc0422985f598b67dd3fe758bd2321f6bcbc5ab2f1c2d8ab"
+    },
+    {
+      "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+      "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973"
+    }
+  ],
+  "packageDigestRule": "sha256-utf8-sorted-path-tab-file-sha256-lf-rows-manifest-excluded",
+  "packageDigest": "c56fa659590247b302cf670245523ed3b02902157c27b0d710bad653cb3a0eee"
+}

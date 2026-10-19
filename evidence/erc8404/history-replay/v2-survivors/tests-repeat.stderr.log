@@ -1,0 +1,12 @@
+test_corruption_is_only_one_scalar (test_isolation.IsolatedWitnesses.test_corruption_is_only_one_scalar) ... ok
+test_native_rejection_is_isolated (test_isolation.IsolatedWitnesses.test_native_rejection_is_isolated) ... ok
+test_positive_control (test_isolation.IsolatedWitnesses.test_positive_control) ... ok
+test_signature_still_required (test_isolation.IsolatedWitnesses.test_signature_still_required) ... ok
+test_stronger_claim_still_unknown (test_isolation.IsolatedWitnesses.test_stronger_claim_still_unknown) ... ok
+test_type_rejection_is_isolated (test_isolation.IsolatedWitnesses.test_type_rejection_is_isolated) ... ok
+test_type_witness_keeps_role_separation (test_isolation.IsolatedWitnesses.test_type_witness_keeps_role_separation) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.015s
+
+OK
