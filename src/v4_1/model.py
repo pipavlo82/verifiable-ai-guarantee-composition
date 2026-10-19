@@ -12,7 +12,12 @@ contract-required obligation reads are listed as unconsumed_claim_fields and ref
 (UNVERIFIABLE instead when a required check was itself UNVERIFIABLE, so its reads are unknown).
 Consumption is observed (reads of the claim during each obligation's check), not declared.
 
-admit() is the consumer side: it recomputes the digest from the contract the consumer holds.
+admit() is the consumer side: it recomputes C from the evidence (a presented result is never
+trusted on its own flags) and the digest from the contract the consumer holds.
+
+Consumption means observation: a field counts as consumed when a required obligation's check
+read it, not when its value was validated. A predicate that reads a field without testing it
+would mark it consumed; that is a coverage limit of this measure, not something it proves.
 """
 import hashlib, json
 from src.v4.model import ROOT,load,V,R,U,combine,check,facts,predicates
@@ -82,10 +87,18 @@ def evaluate(case,f=None,mode=None):
             'claim_fields':claim_fields,'unconsumed_claim_fields':unconsumed,'claim_reads':reads,'components':components,'executed':executed,
             'all_declared_pass':bv==V,'required':sorted(requirements),'missing_obligations':sorted(set(requirements)-set(cat)),'chain_status':'PARTIAL_CHAIN_VERIFIED'}
 
-def admit(result,contract,claim_type):
-    """Consumer-side check. The digest is recomputed from the consumer's own contract."""
-    c=result.get('C') or {}; b=c.get('binding')
-    if not c.get('authorized') or not b or contract is None:return False
+def admit(result,evidence,contract,claim_type):
+    """Consumer-side check. The presented result is not trusted: C is recomputed from the
+    evidence, and the presented C must equal it exactly (status, authorized and every binding
+    field), so an edited flag or edited binding metadata is refused. The digest is recomputed
+    from the consumer's own contract; since the binding is derived from the contract object,
+    an equal digest also fixes binding.scenario and binding.claim_type to that contract."""
+    c=result.get('C') or {}
+    if contract is None or evidence is None:return False
+    recomputed=evaluate(evidence)['C']
+    if c!=recomputed:return False
+    b=c.get('binding')
+    if not c.get('authorized') or not b:return False
     same_contract=b.get('contract_sha256')==contract_digest(contract)
     same_claim=b.get('claim_type')==claim_type==contract.get('claim_type')
     return same_contract and same_claim

@@ -14,6 +14,9 @@ MUTATIONS=[
  ('O14-coverage','source',"    presence('O14')","    pass # omitted presence enforcement",'omitted_O14','positive_output'),
  ('O14-verification','source',"    verify('O14')","    force('O14')",'negative_O14_self_judged','positive_output'),
  ('claim-fields','source',"claim_fields=check(not unconsumed) if determinate else U","claim_fields=V",'unconsumed_output_under_replay','positive_replay'),
+ ('admit-recompute-authorized','source',"    if c!=recomputed:return False","    pass # presented result trusted",'reused_tampered_authorized','control_output_same_contract'),
+ ('admit-recompute-scenario','source',"    if c!=recomputed:return False","    pass # presented result trusted",'reused_tampered_scenario','control_output_same_contract'),
+ ('admit-recompute-binding','source',"    if c!=recomputed:return False","    pass # presented result trusted",'reused_forged_binding','control_output_same_contract'),
  ('admit-digest','source',"same_contract=b.get('contract_sha256')==contract_digest(contract)","same_contract=True",'reused_under_other_contract','control_output_same_contract'),
  ('admit-claim-type','source',"same_claim=b.get('claim_type')==claim_type==contract.get('claim_type')","same_claim=True",'reused_under_other_claim_type','control_replay_same_contract'),
 ]

@@ -8,6 +8,7 @@ contract consumes (declared below, not derived from the evaluator).
 import copy
 from src.v4.model import ROOT,load,V,R,U
 from src.v4 import scenarios as v4
+from src.v4_1.model import contract_digest
 
 CATALOG=load(ROOT/'fixtures/v4_1/catalog.json')
 OUTPUT=load(ROOT/'fixtures/v4_1/contracts/output.json')
@@ -58,14 +59,28 @@ def cases():
     add('unconsumed_output_under_replay',c,R,'claim_fields',expected_a=V,expected_b=V,v4_expected=V)
     return rows
 
+def _flip_authorized(res):
+    res['C']['authorized']=True;return res
+def _drop_scenario(res):
+    res['C']['binding'].pop('scenario');return res
+def _forge_binding(res):
+    res['C']['binding']={'scenario':OUTPUT['scenario'],'claim_type':OUTPUT['claim_type'],'contract_sha256':contract_digest(OUTPUT)};return res
+
 def reuse_cases():
-    """Consumer-side admission of an authorized result. Fixed expectations."""
+    """Consumer-side admission of a presented result. Fixed expectations.
+    Each case: (name, evidence row or case, edit applied to the presented result or None,
+    contract the consumer holds, claim type requested, expected admit)."""
     replay=load(ROOT/'fixtures/v4/contracts/replay.json')
     weak=weak_output()
     return [
-     # (name, row producing the result, contract the consumer holds, claim type requested, expected admit)
-     ('control_replay_same_contract','positive_replay',replay,replay['claim_type'],True),
-     ('control_output_same_contract','positive_output',OUTPUT,OUTPUT['claim_type'],True),
-     ('reused_under_other_claim_type','positive_replay',replay,OUTPUT['claim_type'],False),
-     ('reused_under_other_contract',weak,OUTPUT,OUTPUT['claim_type'],False),
+     ('control_replay_same_contract','positive_replay',None,replay,replay['claim_type'],True),
+     ('control_output_same_contract','positive_output',None,OUTPUT,OUTPUT['claim_type'],True),
+     ('reused_under_other_claim_type','positive_replay',None,replay,OUTPUT['claim_type'],False),
+     ('reused_under_other_contract',weak,None,OUTPUT,OUTPUT['claim_type'],False),
+     # F1: only C.authorized edited false -> true; status and O14 stay REFUTED.
+     ('reused_tampered_authorized','negative_O14_self_judged',_flip_authorized,OUTPUT,OUTPUT['claim_type'],False),
+     # F2: binding.scenario removed from an otherwise authorized result.
+     ('reused_tampered_scenario','positive_output',_drop_scenario,OUTPUT,OUTPUT['claim_type'],False),
+     # Whole binding rewritten to the consumer's contract on a replay-only result.
+     ('reused_forged_binding','positive_replay',_forge_binding,OUTPUT,OUTPUT['claim_type'],False),
     ]

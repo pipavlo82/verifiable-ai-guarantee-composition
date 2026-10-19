@@ -7979,50 +7979,120 @@
   "reuse": [
     {
       "admitted": true,
-      "binding": {
-        "claim_type": "LAB_REPLAY_ADMISSIBLE",
-        "contract_sha256": "9e7bcb0a13ae8dd04d56bf7762b66d2149dabfbf48f52cf50764e9ee0ad88b77",
-        "scenario": "lab-replay-v1"
-      },
+      "edited": false,
       "expected": true,
       "name": "control_replay_same_contract",
       "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_REPLAY_ADMISSIBLE",
+          "contract_sha256": "9e7bcb0a13ae8dd04d56bf7762b66d2149dabfbf48f52cf50764e9ee0ad88b77",
+          "scenario": "lab-replay-v1"
+        },
+        "status": "VERIFIED"
+      },
       "source_authorized": true
     },
     {
       "admitted": true,
-      "binding": {
-        "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
-        "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
-        "scenario": "lab-output-v2"
-      },
+      "edited": false,
       "expected": true,
       "name": "control_output_same_contract",
       "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+          "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+          "scenario": "lab-output-v2"
+        },
+        "status": "VERIFIED"
+      },
       "source_authorized": true
     },
     {
       "admitted": false,
-      "binding": {
-        "claim_type": "LAB_REPLAY_ADMISSIBLE",
-        "contract_sha256": "9e7bcb0a13ae8dd04d56bf7762b66d2149dabfbf48f52cf50764e9ee0ad88b77",
-        "scenario": "lab-replay-v1"
-      },
+      "edited": false,
       "expected": false,
       "name": "reused_under_other_claim_type",
       "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_REPLAY_ADMISSIBLE",
+          "contract_sha256": "9e7bcb0a13ae8dd04d56bf7762b66d2149dabfbf48f52cf50764e9ee0ad88b77",
+          "scenario": "lab-replay-v1"
+        },
+        "status": "VERIFIED"
+      },
       "source_authorized": true
     },
     {
       "admitted": false,
-      "binding": {
-        "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
-        "contract_sha256": "b82254cb6ea914f848d41af38ad5b3fc8a5478e0d3edc2c153996957742bfc7d",
-        "scenario": "lab-output-v2"
-      },
+      "edited": false,
       "expected": false,
       "name": "reused_under_other_contract",
       "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+          "contract_sha256": "b82254cb6ea914f848d41af38ad5b3fc8a5478e0d3edc2c153996957742bfc7d",
+          "scenario": "lab-output-v2"
+        },
+        "status": "VERIFIED"
+      },
+      "source_authorized": true
+    },
+    {
+      "admitted": false,
+      "edited": true,
+      "expected": false,
+      "name": "reused_tampered_authorized",
+      "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+          "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+          "scenario": "lab-output-v2"
+        },
+        "status": "REFUTED"
+      },
+      "source_authorized": false
+    },
+    {
+      "admitted": false,
+      "edited": true,
+      "expected": false,
+      "name": "reused_tampered_scenario",
+      "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+          "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57"
+        },
+        "status": "VERIFIED"
+      },
+      "source_authorized": true
+    },
+    {
+      "admitted": false,
+      "edited": true,
+      "expected": false,
+      "name": "reused_forged_binding",
+      "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+          "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+          "scenario": "lab-output-v2"
+        },
+        "status": "VERIFIED"
+      },
       "source_authorized": true
     }
   ],
