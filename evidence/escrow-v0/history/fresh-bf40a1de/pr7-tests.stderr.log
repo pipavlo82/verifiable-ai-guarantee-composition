@@ -1,0 +1,21 @@
+test_canonical_order (test_engine.IntegrationTests.test_canonical_order) ... ok
+test_changed_scenario (test_engine.IntegrationTests.test_changed_scenario) ... ok
+test_claim_type_replay (test_engine.IntegrationTests.test_claim_type_replay) ... ok
+test_contract_replay (test_engine.IntegrationTests.test_contract_replay) ... ok
+test_forged_authorized (test_engine.IntegrationTests.test_forged_authorized) ... ok
+test_missing_scenario (test_engine.IntegrationTests.test_missing_scenario) ... ok
+test_modified_verified_scope (test_engine.IntegrationTests.test_modified_verified_scope) ... ok
+test_nested_unconsumed_fields (test_engine.IntegrationTests.test_nested_unconsumed_fields) ... ok
+test_no_original_branch_changes (test_engine.IntegrationTests.test_no_original_branch_changes) ... ok
+test_no_preimage (test_engine.IntegrationTests.test_no_preimage) ... ok
+test_numeric_flag (test_engine.IntegrationTests.test_numeric_flag) ... ok
+test_positive_roundtrip (test_engine.IntegrationTests.test_positive_roundtrip) ... ok
+test_predeclared_scenarios (test_engine.IntegrationTests.test_predeclared_scenarios) ... ok
+test_refuted_true (test_engine.IntegrationTests.test_refuted_true) ... ok
+test_same_key_controller_is_not_inferred (test_engine.IntegrationTests.test_same_key_controller_is_not_inferred) ... ok
+test_semantic_validation_not_read_tracking (test_engine.IntegrationTests.test_semantic_validation_not_read_tracking) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 40.519s
+
+OK

@@ -1,6 +1,14 @@
-import argparse,hashlib,json,os,platform,re,subprocess,sys,time
+import argparse,copy,hashlib,json,os,platform,re,subprocess,sys,time
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
+
+def comparison_semantics(value):
+ # Only measured gas is excluded. All decisions, statuses, deltas, evidence,
+ # counts, assumptions and unexpected fields remain equality-sensitive.
+ result=copy.deepcopy(value)
+ for row in result['rows']:row.pop('release_call_gas')
+ result.pop('hypothetical_1_gwei_positive_call_wei')
+ return result
 def main():
  p=argparse.ArgumentParser();p.add_argument('--out',default='build/escrow/validation');p.add_argument('--skip-onchain-mutations',action='store_true');a=p.parse_args();out=(ROOT/a.out).resolve();out.mkdir(parents=True,exist_ok=True);rows=[]
  forge=os.environ.get('FORGE','C:/Users/msi/.foundry/bin/forge.exe' if os.name=='nt' else 'forge')
@@ -23,6 +31,7 @@ def main():
   folder=out/mode;env=dict(baseenv,LAB_EVIDENCE_DIR=str(folder),LAB_VECTOR_DIR=str(folder),PYTHONOPTIMIZE='1' if mode=='optimized' else '0')
   run('evm-'+mode,[forge,'test','--root',HERE,'--threads','1','--json'],env)
   run('unit-'+mode,[*py,*(['-O'] if mode=='optimized' else []),'-m','unittest','discover','-s',HERE,'-p','test_adapter.py','-v'],env)
+  run('determinism-contract-'+mode,[*py,*(['-O'] if mode=='optimized' else []),'-m','unittest','discover','-s',HERE,'-p','test_determinism.py','-v'],env)
   run('comparison-'+mode,[*py,prefix+'analyze.py',folder],env)
   run('secondary-'+mode,['node',prefix+'secondary.mjs',folder],env)
   run('mutations-'+mode,[*py,prefix+'mutations.py',out/('mutations-'+mode)],env)
@@ -31,10 +40,12 @@ def main():
  run('pr7-mutations',[*py,'tools/integration/mutations.py','--out',out/'pr7-mutations'])
  run('baseline-integrity-after',[*py,prefix+'integrity.py'])
  deterministic={}
- for name in ('comparison','secondary'):
-  values=[json.loads((out/(name+'-'+m+'.stdout.log')).read_bytes()) for m in ('normal','repeat','optimized')];deterministic[name]=values[0]==values[1]==values[2]
+ comparisons=[json.loads((out/('comparison-'+m+'.stdout.log')).read_bytes()) for m in ('normal','repeat','optimized')]
+ semantic=[comparison_semantics(v) for v in comparisons];deterministic['comparison_semantics']=semantic[0]==semantic[1]==semantic[2]
+ values=[json.loads((out/('secondary-'+m+'.stdout.log')).read_bytes()) for m in ('normal','repeat','optimized')];deterministic['secondary']=values[0]==values[1]==values[2]
  deterministic['vectors']=all((out/'normal'/f.name).read_bytes()==(out/'repeat'/f.name).read_bytes()==(out/'optimized'/f.name).read_bytes() for f in (out/'normal').glob('*-offchain.json'))
  deterministic['mutations']=len({hashlib.sha256((out/('mutations-'+m)/'report.json').read_bytes()).hexdigest() for m in ('normal','repeat','optimized')})==1
  report={'commands':rows,'python':sys.version,'platform':platform.platform(),'source_inventory':before,'source_unchanged':before==inv(),'determinism':deterministic,'comparison':json.loads((out/'comparison-normal.stdout.log').read_bytes()),'adapter_mutations':json.loads((out/'mutations-normal/report.json').read_bytes())['counts'],'onchain_mutations':json.loads((out/'onchain-mutations/report.json').read_bytes())['counts'] if not a.skip_onchain_mutations else None,'passed':before==inv() and all(deterministic.values())}
+ report['gas_observations']={'identical_across_modes':comparisons[0]==comparisons[1]==comparisons[2],'per_mode':{mode:{row['name']:row['release_call_gas'] for row in value['rows']} for mode,value in zip(('normal','repeat','optimized'),comparisons)},'scope':'Measured warm-call gas, sensitive to harness output-path memory allocation; retained separately from exact authorization and token-delta equality.'}
  (out/'report.json').write_text(json.dumps(report,indent=2,sort_keys=True)+'\n',encoding='utf8',newline='\n');print(json.dumps({k:report[k] for k in ('passed','determinism','adapter_mutations','onchain_mutations')}));return 0 if report['passed'] else 1
 if __name__=='__main__':raise SystemExit(main())

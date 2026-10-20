@@ -1,0 +1,17 @@
+{
+  "compiled_runtime_identical": true,
+  "equal_length_gas_reproduced": true,
+  "path_lengths": {
+    "equal_length": 86,
+    "long": 100,
+    "reference": 86
+  },
+  "paths": {
+    "equal_length": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\ggggggggggggggggg",
+    "long": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\normal",
+    "reference": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\normal"
+  },
+  "rows": [],
+  "scope": "One controlled output-path-length change in the unchanged test harness, excluding rows overwritten by separate test methods in the reference full suite.",
+  "semantic_results_identical": true
+}

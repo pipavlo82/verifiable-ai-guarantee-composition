@@ -1,0 +1,268 @@
+{
+  "compiled_runtime_identical": true,
+  "equal_length_gas_reproduced": true,
+  "executed_test_methods": 1,
+  "executed_vectors": 31,
+  "path_lengths": {
+    "equal_length": 86,
+    "long": 100,
+    "reference": 86
+  },
+  "paths": {
+    "equal_length": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\ggggggggggggggggg",
+    "long": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\normal",
+    "reference": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\normal"
+  },
+  "rows": [
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36666,
+      "long_path_gas": 36651,
+      "name": "A_wrong_scope",
+      "reference_gas": 36651,
+      "same_test_context": false
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36603,
+      "long_path_gas": 36603,
+      "name": "B_missing_obligation",
+      "reference_gas": 36603,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 9991,
+      "long_path_gas": 9991,
+      "name": "C_other_escrow",
+      "reference_gas": 9991,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36914,
+      "long_path_gas": 36915,
+      "name": "changed_scenario_digest",
+      "reference_gas": 36914,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 10004,
+      "long_path_gas": 10004,
+      "name": "D_other_chain",
+      "reference_gas": 10004,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36715,
+      "long_path_gas": 36715,
+      "name": "E_other_recipient",
+      "reference_gas": 36715,
+      "same_test_context": false
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36939,
+      "long_path_gas": 36941,
+      "name": "expired_after_signing",
+      "reference_gas": 36939,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36728,
+      "long_path_gas": 36728,
+      "name": "F_other_amount",
+      "reference_gas": 36728,
+      "same_test_context": false
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 11868,
+      "long_path_gas": 11870,
+      "name": "false_returning_token",
+      "reference_gas": 11868,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 10045,
+      "long_path_gas": 10046,
+      "name": "G_other_payment",
+      "reference_gas": 10045,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 1618,
+      "long_path_gas": 1619,
+      "name": "H_replay",
+      "reference_gas": 1618,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 3953,
+      "long_path_gas": 3955,
+      "name": "high_s",
+      "reference_gas": 3953,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36764,
+      "long_path_gas": 36650,
+      "name": "I_expired",
+      "reference_gas": 36650,
+      "same_test_context": false
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 3937,
+      "long_path_gas": 3940,
+      "name": "invalid_signature",
+      "reference_gas": 3937,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36789,
+      "long_path_gas": 36789,
+      "name": "J_revoked",
+      "reference_gas": 36789,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 10009,
+      "long_path_gas": 10009,
+      "name": "J_unauthorized",
+      "reference_gas": 10009,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36801,
+      "long_path_gas": 36801,
+      "name": "K_evidence_digest",
+      "reference_gas": 36801,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36738,
+      "long_path_gas": 36739,
+      "name": "L_no_contract",
+      "reference_gas": 36738,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 14264,
+      "long_path_gas": 13901,
+      "name": "lying_token",
+      "reference_gas": 13901,
+      "same_test_context": false
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36826,
+      "long_path_gas": 36827,
+      "name": "M_unverified_field",
+      "reference_gas": 36826,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36926,
+      "long_path_gas": 36929,
+      "name": "missing_profile",
+      "reference_gas": 36926,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36763,
+      "long_path_gas": 36764,
+      "name": "N_self_judgment",
+      "reference_gas": 36763,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 10363,
+      "long_path_gas": 10365,
+      "name": "negated_s",
+      "reference_gas": 10363,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36901,
+      "long_path_gas": 36903,
+      "name": "nonce_reused_other_job",
+      "reference_gas": 36901,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 1717,
+      "long_path_gas": 1718,
+      "name": "O_duplicate",
+      "reference_gas": 1717,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36788,
+      "long_path_gas": 36789,
+      "name": "P_incorrect_authorization",
+      "reference_gas": 36788,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36654,
+      "long_path_gas": 36654,
+      "name": "positive",
+      "reference_gas": 36654,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36800,
+      "long_path_gas": 36801,
+      "name": "Q_record_tamper",
+      "reference_gas": 36800,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36888,
+      "long_path_gas": 36890,
+      "name": "R_other_profile",
+      "reference_gas": 36888,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 1910,
+      "long_path_gas": 1912,
+      "name": "refund_then_release",
+      "reference_gas": 1910,
+      "same_test_context": true
+    },
+    {
+      "authorization_and_transfer_equal": true,
+      "equal_length_path_gas": 36951,
+      "long_path_gas": 36953,
+      "name": "revoked_after_signing",
+      "reference_gas": 36951,
+      "same_test_context": true
+    }
+  ],
+  "scope": "One controlled output-path-length change in the unchanged test harness, excluding rows overwritten by separate test methods in the reference full suite.",
+  "semantic_results_identical": true
+}

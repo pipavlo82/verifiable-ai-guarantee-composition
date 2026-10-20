@@ -1,0 +1,1 @@
+The anchored selector matched zero tests. Its vacuous booleans are INVALID, provide no coverage and are not accepted. The corrected probe requires one successful test method and all 31 vector records.

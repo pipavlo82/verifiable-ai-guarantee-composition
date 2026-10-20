@@ -1,0 +1,236 @@
+{
+  "rows": [
+    {
+      "name": "A_wrong_scope",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "B_missing_obligation",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "C_other_escrow",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "D_other_chain",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "E_other_recipient",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "F_other_amount",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "G_other_payment",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "H_replay",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "I_expired",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "J_revoked",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "J_unauthorized",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "K_evidence_digest",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "L_no_contract",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "M_unverified_field",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "N_self_judgment",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "O_duplicate",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "P_incorrect_authorization",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "Q_record_tamper",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "R_other_profile",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "changed_scenario_digest",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "expired_after_signing",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "false_returning_token",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "high_s",
+      "digest_equal": true,
+      "python_schnorr": false,
+      "node_schnorr": false,
+      "agreement": true
+    },
+    {
+      "name": "invalid_signature",
+      "digest_equal": true,
+      "python_schnorr": false,
+      "node_schnorr": false,
+      "agreement": true
+    },
+    {
+      "name": "lying_token",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "missing_profile",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "negated_s",
+      "digest_equal": true,
+      "python_schnorr": false,
+      "node_schnorr": false,
+      "agreement": true
+    },
+    {
+      "name": "nonce_first_payment",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "nonce_reused_other_job",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "nonce_second_payment",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "positive",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "refund_then_release",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    },
+    {
+      "name": "revoked_after_signing",
+      "digest_equal": true,
+      "python_schnorr": true,
+      "node_schnorr": true,
+      "agreement": true
+    }
+  ],
+  "passed": true
+}

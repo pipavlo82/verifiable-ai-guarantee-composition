@@ -1,0 +1,6 @@
+chain KILLED
+escrow_address KILLED
+trusted_signer KILLED
+replay_guard KILLED
+state_consumption KILLED
+{"KILLED": 5, "SURVIVED": 0, "CRASHED": 0, "NOT_APPLIED": 0, "UNVERIFIABLE": 0}

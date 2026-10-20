@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:/Users/msi/.foundry/bin/forge.exe",
+    "test",
+    "--root",
+    "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+    "--match-test",
+    "test_all_vectors",
+    "--threads",
+    "1",
+    "--json"
+  ],
+  "exit": 0,
+  "LAB_EVIDENCE_DIR": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\ggggggggggggggggg"
+}

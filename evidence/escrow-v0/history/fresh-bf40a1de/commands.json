@@ -1,0 +1,418 @@
+[
+  {
+    "name": "baseline-integrity",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/integrity.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 4.235276000050362,
+    "stdout_sha256": "c35fc7abcd0fe64b974726b0bb9a694b1f11ba684c1acf45f5d05dab17e289e2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "forge-version",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 0.023841499991249293,
+    "stdout_sha256": "92280b6d2d5f80227bfa96c6e60b22b7365806aeb514e4ce2429f3b7424b12f9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "core-integrity",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/integrity.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 2.1487673000083305,
+    "stdout_sha256": "ba5d855f04210451bced1bae708e2004c8621416aed3bc0b08382ec3829df1a6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "stock-clean-build",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "build",
+      "--force",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\stock\\integrations\\verdict-escrow",
+      "--remappings",
+      "forge-std/=C:/Users/msi/Documents/Codex/vagc-escrow-fresh-20261020/build/escrow/lib/forge-std/src/",
+      "--lib-paths",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\lib\\forge-std"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 2.387134100019466,
+    "stdout_sha256": "f7ef8c896f18e01a7922386b79423d805776a53a36685441c1d62a63344786df",
+    "stderr_sha256": "9e776cd80ccf5d7d8c23eb558fbc5c27ebd8ce290f3462e94d2212e6c0c0f002"
+  },
+  {
+    "name": "stock-seven-tests",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "test",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\stock\\integrations\\verdict-escrow",
+      "--remappings",
+      "forge-std/=C:/Users/msi/Documents/Codex/vagc-escrow-fresh-20261020/build/escrow/lib/forge-std/src/",
+      "--lib-paths",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\lib\\forge-std",
+      "--json"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 1.3460037999902852,
+    "stdout_sha256": "79bdc8797cdd0aa776b3d918af61d42518e990c105f53a479e8bc1aa19b89b6c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "joint-clean-build",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "build",
+      "--force",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 6.461016900022514,
+    "stdout_sha256": "1cc8e7bab5dc433ec02792b37ecea3d8efc33faab7945ece5a7cfbcedc3ee971",
+    "stderr_sha256": "3abb4ab7aea08e1b082096760170ec5114f7c69356cf7cd8eba8fb1e3d2f84f6"
+  },
+  {
+    "name": "evm-normal",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "test",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+      "--threads",
+      "1",
+      "--json"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 81.55653470003745,
+    "stdout_sha256": "cc4494399f627d01951ef80109057e780e1d27d4a486f0836a494c74379881b6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "unit-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+      "-p",
+      "test_adapter.py",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 2.23088160000043,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "f3ab2473feaa3683bbe9347cc24a652dc861f3c1b4307341004dd10202552feb"
+  },
+  {
+    "name": "comparison-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/analyze.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\normal"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 3.5291579000186175,
+    "stdout_sha256": "1c2238df237654f0674b08db0d1356b507fb18b971216644e918a1b9f14181d8",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "secondary-normal",
+    "command": [
+      "node",
+      "experiments/verdict_escrow/secondary.mjs",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\normal"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 0.25986039999406785,
+    "stdout_sha256": "75d90e632da87d88f6d4909668e9abc99eff0575eed282f82674848853cc4a83",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "mutations-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/mutations.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\mutations-normal"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 79.29690980003215,
+    "stdout_sha256": "f2d2617202cb768132c2f1d4041b0b6396a289c0d023b4d8949ef0549a205dd1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "evm-repeat",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "test",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+      "--threads",
+      "1",
+      "--json"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 83.98295360000338,
+    "stdout_sha256": "f173d47bea4a5c668e7c5d95c385adc10e400ec07920f480c31d370baebb07eb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "unit-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+      "-p",
+      "test_adapter.py",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 2.2705816000234336,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "9e32bff7be547851ca692c6b6ed25c85f3df325538bcbb2a080e07f0d53afaab"
+  },
+  {
+    "name": "comparison-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/analyze.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 3.8662547999992967,
+    "stdout_sha256": "1c2238df237654f0674b08db0d1356b507fb18b971216644e918a1b9f14181d8",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "secondary-repeat",
+    "command": [
+      "node",
+      "experiments/verdict_escrow/secondary.mjs",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 0.2688729999936186,
+    "stdout_sha256": "75d90e632da87d88f6d4909668e9abc99eff0575eed282f82674848853cc4a83",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "mutations-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/mutations.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\mutations-repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 82.19952939997893,
+    "stdout_sha256": "f2d2617202cb768132c2f1d4041b0b6396a289c0d023b4d8949ef0549a205dd1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "evm-optimized",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "test",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+      "--threads",
+      "1",
+      "--json"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 91.07247130002361,
+    "stdout_sha256": "583b8920a5e9f960c0abc721cd3cbfc77d96728ca57c62f2780d2b7e86a1a4b9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "unit-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\experiments\\verdict_escrow",
+      "-p",
+      "test_adapter.py",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 2.542297200008761,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "0325457f15ef222966d991c2f3bdf347fdbca0e8ad5560c102784f362c578f89"
+  },
+  {
+    "name": "comparison-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/analyze.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\optimized"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 3.7903327999520116,
+    "stdout_sha256": "f0fa51977452bf706183a144ad4ff5998749dfbbaed130e8a350e7b71ac33e1b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "secondary-optimized",
+    "command": [
+      "node",
+      "experiments/verdict_escrow/secondary.mjs",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\optimized"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 0.2636037999764085,
+    "stdout_sha256": "75d90e632da87d88f6d4909668e9abc99eff0575eed282f82674848853cc4a83",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "mutations-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/mutations.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\mutations-optimized"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 80.6498605000088,
+    "stdout_sha256": "f2d2617202cb768132c2f1d4041b0b6396a289c0d023b4d8949ef0549a205dd1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "onchain-mutations",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/onchain_mutations.py",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\onchain-mutations"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 147.00673059996916,
+    "stdout_sha256": "ee0d2cd0f918ef56ca9c4764526f0ce45145b722837b31f187065e77fda08262",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "pr7-tests",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 40.713494700030424,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c02a6e5f25eb346b1f8893b6f94c910c600c90082f37f81e99d748790d302cef"
+  },
+  {
+    "name": "pr7-mutations",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/mutations.py",
+      "--out",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\pr7-mutations"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 47.24579889996676,
+    "stdout_sha256": "1c95abfbed627f5ec43f7714d8e4f96e9c91fca03f8774b52e0011dd90abc270",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "baseline-integrity-after",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "experiments/verdict_escrow/integrity.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020",
+    "exit": 0,
+    "elapsed_seconds": 4.536110900051426,
+    "stdout_sha256": "c35fc7abcd0fe64b974726b0bb9a694b1f11ba684c1acf45f5d05dab17e289e2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]
