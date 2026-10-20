@@ -1,0 +1,396 @@
+[
+  {
+    "name": "integrity-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/integrity.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 3.6049375000293367,
+    "tests": null,
+    "stdout_sha256": "ba5d855f04210451bced1bae708e2004c8621416aed3bc0b08382ec3829df1a6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "source-pins",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v3/verify_sources.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 0.7581609999760985,
+    "tests": null,
+    "stdout_sha256": "d8bea50dca3f20fb2185b3cb71e3debed8cefb3cfc7baed282601ceb5b90316d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "core-python",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+      "--check"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 0.23302879999391735,
+    "tests": null,
+    "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "core-typescript",
+    "command": [
+      "C:/Users/msi/.bun/bin/bun.exe",
+      "evidence/erc8404/core/conformance/rvr-v0/adapter.ts",
+      "--check"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 0.3399599000113085,
+    "tests": null,
+    "stdout_sha256": "ded4743ff34cdf587363e9b334df4f5d90707feb0968a0fcdc6c4b9e1fd30ed0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "tests-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 27.99565930000972,
+    "tests": 16,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "00ed2fe3108c30653eed614da1a2baece3acd6952035b6461c2e9eef9306cf3e"
+  },
+  {
+    "name": "comparison-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/run.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 76.88092259998666,
+    "tests": null,
+    "stdout_sha256": "b1ae03c5d7954c7df64f50d8d941ca98778efbbb7aae0be6c7e0d3b7cd07077b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "mutations-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/mutations.py",
+      "--out",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\build\\integration\\prepublication\\mutations-normal"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 28.389222299971152,
+    "tests": null,
+    "stdout_sha256": "69b3a840bb98972426f4e53a622fc52b7c8b9ef7e2b3f47c0260adef6632ca98",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "pr5-targeted-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/pr5_controls.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 18.152283100003842,
+    "tests": null,
+    "stdout_sha256": "a37ddefacb19f8cca149b4b9975cca4ec6e5aa355e62040185d272c68814295c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "fallback-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/survivor.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 1.07632759999251,
+    "tests": null,
+    "stdout_sha256": "0548289145c0501ee592c398740976ad9e9129d9a1bf3428e9ae04522eb48677",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "read-tracking-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/read_tracking.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 1.7026176999788731,
+    "tests": null,
+    "stdout_sha256": "6860b6727a9a5600362fa5e40596936ead93e9ee4e420666802ce31ea11c0822",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "tests-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 28.399374500033446,
+    "tests": 16,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "3501a2608ce49bc388d415b891fcfea48c79ad8b418413cbc4b01f4cc0ccab2b"
+  },
+  {
+    "name": "comparison-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/run.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 81.8276641999837,
+    "tests": null,
+    "stdout_sha256": "b1ae03c5d7954c7df64f50d8d941ca98778efbbb7aae0be6c7e0d3b7cd07077b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "mutations-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/mutations.py",
+      "--out",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\build\\integration\\prepublication\\mutations-repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 29.36414680001326,
+    "tests": null,
+    "stdout_sha256": "69b3a840bb98972426f4e53a622fc52b7c8b9ef7e2b3f47c0260adef6632ca98",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "pr5-targeted-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/pr5_controls.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 18.41968039999483,
+    "tests": null,
+    "stdout_sha256": "a37ddefacb19f8cca149b4b9975cca4ec6e5aa355e62040185d272c68814295c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "fallback-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/survivor.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 1.2503536000149325,
+    "tests": null,
+    "stdout_sha256": "0548289145c0501ee592c398740976ad9e9129d9a1bf3428e9ae04522eb48677",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "read-tracking-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/read_tracking.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 1.887368299998343,
+    "tests": null,
+    "stdout_sha256": "6860b6727a9a5600362fa5e40596936ead93e9ee4e420666802ce31ea11c0822",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "tests-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 29.73095340002328,
+    "tests": 16,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c0c5dc7bd5f5adc7bd9d503656637149cdf72306b847a573736d4a00daddafe3"
+  },
+  {
+    "name": "comparison-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "tools/integration/run.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 78.25010689999908,
+    "tests": null,
+    "stdout_sha256": "b1ae03c5d7954c7df64f50d8d941ca98778efbbb7aae0be6c7e0d3b7cd07077b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "mutations-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "tools/integration/mutations.py",
+      "--out",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\build\\integration\\prepublication\\mutations-optimized"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 29.32151259999955,
+    "tests": null,
+    "stdout_sha256": "69b3a840bb98972426f4e53a622fc52b7c8b9ef7e2b3f47c0260adef6632ca98",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "pr5-targeted-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "tools/integration/pr5_controls.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 18.569047800032422,
+    "tests": null,
+    "stdout_sha256": "a37ddefacb19f8cca149b4b9975cca4ec6e5aa355e62040185d272c68814295c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "fallback-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "tools/integration/survivor.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 1.2223869999870658,
+    "tests": null,
+    "stdout_sha256": "0548289145c0501ee592c398740976ad9e9129d9a1bf3428e9ae04522eb48677",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "read-tracking-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "tools/integration/read_tracking.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 0,
+    "elapsed_seconds": 1.9047798999818042,
+    "tests": null,
+    "stdout_sha256": "6860b6727a9a5600362fa5e40596936ead93e9ee4e420666802ce31ea11c0822",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "secondary-crypto-native",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/integration/secondary.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+    "exit": 1,
+    "elapsed_seconds": 2.1079815000412054,
+    "tests": null,
+    "stdout_sha256": "c027c0e43ab2b4880fcc741addc28697909c8a68f330849ede37ef224128b9be",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

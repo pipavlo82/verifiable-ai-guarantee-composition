@@ -1,0 +1,185 @@
+{
+  "catalog_restored": true,
+  "catalog_sha256": "bdc3fb800628c11d085e17849d10b47cea9b7c293e8ca303dad7ebe40a7b71e1",
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 9,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "mutations": [
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "CATALOG_DELETION_DETECTED",
+      "id": "O14-catalog",
+      "kind": "catalog",
+      "mutant": false,
+      "mutant_sha256": "f88e4b3ae3c05d7e26fc65882f63a4f6d5eb63054dd4dda3315598bec524d433",
+      "positive": "positive_output",
+      "positive_before": true,
+      "positive_mutant": false,
+      "positive_restored": true,
+      "replacement": null,
+      "restored": false,
+      "witness": "negative_O14_self_judged"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "O14-coverage",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "0f6bda169d53d1ce36ffe6520cc0bbf118738b92ae8a1e0b8b3b5cc53be4198f",
+      "positive": "positive_output",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    presence('O14')",
+        "to": "    pass # omitted presence enforcement"
+      },
+      "restored": false,
+      "witness": "omitted_O14"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "O14-verification",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "ccab848c60983b3f6a74c7ce9d54113438d8a09b222a11e0e8257585444a4527",
+      "positive": "positive_output",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    verify('O14')",
+        "to": "    force('O14')"
+      },
+      "restored": false,
+      "witness": "negative_O14_self_judged"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "claim-fields",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "147f509a3bd5c1274ddfbcb271b03ea9f5195634beabd4a91a8f98b23e22b44a",
+      "positive": "positive_replay",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "claim_fields=check(not unconsumed) if determinate else U",
+        "to": "claim_fields=V"
+      },
+      "restored": false,
+      "witness": "unconsumed_output_under_replay"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-recompute-authorized",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "f7a4a24e26214cc23b585c7289b2921047b7a7e1d16155864a6d5e638fa0c79d",
+      "positive": "control_output_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    if c!=recomputed:return False",
+        "to": "    pass # presented result trusted"
+      },
+      "restored": false,
+      "witness": "reused_tampered_authorized"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-recompute-scenario",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "f7a4a24e26214cc23b585c7289b2921047b7a7e1d16155864a6d5e638fa0c79d",
+      "positive": "control_output_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    if c!=recomputed:return False",
+        "to": "    pass # presented result trusted"
+      },
+      "restored": false,
+      "witness": "reused_tampered_scenario"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-recompute-binding",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "f7a4a24e26214cc23b585c7289b2921047b7a7e1d16155864a6d5e638fa0c79d",
+      "positive": "control_output_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "    if c!=recomputed:return False",
+        "to": "    pass # presented result trusted"
+      },
+      "restored": false,
+      "witness": "reused_forged_binding"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-digest",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "e796a9d1ff35d92db8b0d19ca93160e276ab74622c6ef716c39cd3c0ba6a60e1",
+      "positive": "control_output_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "same_contract=b.get('contract_sha256')==contract_digest(contract)",
+        "to": "same_contract=True"
+      },
+      "restored": false,
+      "witness": "reused_under_other_contract"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "effect": "UNSUPPORTED_AUTHORIZATION",
+      "id": "admit-claim-type",
+      "kind": "source",
+      "mutant": true,
+      "mutant_sha256": "210bf51b61eb675095e38e3c8c37957cdb727bc946bd1d942678a096eef0aa6d",
+      "positive": "control_replay_same_contract",
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "replacement": {
+        "from": "same_claim=b.get('claim_type')==claim_type==contract.get('claim_type')",
+        "to": "same_claim=True"
+      },
+      "restored": false,
+      "witness": "reused_under_other_claim_type"
+    }
+  ],
+  "passed": true,
+  "schema": "v4.1-physical-mutations",
+  "source_restored": true,
+  "source_sha256": "7c7a6222a23d4d82a99e1b1f7bb20433674c9c3a4791965f6b92b48b33c3f4b5"
+}

@@ -1,0 +1,413 @@
+{
+  "ancestry": [
+    {
+      "ancestor_pr": "2",
+      "descendant_pr": "3"
+    },
+    {
+      "ancestor_pr": "2",
+      "descendant_pr": "4"
+    },
+    {
+      "ancestor_pr": "2",
+      "descendant_pr": "5"
+    },
+    {
+      "ancestor_pr": "2",
+      "descendant_pr": "6"
+    },
+    {
+      "ancestor_pr": "3",
+      "descendant_pr": "4"
+    },
+    {
+      "ancestor_pr": "3",
+      "descendant_pr": "5"
+    },
+    {
+      "ancestor_pr": "3",
+      "descendant_pr": "6"
+    },
+    {
+      "ancestor_pr": "4",
+      "descendant_pr": "5"
+    },
+    {
+      "ancestor_pr": "4",
+      "descendant_pr": "6"
+    }
+  ],
+  "main": "18a5916098addf6447700ed95441125bfa7079c3",
+  "prs": {
+    "2": {
+      "author": "pipavlo82",
+      "auto_merge": null,
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "base_ref": "main",
+      "checks": 8,
+      "draft": true,
+      "head": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "head_ref": "research/real-artifact-composition-v2",
+      "merged": false,
+      "reviews": [],
+      "runs": [
+        {
+          "conclusion": "success",
+          "id": 38969191207,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969191207"
+        },
+        {
+          "conclusion": "success",
+          "id": 38969191208,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969191208"
+        },
+        {
+          "conclusion": "success",
+          "id": 38969191251,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969191251"
+        },
+        {
+          "conclusion": "success",
+          "id": 38969185220,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969185220"
+        },
+        {
+          "conclusion": "success",
+          "id": 38969185272,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969185272"
+        },
+        {
+          "conclusion": "success",
+          "id": 38969185327,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38969185327"
+        }
+      ],
+      "state": "open"
+    },
+    "3": {
+      "author": "pipavlo82",
+      "auto_merge": null,
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "base_ref": "main",
+      "checks": 10,
+      "draft": true,
+      "head": "98ffba16730030c797c47766e13a5314181ba2f6",
+      "head_ref": "research/complete-real-evidence-chain-v3",
+      "merged": false,
+      "reviews": [],
+      "runs": [
+        {
+          "conclusion": "success",
+          "id": 38996696864,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996696864"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996696867,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996696867"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996696876,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996696876"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996697031,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996697031"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996694518,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996694518"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996694446,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996694446"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996694454,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996694454"
+        },
+        {
+          "conclusion": "success",
+          "id": 38996694508,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/38996694508"
+        }
+      ],
+      "state": "open"
+    },
+    "4": {
+      "author": "pipavlo82",
+      "auto_merge": null,
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "base_ref": "main",
+      "checks": 12,
+      "draft": true,
+      "head": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+      "head_ref": "research/verification-obligation-coverage-v4",
+      "merged": false,
+      "reviews": [],
+      "runs": [
+        {
+          "conclusion": "success",
+          "id": 39152701942,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152701942"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152701969,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152701969"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152701933,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152701933"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152701900,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152701900"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152701909,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152701909"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152698097,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152698097"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152698080,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152698080"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152698081,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152698081"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152698102,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152698102"
+        },
+        {
+          "conclusion": "success",
+          "id": 39152698155,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39152698155"
+        }
+      ],
+      "state": "open"
+    },
+    "5": {
+      "author": "babyblueviper1",
+      "auto_merge": null,
+      "base": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+      "base_ref": "research/verification-obligation-coverage-v4",
+      "checks": 0,
+      "draft": false,
+      "head": "c14d96b0a63fceba02b2cb4469d5b3228ae46612",
+      "head_ref": "research/v4.1-checker-independence-binding",
+      "merged": false,
+      "reviews": [
+        {
+          "_links": {
+            "html": {
+              "href": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/pull/5#pullrequestreview-5566365899"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/pipavlo82/verifiable-ai-guarantee-composition/pulls/5"
+            }
+          },
+          "author_association": "OWNER",
+          "body": "LGTM for the two admission-boundary fixes at c14d96b0a63fceba02b2cb4469d5b3228ae46612, as detailed in https://github.com/pipavlo82/verifiable-ai-guarantee-composition/pull/5#issuecomment-6258448494. Approval is limited to the reviewed research implementation. No merge yet: the combined composition review with #6 and successful CI remain required. The documented research limitations remain unchanged.",
+          "commit_id": "c14d96b0a63fceba02b2cb4469d5b3228ae46612",
+          "html_url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/pull/5#pullrequestreview-5566365899",
+          "id": 5566365899,
+          "node_id": "PRR_kwDOVMZGKc8AAAABS8gAyw",
+          "pull_request_url": "https://api.github.com/repos/pipavlo82/verifiable-ai-guarantee-composition/pulls/5",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-19T02:36:25Z",
+          "user": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/212635108?u=39f7dee5d026407aa1d0a30918413460fdb7fb5f&v=4",
+            "events_url": "https://api.github.com/users/pipavlo82/events{/privacy}",
+            "followers_url": "https://api.github.com/users/pipavlo82/followers",
+            "following_url": "https://api.github.com/users/pipavlo82/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pipavlo82/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/pipavlo82",
+            "id": 212635108,
+            "login": "pipavlo82",
+            "node_id": "U_kgDODKyN5A",
+            "organizations_url": "https://api.github.com/users/pipavlo82/orgs",
+            "received_events_url": "https://api.github.com/users/pipavlo82/received_events",
+            "repos_url": "https://api.github.com/users/pipavlo82/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/pipavlo82/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pipavlo82/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/pipavlo82",
+            "user_view_type": "public"
+          }
+        }
+      ],
+      "runs": [
+        {
+          "conclusion": "action_required",
+          "id": 39186213965,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39186213965"
+        },
+        {
+          "conclusion": "action_required",
+          "id": 39186213763,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39186213763"
+        },
+        {
+          "conclusion": "action_required",
+          "id": 39186213777,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39186213777"
+        },
+        {
+          "conclusion": "action_required",
+          "id": 39186213761,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39186213761"
+        },
+        {
+          "conclusion": "action_required",
+          "id": 39186213828,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39186213828"
+        },
+        {
+          "conclusion": "action_required",
+          "id": 39186213813,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39186213813"
+        }
+      ],
+      "state": "open"
+    },
+    "6": {
+      "author": "pipavlo82",
+      "auto_merge": null,
+      "base": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+      "base_ref": "research/verification-obligation-coverage-v4",
+      "checks": 14,
+      "draft": true,
+      "head": "b0e894db53d58370df0d9959e070a1302f4a5787",
+      "head_ref": "research/erc8404-claim-aware-compatibility",
+      "merged": false,
+      "reviews": [],
+      "runs": [
+        {
+          "conclusion": "success",
+          "id": 39180606589,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180606589"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180606586,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180606586"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180606548,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180606548"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180606553,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180606553"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180606603,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180606603"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180606568,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180606568"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180604551,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180604551"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180604630,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180604630"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180604604,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180604604"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180604619,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180604619"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180604489,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180604489"
+        },
+        {
+          "conclusion": "success",
+          "id": 39180604639,
+          "status": "completed",
+          "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39180604639"
+        }
+      ],
+      "state": "open"
+    }
+  },
+  "repository": "pipavlo82/verifiable-ai-guarantee-composition",
+  "root": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019"
+}

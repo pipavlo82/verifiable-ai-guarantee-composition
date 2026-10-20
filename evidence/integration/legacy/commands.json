@@ -1,0 +1,22 @@
+[
+  {
+    "name": "v0-tests-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_composition.py",
+      "-v"
+    ],
+    "exit": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "ff56e91a7f2f86e25a4d69c266a75c62c789b6a42bcd73d889a2ef5a889d7d69"
+  }
+]

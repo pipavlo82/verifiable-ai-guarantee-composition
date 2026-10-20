@@ -1,0 +1,83 @@
+{
+  "admission_controls": 20,
+  "benchmark_seconds": {
+    "A": {
+      "mean": 0.3589997655754054,
+      "samples": 61,
+      "total": 21.89898570009973
+    },
+    "B": {
+      "mean": 0.490162734427016,
+      "samples": 61,
+      "total": 29.89992680004798
+    },
+    "C": {
+      "mean": 0.493534957379347,
+      "samples": 61,
+      "total": 30.105632400140166
+    },
+    "D": {
+      "mean": 0.49154817869459266,
+      "samples": 61,
+      "total": 29.98443890037015
+    }
+  },
+  "chain_status": "PARTIAL_CHAIN_VERIFIED",
+  "comparison": {
+    "A": {
+      "correct_refusals": 8,
+      "false_authorizations": 51,
+      "missing_obligation_detection": 0,
+      "positive_authorizations": 2,
+      "unverifiable": 4
+    },
+    "B": {
+      "correct_refusals": 46,
+      "false_authorizations": 13,
+      "missing_obligation_detection": 0,
+      "positive_authorizations": 2,
+      "unverifiable": 16
+    },
+    "C": {
+      "correct_refusals": 59,
+      "false_authorizations": 0,
+      "missing_obligation_detection": 10,
+      "positive_authorizations": 2,
+      "unverifiable": 16
+    },
+    "D": {
+      "correct_refusals": 59,
+      "false_authorizations": 0,
+      "missing_obligation_detection": 10,
+      "positive_authorizations": 2,
+      "unverifiable": 16
+    }
+  },
+  "mutations": {
+    "CRASHED": 0,
+    "KILLED": 22,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "pr5": "16 tests x3; 57 scenarios; 7 reuse controls; 9 killed controls / 7 unique edits; original physical CLI + targeted modes",
+  "pr6": "17 tests x3; 45 scenarios; original 16 killed / 1 survived preserved; canonical-carrier isolation killed separately",
+  "real_evidence_level": "LABORATORY_VERIFIED",
+  "resolved_development_findings": [
+    "Initial secondary negative added an unsigned provenance field; corrected to signed LabJudgment.subject.",
+    "O14 name alone was insufficient in the first joint prototype; final joint policy verifies actual recovered key inequality. Original development witness retained.",
+    "The final joint contract explicitly pins the separate PR5 authority/model/scope policy bytes; a valid alternative signed policy must not inherit that commitment.",
+    "The final component-only baseline verifies all five signatures, native proof and RVR independently and does not impose the joint contract carrier gate. Superseded baseline counts are development evidence only."
+  ],
+  "scenarios": 61,
+  "schema": "claim-aware-integration-prepublication-v1",
+  "source_shas": {
+    "main": "18a5916098addf6447700ed95441125bfa7079c3",
+    "pr2": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+    "pr3": "98ffba16730030c797c47766e13a5314181ba2f6",
+    "pr4": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+    "pr5": "c14d96b0a63fceba02b2cb4469d5b3228ae46612",
+    "pr6": "b0e894db53d58370df0d9959e070a1302f4a5787"
+  },
+  "verdict": "READY_FOR_INDEPENDENT_REVIEW after published-commit replay and CI; not a merge approval"
+}

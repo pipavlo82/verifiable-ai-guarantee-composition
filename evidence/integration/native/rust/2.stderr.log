@@ -1,0 +1,121 @@
+warning: unused import: `std::env`
+  --> crates\zkie-core\build.rs:10:5
+   |
+10 | use std::env;
+   |     ^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::path::PathBuf`
+  --> crates\zkie-core\build.rs:11:5
+   |
+11 | use std::path::PathBuf;
+   |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::process::Command`
+  --> crates\zkie-core\build.rs:12:5
+   |
+12 | use std::process::Command;
+   |     ^^^^^^^^^^^^^^^^^^^^^
+
+warning: `zkie-core` (build script) generated 3 warnings
+warning: unused import: `Field`
+ --> crates\zkie-core\src\common\logup_gkr.rs:3:28
+  |
+3 | use crate::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                            ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Field`
+ --> crates\zkie-core\src\common\same_poly.rs:4:28
+  |
+4 | use crate::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                            ^^^^^
+
+warning: unused variable: `claimed_sum`
+   --> crates\zkie-core\src\common\sumcheck.rs:242:5
+    |
+242 |     claimed_sum: Goldilocks, #[allow(unused_variables)]
+    |     ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_claimed_sum`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `claimed`
+   --> crates\zkie-core\src\common\sumcheck.rs:366:5
+    |
+366 |     claimed: Goldilocks,
+    |     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_claimed`
+
+warning: unused variable: `mles`
+  --> crates\zkie-core\src\common\logup_gkr.rs:65:13
+   |
+65 |         let mles: Vec<&[Goldilocks]> = vec![&eq, &next_num, &next_den, num_low, num_high, den_low, den_high];
+   |             ^^^^ help: if this is intentional, prefix it with an underscore: `_mles`
+
+warning: `zkie-core` (lib) generated 5 warnings (run `cargo fix --lib -p zkie-core` to apply 5 suggestions)
+warning: unused import: `Field`
+  --> crates\zkie-ops\src\compose.rs:16:32
+   |
+16 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+   |                                ^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: duplicated attribute
+    --> crates\zkie-ops\src\compose.rs:3017:5
+     |
+3017 |     #[test]
+     |     ^^^^^^^
+     |
+     = note: `#[warn(duplicate_macro_attributes)]` on by default
+
+warning: unused import: `Field`
+ --> crates\zkie-ops\src\projection.rs:6:32
+  |
+6 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused import: `Field`
+ --> crates\zkie-ops\src\layer_norm_centered.rs:7:32
+  |
+7 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused import: `Field`
+ --> crates\zkie-ops\src\layernorm_chain.rs:6:32
+  |
+6 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused import: `Field`
+ --> crates\zkie-ops\src\rms_norm.rs:7:32
+  |
+7 | use zkie_core::common::field::{Field, Goldilocks, PrimeCharacteristicRing, XorShift64};
+  |                                ^^^^^
+
+warning: unused variable: `m`
+    --> crates\zkie-ops\src\compose.rs:1009:48
+     |
+1009 |             Op::ScaleGate { x, gate, col, out, m, n, h, shift } => {
+     |                                                ^ help: try ignoring the field: `m: _`
+     |
+     = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `m`
+   --> crates\zkie-ops\src\topk.rs:169:5
+    |
+169 |     m: usize,
+    |     ^ help: if this is intentional, prefix it with an underscore: `_m`
+
+warning: function `rsqrt_index_piecewise` is never used
+    --> crates\zkie-ops\src\compose.rs:3049:8
+     |
+3049 |     fn rsqrt_index_piecewise() {
+     |        ^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `zkie-ops` (lib test) generated 9 warnings (run `cargo fix --lib -p zkie-ops --tests` to apply 7 suggestions)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.27s
+     Running unittests src\lib.rs (build\chain-v2\cargo-target\debug\deps\zkie_ops-ce360843a7e6d064.exe)

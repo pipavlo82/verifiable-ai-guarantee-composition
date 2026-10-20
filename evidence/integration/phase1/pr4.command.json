@@ -1,0 +1,12 @@
+{
+  "command": [
+    "gh",
+    "api",
+    "repos/pipavlo82/verifiable-ai-guarantee-composition/pulls/4"
+  ],
+  "cwd": "None",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "e0ce3292fdcda44b124c0dc260fdeebb176ee12ee3471f0a538598b0868186c2",
+  "utc": "2026-10-20T01:46:22.197392+00:00"
+}

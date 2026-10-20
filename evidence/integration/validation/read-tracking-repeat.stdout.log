@@ -1,0 +1,454 @@
+{
+  "classification": "KILLED_BY_ISOLATED_NEGATIVE_WITNESS",
+  "integration_before": {
+    "assumptions": [
+      "Consumer independently selects an adequate scenario contract and its policies.",
+      "Pinned local verifiers, runtimes and filesystem are trusted during this call.",
+      "Distinct recovered keys do not establish distinct real-world controllers.",
+      "Laboratory attestations establish authenticity, not judgment truth or external admission.",
+      "ReceiptOS records and RVR identity receipts do not establish historical external execution.",
+      "The two subject labels retain separate meanings; no entity-equivalence claim is made."
+    ],
+    "authorized": false,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "checks": {
+      "J01": "REFUTED",
+      "J02": "VERIFIED",
+      "J03": "VERIFIED",
+      "J04": "VERIFIED",
+      "J05": "VERIFIED",
+      "J06": "REFUTED",
+      "J07": "VERIFIED",
+      "J08": "VERIFIED",
+      "J09": "VERIFIED",
+      "coverage": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependencies": "VERIFIED",
+      "scope_floor": "VERIFIED"
+    },
+    "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+    "components": {
+      "inference": "REFUTED",
+      "review": "VERIFIED"
+    },
+    "contract_sha256": "60a98d797564268383a7bb6268b4e58659b77f978b20c2c1b80617b3573a2834",
+    "evidence_level": "LABORATORY_VERIFIED",
+    "evidence_references": {
+      "documents_sha256": "3f06270f8b41ee7ffe09983983da571230b543797020802b583c40db5ac68b85",
+      "inference_files": {
+        "input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "model": "a8645f4c909745d4e90df6bac9c929960e665ef48f1379d7f689c42245604b8c",
+        "observation": "a37afea593d4d7bd650584d8202593ffdb904f3781055ff556ea64a47b3eb6df",
+        "output": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "policy": "1f3eb46b203d8e39883bb54193dae9a870e7b1fe3795e07f40c9b666a331b977",
+        "proof": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "raw_input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "result": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "transform": "f5d5296de6c395b77199b0e153d42166a1793947f8720e340b5815adfe24bd78",
+        "weights": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7"
+      },
+      "rvr_receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77"
+    },
+    "missing_obligations": [],
+    "mode": "C",
+    "scenario": "preserved-proof-a-replay-and-review",
+    "status": "REFUTED",
+    "unconsumed_claim_fields": [
+      "inference.unchecked"
+    ],
+    "verified_scope": null
+  },
+  "integration_restored": {
+    "assumptions": [
+      "Consumer independently selects an adequate scenario contract and its policies.",
+      "Pinned local verifiers, runtimes and filesystem are trusted during this call.",
+      "Distinct recovered keys do not establish distinct real-world controllers.",
+      "Laboratory attestations establish authenticity, not judgment truth or external admission.",
+      "ReceiptOS records and RVR identity receipts do not establish historical external execution.",
+      "The two subject labels retain separate meanings; no entity-equivalence claim is made."
+    ],
+    "authorized": false,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "checks": {
+      "J01": "REFUTED",
+      "J02": "VERIFIED",
+      "J03": "VERIFIED",
+      "J04": "VERIFIED",
+      "J05": "VERIFIED",
+      "J06": "REFUTED",
+      "J07": "VERIFIED",
+      "J08": "VERIFIED",
+      "J09": "VERIFIED",
+      "coverage": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependencies": "VERIFIED",
+      "scope_floor": "VERIFIED"
+    },
+    "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+    "components": {
+      "inference": "REFUTED",
+      "review": "VERIFIED"
+    },
+    "contract_sha256": "60a98d797564268383a7bb6268b4e58659b77f978b20c2c1b80617b3573a2834",
+    "evidence_level": "LABORATORY_VERIFIED",
+    "evidence_references": {
+      "documents_sha256": "3f06270f8b41ee7ffe09983983da571230b543797020802b583c40db5ac68b85",
+      "inference_files": {
+        "input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "model": "a8645f4c909745d4e90df6bac9c929960e665ef48f1379d7f689c42245604b8c",
+        "observation": "a37afea593d4d7bd650584d8202593ffdb904f3781055ff556ea64a47b3eb6df",
+        "output": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "policy": "1f3eb46b203d8e39883bb54193dae9a870e7b1fe3795e07f40c9b666a331b977",
+        "proof": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "raw_input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "result": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "transform": "f5d5296de6c395b77199b0e153d42166a1793947f8720e340b5815adfe24bd78",
+        "weights": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7"
+      },
+      "rvr_receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77"
+    },
+    "missing_obligations": [],
+    "mode": "C",
+    "scenario": "preserved-proof-a-replay-and-review",
+    "status": "REFUTED",
+    "unconsumed_claim_fields": [
+      "inference.unchecked"
+    ],
+    "verified_scope": null
+  },
+  "integration_under_pr5_mutant": {
+    "assumptions": [
+      "Consumer independently selects an adequate scenario contract and its policies.",
+      "Pinned local verifiers, runtimes and filesystem are trusted during this call.",
+      "Distinct recovered keys do not establish distinct real-world controllers.",
+      "Laboratory attestations establish authenticity, not judgment truth or external admission.",
+      "ReceiptOS records and RVR identity receipts do not establish historical external execution.",
+      "The two subject labels retain separate meanings; no entity-equivalence claim is made."
+    ],
+    "authorized": false,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "checks": {
+      "J01": "VERIFIED",
+      "J02": "VERIFIED",
+      "J03": "VERIFIED",
+      "J04": "VERIFIED",
+      "J05": "VERIFIED",
+      "J06": "REFUTED",
+      "J07": "VERIFIED",
+      "J08": "VERIFIED",
+      "J09": "VERIFIED",
+      "coverage": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependencies": "VERIFIED",
+      "scope_floor": "VERIFIED"
+    },
+    "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+    "components": {
+      "inference": "VERIFIED",
+      "review": "VERIFIED"
+    },
+    "contract_sha256": "60a98d797564268383a7bb6268b4e58659b77f978b20c2c1b80617b3573a2834",
+    "evidence_level": "LABORATORY_VERIFIED",
+    "evidence_references": {
+      "documents_sha256": "3f06270f8b41ee7ffe09983983da571230b543797020802b583c40db5ac68b85",
+      "inference_files": {
+        "input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "model": "a8645f4c909745d4e90df6bac9c929960e665ef48f1379d7f689c42245604b8c",
+        "observation": "a37afea593d4d7bd650584d8202593ffdb904f3781055ff556ea64a47b3eb6df",
+        "output": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "policy": "1f3eb46b203d8e39883bb54193dae9a870e7b1fe3795e07f40c9b666a331b977",
+        "proof": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "raw_input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "result": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "transform": "f5d5296de6c395b77199b0e153d42166a1793947f8720e340b5815adfe24bd78",
+        "weights": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7"
+      },
+      "rvr_receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77"
+    },
+    "missing_obligations": [],
+    "mode": "C",
+    "scenario": "preserved-proof-a-replay-and-review",
+    "status": "REFUTED",
+    "unconsumed_claim_fields": [
+      "inference.unchecked"
+    ],
+    "verified_scope": null
+  },
+  "mutation": {
+    "from": "    funcs['checker_independence']=lambda:independence(f)",
+    "sha256": "c6c17430715a415ff010eb59264b29525cb4ca8c8093f65b763817987851c0af",
+    "to": "    funcs['checker_independence']=lambda:independence(f)\n    funcs['attestation_signature']=lambda:(claim.get('unchecked'),f['signatures'].get('provenance',{}).get('status',U))[1]"
+  },
+  "passed": true,
+  "pr5_before": {
+    "A": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "B": {
+      "authorized": true,
+      "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+      "status": "VERIFIED"
+    },
+    "C": {
+      "authorized": false,
+      "binding": {
+        "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+        "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+        "scenario": "lab-output-v2"
+      },
+      "status": "REFUTED"
+    },
+    "all_declared_pass": true,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "claim_fields": "REFUTED",
+    "claim_reads": {
+      "O01": [],
+      "O02": [],
+      "O03": [],
+      "O04": [],
+      "O05": [
+        "inputHash"
+      ],
+      "O06": [
+        "modelHash"
+      ],
+      "O07": [
+        "action",
+        "proofHash",
+        "subject"
+      ],
+      "O08": [],
+      "O09": [
+        "executionId"
+      ],
+      "O10": [],
+      "O11": [
+        "nonce",
+        "policyHash"
+      ],
+      "O12": [
+        "claimKind",
+        "scope"
+      ],
+      "O13": [
+        "outputHash"
+      ],
+      "O14": []
+    },
+    "components": {
+      "judgment": "VERIFIED",
+      "native": "VERIFIED",
+      "provenance": "VERIFIED",
+      "receipt": "VERIFIED"
+    },
+    "composition": "VERIFIED",
+    "coverage": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O10": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "O13": "VERIFIED",
+      "O14": "VERIFIED",
+      "context": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependency_closure": "VERIFIED"
+    },
+    "executed": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O14"
+    ],
+    "missing_obligations": [],
+    "required": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O14"
+    ],
+    "unconsumed_claim_fields": [
+      "unchecked"
+    ],
+    "verification": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O10": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "O13": "VERIFIED",
+      "O14": "VERIFIED"
+    }
+  },
+  "pr5_mutant": {
+    "A": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "B": {
+      "authorized": true,
+      "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+      "status": "VERIFIED"
+    },
+    "C": {
+      "authorized": true,
+      "binding": {
+        "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+        "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+        "scenario": "lab-output-v2"
+      },
+      "status": "VERIFIED"
+    },
+    "all_declared_pass": true,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "claim_fields": "VERIFIED",
+    "claim_reads": {
+      "O01": [
+        "unchecked"
+      ],
+      "O02": [],
+      "O03": [],
+      "O04": [],
+      "O05": [
+        "inputHash"
+      ],
+      "O06": [
+        "modelHash"
+      ],
+      "O07": [
+        "action",
+        "proofHash",
+        "subject"
+      ],
+      "O08": [],
+      "O09": [
+        "executionId"
+      ],
+      "O10": [],
+      "O11": [
+        "nonce",
+        "policyHash"
+      ],
+      "O12": [
+        "claimKind",
+        "scope"
+      ],
+      "O13": [
+        "outputHash"
+      ],
+      "O14": []
+    },
+    "components": {
+      "judgment": "VERIFIED",
+      "native": "VERIFIED",
+      "provenance": "VERIFIED",
+      "receipt": "VERIFIED"
+    },
+    "composition": "VERIFIED",
+    "coverage": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O10": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "O13": "VERIFIED",
+      "O14": "VERIFIED",
+      "context": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependency_closure": "VERIFIED"
+    },
+    "executed": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O14"
+    ],
+    "missing_obligations": [],
+    "required": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O14"
+    ],
+    "unconsumed_claim_fields": [],
+    "verification": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O10": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "O13": "VERIFIED",
+      "O14": "VERIFIED"
+    }
+  },
+  "result": "PR5 read tracking marks a discarded read consumed. External integration rejects the explicitly unconsumed nested claim field."
+}

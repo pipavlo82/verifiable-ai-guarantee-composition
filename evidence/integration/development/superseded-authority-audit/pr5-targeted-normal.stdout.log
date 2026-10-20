@@ -1,0 +1,122 @@
+{
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 9,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "mutations": [
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "O14-catalog",
+      "kind": "catalog",
+      "mutant": false,
+      "positive_before": true,
+      "positive_mutant": false,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "negative_O14_self_judged"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "O14-coverage",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "omitted_O14"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "O14-verification",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "negative_O14_self_judged"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "claim-fields",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "unconsumed_output_under_replay"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "admit-recompute-authorized",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "reused_tampered_authorized"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "admit-recompute-scenario",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "reused_tampered_scenario"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "admit-recompute-binding",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "reused_forged_binding"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "admit-digest",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "reused_under_other_contract"
+    },
+    {
+      "before": false,
+      "classification": "KILLED",
+      "id": "admit-claim-type",
+      "kind": "source",
+      "mutant": true,
+      "positive_before": true,
+      "positive_mutant": true,
+      "positive_restored": true,
+      "restored": false,
+      "witness": "reused_under_other_claim_type"
+    }
+  ],
+  "passed": true,
+  "unchanged": true,
+  "unique_edits": 7
+}

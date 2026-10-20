@@ -1,0 +1,70 @@
+test_all_boundary_mutations_and_restore (test_composition.CompositionTests.test_all_boundary_mutations_and_restore) ... ok
+test_all_fixtures_both_strategies (test_composition.CompositionTests.test_all_fixtures_both_strategies) ... ok
+test_arbitrary_dependency_list_cannot_omit_check (test_composition.CompositionTests.test_arbitrary_dependency_list_cannot_omit_check) ... ok
+test_boolean_evidence_numbers_rejected (test_composition.CompositionTests.test_boolean_evidence_numbers_rejected) ... ok
+test_boolean_is_not_proof (test_composition.CompositionTests.test_boolean_is_not_proof) ... ok
+test_boolean_version_rejected (test_composition.CompositionTests.test_boolean_version_rejected) ... ok
+test_checksum_corruption (test_composition.CompositionTests.test_checksum_corruption) ... ok
+test_checksum_does_not_authenticate (test_composition.CompositionTests.test_checksum_does_not_authenticate) ... ok
+test_combine_three_values (test_composition.CompositionTests.test_combine_three_values) ... ok
+test_duplicate_keys_and_nonfinite_rejected (test_composition.CompositionTests.test_duplicate_keys_and_nonfinite_rejected) ... ERROR
+test_every_missing_component_unknown (test_composition.CompositionTests.test_every_missing_component_unknown) ... ok
+test_fixture_inventory (test_composition.CompositionTests.test_fixture_inventory) ... ok
+test_missing_is_not_refutation (test_composition.CompositionTests.test_missing_is_not_refutation) ... ok
+test_mutation_classifications (test_composition.CompositionTests.test_mutation_classifications) ... ok
+test_no_real_crypto_claim_in_any_case (test_composition.CompositionTests.test_no_real_crypto_claim_in_any_case) ... ok
+test_nonobject_packet_unverifiable (test_composition.CompositionTests.test_nonobject_packet_unverifiable) ... ok
+test_real_mode_even_with_flags_is_unimplemented (test_composition.CompositionTests.test_real_mode_even_with_flags_is_unimplemented) ... ok
+test_repeat_deterministic_and_no_mutation (test_composition.CompositionTests.test_repeat_deterministic_and_no_mutation) ... ok
+test_unknown_mechanism_is_not_false_proof (test_composition.CompositionTests.test_unknown_mechanism_is_not_false_proof) ... ok
+
+======================================================================
+ERROR: test_duplicate_keys_and_nonfinite_rejected (test_composition.CompositionTests.test_duplicate_keys_and_nonfinite_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\msi\Documents\Codex\vagc-integration-20261019\tests\test_composition.py", line 114, in test_duplicate_keys_and_nonfinite_rejected
+    path.write_text(data, encoding="utf-8")
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\msi\\AppData\\Local\\Packages\\sandbox.{cc2977c2-70d0-4061-9134-6ea430b25938}\\AC\\Temp\\tmpkm6djze9\\bad.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\shutil.py", line 637, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\msi\\AppData\\Local\\Packages\\sandbox.{cc2977c2-70d0-4061-9134-6ea430b25938}\\AC\\Temp\\tmpkm6djze9'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\msi\Documents\Codex\vagc-integration-20261019\tests\test_composition.py", line 111, in test_duplicate_keys_and_nonfinite_rejected
+    with tempfile.TemporaryDirectory() as temp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\shutil.py", line 639, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\msi\\AppData\\Local\\Packages\\sandbox.{cc2977c2-70d0-4061-9134-6ea430b25938}\\AC\\Temp\\tmpkm6djze9'
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.397s
+
+FAILED (errors=1)

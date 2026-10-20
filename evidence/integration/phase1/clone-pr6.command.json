@@ -1,0 +1,16 @@
+{
+  "command": [
+    "git",
+    "-c",
+    "core.autocrlf=false",
+    "clone",
+    "--no-checkout",
+    "https://github.com/pipavlo82/verifiable-ai-guarantee-composition.git",
+    "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019-pr6"
+  ],
+  "cwd": "None",
+  "exit": 0,
+  "stderr_sha256": "72ebc405bb3c85533ac5dce49ff8c0041eb248e4d84270df2e52518e7d7296a3",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "utc": "2026-10-20T01:46:35.116038+00:00"
+}

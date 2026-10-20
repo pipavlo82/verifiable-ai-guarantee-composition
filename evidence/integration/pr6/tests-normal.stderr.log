@@ -1,0 +1,22 @@
+test_additional_roles (test_consumer.ConsumerTests.test_additional_roles) ... ok
+test_authorization_reuse (test_consumer.ConsumerTests.test_authorization_reuse) ... ok
+test_canonical_discrimination (test_consumer.ConsumerTests.test_canonical_discrimination) ... ok
+test_catalog_not_coverage_oracle (test_consumer.ConsumerTests.test_catalog_not_coverage_oracle) ... ok
+test_contract_preimage_required (test_consumer.ConsumerTests.test_contract_preimage_required) ... ok
+test_independence_scenario_dependent (test_consumer.ConsumerTests.test_independence_scenario_dependent) ... ok
+test_invalid_canonical_domain (test_consumer.ConsumerTests.test_invalid_canonical_domain) ... ok
+test_list_policy_does_not_authorize_output (test_consumer.ConsumerTests.test_list_policy_does_not_authorize_output) ... ok
+test_malformed_contract (test_consumer.ConsumerTests.test_malformed_contract) ... ok
+test_missing_payload_preserves_core_axis (test_consumer.ConsumerTests.test_missing_payload_preserves_core_axis) ... ok
+test_mixed_failure_precedence (test_consumer.ConsumerTests.test_mixed_failure_precedence) ... ok
+test_no_broader_core_inference (test_consumer.ConsumerTests.test_no_broader_core_inference) ... ok
+test_profile_preimage_substitution (test_consumer.ConsumerTests.test_profile_preimage_substitution) ... ok
+test_receipt_bytes_unchanged (test_consumer.ConsumerTests.test_receipt_bytes_unchanged) ... ok
+test_scenarios (test_consumer.ConsumerTests.test_scenarios) ... ok
+test_scope_always_named (test_consumer.ConsumerTests.test_scope_always_named) ... ok
+test_unknown_obligation (test_consumer.ConsumerTests.test_unknown_obligation) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 11.851s
+
+OK

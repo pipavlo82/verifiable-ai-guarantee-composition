@@ -1,0 +1,5 @@
+{"step": "node-version", "exit": 0}
+{"step": "bun-version", "exit": 0}
+{"step": "clone-native", "exit": 0}
+{"step": "node-manifest", "exit": 0}
+{"step": "native", "exit": 1}

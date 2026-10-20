@@ -1,0 +1,56 @@
+{
+  "assumptions": [
+    "Consumer independently selects an adequate scenario contract and its policies.",
+    "Pinned local verifiers, runtimes and filesystem are trusted during this call.",
+    "Distinct recovered keys do not establish distinct real-world controllers.",
+    "Laboratory attestations establish authenticity, not judgment truth or external admission.",
+    "ReceiptOS records and RVR identity receipts do not establish historical external execution.",
+    "The two subject labels retain separate meanings; no entity-equivalence claim is made."
+  ],
+  "authorized": false,
+  "chain_status": "PARTIAL_CHAIN_VERIFIED",
+  "checks": {
+    "J01": "VERIFIED",
+    "J02": "VERIFIED",
+    "J03": "VERIFIED",
+    "J04": "VERIFIED",
+    "J05": "VERIFIED",
+    "J06": "VERIFIED",
+    "J07": "REFUTED",
+    "J08": "VERIFIED",
+    "J09": "VERIFIED",
+    "coverage": "VERIFIED",
+    "definitions": "VERIFIED",
+    "dependencies": "VERIFIED",
+    "scope_floor": "VERIFIED"
+  },
+  "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+  "components": {
+    "inference": "VERIFIED",
+    "review": "VERIFIED"
+  },
+  "contract_sha256": "008373ffd7ef2a6788af41356d1052b686fbf3b889a72fa86ee99ff902457666",
+  "evidence_level": "LABORATORY_VERIFIED",
+  "evidence_references": {
+    "documents_sha256": "ce96d865ff3a615dc6173d55d9634d0e932cb05c33b6dbb4d1f4e08f78064b24",
+    "inference_files": {
+      "input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+      "model": "a8645f4c909745d4e90df6bac9c929960e665ef48f1379d7f689c42245604b8c",
+      "observation": "a37afea593d4d7bd650584d8202593ffdb904f3781055ff556ea64a47b3eb6df",
+      "output": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+      "policy": "7ce8ff4b8887bf1c91d641ebff94a6e0eaf8cc537387ea05905b3c99b4eb2306",
+      "proof": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+      "raw_input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+      "result": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+      "transform": "f5d5296de6c395b77199b0e153d42166a1793947f8720e340b5815adfe24bd78",
+      "weights": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7"
+    },
+    "rvr_receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77"
+  },
+  "missing_obligations": [],
+  "mode": "C",
+  "scenario": "preserved-proof-a-replay-and-review",
+  "status": "REFUTED",
+  "unconsumed_claim_fields": [],
+  "verified_scope": null
+}

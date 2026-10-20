@@ -1,0 +1,12 @@
+{
+  "command": [
+    "gh",
+    "api",
+    "repos/pipavlo82/verifiable-ai-guarantee-composition/commits/653b8e92e56afb99797c04b1c616a6d7fb3555e9/check-runs?per_page=100"
+  ],
+  "cwd": "None",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "2f1fd5862f9ffecac36ffcecce12abda39184167b714459b1fe31b81badfd087",
+  "utc": "2026-10-20T01:46:24.195021+00:00"
+}

@@ -1,0 +1,16 @@
+test_algorithm_and_representation_cannot_be_erased (test_model.ObligationTests.test_algorithm_and_representation_cannot_be_erased) ... ok
+test_each_removal_satisfies_remaining_and_breaks_target (test_model.ObligationTests.test_each_removal_satisfies_remaining_and_breaks_target) ... ok
+test_empty_or_one_disconnected_group_cannot_entail (test_model.ObligationTests.test_empty_or_one_disconnected_group_cannot_entail) ... ok
+test_exhaustive_oracle_and_minimal_bases (test_model.ObligationTests.test_exhaustive_oracle_and_minimal_bases) ... ok
+test_missing_unsupported_or_boolean_evidence_cannot_verify (test_model.ObligationTests.test_missing_unsupported_or_boolean_evidence_cannot_verify) ... ok
+test_native_premise_changes_minimum (test_model.ObligationTests.test_native_premise_changes_minimum) ... ok
+test_no_real_authorization_claim (test_model.ObligationTests.test_no_real_authorization_claim) ... ok
+test_noninjective_translation_has_concrete_preimages (test_model.ObligationTests.test_noninjective_translation_has_concrete_preimages) ... ok
+test_same_type_digest_contradiction_refuted (test_model.ObligationTests.test_same_type_digest_contradiction_refuted) ... ok
+test_source_removal_controls (test_model.ObligationTests.test_source_removal_controls) ... ok
+test_unknown_native_fact_rejected (test_model.ObligationTests.test_unknown_native_fact_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.057s
+
+OK

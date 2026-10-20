@@ -1,0 +1,15 @@
+{
+  "command": [
+    "git",
+    "-c",
+    "core.autocrlf=false",
+    "checkout",
+    "--detach",
+    "c14d96b0a63fceba02b2cb4469d5b3228ae46612"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019-pr5",
+  "exit": 0,
+  "stderr_sha256": "2d470f37cd5d956059a21f3db2222f9e384935b15f5aac907da3a153c93eee2e",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "utc": "2026-10-20T01:46:34.433149+00:00"
+}

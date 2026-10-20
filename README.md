@@ -1,5 +1,16 @@
 # Verifiable AI Guarantee Composition
 
+Experimental PR #5 + #6 integration is available in
+[research/integration/EXPERIMENT_RESULTS.md](research/integration/EXPERIMENT_RESULTS.md).
+It adds a separately scoped laboratory consumer, exact proof-byte binding and independent
+admission recomputation. The full external chain remains **PARTIAL_CHAIN_VERIFIED**.
+See the [engine](research/integration/CLAIM_AWARE_ENGINE.md),
+[compatibility matrix](research/integration/COMPATIBILITY_MATRIX.md),
+[mutation report](research/integration/MUTATION_REPORT.md),
+[paper addendum](research/integration/ACADEMIC_PAPER_DRAFT.md) and
+[fresh replay instructions](research/integration/INDEPENDENT_REVIEW_CHECKLIST.md).
+ERC-8404 Core, original receipts and historical v0-v4/PR5/PR6 evidence remain unchanged.
+
 Experimental ERC-8404 compatibility research is available in
 [research/erc8404/RECOMMENDATION.md](research/erc8404/RECOMMENDATION.md).
 It adds an external claim-aware consumer with scenario-dependent checker
