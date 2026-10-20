@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "full_bytecode_match": true,
+    "two_provider_code_agreement": true,
+    "two_provider_block_agreement": true
+  },
+  "runtime_sha256": "7e9f66bf43f8b6bc9f80e89c94788244770a81958c48fd5bed107660dbcc697c",
+  "compiled_sha256": "7e9f66bf43f8b6bc9f80e89c94788244770a81958c48fd5bed107660dbcc697c",
+  "runtime_bytes": 4370,
+  "limitations": "Offline consistency of captured public RPC observations; no independent consensus or payment proof."
+}

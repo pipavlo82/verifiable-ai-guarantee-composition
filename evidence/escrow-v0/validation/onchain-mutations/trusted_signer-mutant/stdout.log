@@ -1,0 +1,1 @@
+{"test/Boundary.t.sol:BoundaryMutationTest":{"duration":"4s 851ms 655µs 600ns","test_results":{"test_distinguishing_witness_and_positive()":{"status":"Success","reason":null,"counterexample":null,"logs":[],"decoded_logs":[],"kind":{"Unit":{"gas":462628}},"traces":[],"labeled_addresses":{},"duration":"4s 584ms 304µs 300ns","breakpoints":{},"gas_snapshots":{}}},"warnings":[]}}

@@ -1,0 +1,1008 @@
+{
+  "adapter_mutations": {
+    "CRASHED": 0,
+    "KILLED": 17,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/integrity.py"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 25.638865799992345,
+      "exit": 0,
+      "name": "baseline-integrity",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c35fc7abcd0fe64b974726b0bb9a694b1f11ba684c1acf45f5d05dab17e289e2"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 0.025879499968141317,
+      "exit": 0,
+      "name": "forge-version",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "92280b6d2d5f80227bfa96c6e60b22b7365806aeb514e4ce2429f3b7424b12f9"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/integration/integrity.py"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 3.87297770002624,
+      "exit": 0,
+      "name": "core-integrity",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ba5d855f04210451bced1bae708e2004c8621416aed3bc0b08382ec3829df1a6"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "build",
+        "--force",
+        "--root",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\stock\\integrations\\verdict-escrow",
+        "--remappings",
+        "forge-std/=C:/Users/msi/Documents/Codex/vagc-escrow-20261020/build/escrow/lib/forge-std/src/",
+        "--lib-paths",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\lib\\forge-std"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 1.7790413000038825,
+      "exit": 0,
+      "name": "stock-clean-build",
+      "stderr_sha256": "362564308d1ea580b4030981caec82eee20a41a5ae12138e9c0d60971b9aca57",
+      "stdout_sha256": "38c5e1a285965ed3af5c3afc41f7eaced0a8e2e75c65d73ba636010293fea089"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "test",
+        "--root",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\stock\\integrations\\verdict-escrow",
+        "--remappings",
+        "forge-std/=C:/Users/msi/Documents/Codex/vagc-escrow-20261020/build/escrow/lib/forge-std/src/",
+        "--lib-paths",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\lib\\forge-std",
+        "--json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 0.9443837000289932,
+      "exit": 0,
+      "name": "stock-seven-tests",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3389c4bb9b6acd4ac0613baa28583ba915ca20164540c4c56c66b33cec556e5f"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "build",
+        "--force",
+        "--root",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 6.20541230001254,
+      "exit": 0,
+      "name": "joint-clean-build",
+      "stderr_sha256": "aa1efc12825d04bbdb0c92a7c6c80d1952458393708e6ecd4b6548534286b2df",
+      "stdout_sha256": "72684e64f4f95e7f190a321d9b373db20b8e9b19b3bd47667799cb5b8ad96b18"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "test",
+        "--root",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow",
+        "--threads",
+        "1",
+        "--json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 89.73643510002876,
+      "exit": 0,
+      "name": "evm-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ae9437e7fe2cf8ba726a59d1e29c30327db667892776037b1b1321be9a99958"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow",
+        "-p",
+        "test_adapter.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 2.4464145999518223,
+      "exit": 0,
+      "name": "unit-normal",
+      "stderr_sha256": "57e9eb7224f40fb449f71036c80a589fbfc9cb074a44ffb33c33da201e8a044d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/analyze.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\normal"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 3.5307738999836147,
+      "exit": 0,
+      "name": "comparison-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "568ae231aa30ec792360dc065c88a89212ef9208ea298a09f3aa31985d8be441"
+    },
+    {
+      "command": [
+        "node",
+        "experiments/verdict_escrow/secondary.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\normal"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 0.2740639999974519,
+      "exit": 0,
+      "name": "secondary-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "75d90e632da87d88f6d4909668e9abc99eff0575eed282f82674848853cc4a83"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/mutations.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\mutations-normal"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 85.41083939996315,
+      "exit": 0,
+      "name": "mutations-normal",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f2d2617202cb768132c2f1d4041b0b6396a289c0d023b4d8949ef0549a205dd1"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "test",
+        "--root",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow",
+        "--threads",
+        "1",
+        "--json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 90.37414279999211,
+      "exit": 0,
+      "name": "evm-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "01c8906e77ec4691d72fbf1cadac3277058b50dc8fc94a3a065c3fd9024089b8"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow",
+        "-p",
+        "test_adapter.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 3.852063999976963,
+      "exit": 0,
+      "name": "unit-repeat",
+      "stderr_sha256": "c4e45042a49760300e9b8c54d6d3eff5db6d7c72dbed05001eef451a5f6ddbd5",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/analyze.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\repeat"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 4.787615699984599,
+      "exit": 0,
+      "name": "comparison-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "568ae231aa30ec792360dc065c88a89212ef9208ea298a09f3aa31985d8be441"
+    },
+    {
+      "command": [
+        "node",
+        "experiments/verdict_escrow/secondary.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\repeat"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 0.343349099974148,
+      "exit": 0,
+      "name": "secondary-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "75d90e632da87d88f6d4909668e9abc99eff0575eed282f82674848853cc4a83"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/mutations.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\mutations-repeat"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 88.44345370004885,
+      "exit": 0,
+      "name": "mutations-repeat",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f2d2617202cb768132c2f1d4041b0b6396a289c0d023b4d8949ef0549a205dd1"
+    },
+    {
+      "command": [
+        "C:/Users/msi/.foundry/bin/forge.exe",
+        "test",
+        "--root",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow",
+        "--threads",
+        "1",
+        "--json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 101.61236720002489,
+      "exit": 0,
+      "name": "evm-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "44dea5ee84c9b272799f57ac9ace42d57622b7e08ccd0ac290d13aab685b5e8c"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow",
+        "-p",
+        "test_adapter.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 2.7654954999452457,
+      "exit": 0,
+      "name": "unit-optimized",
+      "stderr_sha256": "bdfca57fd2dadea0d932df32587f22b8e43d8765b3437dd52609ba467f6f48e8",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/analyze.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\optimized"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 3.8980239999946207,
+      "exit": 0,
+      "name": "comparison-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "568ae231aa30ec792360dc065c88a89212ef9208ea298a09f3aa31985d8be441"
+    },
+    {
+      "command": [
+        "node",
+        "experiments/verdict_escrow/secondary.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\optimized"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 0.2848524000146426,
+      "exit": 0,
+      "name": "secondary-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "75d90e632da87d88f6d4909668e9abc99eff0575eed282f82674848853cc4a83"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/mutations.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\mutations-optimized"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 86.77847200003453,
+      "exit": 0,
+      "name": "mutations-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f2d2617202cb768132c2f1d4041b0b6396a289c0d023b4d8949ef0549a205dd1"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/onchain_mutations.py",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\onchain-mutations"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 142.79157689999556,
+      "exit": 0,
+      "name": "onchain-mutations",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ee0d2cd0f918ef56ca9c4764526f0ce45145b722837b31f187065e77fda08262"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 44.42441209999379,
+      "exit": 0,
+      "name": "pr7-tests",
+      "stderr_sha256": "fdfd981f0ff5d14a0a1c8ffc1a6a4218aa3073b072d3cbe7c7ed8d133a73cffd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/integration/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\final-validation\\pr7-mutations"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 50.86226089997217,
+      "exit": 0,
+      "name": "pr7-mutations",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1c95abfbed627f5ec43f7714d8e4f96e9c91fca03f8774b52e0011dd90abc270"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "experiments/verdict_escrow/integrity.py"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+      "elapsed_seconds": 6.161975399998482,
+      "exit": 0,
+      "name": "baseline-integrity-after",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c35fc7abcd0fe64b974726b0bb9a694b1f11ba684c1acf45f5d05dab17e289e2"
+    }
+  ],
+  "comparison": {
+    "authorization_comparison_count": 29,
+    "comparison": {
+      "A": {
+        "correct_refusals": 4,
+        "false_authorizations": 24,
+        "missing_obligations": 0,
+        "positive_authorizations": 1,
+        "unverifiable": 0
+      },
+      "B": {
+        "correct_refusals": 26,
+        "false_authorizations": 2,
+        "missing_obligations": 2,
+        "positive_authorizations": 1,
+        "unverifiable": 2
+      },
+      "C": {
+        "correct_refusals": 26,
+        "false_authorizations": 2,
+        "missing_obligations": 2,
+        "positive_authorizations": 1,
+        "unverifiable": 2
+      }
+    },
+    "conditional_on_honest_offchain_gate": true,
+    "execution_only_count": 2,
+    "gas_scope": "Foundry in-process release call with warmed storage; excludes tx intrinsic/calldata, Base L1 data fee and real funds. No actual payment cost incurred.",
+    "guarantee": "LABORATORY_VERIFIED / PARTIAL_CHAIN_VERIFIED",
+    "hypothetical_1_gwei_positive_call_wei": 36654000000000,
+    "passed": true,
+    "raw_chain_accepts_not_full_policy_coverage": 19,
+    "rows": [
+      {
+        "expected_offchain": "VERIFIED",
+        "kind": "positive",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": true,
+          "C": true
+        },
+        "name": "positive",
+        "observed_recipient_delta": 1000000,
+        "offchain": "VERIFIED",
+        "onchain": "VERIFIED",
+        "release_call_gas": 36654,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "A_wrong_scope",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36651,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [
+          "J07"
+        ],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "B_missing_obligation",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36603,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "C_other_escrow",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 9991,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "D_other_chain",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 10004,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "E_other_recipient",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36715,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "F_other_amount",
+        "observed_recipient_delta": 2000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36728,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "G_other_payment",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 10045,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "H_replay",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 1618,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "I_expired",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36650,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": false,
+          "B": false,
+          "C": false
+        },
+        "name": "J_unauthorized",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 10009,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "J_revoked",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36789,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "K_evidence_digest",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36801,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "UNVERIFIABLE",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "L_no_contract",
+        "observed_recipient_delta": 1000000,
+        "offchain": "UNVERIFIABLE",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36738,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "M_unverified_field",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36826,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "N_self_judgment",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36763,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "O_duplicate",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 1717,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [
+          "J01"
+        ],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "P_incorrect_authorization",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36788,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "Q_record_tamper",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36800,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "R_other_profile",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36888,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "nonce_reused_other_job",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36901,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "changed_scenario_digest",
+        "observed_recipient_delta": 1000000,
+        "offchain": "REFUTED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36914,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "UNVERIFIABLE",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "missing_profile",
+        "observed_recipient_delta": 1000000,
+        "offchain": "UNVERIFIABLE",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36926,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "VERIFIED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": true,
+          "C": true
+        },
+        "name": "expired_after_signing",
+        "observed_recipient_delta": 1000000,
+        "offchain": "VERIFIED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36939,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "VERIFIED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": true,
+          "C": true
+        },
+        "name": "revoked_after_signing",
+        "observed_recipient_delta": 1000000,
+        "offchain": "VERIFIED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 36951,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "VERIFIED",
+        "kind": "execution-only",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": true,
+          "C": false
+        },
+        "name": "false_returning_token",
+        "observed_recipient_delta": 0,
+        "offchain": "VERIFIED",
+        "onchain": "REFUTED",
+        "release_call_gas": 11868,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": false,
+          "B": false,
+          "C": false
+        },
+        "name": "high_s",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 3953,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": false,
+          "B": false,
+          "C": false
+        },
+        "name": "invalid_signature",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 3937,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": false,
+          "C": false
+        },
+        "name": "refund_then_release",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 1910,
+        "release_succeeded": false
+      },
+      {
+        "expected_offchain": "VERIFIED",
+        "kind": "execution-only",
+        "missing_obligations": [],
+        "modes": {
+          "A": true,
+          "B": true,
+          "C": true
+        },
+        "name": "lying_token",
+        "observed_recipient_delta": 0,
+        "offchain": "VERIFIED",
+        "onchain": "NOT_COVERED",
+        "release_call_gas": 13901,
+        "release_succeeded": true
+      },
+      {
+        "expected_offchain": "REFUTED",
+        "kind": "negative",
+        "missing_obligations": [],
+        "modes": {
+          "A": false,
+          "B": false,
+          "C": false
+        },
+        "name": "negated_s",
+        "observed_recipient_delta": 0,
+        "offchain": "REFUTED",
+        "onchain": "REFUTED",
+        "release_call_gas": 10363,
+        "release_succeeded": false
+      }
+    ],
+    "scenario_count": 31,
+    "verdict": "PARTIALLY_COMPATIBLE"
+  },
+  "determinism": {
+    "comparison": true,
+    "mutations": true,
+    "secondary": true,
+    "vectors": true
+  },
+  "onchain_mutations": {
+    "CRASHED": 0,
+    "KILLED": 5,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "passed": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_inventory": {
+    "experiments/verdict_escrow/adapter.py": "f5735bd91b110043a1cf5e38fb1ce67ceda38b96612eb2675771c43e569a9e9a",
+    "experiments/verdict_escrow/analyze.py": "8459d02219db86e552ab63db335bec4c8f8155c50824c5e020b93a81e2a26ede",
+    "experiments/verdict_escrow/bridge.py": "f56d4e23f785ad54db9be66ebf1e5ec67793b71764a6978ea69eb7538a2422c6",
+    "experiments/verdict_escrow/evm/Composition.t.sol": "9f3f2d3d9f8a15d849c0fba57d18d8261aaef5a39a088811ab4c3be12283b489",
+    "experiments/verdict_escrow/foundry.toml": "17f0c81939441708ec53ab848253150bca308be06e2bf04b8d563172442c66dc",
+    "experiments/verdict_escrow/integrity.py": "6ba1d48092293eb0aaf648bc0e35e648825c2835fc5c1b5ac3dbbd5cbd9fa5c0",
+    "experiments/verdict_escrow/mutation_harness.sol": "7a6846791b20c39d22dd53662044a6373c48416eed0e831090da30d62eb356e2",
+    "experiments/verdict_escrow/mutations.py": "7899467e17e28157f0524e341fa3892766c7ac0ecf76ab95dd8711698ef25306",
+    "experiments/verdict_escrow/onchain_mutations.py": "f10ed3707e33883e5699991da0df92cbb5b7d738e40774de5f667553511d46d7",
+    "experiments/verdict_escrow/profile.json": "9916f0ee2862691b528fe4566e7c86f30003d64e7f6cc27aef99bb532d94ca5d",
+    "experiments/verdict_escrow/secondary.mjs": "f2e0d1001029434c138cebb6625aab0a0c35ca38a3511a521f19110b94af3a3a",
+    "experiments/verdict_escrow/source-lock.json": "b85cac0dafe0a533f670b9d358b3cff7ca83349499c0d24c4dc67af43c596998",
+    "experiments/verdict_escrow/test_adapter.py": "cefadb25b9aa1e34b20bdab6d1e41cd20260b69718936027bfe867ddfdb2d582",
+    "experiments/verdict_escrow/validate.py": "1a9e098510bfabb691e7ec1d7550199437bd8295f86e14aeecece2778cf50dd7",
+    "experiments/verdict_escrow/vectors.py": "64569d8fc3a4fd80a96ebe6980baeb8a9fc80f471398c4e0dc063b9a7a9390a3",
+    "experiments/verdict_escrow/vendor/invinoveritas/LICENSE": "7d61ebc2444480f145943d2b611d82ed616e1750972878c6eea99f25c7fb90ea",
+    "experiments/verdict_escrow/vendor/invinoveritas/examples/decision-receipt/bip340.py": "c590a837b1735bea40dc41d8a493eaefc66b0019a04f0fe36d98df7583b20090",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/.gitignore": "afa66272cea2a39decce405da224c241d32e91855c6b1802d915e2972131ddf4",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/README.md": "ee086f1368ff29102baba220264e7c83aa341ed7c57cc8ec332c01c72febfd88",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/escrow_client.py": "c335513887cc510516f49209174980d1a58ee97ff18e7f27f06f404ce2906854",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/foundry.toml": "4c410c454d1442efb98d829011daf0a65dd384117b59e9ebc698b60185226b51",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/src/BIP340.sol": "26fad4abffbc10cff68eccff60f1a20116a79dd0db6f11f9b93c10b33853c806",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/src/VerdictGatedEscrow.sol": "65e9f164ba91d473a53d4310ff208b9138967ebea431055ba238dbe887abd527",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/test/VerdictGatedEscrow.t.sol": "74f3c9430cadab3fdec289e7d3fac74b20b00cfb402671435f5356c4fdc6dda5",
+    "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/test/sign.py": "5bc3baf031ad95753d80f1d53fb5a4fa615f723829fd18363925acce3c3be296"
+  },
+  "source_unchanged": true
+}

@@ -1,0 +1,16 @@
+{
+  "baseline": "c93087f06bd14c45a1d12b0c068195e3bef05dae",
+  "escrow": "ce8c504f2ae4d9b389b53823fe16afec7fcf3bb3",
+  "files": {
+    "integrations/verdict-escrow/.gitignore": "afa66272cea2a39decce405da224c241d32e91855c6b1802d915e2972131ddf4",
+    "integrations/verdict-escrow/escrow_client.py": "c335513887cc510516f49209174980d1a58ee97ff18e7f27f06f404ce2906854",
+    "integrations/verdict-escrow/foundry.toml": "4c410c454d1442efb98d829011daf0a65dd384117b59e9ebc698b60185226b51",
+    "integrations/verdict-escrow/README.md": "ee086f1368ff29102baba220264e7c83aa341ed7c57cc8ec332c01c72febfd88",
+    "integrations/verdict-escrow/src/BIP340.sol": "26fad4abffbc10cff68eccff60f1a20116a79dd0db6f11f9b93c10b33853c806",
+    "integrations/verdict-escrow/src/VerdictGatedEscrow.sol": "65e9f164ba91d473a53d4310ff208b9138967ebea431055ba238dbe887abd527",
+    "integrations/verdict-escrow/test/sign.py": "5bc3baf031ad95753d80f1d53fb5a4fa615f723829fd18363925acce3c3be296",
+    "integrations/verdict-escrow/test/VerdictGatedEscrow.t.sol": "74f3c9430cadab3fdec289e7d3fac74b20b00cfb402671435f5356c4fdc6dda5",
+    "examples/decision-receipt/bip340.py": "c590a837b1735bea40dc41d8a493eaefc66b0019a04f0fe36d98df7583b20090",
+    "LICENSE": "7d61ebc2444480f145943d2b611d82ed616e1750972878c6eea99f25c7fb90ea"
+  }
+}

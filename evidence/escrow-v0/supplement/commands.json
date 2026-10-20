@@ -1,0 +1,149 @@
+[
+  {
+    "name": "python",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "rustc",
+    "command": [
+      "rustc",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "cargo",
+    "command": [
+      "cargo",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "node",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "git",
+    "command": [
+      "git",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "bun",
+    "command": [
+      "C:/Users/msi/.bun/bin/bun.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "original-settings-build",
+    "command": [
+      "C:/Users/msi/.foundry/bin/forge.exe",
+      "build",
+      "--root",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\experiments\\verdict_escrow\\vendor\\invinoveritas\\integrations\\verdict-escrow",
+      "--skip",
+      "test",
+      "--out",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\compiler",
+      "--cache-path",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\compiler-cache",
+      "--ast",
+      "--force"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "bytecode-comparison",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/escrow_bytecode.py",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\outputs\\verdict-escrow-20261020\\public",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020\\build\\escrow\\compiler\\VerdictGatedEscrow.sol\\VerdictGatedEscrow.json"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-20261020",
+    "exit": 0
+  },
+  {
+    "name": "escrow-head",
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\verdict-escrow-20261020\\upstream\\escrow",
+    "exit": 0
+  },
+  {
+    "name": "escrow-clean",
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\verdict-escrow-20261020\\upstream\\escrow",
+    "exit": 0
+  },
+  {
+    "name": "zkie-head",
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\verdict-escrow-20261020\\upstream\\zkie",
+    "exit": 0
+  },
+  {
+    "name": "zkie-clean",
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\verdict-escrow-20261020\\upstream\\zkie",
+    "exit": 0
+  },
+  {
+    "name": "erc8404-head",
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\verdict-escrow-20261020\\upstream\\erc8404",
+    "exit": 0
+  },
+  {
+    "name": "erc8404-clean",
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\verdict-escrow-20261020\\upstream\\erc8404",
+    "exit": 0
+  }
+]

@@ -1,0 +1,9 @@
+2026-10-20T22:36:40.533351Z  WARN evm::traces: failed to flush signature cache err=failed to create file "C:\\Users\\msi\\.foundry\\cache\\signatures": Access is denied. (os error 5)
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+    ╭▸ experiments\verdict_escrow\vendor\invinoveritas\integrations\verdict-escrow\src\VerdictGatedEscrow.sol:108:13
+    │
+108 │         if (block.timestamp < e.refundAfter) revert TooEarly();
+    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://book.getfoundry.sh/reference/forge/forge-lint#block-timestamp
+

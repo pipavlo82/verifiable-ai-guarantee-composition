@@ -1,0 +1,1078 @@
+{
+  "adapter": {
+    "assumptions": [
+      "payer-selected grant",
+      "authenticated fresh snapshot",
+      "honest policy signer",
+      "local nonce journal is not a global chain registry"
+    ],
+    "authorized": false,
+    "checks": {
+      "amount": "VERIFIED",
+      "authorization_recomputation": "REFUTED",
+      "canonical_request": "VERIFIED",
+      "chain": "VERIFIED",
+      "consumer": "VERIFIED",
+      "consumer_record": "VERIFIED",
+      "escrow": "VERIFIED",
+      "evidence_digest": "VERIFIED",
+      "expiry": "VERIFIED",
+      "funded": "VERIFIED",
+      "nonce": "VERIFIED",
+      "outcome": "VERIFIED",
+      "payment": "VERIFIED",
+      "policy_hash": "VERIFIED",
+      "profile": "VERIFIED",
+      "recipient": "VERIFIED",
+      "request_hash": "VERIFIED",
+      "scenario_digest": "VERIFIED",
+      "scope": "VERIFIED",
+      "signer_active": "VERIFIED",
+      "token": "VERIFIED"
+    },
+    "enforcement": "OFF_CHAIN",
+    "missing_obligations": [
+      "J01"
+    ],
+    "status": "REFUTED"
+  },
+  "case": {
+    "catalog": {
+      "J02": {
+        "dependencies": [],
+        "procedure": "review_profile"
+      },
+      "J03": {
+        "dependencies": [
+          "J01",
+          "J02"
+        ],
+        "procedure": "proof_byte_binding"
+      },
+      "J04": {
+        "dependencies": [],
+        "procedure": "profile_commitments"
+      },
+      "J05": {
+        "dependencies": [
+          "J01",
+          "J02",
+          "J03"
+        ],
+        "procedure": "claim_values"
+      },
+      "J06": {
+        "dependencies": [
+          "J05"
+        ],
+        "procedure": "claim_fields"
+      },
+      "J07": {
+        "dependencies": [
+          "J01",
+          "J02"
+        ],
+        "procedure": "key_policy"
+      },
+      "J08": {
+        "dependencies": [
+          "J07"
+        ],
+        "procedure": "controller_scope"
+      },
+      "J09": {
+        "dependencies": [
+          "J01",
+          "J02"
+        ],
+        "procedure": "supported_scope"
+      }
+    },
+    "claim": {
+      "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+      "inference_subject": "lab-subject-a",
+      "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+      "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+      "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+      "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+      "review_subject": "lab:preserved-native-proof-a",
+      "scenario": "preserved-proof-a-replay-and-review",
+      "scope": "local-output-replay-and-proof-byte-review"
+    },
+    "contract_bytes": "eyJhZGVxdWFjeSI6IkVYVEVSTkFMX1JFU0VBUkNIX0FTU1VNUFRJT047IHNhbWUgaW52ZXN0aWdhdG9ycyBhdXRob3JlZCBjb250cmFjdCBhbmQgZW5naW5lIiwiY2hlY2tlcl9wb2xpY3kiOiJESVNUSU5DVF9LRVlTX0lOX0VBQ0hfUFJPRklMRSIsImNsYWltX3R5cGUiOiJMQUJfUkVQTEFZX0FORF9SRVZJRVdFRF9QUk9PRl9JREVOVElUWSIsImNvbnRyb2xsZXJfcG9saWN5IjoiTk9UX0NMQUlNRUQiLCJwcm9maWxlcyI6eyJpbmZlcmVuY2UiOiI0YmExYjg4NWJlYzc4NDkxYjVhMjNmZjY4ZmQ5MTJjMWY1ZTFhYWVlZDIwZDQ3Mzc5OTkzYjI0ZmU4MDc3YTU3IiwiaW5mZXJlbmNlX3BvbGljeSI6IjFmM2ViNDZiMjAzZDhlMzk4ODNiYjU0MTkzZGFlOWE4NzBlN2IxZmUzNzk1ZTA3ZjQwYzliNjY2YTMzMWI5NzciLCJyZXZpZXciOiI0ZDI3Nzg1MjE2ZThiZDEyMTJkMWEwODgxOGE2MjY1M2ExZDQwNmNlNzVjYWI1OTU1YWYyOThhNzc4YzJiNDk2In0sInJlcXVpcmVtZW50cyI6eyJKMDEiOnsiZGVwZW5kZW5jaWVzIjpbXSwicHJvY2VkdXJlIjoiaW5mZXJlbmNlX3Byb2ZpbGUifSwiSjAyIjp7ImRlcGVuZGVuY2llcyI6W10sInByb2NlZHVyZSI6InJldmlld19wcm9maWxlIn0sIkowMyI6eyJkZXBlbmRlbmNpZXMiOlsiSjAxIiwiSjAyIl0sInByb2NlZHVyZSI6InByb29mX2J5dGVfYmluZGluZyJ9LCJKMDQiOnsiZGVwZW5kZW5jaWVzIjpbXSwicHJvY2VkdXJlIjoicHJvZmlsZV9jb21taXRtZW50cyJ9LCJKMDUiOnsiZGVwZW5kZW5jaWVzIjpbIkowMSIsIkowMiIsIkowMyJdLCJwcm9jZWR1cmUiOiJjbGFpbV92YWx1ZXMifSwiSjA2Ijp7ImRlcGVuZGVuY2llcyI6WyJKMDUiXSwicHJvY2VkdXJlIjoiY2xhaW1fZmllbGRzIn0sIkowNyI6eyJkZXBlbmRlbmNpZXMiOlsiSjAxIiwiSjAyIl0sInByb2NlZHVyZSI6ImtleV9wb2xpY3kifSwiSjA4Ijp7ImRlcGVuZGVuY2llcyI6WyJKMDciXSwicHJvY2VkdXJlIjoiY29udHJvbGxlcl9zY29wZSJ9LCJKMDkiOnsiZGVwZW5kZW5jaWVzIjpbIkowMSIsIkowMiJdLCJwcm9jZWR1cmUiOiJzdXBwb3J0ZWRfc2NvcGUifX0sInNjZW5hcmlvIjoicHJlc2VydmVkLXByb29mLWEtcmVwbGF5LWFuZC1yZXZpZXciLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5pbnRlZ3JhdGlvbi52MSIsInNjb3BlIjoibG9jYWwtb3V0cHV0LXJlcGxheS1hbmQtcHJvb2YtYnl0ZS1yZXZpZXcifQ==",
+    "inference": {
+      "catalog": {
+        "O01": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume provenance signature under the separately declared scenario contract",
+          "dependencies": [],
+          "evidence_requirements": "provenance signature",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O01",
+          "scope": "local public MatMul replay only",
+          "source_specification": "WYRIWE 5.1",
+          "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "attestation_signature"
+        },
+        "O02": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume input weights output proof under the separately declared scenario contract",
+          "dependencies": [],
+          "evidence_requirements": "input weights output proof",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O02",
+          "scope": "local public MatMul replay only",
+          "source_specification": "zkIE pinned native public MatMul",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "native_proof"
+        },
+        "O03": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume raw bytes and signed rawInputHash under the separately declared scenario contract",
+          "dependencies": [
+            "O01"
+          ],
+          "evidence_requirements": "raw bytes and signed rawInputHash",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O03",
+          "scope": "local public MatMul replay only",
+          "source_specification": "WYRIWE 5.2 conditional; research policy requires availability",
+          "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "raw_preimage"
+        },
+        "O04": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume raw input identity spec and pipeline digest under the separately declared scenario contract",
+          "dependencies": [
+            "O01",
+            "O03"
+          ],
+          "evidence_requirements": "raw input identity spec and pipeline digest",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O04",
+          "scope": "local public MatMul replay only",
+          "source_specification": "WYRIWE 5.3-4 conditional; research replay policy",
+          "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "transform_replay"
+        },
+        "O05": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume requested input and every signed input under the separately declared scenario contract",
+          "dependencies": [
+            "O01",
+            "O02",
+            "O07",
+            "O09"
+          ],
+          "evidence_requirements": "requested input and every signed input",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O05",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research cross-artifact binding",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "input_binding"
+        },
+        "O06": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume model manifest weights and pinned model authorization under the separately declared scenario contract",
+          "dependencies": [
+            "O02"
+          ],
+          "evidence_requirements": "model manifest weights and pinned model authorization",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O06",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research model authorization",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "model_binding"
+        },
+        "O07": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume judgment signature exact proof subject action under the separately declared scenario contract",
+          "dependencies": [
+            "O02"
+          ],
+          "evidence_requirements": "judgment signature exact proof subject action",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O07",
+          "scope": "local public MatMul replay only",
+          "source_specification": "laboratory LabJudgment schema; not WYRIWE L4",
+          "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "judgment_inference"
+        },
+        "O08": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume trusted policy and recovered signer evidence under the separately declared scenario contract",
+          "dependencies": [
+            "O01"
+          ],
+          "evidence_requirements": "trusted policy and recovered signer evidence",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O08",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research laboratory authority; no on-chain identity",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "authority"
+        },
+        "O09": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume receipt signature and execution identifier under the separately declared scenario contract",
+          "dependencies": [
+            "O07"
+          ],
+          "evidence_requirements": "receipt signature and execution identifier",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O09",
+          "scope": "local public MatMul replay only",
+          "source_specification": "laboratory LabReceipt schema",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "receipt_binding"
+        },
+        "O10": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume preserved result and observation bytes under the separately declared scenario contract",
+          "dependencies": [
+            "O09"
+          ],
+          "evidence_requirements": "preserved result and observation bytes",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O10",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research integrity only, no historical execution claim",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "receipt_evidence"
+        },
+        "O11": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume policy bytes declared domain request nonce consumed snapshot under the separately declared scenario contract",
+          "dependencies": [
+            "O08"
+          ],
+          "evidence_requirements": "policy bytes declared domain request nonce consumed snapshot",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O11",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research context; WYRIWE timestamp is not replay protection",
+          "source_version": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "policy_domain_context"
+        },
+        "O12": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume claim policy and signed scope under the separately declared scenario contract",
+          "dependencies": [
+            "O07",
+            "O09"
+          ],
+          "evidence_requirements": "claim policy and signed scope",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O12",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research non-amplification",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "evidence_scope"
+        },
+        "O13": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected laboratory replay",
+          "coverage_justification": "Required to consume requested actual and signed output digests under the separately declared scenario contract",
+          "dependencies": [
+            "O02",
+            "O07",
+            "O09"
+          ],
+          "evidence_requirements": "requested actual and signed output digests",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O13",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research output assertion binding",
+          "source_version": "v4-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "output_binding"
+        },
+        "O14": {
+          "applicable_policy": "v4-lab-policy/4",
+          "authority": "v4-lab-policy",
+          "claim_type": "scenario-selected independent judgment",
+          "coverage_justification": "Required where the scenario contract requires independent judgment: the judgment signer must differ from the provenance (producer) signer; authorization of both roles by policy does not establish separation",
+          "dependencies": [
+            "O01",
+            "O07",
+            "O08"
+          ],
+          "evidence_requirements": "recovered provenance and judgment signers from verified signatures",
+          "failure_classification": {
+            "mismatch": "REFUTED",
+            "missing": "UNVERIFIABLE"
+          },
+          "obligation_id": "O14",
+          "scope": "local public MatMul replay only",
+          "source_specification": "research laboratory checker independence; mirrors work-acceptance record profile 1.3 (checker key != producer key)",
+          "source_version": "v4.1-research-profile-1",
+          "subject": "exact supplied request and its evidence",
+          "verification_procedure": "checker_independence"
+        }
+      },
+      "claim": {
+        "action": "materialize-matmul-output",
+        "claimKind": "recompute-output",
+        "executionId": "lab-execution-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "nonce": "lab-request-a",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "scope": "public-matmul-recomputation",
+        "subject": "lab-subject-a"
+      },
+      "consumed_nonces": [],
+      "contract": {
+        "adequacy": "ASSUMED; structurally separate specification, not independently elicited by another researcher",
+        "authority": "reviewer-supplied local research policy, not an ERC authority",
+        "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+        "excluded_claims": [
+          "external input admission",
+          "factual judgment correctness",
+          "historical execution",
+          "task success",
+          "chain conformance"
+        ],
+        "requirements": {
+          "O01": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "attestation_signature"
+          },
+          "O02": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "native_proof"
+          },
+          "O03": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O01"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "raw_preimage"
+          },
+          "O04": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O01",
+              "O03"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "transform_replay"
+          },
+          "O05": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O01",
+              "O02",
+              "O07",
+              "O09"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "input_binding"
+          },
+          "O06": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O02"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "model_binding"
+          },
+          "O07": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O02"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "judgment_inference"
+          },
+          "O08": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O01"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "authority"
+          },
+          "O09": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O07"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "receipt_binding"
+          },
+          "O10": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O09"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "receipt_evidence"
+          },
+          "O11": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O08"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "policy_domain_context"
+          },
+          "O12": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O07",
+              "O09"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "evidence_scope"
+          },
+          "O13": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O02",
+              "O07",
+              "O09"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "output_binding"
+          },
+          "O14": {
+            "applicable_policy": "v4-lab-policy/4",
+            "authority": "v4-lab-policy",
+            "dependencies": [
+              "O01",
+              "O07",
+              "O08"
+            ],
+            "scope": "local public MatMul replay only",
+            "verification_procedure": "checker_independence"
+          }
+        },
+        "revision": 3,
+        "scenario": "lab-output-v2",
+        "schema": "independently-declared-scenario-contract-v4.1"
+      },
+      "documents": {
+        "judgment": {
+          "domain": {
+            "chainId": 31337,
+            "name": "ERC8004AttestationGateway",
+            "version": "1"
+          },
+          "message": {
+            "action": "materialize-matmul-output",
+            "executionId": "lab-execution-a",
+            "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "nonce": "lab-request-a",
+            "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+            "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "scope": "public-matmul-recomputation",
+            "subject": "lab-subject-a"
+          },
+          "signature": "0xd7385be226c0d901cef114c2ae9a435501661c21a49b4221dec1a905564f54d03aba557f1763f0db4c3a7625ee48c3b049f8f3204b3da0b5969594e5872566071b",
+          "signer": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8",
+          "type": "LabJudgment"
+        },
+        "provenance": {
+          "domain": {
+            "chainId": 31337,
+            "name": "ERC8004AttestationGateway",
+            "version": "1"
+          },
+          "message": {
+            "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "rawInputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "registry": "0x0000000000000000000000000000000000000000",
+            "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+            "timestamp": 0
+          },
+          "signature": "0xdf865d887a91b03e7ca65528d2c59b4b210dd338f8b735be7cc400c73a0d8567053ad523fa318c8f336962b412132049511d5294d543a5a2a705b080d625c3471c",
+          "signer": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87",
+          "type": "WyriweAttestation"
+        },
+        "receipt": {
+          "domain": {
+            "chainId": 31337,
+            "name": "ERC8004AttestationGateway",
+            "version": "1"
+          },
+          "message": {
+            "action": "materialize-matmul-output",
+            "executionId": "lab-execution-a",
+            "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+            "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+            "nonce": "lab-request-a",
+            "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819",
+            "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+            "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+            "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+            "scope": "public-matmul-recomputation",
+            "subject": "lab-subject-a"
+          },
+          "signature": "0x77e91b04f7f6afa9ce0a33f95491689e96b9efb1c3952387addda1840d1e3b282247bb903bbeb37bcea110dd6fe2a9c6bfcab75d90cacc1521f8868376ca06951c",
+          "signer": "0xd6566ec8c06737b38138853294003abb45c19c5d",
+          "type": "LabReceipt"
+        }
+      },
+      "files": {
+        "input": "evidence/v2/capture/a/input.bin",
+        "model": "evidence/v2/capture/a/model.json",
+        "observation": "evidence/v2/capture/a/execution-observation.json",
+        "output": "evidence/v2/capture/a/output.bin",
+        "policy": "evidence/v4/lab/policy.json",
+        "proof": "evidence/v2/capture/a/proof.bin",
+        "raw_input": "evidence/v2/capture/a/raw-input.bin",
+        "result": "evidence/v2/capture/a/delivered.bin",
+        "transform": "evidence/v4/sources/identity.json",
+        "weights": "evidence/v2/capture/a/weights.bin"
+      },
+      "policy": {
+        "action": "materialize-matmul-output",
+        "authorized": {
+          "judgment": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8",
+          "provenance": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87",
+          "receipt": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+        },
+        "domain": {
+          "chainId": 31337,
+          "name": "ERC8004AttestationGateway",
+          "version": "1"
+        },
+        "domain_status": "DECLARED_OFFLINE_LAB_DOMAIN_NO_CHAIN_OBSERVATION",
+        "historicalExecutionAuthority": null,
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "schema": "v4-lab-policy",
+        "scope": "public-matmul-recomputation",
+        "version": 4
+      },
+      "requested_claim": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+      "scenario": "lab-output-v2"
+    },
+    "review": {
+      "bundle_bytes": "eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib2JzZXJ2ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM4MCIsImRpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlZrRkhRMDVRTWdBQkFBQUE1bjc4bHV3em1tNENBQUFBYmVYaERZallIZHpuM2VEaTIzTE81Z01BQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2tEQUFBQUdYczAreFkzZGVXdjllRi8zKzVSeklTOTNueU1HaXZhQ1FBQUFQQjNoNDBaRFdYUGUwRTRac014VUVHTlRiVVY5T2Qvam9sbUNxTmdSc2tpOWllWkorTE1mL0RLdUdPRFdMalR3dUZTLzhUQjloalpQVUU0VFNBc1krdU05bUMzd3lzVGNRSUFBQUJGWnBDTElYR2JOTnlHbTE5T281aGVBQUFBQUFVQUFBQVplelQ3RmpkMTVhLzE0WC9mN2xITWhMM2VmSXdhSzlwdDVlRU5pTmdkM09mZDRPTGJjczdtQVFBQUFFVm1rSXNoY1pzMEFRQUFBQVlBQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2taZXpUN0ZqZDE1YS8xNFgvZjdsSE1oTDNlZkl3YUs5b0JBQUFBM0lhYlgwNmptRjRDQUFBQUJRQUFBSnlGbHYzSHlmRmhsMDlSV09jcVN4REk2TkI2NzdnZ3FXM2w0UTJJMkIzYzU5M2c0dHR5enVZQkFBQUE1bjc4bHV3em1tND0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fQ==",
+      "catalog": {
+        "O14": {
+          "dependencies": [
+            "S01",
+            "S04",
+            "S05"
+          ],
+          "procedure": "independence"
+        },
+        "S01": {
+          "dependencies": [],
+          "procedure": "signature"
+        },
+        "S02": {
+          "dependencies": [
+            "S01"
+          ],
+          "procedure": "artifact"
+        },
+        "S03": {
+          "dependencies": [
+            "S01"
+          ],
+          "procedure": "subject"
+        },
+        "S04": {
+          "dependencies": [
+            "S01"
+          ],
+          "procedure": "authority"
+        },
+        "S05": {
+          "dependencies": [
+            "S01"
+          ],
+          "procedure": "domain"
+        },
+        "S06": {
+          "dependencies": [
+            "S01"
+          ],
+          "procedure": "judgment"
+        }
+      },
+      "claim": {
+        "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+        "scenario": "lab-artifact-review-v1",
+        "scope": "artifact-byte-identity",
+        "subject": "lab:preserved-native-proof-a"
+      },
+      "context": {
+        "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496"
+      },
+      "contract": {
+        "actions": {
+          "judgment": "review-artifact",
+          "producer": "declare-artifact"
+        },
+        "adequacy": "EXTERNAL_ASSUMPTION",
+        "authorized": {
+          "judgment": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+          "producer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789"
+        },
+        "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+        "consumed_fields": [
+          "scenario",
+          "claimType",
+          "scope",
+          "subject",
+          "artifactSha256"
+        ],
+        "domain": {
+          "chainId": "31337",
+          "name": "Claim-Aware External Lab",
+          "version": "1"
+        },
+        "identity_namespace": "eip155:31337:secp256k1",
+        "requirements": {
+          "O14": {
+            "dependencies": [
+              "S01",
+              "S04",
+              "S05"
+            ],
+            "procedure": "independence"
+          },
+          "S01": {
+            "dependencies": [],
+            "procedure": "signature"
+          },
+          "S02": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "artifact"
+          },
+          "S03": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "subject"
+          },
+          "S04": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "authority"
+          },
+          "S05": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "domain"
+          },
+          "S06": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "judgment"
+          }
+        },
+        "scenario": "lab-artifact-review-v1",
+        "schema": "claim-aware.external.v1",
+        "scope": "artifact-byte-identity",
+        "separation": [
+          [
+            "producer",
+            "judgment"
+          ]
+        ],
+        "unconsumed_policy": "REJECT"
+      },
+      "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweGI4YmIzMzUwMDk1Mzg3ZDU0ZDlkODY5ODNjNDhjMDE2NGVjOTNjYzciLCJwcm9kdWNlciI6IjB4N2Q4ZjAyMGI3ZDhkYmJmZjg1ODdlMWE3ZjljZTAyZWUzZjk3ZTc4OSJ9LCJjbGFpbV90eXBlIjoiUkVWSUVXRURfQVJUSUZBQ1RfSURFTlRJVFkiLCJjb25zdW1lZF9maWVsZHMiOlsic2NlbmFyaW8iLCJjbGFpbVR5cGUiLCJzY29wZSIsInN1YmplY3QiLCJhcnRpZmFjdFNoYTI1NiJdLCJkb21haW4iOnsiY2hhaW5JZCI6IjMxMzM3IiwibmFtZSI6IkNsYWltLUF3YXJlIEV4dGVybmFsIExhYiIsInZlcnNpb24iOiIxIn0sImlkZW50aXR5X25hbWVzcGFjZSI6ImVpcDE1NTozMTMzNzpzZWNwMjU2azEiLCJyZXF1aXJlbWVudHMiOnsiTzE0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiLCJTMDQiLCJTMDUiXSwicHJvY2VkdXJlIjoiaW5kZXBlbmRlbmNlIn0sIlMwMSI6eyJkZXBlbmRlbmNpZXMiOltdLCJwcm9jZWR1cmUiOiJzaWduYXR1cmUifSwiUzAyIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXJ0aWZhY3QifSwiUzAzIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoic3ViamVjdCJ9LCJTMDQiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJhdXRob3JpdHkifSwiUzA1Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiZG9tYWluIn0sIlMwNiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6Imp1ZGdtZW50In19LCJzY2VuYXJpbyI6ImxhYi1hcnRpZmFjdC1yZXZpZXctdjEiLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5leHRlcm5hbC52MSIsInNjb3BlIjoiYXJ0aWZhY3QtYnl0ZS1pZGVudGl0eSIsInNlcGFyYXRpb24iOltbInByb2R1Y2VyIiwianVkZ21lbnQiXV0sInVuY29uc3VtZWRfcG9saWN5IjoiUkVKRUNUIn0=",
+      "documents": {
+        "judgment": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "review-artifact",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          },
+          "signature": "0x098c53954246db4a9cd2617732467295eab065c5ff97ef29ebf7f2184806c5aa0f709b7e4e6e52be9f8cf70209d16fbc6bb49d51c1af72c128c012e0b7124c531b",
+          "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+          "type": "LabJudgment"
+        },
+        "producer": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "declare-artifact",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          },
+          "signature": "0xbc4c99850fc8497604db59b9649ab6a25098b7668d2c79ea8aba73e6b5a725757791e61248b04fa1f5dc7e2ca8c3f7e3c38a23de02ba7e754d00ce54b289652e1c",
+          "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+          "type": "LabJudgment"
+        }
+      },
+      "receipt_bytes": "eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9",
+      "variants": {
+        "unauthorized": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "review-artifact",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          },
+          "signature": "0x22dd389d602d8631b695adca1310452bc3dd491c945930ab2f3bc475e8359d5b5edaabb7417903fe0091c173b87f4a444158d76d7547b764acc4df10fac92f781b",
+          "signer": "0x3b20da9d9a12a9ab15ebe8a1599bc583d6a9cc12",
+          "type": "LabJudgment"
+        },
+        "wrong_action": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "release-funds",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          },
+          "signature": "0x293e5d5d58da44e4cc64d1b9900c1bd81803059347182b8961f04c7d41fe81d0449d3a90c76c3f6b43e732cd26b30ba499eeff4df2966fc5f6bc92603f13cbba1b",
+          "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+          "type": "LabJudgment"
+        },
+        "wrong_artifact": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "review-artifact",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "proofHash": "0x1212121212121212121212121212121212121212121212121212121212121212",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          },
+          "signature": "0x209296de647756edc05c7a2834ca83d41757c5b10ae01c5a0a10f48de99dd0645e84b6278ed469392b48e7bbbb7a3f622c1761f9257db405a7e6d97c83cfed5d1b",
+          "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+          "type": "LabJudgment"
+        },
+        "wrong_contract": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "review-artifact",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x3434343434343434343434343434343434343434343434343434343434343434",
+            "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          },
+          "signature": "0x78c5aec26ed5fd9cd72e765f255fe4f6b7e0bc01dbb7a1ae8cbcba51a23b909433557da26c3f7b5dd53570eb67802eb48e23e311430b56dd16f139934defd3331b",
+          "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+          "type": "LabJudgment"
+        },
+        "wrong_subject": {
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "message": {
+            "action": "review-artifact",
+            "executionId": "NOT_AN_EXECUTION_CLAIM",
+            "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "lab-fixture-v1",
+            "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "scope": "artifact-byte-identity",
+            "subject": "other-subject"
+          },
+          "signature": "0xf85f893d906b939a48e24c6c96d6657b4c6cf3b5aea28aaddea019106f3f07d91253346f416cc49b9a5213e70ae4588bd7958ce42c125a14e4b9e0aeb2e615981c",
+          "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+          "type": "LabJudgment"
+        }
+      }
+    }
+  },
+  "component_signature_valid": true,
+  "decision_ref": "efb4f0928762102ab3dadd9a5c872496f814f4356cc5b3139317d4a432fa8fe0",
+  "grant": {
+    "amount": "1000000",
+    "chain_id": "8453",
+    "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+    "escrow_contract": "0x2e234dae75c793f67a35089c9d99245e1c58470b",
+    "expires_at": "2000",
+    "intended_consumer": "claim-aware.escrow.consumer.v0",
+    "job_id": "lab-proof-review-job-1",
+    "nonce": "7",
+    "payment_id": "65753461467026701966363993773094006983464321202710526546112595315786354133703",
+    "permission": "PAY_FOR_LOCAL_PROOF_REPLAY_AND_REVIEW_ONLY; no delivery assertion",
+    "recipient": "0x0000000000000000000000000000000000000b0b",
+    "revoked_signers": [],
+    "scenario": "preserved-proof-a-replay-and-review",
+    "scenario_contract_sha256": "60a98d797564268383a7bb6268b4e58659b77f978b20c2c1b80617b3573a2834",
+    "schema": "payer-lab-grant.v0",
+    "scope": "local-output-replay-and-proof-byte-review",
+    "signer": "388617cf1aada9a0b23ed2fbbcc3ec9dcef62673ef4aca210cb8f15e91c39f87",
+    "token": "0x5615deb798bb3e4dfa0139dfa1b3d433cc23b72f",
+    "verification_profile_sha256": "9916f0ee2862691b528fe4566e7c86f30003d64e7f6cc27aef99bb532d94ca5d"
+  },
+  "journal": [],
+  "name": "P_incorrect_authorization",
+  "now": 1000,
+  "profile_bytes": "7b22626173656c696e655f636f6d6d6974223a2263393330383766303662643134633435613164313262306330363831393565336265663035646165222c22636c61696d5f74797065223a224c41425f5245504c41595f414e445f52455649455745445f50524f4f465f4944454e54495459222c2272756c65223a227061796572206772616e7420414e4420696e646570656e64656e7420505237207265636f6d7075746174696f6e20414e44206578616374207061796d656e7420636f6e746578743b20657363726f7720656e666f72636573206f6e6c7920697473206578697374696e672064696765737420616e64207374617465222c22736368656d61223a22636c61696d2d61776172652e657363726f772d70726f66696c652e7630222c2273636f7065223a226c6f63616c2d6f75747075742d7265706c61792d616e642d70726f6f662d627974652d726576696577222c22736f7572636573223a7b2266697874757265732f696e746567726174696f6e2f7363656e6172696f2d636f6e74726163742e6a736f6e223a2236306139386437393735363432363833383361376262363236386234653538363539623737663937386232306332633162383036313762333537336132383334222c227372632f657263383430342f656e67696e652e7079223a2263313633363031323763633662646238323463323035313834626434366535376631366664336165656332636665353864383132643961396662396665343132222c227372632f696e746567726174696f6e2f656e67696e652e7079223a2238313730373633386661303736343836653731653138646639383163633764616166306539313837306635336434353738373063306166303966643866633363222c227372632f76345f312f6d6f64656c2e7079223a2237633761363232326132336434643832613939653162316637626232303433333637346339633361343739313936356636623932623438623333633366346235227d7d",
+  "record": {
+    "assumptions": [
+      "Consumer independently selects an adequate scenario contract and its policies.",
+      "Pinned local verifiers, runtimes and filesystem are trusted during this call.",
+      "Distinct recovered keys do not establish distinct real-world controllers.",
+      "Laboratory attestations establish authenticity, not judgment truth or external admission.",
+      "ReceiptOS records and RVR identity receipts do not establish historical external execution.",
+      "The two subject labels retain separate meanings; no entity-equivalence claim is made."
+    ],
+    "authorized": false,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "checks": {
+      "J02": "VERIFIED",
+      "J03": "VERIFIED",
+      "J04": "VERIFIED",
+      "J05": "VERIFIED",
+      "J06": "VERIFIED",
+      "J07": "VERIFIED",
+      "J08": "VERIFIED",
+      "J09": "VERIFIED",
+      "coverage": "REFUTED",
+      "definitions": "VERIFIED",
+      "dependencies": "VERIFIED",
+      "scope_floor": "VERIFIED"
+    },
+    "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+    "components": {
+      "inference": "VERIFIED",
+      "review": "VERIFIED"
+    },
+    "contract_sha256": "60a98d797564268383a7bb6268b4e58659b77f978b20c2c1b80617b3573a2834",
+    "evidence_level": "LABORATORY_VERIFIED",
+    "evidence_references": {
+      "documents_sha256": "3f06270f8b41ee7ffe09983983da571230b543797020802b583c40db5ac68b85",
+      "inference_files": {
+        "input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "model": "a8645f4c909745d4e90df6bac9c929960e665ef48f1379d7f689c42245604b8c",
+        "observation": "a37afea593d4d7bd650584d8202593ffdb904f3781055ff556ea64a47b3eb6df",
+        "output": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "policy": "1f3eb46b203d8e39883bb54193dae9a870e7b1fe3795e07f40c9b666a331b977",
+        "proof": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "raw_input": "86cec0ce6ef740dacace6e1509a4d141e8737fc5e8f6fe9136eabc052b305e12",
+        "result": "65dd566b791a1a17845e32e06aa5a939256ac725f7a9240225fd1e809a083336",
+        "transform": "f5d5296de6c395b77199b0e153d42166a1793947f8720e340b5815adfe24bd78",
+        "weights": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7"
+      },
+      "rvr_receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77"
+    },
+    "missing_obligations": [
+      "J01"
+    ],
+    "mode": "C",
+    "scenario": "preserved-proof-a-replay-and-review",
+    "status": "REFUTED",
+    "unconsumed_claim_fields": [],
+    "verified_scope": null
+  },
+  "request": {
+    "amount": "1000000",
+    "authorization": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "chain_id": "8453",
+    "claim_type": "LAB_REPLAY_AND_REVIEWED_PROOF_IDENTITY",
+    "escrow_contract": "0x2e234dae75c793f67a35089c9d99245e1c58470b",
+    "evidence_sha256": "9677a4f0238352cb7f3ea17bac38c348b67a8ef7de7ec24395cf0dae321fc032",
+    "expires_at": "2000",
+    "intended_consumer": "claim-aware.escrow.consumer.v0",
+    "job_id": "lab-proof-review-job-1",
+    "nonce": "7",
+    "payment_id": "65753461467026701966363993773094006983464321202710526546112595315786354133703",
+    "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+    "recipient": "0x0000000000000000000000000000000000000b0b",
+    "scenario": "preserved-proof-a-replay-and-review",
+    "scenario_contract_sha256": "60a98d797564268383a7bb6268b4e58659b77f978b20c2c1b80617b3573a2834",
+    "schema": "claim-aware.escrow-request.v0",
+    "scope": "local-output-replay-and-proof-byte-review",
+    "token": "0x5615deb798bb3e4dfa0139dfa1b3d433cc23b72f",
+    "verification_profile_sha256": "9916f0ee2862691b528fe4566e7c86f30003d64e7f6cc27aef99bb532d94ca5d"
+  },
+  "request_bytes": "7b22616d6f756e74223a2231303030303030222c22617574686f72697a6174696f6e223a7b22617574686f72697a6564223a747275652c22737461747573223a225645524946494544227d2c22636861696e5f6964223a2238343533222c22636c61696d5f74797065223a224c41425f5245504c41595f414e445f52455649455745445f50524f4f465f4944454e54495459222c22657363726f775f636f6e7472616374223a22307832653233346461653735633739336636376133353038396339643939323435653163353834373062222c2265766964656e63655f736861323536223a2239363737613466303233383335326362376633656131376261633338633334386236376138656637646537656332343339356366306461653332316663303332222c22657870697265735f6174223a2232303030222c22696e74656e6465645f636f6e73756d6572223a22636c61696d2d61776172652e657363726f772e636f6e73756d65722e7630222c226a6f625f6964223a226c61622d70726f6f662d7265766965772d6a6f622d31222c226e6f6e6365223a2237222c227061796d656e745f6964223a223635373533343631343637303236373031393636333633393933373733303934303036393833343634333231323032373130353236353436313132353935333135373836333534313333373033222c2270726f6f665f736861323536223a2238376461383435613266653263343736386430656334373932366436633562366138386366313031343966306163323931303333623033346463333634353330222c22726563697069656e74223a22307830303030303030303030303030303030303030303030303030303030303030303030303030623062222c227363656e6172696f223a227072657365727665642d70726f6f662d612d7265706c61792d616e642d726576696577222c227363656e6172696f5f636f6e74726163745f736861323536223a2236306139386437393735363432363833383361376262363236386234653538363539623737663937386232306332633162383036313762333537336132383334222c22736368656d61223a22636c61696d2d61776172652e657363726f772d726571756573742e7630222c2273636f7065223a226c6f63616c2d6f75747075742d7265706c61792d616e642d70726f6f662d627974652d726576696577222c22746f6b656e223a22307835363135646562373938626233653464666130313339646661316233643433336363323362373266222c22766572696669636174696f6e5f70726f66696c655f736861323536223a2239393136663065653238363236393162353238666534353636653763383666333030303364363465376636636332376165663939626235333264393463613564227d",
+  "snapshot": {
+    "amount": "1000000",
+    "chain_id": "8453",
+    "escrow_contract": "0x2e234dae75c793f67a35089c9d99245e1c58470b",
+    "payment_id": "65753461467026701966363993773094006983464321202710526546112595315786354133703",
+    "policy_sha256": "ddd3cd6cd134673dd56833b561e02cc6fdea7789ced32da35a7ebc38640d1399",
+    "recipient": "0x0000000000000000000000000000000000000b0b",
+    "request_sha256": "8174e9313351cc3d758cdf252623537d682480165dd4cc7116fa4210827f42fe",
+    "state": "Funded",
+    "token": "0x5615deb798bb3e4dfa0139dfa1b3d433cc23b72f"
+  },
+  "verdict": {
+    "digest": "9628a7c2a37495d0a9843a3c5932c8bd0cbda5e2c8ae217302e52f2189a06941",
+    "origin": "DETERMINISTIC_LABORATORY_ONLY",
+    "signature": "1692a645906045c74ca4cd663cd6c6e9041fd053619f0afeb1e0b82f0e230103d0431070c21303a1b82eef7a9aa347a528049b4aabb9281945cc9de939744552",
+    "signer": "388617cf1aada9a0b23ed2fbbcc3ec9dcef62673ef4aca210cb8f15e91c39f87"
+  }
+}

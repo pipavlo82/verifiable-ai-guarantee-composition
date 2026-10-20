@@ -1,0 +1,16 @@
+{
+  "escrow": {
+    "head": "ce8c504f2ae4d9b389b53823fe16afec7fcf3bb3",
+    "clean": true
+  },
+  "zkie": {
+    "head": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+    "clean": true
+  },
+  "erc8404": {
+    "head": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+    "clean": true,
+    "spec_sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85"
+  },
+  "native_binary_initial_sha256": "5ab19c3ce639a17607926246dbecddae033834ab282b3e4f8ae673b502ab6a12"
+}

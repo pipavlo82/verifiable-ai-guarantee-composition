@@ -1,0 +1,13 @@
+{
+  "amount": 1000000,
+  "escrow": "0x2e234DAe75C793f67A35089C9d99245E1C58470b",
+  "name": "H_replay",
+  "offchain_admitted": false,
+  "offchain_status_code": 1,
+  "onchain_success": false,
+  "recipient": "0x0000000000000000000000000000000000000B0b",
+  "recipient_delta": 0,
+  "release_call_gas": 1645,
+  "return_data": "0xd5ef09ba",
+  "state": 2
+}
