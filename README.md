@@ -1,129 +1,218 @@
-# Verifiable AI Guarantee Composition
+# Verifiable Execution & Claim Authorization
 
-Experimental PR #5 + #6 integration is available in
-[research/integration/EXPERIMENT_RESULTS.md](research/integration/EXPERIMENT_RESULTS.md).
-It adds a separately scoped laboratory consumer, exact proof-byte binding and independent
-admission recomputation. The full external chain remains **PARTIAL_CHAIN_VERIFIED**.
-See the [engine](research/integration/CLAIM_AWARE_ENGINE.md),
-[compatibility matrix](research/integration/COMPATIBILITY_MATRIX.md),
-[mutation report](research/integration/MUTATION_REPORT.md),
-[paper addendum](research/integration/ACADEMIC_PAPER_DRAFT.md) and
-[fresh replay instructions](research/integration/INDEPENDENT_REVIEW_CHECKLIST.md).
-ERC-8404 Core, original receipts and historical v0-v4/PR5/PR6 evidence remain unchanged.
+Experimental research and executable verification tools for determining **which
+downstream claims a collection of proofs, attestations and execution records can
+actually authorize**.
 
-Experimental ERC-8404 compatibility research is available in
-[research/erc8404/RECOMMENDATION.md](research/erc8404/RECOMMENDATION.md).
-It adds an external claim-aware consumer with scenario-dependent checker
-independence and explicit authorization scope. ERC-8404 Core and historical
-v0-v4 evidence remain unchanged. See the
-[compatibility matrix](research/erc8404/COMPATIBILITY_MATRIX.md),
-[profile](research/erc8404/CLAIM_AWARE_PROFILE.md) and
-[results](research/erc8404/EXPERIMENT_RESULTS.md).
+A valid inference proof, authentic judgment and valid receipt can refer to different
+inputs, subjects, actions or policies. This project makes those relationships explicit,
+checks the evidence for each required relationship, and recomputes authorization at
+the consumer boundary.
 
-Independent experimental research by **pipavlo82** on the conditions under which
-component guarantees can justify a downstream authorization claim.
+> **Research status: PARTIAL_CHAIN_VERIFIED.** The integration and escrow experiments
+> are reproducible laboratory studies. A complete external provenance-to-execution
+> chain has not been established. **Production payments: HOLD.**
 
-## V4: scenario-relative obligation coverage
+Initiated by [Pavlo / pipavlo82](https://github.com/pipavlo82) as
+`verifiable-ai-guarantee-composition`, the project now lives under
+[Trustless AI](https://github.com/trustless-ai), preserving its history, contributors,
+pull requests and evidence. Research policies here are separate from normative ERC
+requirements; this repository is not a security certification.
 
-V4 asks whether every implemented check can pass while a necessary requirement
-was never declared. It separates **coverage**, **verification** and **composition**
-using independently declared scenario contracts and a typed 13-obligation catalog.
-Coverage remains relative to the adequacy of those trusted contracts.
+## Project structure
 
-The finite experiment has 54 scenarios, 24 tests per normal/repeat/Python -O run
-and 44 killed physical mutants, with zero final survivors or crashes. On the same
-50 negative/unsupported inputs, false authorizations are 41 for component-only,
-21 for declared obligations and 0 for scenario-contract coverage plus composition.
-All 13 omission controls are detected. Initial development crashes are preserved
-separately. Ten genuine laboratory signatures and the retained native proof are
-actually replayed; laboratory signatures are not external observations.
-
-Read the [results](research/v4/RESULTS.md), [formal model](research/v4/FORMAL_MODEL.md),
-[catalog](research/v4/OBLIGATION_CATALOG.md), [source pins](research/v4/SOURCES_AND_ARTIFACTS.md),
-[WYRIWE analysis](research/v4/WYRIWE_SECTION5_ANALYSIS.md),
-[ERC-8274 assessment](research/v4/ZKIE_ERC8274_MAPPING.md),
-[prior art](research/v4/PRIOR_ART.md) and [replay instructions](research/v4/REPRODUCE.md).
-The external chain remains **PARTIAL_CHAIN_VERIFIED**; no general completeness,
-scientific novelty, ERC-8274 deployment or upstream vulnerability is claimed.
-Draft branch depends on unmerged PR #3; no automatic merge.
-
-## V3: public artifacts and explicit missing links
-
-**PARTIAL_CHAIN_VERIFIED — full external chain remains unestablished.** V3 adds
-three preserved externally published signatures checked by two implementations,
-retained native zkIE replay, an actual unsigned local replay receipt, typed claim
-dependency planning, 36 scenarios and 14 isolated killed mutations. The controlled
-baseline authorizes 21/32 negative or unsupported requests; composition authorizes
-0/32 and preserves 16 UNVERIFIABLE results. There are 19 v3 test methods per mode.
-
-Read the [v3 report](research/V3_REAL_CHAIN_REPORT.md),
-[paper draft](research/ACADEMIC_PAPER_DRAFT.md),
-[prior-art comparison](research/PRIOR_ART_ANALYSIS.md), and
-[exact blockers and acquisition plan](research/OPEN_PROOF_OBLIGATIONS.md).
-V3 is based on unmerged draft PR #2; its historical results below remain intact.
-No full-chain success, upstream vulnerability, general security guarantee or
-scientific novelty is claimed.
-
-## Preserved v2 report
-
-**V2 verifies genuine laboratory signatures and retained native zkIE proof artifacts.
-It does not establish a complete external WYRIWE -> zkIE -> judgment -> execution
-chain. Historical execution remains UNVERIFIABLE. No upstream vulnerability,
-security certification or scientific priority is claimed.**
-
-The positive claim is deliberately narrow: a pinned public matrix operation's
-output can be recomputed and is consistently referenced by laboratory attestations
-under an explicit caller policy. The source-controlled profile uses exact bytes,
-Keccak-256, real EIP-712/secp256k1 verification and a separate native proof verifier
-process. The generated keys are laboratory authorities, not external issuer keys.
-
-## Current results
-
-**Survivor follow-up:** both original survivors are non-equivalent mutations masked
-by additional failures in their original witnesses. Isolated cases now kill both;
-7 additional tests pass in normal/repeat/`-O`. The production verifier is unchanged.
-See the [audit and reproduction evidence](research/V2_SURVIVOR_AUDIT.md).
-The table below preserves the original v2 experiment's results.
-
-| Experiment | Observed result |
+| Component | Purpose and current state |
 | --- | --- |
-| Same-evidence v2 comparison | 26 scenarios: one narrow positive and 25 negative/unsupported claims |
-| Independent component baseline | 18/25 negative cases falsely authorized |
-| Explicit composition | 0/25 negative cases authorized; 4 UNVERIFIABLE classifications retained |
-| Python v2 tests | 20 pass in normal, repeated and optimized runs |
-| Executed source mutations | 18 KILLED, 2 SURVIVED, 0 CRASHED, 0 NOT_APPLIED |
-| Unavailable integration check | 1 UNVERIFIABLE, unexecuted; not counted as a mutation |
-| Native artifacts | Two retained 380-byte proofs; deserialized native verification and full output recomputation |
-| Signatures | Ten genuine laboratory artifacts; external EIP-712 known-answer recovery also checked |
+| Research model | Typed guarantees, dependencies, authorities, scenario contracts, counterexamples and prior-art analysis |
+| Claim-Aware Verification Engine | Experimental composition, claim-scoped authorization and independently recomputed consumer admission |
+| Agent Conformance Harness | Existing vectors, replay runners and mutation controls; a general adapter interface for arbitrary implementations is a next development stage |
+| Application adapters | External ERC-8404 consumer and verdict-gated escrow laboratory experiment |
 
-These numbers describe a controlled experiment against our deliberately incomplete
-component-only baseline. They do not estimate real deployment exploit rates or
-compare against upstream authorization software. The two surviving mutants are
-retained in that original run, not retroactively counted as kills. The separate
-follow-up reports 2 KILLED and 0 SURVIVED. No security advantage is generalized beyond these
-specific witnesses. Full evidence is linked below.
+The conformance harness is a component of the broader research programme. Escrow is
+one downstream use case, not the definition of the project.
 
-- [Completed v2 experimental report](research/V2_REAL_ARTIFACT_REPORT.md)
-- [Fresh-checkout reproduction](research/chain-v2/REPRODUCE.md)
-- [Exact formats and trust boundaries](research/chain-v2/ARTIFACT_FORMATS.md)
-- [Typed model and candidate propositions](research/chain-v2/FORMAL_MODEL.md)
-- [Machine-readable results](evidence/v2/validation/report.json), [mutation evidence](evidence/v2/validation/mutations-normal.stdout.log), [integration status](evidence/v2/status.json)
-- [Prior-art comparison](research/RELATED_WORK.md) and [paper outline](research/PAPER_OUTLINE.md)
+```mermaid
+flowchart LR
+    C[Claim and scenario contract] --> O[Coverage]
+    O --> V[Evidence verification]
+    E[Proofs, attestations and receipts] --> V
+    V --> G[Guarantee composition]
+    G --> A[Claim-scoped authorization]
+    A --> I[Independent consumer admission]
+    I --> D[Application-specific enforcement]
+```
 
-## Version history and provenance
+**Coverage** identifies obligations from an independently supplied scenario contract.
+**Verification** checks whether evidence establishes each obligation. **Composition**
+determines whether those guarantees jointly authorize the requested claim. Contract
+adequacy remains an external assumption: a list of implemented checks does not prove
+that every necessary requirement was declared.
 
-V0 (`905767f8696afe4cee612c8248f9d5d76f81f81b`) was an explicitly labeled synthetic
-reconstruction: the requested original ZIP was unavailable and was never verified.
-Its 21 scenarios, 19 tests and 8 killed controls remain preserved.
+Decisions retain `VERIFIED`, `REFUTED` and `UNVERIFIABLE`. Missing evidence refuses
+authorization without becoming a refutation. Authorized results identify the scenario,
+claim type, recomputed contract digest and verified scope. Admission does not trust a
+mutable `authorized=true` flag. Checker independence (O14) applies only when required
+by policy; different keys do not prove different real-world controllers.
 
-V1 (`ea89871064e98a67b6ba01c836d498bee89aa437`) added typed obligations, native library probes and an unrelated genuine
-public signature. It did not provide a coherent real chain. V1 is an ancestor of
-verified main `18a5916098addf6447700ed95441125bfa7079c3` (merge parents include the exact v1 SHA). Both main CI runs
-passed; a fresh public clone reproduced v0/v1 before v2 began. See the
-[phase-1 record](evidence/v2/phase1/report.json).
+Read the [engine contract](research/integration/CLAIM_AWARE_ENGINE.md),
+[coverage model](research/v4/FORMAL_MODEL.md),
+[obligation catalog](research/v4/OBLIGATION_CATALOG.md) and
+[trust boundaries](research/integration/TRUST_BOUNDARIES.md).
 
-V2 is developed on `research/real-artifact-composition-v2` from that main. Its
-experimental status is distinct from the frozen v0/v1 evidence. MIT covers our
-original code; upstream source is fetched at pinned commits, not copied into the
-repository. Dependency licenses remain applicable. No upstream repositories were
-modified, no external researchers were contacted, and no merge is authorized.
+## Current integrated state
+
+As of **2026-10-21**, research PRs **#2-#8 are merged into `main`**. The combined
+research baseline is
+[`3d55a8456dddb3cb981c91b143761e87e31d7531`](https://github.com/trustless-ai/verifiable-execution-claim-authorization/commit/3d55a8456dddb3cb981c91b143761e87e31d7531).
+[PR #7](https://github.com/trustless-ai/verifiable-execution-claim-authorization/pull/7)
+and [PR #8](https://github.com/trustless-ai/verifiable-execution-claim-authorization/pull/8)
+retain the integration and escrow implementation history. See
+[GitHub Actions](https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions)
+for commit-specific CI outcomes.
+
+Historical reports describe their own dates, commits and publication constraints.
+References there to drafts, unmerged dependencies or prohibited publication are
+historical, not current repository status. Original results and failed runs remain
+preserved. Merging research does not establish independent academic approval or
+production readiness.
+
+## Reproduced experimental results
+
+These are **two separate finite experiments** with different baselines and
+denominators. Counts do not estimate deployment exploit rates or universal coverage.
+
+| Experiment | Scenarios | Applied mutations | Unsupported downstream authorizations |
+| --- | --- | --- | --- |
+| Claim-aware integration | 61: 2 positives, 59 negative/unsupported | 22 KILLED / 0 SURVIVED / 0 CRASHED | Component-only: 51/59; declared checks: 13/59; scenario-complete composition: 0/59; independently recomputed admission: 0/59 |
+| Verdict-gated escrow | 31/31 expected: 1 positive, 28 authorization-negative, 2 token-execution controls | 22 KILLED / 0 SURVIVED / 0 CRASHED; 6 absent on-chain guards separately NOT_APPLIED | Signed verdict only: 24/28; claim-aware issuance: 2/28; issuance plus existing on-chain enforcement: 2/28 |
+
+The two remaining escrow cases concern **expiration and revocation after signing**.
+An earlier admission is not perpetual execution-time authorization. These are not
+surviving mutants. Missing broader research-policy checks are not automatically
+violations of the upstream contract's documented, narrower guarantees.
+
+Replay suites cover normal/repeated/Python `-O` runs, native proof verification,
+cryptographic cross-checks, source-copy mutations and deterministic semantic outputs.
+Crashes are not kills; repeated regression runs do not create additional mutations.
+
+- **Integration:** [results](research/integration/EXPERIMENT_RESULTS.md),
+  [mutations](research/integration/MUTATION_REPORT.md),
+  [machine-readable evidence](evidence/integration/validation/report.json).
+- **Escrow:** [technical report](research/escrow-v0/REPORT.md),
+  [results and gas-measurement scope](research/escrow-v0/EXPERIMENT_RESULTS.md),
+  [mutations](research/escrow-v0/MUTATION_REPORT.md), [evidence](evidence/escrow-v0/).
+- **ERC-8404:** [compatibility](research/erc8404/COMPATIBILITY_MATRIX.md),
+  [external profile](research/erc8404/CLAIM_AWARE_PROFILE.md),
+  [frozen Core baseline](research/erc8404/CORE_BASELINE.md).
+
+ERC-8404 Core, original conformance vectors and upstream escrow implementation remain
+unchanged. Additional authorization rules live in external research consumers.
+
+## Reproduce
+
+Clone the complete Git history: integrity checks need pinned ancestor commits.
+Run commands from the repository root. The pinned replay environment uses Python
+**3.12**.
+
+### Lightweight synthetic baseline
+
+```sh
+git clone https://github.com/trustless-ai/verifiable-execution-claim-authorization.git
+cd verifiable-execution-claim-authorization
+python -B tools/verify_artifacts.py
+python -B tools/validate.py
+```
+
+This standard-library entry point runs the **v0 synthetic baseline**, including
+normal/repeat/optimized tests and mutations. It does not establish cryptographic or
+full-chain verification. Results go to `build/validation/`.
+
+### Real-artifact integration
+
+Install Node **22.15.0**, Bun **1.3.14** and Rust **1.97.1**, then run:
+
+```sh
+rustup override set 1.97.1
+python -B tools/v3/prepare.py --online
+python -B tools/integration/validate.py
+python -B tools/verify_artifacts.py
+```
+
+Preparation fetches pinned dependencies and builds the native verifier; it does not
+generate replacement evidence. Commands, exit codes and replay logs go to
+`build/integration/validation/`. See the
+[review checklist](research/integration/INDEPENDENT_REVIEW_CHECKLIST.md) and
+[source lock](fixtures/integration/source-lock.json).
+
+### Local escrow
+
+After integration preparation, install Foundry **1.7.1**; the harness uses solc
+**0.8.26**. In a fresh checkout, reproduce the locked forge-std bytes as the
+[CI workflow](.github/workflows/verdict-escrow.yml) does:
+
+```sh
+git -c core.autocrlf=true clone --no-checkout https://github.com/foundry-rs/forge-std.git build/escrow/forge-std-source
+git -C build/escrow/forge-std-source -c core.autocrlf=true checkout --detach b013eff2ac4fce26f34d789e6f5c49021c5ee817
+python -B tools/escrow_prepare.py --forge-std-cache build/escrow/forge-std-source
+python -B -X utf8 tools/escrow_ci.py
+python -B tools/verify_artifacts.py
+```
+
+The dependency checkout setting reproduces its locked representation; repository
+technical text uses LF. This suite executes local EVM/mock-token tests, authorization
+mutations, integrity controls and semantic determinism checks. It does not broadcast
+transactions or require production keys or real funds. Logs go to `build/escrow/ci/`.
+
+Do not regenerate manifests to hide unexplained mismatches. The old root README is
+retained byte-for-byte in [this historical snapshot](research/history/README-3d55a845.md)
+(its relative links refer to the original root location). The baseline checker permits
+only the explicitly pinned current README version and still requires the archived
+original and complete current inventory.
+
+## Evidence boundaries and next work
+
+The demonstrated chain is **LABORATORY_VERIFIED / PARTIAL_CHAIN_VERIFIED**; the escrow
+adapter is **PARTIALLY_COMPATIBLE** with the existing contract.
+
+- Native zkIE verification establishes its pinned statement, not original input
+  admission, model authorization or arbitrary task completion.
+- Authentic signatures identify signers, not factual judgment correctness or
+  independent real-world controllers.
+- Coverage assumes adequate scenario contracts and authority policies.
+- A receipt or matching digest does not independently establish external execution,
+  admission of original bytes or successful real-world payment.
+- Escrow does not make the external adapter mandatory or enforce the required
+  expiration/revocation policy at execution time. Production signing-service
+  compatibility and authenticated payer/state inputs remain unestablished.
+
+Next work is to extract a reusable harness interface, reproduce it against another
+independent implementation, and obtain the missing external bindings. Scientific
+novelty and end-to-end external success are not claimed. Read the
+[integration limitations](research/integration/LIMITATIONS.md),
+[escrow limitations](research/escrow-v0/LIMITATIONS.md) and
+[open proof obligations](research/OPEN_PROOF_OBLIGATIONS.md).
+
+## Research history and contribution
+
+| Stage | Preserved contribution |
+| --- | --- |
+| [v0-v1](research/PAPER_OUTLINE.md) | Synthetic composition and typed obligations. V0 was explicitly reconstructed because the original ZIP was unavailable; that missing archive was never verified. |
+| [v2](research/V2_REAL_ARTIFACT_REPORT.md) | Laboratory signatures and native proof artifacts. Original mutations: 18 KILLED / 2 SURVIVED; the [separate audit](research/V2_SURVIVOR_AUDIT.md) reports 2 isolated kills without rewriting history. |
+| [v3](research/V3_REAL_CHAIN_REPORT.md) | Published artifacts, dependencies and explicit missing real-chain links. |
+| [v4](research/v4/RESULTS.md) | Scenario-relative coverage independent of the verifier's own check inventory. |
+| [v4.1](research/v4_1/README.md) | Scenario-dependent O14 and authorization-scope binding. |
+| [ERC-8404 consumer](research/erc8404/EXPERIMENT_RESULTS.md) | External profile. Original 16/1 mutation report and later [fallback isolation](research/integration/MUTATION_REPORT.md) remain distinct. |
+| [Integration](research/integration/EXPERIMENT_RESULTS.md) | Combined guarantees and independently recomputed admission. |
+| [Escrow](research/escrow-v0/REPORT.md) | Signed-verdict consumption and local enforcement under explicit limits. |
+
+For academic context, read the [paper draft](research/ACADEMIC_PAPER_DRAFT.md),
+[integration addendum](research/integration/ACADEMIC_PAPER_DRAFT.md) and
+[prior-art analysis](research/PRIOR_ART_ANALYSIS.md). Candidate propositions and
+observations are not presented as proven general theorems.
+
+Independent review and adapters are welcome. Reports should identify exact commits,
+scenario contracts, expected scope, commands and raw outcomes. Separate normative
+requirements from research policies; preserve negative witnesses and historical evidence.
+
+Original project code is [MIT licensed](LICENSE). Vendored material and fetched
+dependencies retain their upstream licenses and attribution.

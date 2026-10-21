@@ -90,6 +90,33 @@ def main():
         rows.append({'id': 'rehashed_original_artifact', 'negative_exit': 1,
                      'positive_exit': 0, 'restored_exit': 0, 'classification': 'EXPECTED_FAILURE_OBSERVED'})
 
+        # A current inventory alone must not authorize another README revision
+        # or loss/corruption of the exact archived original.
+        archive = 'research/history/README-3d55a845.md'
+        readme_bytes = (carrier / 'README.md').read_bytes()
+        archive_bytes = (carrier / archive).read_bytes()
+        for name in ('rehashed_unapproved_readme', 'rehashed_changed_readme_archive',
+                     'rehashed_missing_readme_archive'):
+            run(name + '-positive', py + ['experiments/verdict_escrow/integrity.py'], carrier, env)
+            if name == 'rehashed_unapproved_readme':
+                (carrier / 'README.md').write_bytes(readme_bytes + b'\nunapproved revision\n')
+            elif name == 'rehashed_changed_readme_archive':
+                (carrier / archive).write_bytes(archive_bytes + b'\nchanged history\n')
+            else:
+                (carrier / archive).unlink()
+            run(name + '-rehash', py + ['tools/verify_artifacts.py', '--write'], carrier)
+            p = run(name + '-negative', py + ['experiments/verdict_escrow/integrity.py'], carrier, env, 1)
+            result = json.loads(p.stdout)
+            need(result['passed'] is False and 'README.md' in result['baseline_changed'] and
+                 result['manifest_refresh']['old_entries_accounted_for'] is False,
+                 'Documentation revision boundary bypassed')
+            (carrier / 'README.md').write_bytes(readme_bytes)
+            (carrier / archive).write_bytes(archive_bytes)
+            (carrier / 'artifacts.sha256.json').write_bytes(manifest_raw)
+            run(name + '-restored', py + ['experiments/verdict_escrow/integrity.py'], carrier, env)
+            rows.append({'id': name, 'negative_exit': 1, 'positive_exit': 0,
+                         'restored_exit': 0, 'classification': 'EXPECTED_FAILURE_OBSERVED'})
+
     gate = py + ['tools/escrow_ci.py', '--mutation-report', args.baseline_mutations, '--kind', 'adapter']
     run('mutation-gate-positive', gate)
     with tempfile.TemporaryDirectory(prefix='survivor-', dir=out) as tmp:
