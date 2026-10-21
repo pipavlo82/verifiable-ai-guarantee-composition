@@ -26,7 +26,11 @@ jobs:
       - run: rustup override set 1.97.1
       - run: python -B tools/verify_artifacts.py
       - run: python -B tools/v3/prepare.py --online
-      - run: python -B tools/escrow_prepare.py --online
+      - name: Reproduce the exact locked forge-std checkout bytes
+        run: |
+          git -c core.autocrlf=true clone --no-checkout https://github.com/foundry-rs/forge-std.git build/escrow/forge-std-source
+          git -C build/escrow/forge-std-source -c core.autocrlf=true checkout --detach b013eff2ac4fce26f34d789e6f5c49021c5ee817
+      - run: python -B tools/escrow_prepare.py --forge-std-cache build/escrow/forge-std-source
       - run: python -B -X utf8 tools/escrow_ci.py
       - run: python -B tools/verify_artifacts.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

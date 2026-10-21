@@ -1,6 +1,7 @@
 {
-  ".github/workflows/verdict-escrow.yml": "9aca25c5e6f96fa947a08508131d8b3d56baef2599d51a57a84659180d8dd189",
+  ".github/workflows/verdict-escrow.yml": "482cdacc2bc5561bd5c0ad235b88c70569ff7afb060fb479fac22ee01a834289",
   "evidence/escrow-ci-repair/baseline.json": "190684a6210f7241ea96bedd29a66fbf2e3edb26081788eea7ee51bd6abb2333",
+  "evidence/escrow-ci-repair/forge-std-checkout.json": "d6bf66b481f51a7931b840fa0b4003b3820f764bf3794be92b5cf13495c6273a",
   "evidence/escrow-v0/.gitattributes": "44de1c400fbf981689257d46e4ff3fe6a7796292dd5551642680fb7822f2dd97",
   "evidence/escrow-v0/ERC-8404-current-draft.md": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
   "evidence/escrow-v0/compiler/BIP340.json": "1c91fe0848c7fe97c4fbe1f2ff792205efc4eb12138154d322a67d5b8e907745",
@@ -1144,7 +1145,7 @@
   "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/test/sign.py": "5bc3baf031ad95753d80f1d53fb5a4fa615f723829fd18363925acce3c3be296",
   "fixtures/escrow-v0/runtime-lock.json": "2b9dedf187bd5ce9868ac058518d940bac5346c3b81fcd63c0d263737e3cbe2b",
   "research/escrow-v0/ARCHITECTURE.md": "da57cd796777a44f20405e07023544779e0ce40282b673c8244eaca31def2da9",
-  "research/escrow-v0/CI_INVENTORY_REPAIR.md": "16b7d972391bc33f49f98e390fcc527afc1079f8c2b7c2c1cc2158f515f8224d",
+  "research/escrow-v0/CI_INVENTORY_REPAIR.md": "aef0ae5cf98b881904d365ca0589c5309924a3d6b837d4cef71035289ff5b6c2",
   "research/escrow-v0/COMPATIBILITY_MATRIX.md": "50c9d9121a5f0dd0a1deba92afbe76fa39a21e57856cee7eb034db29f4b83f59",
   "research/escrow-v0/EXPERIMENT_RESULTS.md": "216e1767a1ed732d9e182a582ba8149ae695804ecdde2f6d683b5a728c879aec",
   "research/escrow-v0/GUARANTEES.md": "9f933765937968131596b182665e286af60ce34e528e1d0ba1a834979bb5f66b",
