@@ -1,0 +1,21 @@
+test_F1_authorized_flag_alone_not_admitted (test_v4_1.V41Tests.test_F1_authorized_flag_alone_not_admitted) ... ok
+test_F2_scenario_edit_not_admitted (test_v4_1.V41Tests.test_F2_scenario_edit_not_admitted) ... ok
+test_all_v4_rows_carried (test_v4_1.V41Tests.test_all_v4_rows_carried) ... ok
+test_binding_not_taken_from_claim (test_v4_1.V41Tests.test_binding_not_taken_from_claim) ... ok
+test_binding_recomputed_from_contract (test_v4_1.V41Tests.test_binding_recomputed_from_contract) ... ok
+test_fixed_oracles (test_v4_1.V41Tests.test_fixed_oracles) ... ok
+test_forged_binding_not_admitted (test_v4_1.V41Tests.test_forged_binding_not_admitted) ... ok
+test_omitted_O14_coverage_alarm (test_v4_1.V41Tests.test_omitted_O14_coverage_alarm) ... ok
+test_positives_consume_every_claim_field (test_v4_1.V41Tests.test_positives_consume_every_claim_field) ... ok
+test_repeat_evaluation (test_v4_1.V41Tests.test_repeat_evaluation) ... ok
+test_reuse_admission (test_v4_1.V41Tests.test_reuse_admission) ... ok
+test_scenario_count (test_v4_1.V41Tests.test_scenario_count) ... ok
+test_self_judged_isolated_to_O14 (test_v4_1.V41Tests.test_self_judged_isolated_to_O14) ... ok
+test_unauthorized_never_admitted (test_v4_1.V41Tests.test_unauthorized_never_admitted) ... ok
+test_unconsumed_output_under_replay (test_v4_1.V41Tests.test_unconsumed_output_under_replay) ... ok
+test_v4_authorizes_self_judged (test_v4_1.V41Tests.test_v4_authorizes_self_judged) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 13.967s
+
+OK

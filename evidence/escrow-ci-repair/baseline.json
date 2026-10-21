@@ -1,0 +1,144 @@
+{
+  "actual_non_manifest_entries": 11862,
+  "additions": 1154,
+  "head": "ac30419dd5a2e72fe9e359bbbb538f58fc5f40c0",
+  "independent_method": "Git ls-tree SHA-1 blob identity plus independent SHA-256 from every checked-out byte; compare exact addition set with PR7 diff.",
+  "old_root_manifest_entries": 10708,
+  "original_experiment_manifest_sha256": "ff86363080a4e6173429476bad9acc4940fcbef9e67475f4a13ce8aed4f0b574",
+  "original_hash_changes": 0,
+  "original_missing_files": 0,
+  "original_root_manifest_sha256": "0b120207691fbc2a13178089fdaa67b3248de0930611db1fe3c2048874f51a8f",
+  "pr7_base": "c93087f06bd14c45a1d12b0c068195e3bef05dae",
+  "reproduced_workflow_entrypoints": [
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520710275,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520710275"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709833,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709833"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709883,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709883"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709825,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709825"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709828,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709828"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709822,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709822"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709829,
+      "stdout_sha256": "9cdfa6a225c62432d074f39069d60b023e4ac195293ee644a7668eab3fa3de11",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709829"
+    },
+    {
+      "event": "pull_request",
+      "exit": 1,
+      "id": 39520709944,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520709944"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634498,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634498"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634600,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634600"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634554,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634554"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634459,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634459"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634641,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634641"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634616,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634616"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634565,
+      "stdout_sha256": "23b9ca6a012a6073256a9e7c3b7f862657b110f72146396590f1c6ad5f2f574a",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634565"
+    },
+    {
+      "event": "push",
+      "exit": 1,
+      "id": 39520634604,
+      "stdout_sha256": "9cdfa6a225c62432d074f39069d60b023e4ac195293ee644a7668eab3fa3de11",
+      "unlisted_additions": 1154,
+      "url": "https://github.com/pipavlo82/verifiable-ai-guarantee-composition/actions/runs/39520634604"
+    }
+  ],
+  "tracked_files": 11863,
+  "unintended_generated_files": 0
+}

@@ -1,0 +1,6 @@
+{
+  "kind": "EXTERNAL_LABORATORY_COMPOSITION_POLICY",
+  "cryptographic_artifacts": "Original PR5 and PR6 bytes reused without changing signed assertions",
+  "subject_mapping": "Two distinct labels retained; equality applies only to actual proof bytes",
+  "contract_origin": "independently supplied fixture, not inferred from verifier inventory; external adequacy assumption"
+}

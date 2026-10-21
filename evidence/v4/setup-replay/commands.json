@@ -1,0 +1,257 @@
+[
+  {
+    "name": "node-version",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "d656133e6fb1a2be31c1652d360bba7b09442e5480c8541deb85cfcedf37c499",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "bun-version",
+    "command": [
+      "C:/Users/msi/.bun/bin/bun.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "56b0485099b6c5427d3b68c042fd05b632d5e52e924c5064473389812227164c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "clone-zkIE",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/zkIE",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\zkIE"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "05a4bc2d9dc83bd19d0dd38c494493170a1de6a8312620a532897c7cc1a667b7"
+  },
+  {
+    "name": "pin-zkIE",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "39d8df96877bc3bebf33c69b06907d792b3184b9"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\zkIE",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "3bb29bf9e89acc74b1b44e4fe21a26e160deaafc722f2c8771795cbde4370338"
+  },
+  {
+    "name": "clone-agent-ercs",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/agent-ercs",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\agent-ercs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c655d4c7e559b14e118df2bb236c4919b2c2ecec6638b91e9c8a4e4b406b6505"
+  },
+  {
+    "name": "pin-agent-ercs",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "01283ca57305f915afb560d23359a27fd748eb5a"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\agent-ercs",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "f780e0ba62cbb23425f072d016107cc515290b0f530c63c411aabf9561f91b67"
+  },
+  {
+    "name": "clone-recompute-kit",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/recompute-kit",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\recompute-kit"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "ade7a89779ea8545c5c21a347c410ce7153fe57f159732dce0a0235de9dfe4ae"
+  },
+  {
+    "name": "pin-recompute-kit",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\recompute-kit",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "3afecc815c32c76f71714219b3a2fc6f15e9145291e6c033aac982a7d960b2cd"
+  },
+  {
+    "name": "clone-receiptos-verify",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/pipavlo82/receiptos-verify",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\receiptos-verify"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "6e380bdf1adcca9d6f918c9e9d10164ac037c239937012ad97914e0abdbd0daa"
+  },
+  {
+    "name": "pin-receiptos-verify",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "396143120f787d2f5534e92c0cf896c029a05775"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\receiptos-verify",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "68150299f0e9c0e200c2b976531dbca35c5b4ea5c427e5ccb5655c2f377ac602"
+  },
+  {
+    "name": "clone-ccip-router",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "https://github.com/trustless-ai/ccip-router",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\ccip-router"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e00c0e224ec989ab490b0a1c712ceae02075a30917918f3003ab879433e1d2b3"
+  },
+  {
+    "name": "pin-ccip-router",
+    "command": [
+      "git",
+      "checkout",
+      "--detach",
+      "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\ccip-router",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "09c95fa548c7b5807685342fa65cc8b7195e1c69cd5acc7b9e28e288a0a4a8fe"
+  },
+  {
+    "name": "clone-native",
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "clone",
+      "--no-hardlinks",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\upstream\\zkIE",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\chain-v2\\zkIE"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "ed022eda9747fc0d0409c9bf2f400b2ac47ceaff7386967f4cf17985d181702d"
+  },
+  {
+    "name": "node-manifest",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "research/formal-v1/prepare_crypto.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "5ba822f425431b3c424471598896df4567b6a2ff52002422bbde16717094edd6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "node-install",
+    "command": [
+      "npm.cmd",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--prefix",
+      "build/formal-v1/crypto"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "4aaef3acc3c4b16766abf61c4f4aa2d3bd413e2fe822d3edd6cfa9d7e7334efa",
+    "stderr_sha256": "1f4f72b910e27e2bd29eea9a14a36c68da2229f4dfd05538d607a0754fcbab12"
+  },
+  {
+    "name": "native",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "tools/v2/prepare.py",
+      "--online",
+      "--cargo-home",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v1-20261016\\cargo-home"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "9663fab20ce1b2f54206aaa84552fec56a45405b23a1f4cf6f922e094c99afea",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "python-install",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-deps",
+      "--require-hashes",
+      "--target",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\python-deps",
+      "--report",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v4\\build\\v3\\setup-replay\\pip-report.json",
+      "-r",
+      "research/v3/requirements.lock.txt"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "584f18f8a789924af366b5df00f8f257572c2f0d25cf85b29d6716c203f5510c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "sources",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "tools/v3/verify_sources.py"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-v4",
+    "exit": 0,
+    "stdout_sha256": "d8bea50dca3f20fb2185b3cb71e3debed8cefb3cfc7baed282601ceb5b90316d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

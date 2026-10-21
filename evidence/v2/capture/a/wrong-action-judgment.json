@@ -1,0 +1,22 @@
+{
+  "type": "LabJudgment",
+  "domain": {
+    "name": "ERC8004AttestationGateway",
+    "version": "1",
+    "chainId": 31337
+  },
+  "message": {
+    "subject": "lab-subject-a",
+    "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+    "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+    "action": "unrelated-action",
+    "scope": "public-matmul-recomputation",
+    "executionId": "lab-execution-a",
+    "policyHash": "0xda608684800e13a893071c0c2cb6ab1ba84c2e9f9ac791345a936141471aa4c3",
+    "nonce": "lab-request-a"
+  },
+  "signature": "0x5da68da5e4e0a37d3950982c99fccb4d5278d2c0fe5411f72773147d059ae10e46c8e4a094d4ebad0478dbe3016a73124888b8fa260b2219c29c1e79fcf5d5f21b",
+  "signer": "0x9f8837ae32893e6b4f022c9b7665607489ef947d"
+}

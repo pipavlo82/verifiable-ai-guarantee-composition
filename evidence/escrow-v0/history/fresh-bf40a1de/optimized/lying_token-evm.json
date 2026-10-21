@@ -1,0 +1,13 @@
+{
+  "amount": 1000000,
+  "escrow": "0x2e234DAe75C793f67A35089C9d99245E1C58470b",
+  "name": "lying_token",
+  "offchain_admitted": true,
+  "offchain_status_code": 0,
+  "onchain_success": true,
+  "recipient": "0x0000000000000000000000000000000000000B0b",
+  "recipient_delta": 0,
+  "release_call_gas": 13901,
+  "return_data": "0x",
+  "state": 2
+}

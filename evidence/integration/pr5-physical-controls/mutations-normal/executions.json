@@ -1,0 +1,866 @@
+[
+  {
+    "mutation": "O14-catalog",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "negative_O14_self_judged"
+    ],
+    "exit": 0,
+    "stdout_sha256": "0922affb1adce39766c3408d14cbc7e72f14e609a5e7be8db1b072f6aa17318e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-catalog",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "31cadf78e2d866683b5b60f1979997f06a963c0204af95421289257527c71185",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-catalog",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "negative_O14_self_judged"
+    ],
+    "exit": 1,
+    "stdout_sha256": "f2ba3de6768c78d9e7b7944f986faa5e7496cab78b1cdd9da23896d242115a74",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-catalog",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 1,
+    "stdout_sha256": "72aceae466cd9c64bcaa03ee91bc472b083db6c184cc6a83cc492bf23f6b569b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-catalog",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "negative_O14_self_judged"
+    ],
+    "exit": 0,
+    "stdout_sha256": "0922affb1adce39766c3408d14cbc7e72f14e609a5e7be8db1b072f6aa17318e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-catalog",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "31cadf78e2d866683b5b60f1979997f06a963c0204af95421289257527c71185",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-coverage",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "omitted_O14"
+    ],
+    "exit": 0,
+    "stdout_sha256": "326bbb9dbd8236faa25e002debc7b20e6fcac074aa2650e29528e0df27f5d63c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-coverage",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "31cadf78e2d866683b5b60f1979997f06a963c0204af95421289257527c71185",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-coverage",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "omitted_O14"
+    ],
+    "exit": 1,
+    "stdout_sha256": "414f8b65841abad5996549921c75aa49e94acf889b3d3e62ae30c86e1c6a099c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-coverage",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "14ec23db55b147637eec4b6570fc91c2741cb2996c8457eacb602c6a4646a5ad",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-coverage",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "omitted_O14"
+    ],
+    "exit": 0,
+    "stdout_sha256": "326bbb9dbd8236faa25e002debc7b20e6fcac074aa2650e29528e0df27f5d63c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-coverage",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "31cadf78e2d866683b5b60f1979997f06a963c0204af95421289257527c71185",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-verification",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "negative_O14_self_judged"
+    ],
+    "exit": 0,
+    "stdout_sha256": "0922affb1adce39766c3408d14cbc7e72f14e609a5e7be8db1b072f6aa17318e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-verification",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "31cadf78e2d866683b5b60f1979997f06a963c0204af95421289257527c71185",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-verification",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "negative_O14_self_judged"
+    ],
+    "exit": 1,
+    "stdout_sha256": "c469453a57eabfca5d6a76cfd021659684a3e6b1354d59e6c49f33bb741de744",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-verification",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "a30e5b565e05047f0f2e84469069dec205fc5cd9887de9e79abf824c04c42b94",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-verification",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "negative_O14_self_judged"
+    ],
+    "exit": 0,
+    "stdout_sha256": "0922affb1adce39766c3408d14cbc7e72f14e609a5e7be8db1b072f6aa17318e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "O14-verification",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_output"
+    ],
+    "exit": 0,
+    "stdout_sha256": "31cadf78e2d866683b5b60f1979997f06a963c0204af95421289257527c71185",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "claim-fields",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "unconsumed_output_under_replay"
+    ],
+    "exit": 0,
+    "stdout_sha256": "db8e0680f6e2bd3a5e89189303ab4f67816558f6d4bd99d42e965cfb01b6e5d6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "claim-fields",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_replay"
+    ],
+    "exit": 0,
+    "stdout_sha256": "dd09ac406ab49f3f7292ef0cdd7569d868868e1b291ad11cf2a53eb416960ec5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "claim-fields",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "unconsumed_output_under_replay"
+    ],
+    "exit": 1,
+    "stdout_sha256": "43f44f9e1b1f1a29505deb64c9bc540099659021b2c87352eac4955e81c09ee1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "claim-fields",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_replay"
+    ],
+    "exit": 0,
+    "stdout_sha256": "dd09ac406ab49f3f7292ef0cdd7569d868868e1b291ad11cf2a53eb416960ec5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "claim-fields",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "unconsumed_output_under_replay"
+    ],
+    "exit": 0,
+    "stdout_sha256": "db8e0680f6e2bd3a5e89189303ab4f67816558f6d4bd99d42e965cfb01b6e5d6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "claim-fields",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "positive_replay"
+    ],
+    "exit": 0,
+    "stdout_sha256": "dd09ac406ab49f3f7292ef0cdd7569d868868e1b291ad11cf2a53eb416960ec5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-authorized",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_tampered_authorized"
+    ],
+    "exit": 0,
+    "stdout_sha256": "b8b4350bddc958c365eb7806eb186f96c1457875da1b1b51996910ea84ade99d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-authorized",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-authorized",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_tampered_authorized"
+    ],
+    "exit": 1,
+    "stdout_sha256": "8a7e4123063a184523715b35d61ac77d3adfa432d80ee5d0e58d357fa8946fb6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-authorized",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-authorized",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_tampered_authorized"
+    ],
+    "exit": 0,
+    "stdout_sha256": "b8b4350bddc958c365eb7806eb186f96c1457875da1b1b51996910ea84ade99d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-authorized",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-scenario",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_tampered_scenario"
+    ],
+    "exit": 0,
+    "stdout_sha256": "8624f3f8346df6e4688f6b6360bc0f32e959fb3f9dce8491423ff92ecb3e0ac9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-scenario",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-scenario",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_tampered_scenario"
+    ],
+    "exit": 1,
+    "stdout_sha256": "8eae1b3cc3ffd8c33a93fa682dbea05549cd2a97635ffbb6d856de939d2b2576",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-scenario",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-scenario",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_tampered_scenario"
+    ],
+    "exit": 0,
+    "stdout_sha256": "8624f3f8346df6e4688f6b6360bc0f32e959fb3f9dce8491423ff92ecb3e0ac9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-scenario",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-binding",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_forged_binding"
+    ],
+    "exit": 0,
+    "stdout_sha256": "1160da3dc4adb7babc3b8ae490a29ef6645ed7bf3115fb48a9cb49a78a735ecb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-binding",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-binding",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_forged_binding"
+    ],
+    "exit": 1,
+    "stdout_sha256": "6dfaad59d31f4092a88b07c902224633a8376cbc8c017f2a4f2549f7810b770a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-binding",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-binding",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_forged_binding"
+    ],
+    "exit": 0,
+    "stdout_sha256": "1160da3dc4adb7babc3b8ae490a29ef6645ed7bf3115fb48a9cb49a78a735ecb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-recompute-binding",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-digest",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_under_other_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "6df489fd5783398e2aae8b362e14a8a479a6902b51576f9415c987cb4010015a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-digest",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-digest",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_under_other_contract"
+    ],
+    "exit": 1,
+    "stdout_sha256": "857dc01a65ef101bc9fd5b978d42206cca50b0f5a642ff24d8989e3c2d79eb55",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-digest",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-digest",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_under_other_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "6df489fd5783398e2aae8b362e14a8a479a6902b51576f9415c987cb4010015a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-digest",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_output_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "fd53e230670f6428b6bf3952e0245fe1cb0d4855976b78a08f68fac893610563",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-claim-type",
+    "phase": "before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_under_other_claim_type"
+    ],
+    "exit": 0,
+    "stdout_sha256": "ad3929f65ec184a53cef0ec59d21b8f1b155d01d081fd75417fc09b59c1fbb0e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-claim-type",
+    "phase": "positive-before",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_replay_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "8b9e4f02ddf21df8a64328da3a677eeabbb179962e51e1ed8d5f2c31d44cca06",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-claim-type",
+    "phase": "mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_under_other_claim_type"
+    ],
+    "exit": 1,
+    "stdout_sha256": "269c68eedc393af741fe8158d755a646da8f88fe571996d127a17bc589cc70b6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-claim-type",
+    "phase": "positive-mutant",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_replay_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "8b9e4f02ddf21df8a64328da3a677eeabbb179962e51e1ed8d5f2c31d44cca06",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-claim-type",
+    "phase": "restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "reused_under_other_claim_type"
+    ],
+    "exit": 0,
+    "stdout_sha256": "ad3929f65ec184a53cef0ec59d21b8f1b155d01d081fd75417fc09b59c1fbb0e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "mutation": "admit-claim-type",
+    "phase": "positive-restored",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v4_1/run.py",
+      "--case",
+      "control_replay_same_contract"
+    ],
+    "exit": 0,
+    "stdout_sha256": "8b9e4f02ddf21df8a64328da3a677eeabbb179962e51e1ed8d5f2c31d44cca06",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

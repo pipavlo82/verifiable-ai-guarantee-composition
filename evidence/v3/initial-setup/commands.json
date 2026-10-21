@@ -1,0 +1,75 @@
+[
+  {
+    "name": "prepare-node",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "research/formal-v1/prepare_crypto.py"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "install-node",
+    "command": [
+      "npm.cmd",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--prefix",
+      "build/formal-v1/crypto",
+      "--cache",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v1-20261016\\npm-cache"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "clone-native",
+    "command": [
+      "git",
+      "clone",
+      "--no-hardlinks",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\v3\\upstream\\zkIE",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\chain-v2\\zkIE"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "native",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "tools/v2/prepare.py",
+      "--cargo-home",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\work\\guarantee-composition-v1-20261016\\cargo-home"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "python-deps",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--target",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\v3\\python-deps",
+      "--report",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\v3\\setup\\pip-report.json",
+      "eth-account==0.13.7"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "receiptos-node",
+    "command": [
+      "npm.cmd",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund"
+    ],
+    "exit": 0
+  }
+]

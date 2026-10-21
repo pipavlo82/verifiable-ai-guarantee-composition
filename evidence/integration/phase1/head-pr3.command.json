@@ -1,0 +1,12 @@
+{
+  "command": [
+    "git",
+    "rev-parse",
+    "refs/review/pr3"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "4175ff78a678b09d0c33927c53de9f753ee7e93a9a52f1b2705c8720c3440c1c",
+  "utc": "2026-10-20T01:46:29.147229+00:00"
+}

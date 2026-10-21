@@ -1,0 +1,247 @@
+{
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 14,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "mutations": [
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "judgment_signature",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "ffba81bff387bb1d84f8a3c2f489f8b145e848f02439b2ff388bd0776ba6208e",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('judgment_signature',raw['judgment_signature'])",
+        "to": "enforce('judgment_signature',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "bad_judgment_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "judgment_authority",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "25f3945692bdec2930f07c8686ee37fb97903af19138da7a762aed338d2068f2",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('judgment_authority',raw['judgment_authority'])",
+        "to": "enforce('judgment_authority',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "wrong_judgment_authority"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "cell1_signature",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "e56486d961d7957609855108bc9bf648d84e976e682a1edda4470ba3ca56cef8",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('cell1_signature',raw['cell1_signature'])",
+        "to": "enforce('cell1_signature',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "bad_cell1_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "cell2_signature",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "d5c26224bcfe9d3fc12b6ff40a753b8c10aef81c2ec6a82de0fa132008bc866c",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('cell2_signature',raw['cell2_signature'])",
+        "to": "enforce('cell2_signature',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "bad_cell2_signature"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "cell_authority",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "b370399ad79e050769b57ef21b7cbb1a4dd9f7e9fb9703bad1d825b13012590d",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('cell_authority',raw['cell_authority'])",
+        "to": "enforce('cell_authority',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "wrong_cell_authority"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "decision_binding",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "b4316c4c7241b4877d332790083fe3ed84d6d9ffd23b57dc711c4ea9e410cb5f",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('decision_binding',raw['decision_binding'])",
+        "to": "enforce('decision_binding',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "cross_subject"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "claim_binding",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "c67ae56d82e4bd7f8b3978ea07b952d2927252ed150390a19ceff358ce4e5c32",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('claim_binding',raw['claim_binding'])",
+        "to": "enforce('claim_binding',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "wrong_claim"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "judgment_scope",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "3e067015728aab40a8c81586d51085a6f5c94224a824b127e998d1ee51276293",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('judgment_scope',raw['judgment_scope'])",
+        "to": "enforce('judgment_scope',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "valid_judgment_wrong_action"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "domain",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "8d0c2cfa6ef00006cb87b106469e0c85f39adbce27ad4770b8f8169f152ed773",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('domain',raw['domain'])",
+        "to": "enforce('domain',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "cross_domain"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "as_of",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "0006c08957adffd1ccb0426d43280ba8a6f43c432dec85c4e5f516a06189b7f9",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('as_of',raw['as_of'])",
+        "to": "enforce('as_of',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "replay_context"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "native_proof",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "53402c2ede93e782b2334e493d861ee7bd386afbd9abaf93529ef0831ebe03b1",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('native_proof',raw['native_proof'])",
+        "to": "enforce('native_proof',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "invalid_native_proof"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "native_model",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "93b25ff4d55d1d70fad5af3b447731e730bf10b900debde4baf2c13719392c53",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('native_model',raw['native_model'])",
+        "to": "enforce('native_model',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "wrong_model"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "receipt_root",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "9898f44b8b6348ede0f6d630ee08a097e9b09db9af933b11cb7578059621ad62",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('receipt_root',raw['receipt_root'])",
+        "to": "enforce('receipt_root',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "invalid_receipt_root"
+    },
+    {
+      "after": "VERIFIED",
+      "before": "REFUTED",
+      "boundary": "receipt_subject",
+      "classification": "KILLED",
+      "isolated": true,
+      "mutant_source_sha256": "b0f0cd751203a7b4c8cb776ac489f3f059de551c1ea840a5579371e15da477ed",
+      "oracle_mismatch_exit_expected": true,
+      "positive_restored": "VERIFIED",
+      "replacement": {
+        "from": "enforce('receipt_subject',raw['receipt_subject'])",
+        "to": "enforce('receipt_subject',V)"
+      },
+      "restored": "REFUTED",
+      "witness": "valid_receipt_wrong_execution_subject"
+    }
+  ],
+  "passed": true,
+  "schema": "v3-source-mutations",
+  "source_restored": true,
+  "source_sha256": "b91d6c12b7e595f59aff9d931b5e208d850baf93d0e520107d2ee8ff94e6bb1d",
+  "unexecuted_integration_boundaries": [
+    "wyriwe_provenance",
+    "external_model_authority",
+    "inference_judgment_binding",
+    "external_execution",
+    "historical_input_bytes",
+    "historical_execution"
+  ]
+}

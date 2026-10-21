@@ -1,0 +1,44 @@
+name: Claim-aware verdict escrow independent replay
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  escrow:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.15.0'
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6
+        with:
+          bun-version: '1.3.14'
+      - uses: foundry-rs/foundry-toolchain@908c540300062bd5a7e473851cdb4282204cee09
+        with:
+          version: v1.7.1
+      - run: rustup toolchain install 1.97.1 --profile minimal
+      - run: rustup override set 1.97.1
+      - run: python -B tools/verify_artifacts.py
+      - run: python -B tools/v3/prepare.py --online
+      - name: Reproduce the exact locked forge-std checkout bytes
+        run: |
+          git -c core.autocrlf=true clone --no-checkout https://github.com/foundry-rs/forge-std.git build/escrow/forge-std-source
+          git -C build/escrow/forge-std-source -c core.autocrlf=true checkout --detach b013eff2ac4fce26f34d789e6f5c49021c5ee817
+      - run: python -B tools/escrow_prepare.py --forge-std-cache build/escrow/forge-std-source
+      - run: python -B -X utf8 tools/escrow_ci.py
+      - run: python -B tools/verify_artifacts.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: verdict-escrow-evidence
+          path: |
+            build/escrow/ci
+            build/escrow/setup.json
+            build/v2/native
+            build/v3/setup-replay

@@ -1,1 +1,16 @@
 * text=auto eol=lf
+evidence/erc8404/** -text -whitespace
+fixtures/erc8404/** -text -whitespace
+# Preserve captured subprocess output byte-for-byte, including platform line endings.
+evidence/v2/**/*.log -text -whitespace
+evidence/v2/**/*.stdout.json -text -whitespace
+evidence/v2/**/*.bin -text
+# V3 public captures and subprocess streams are evidence, not editable text.
+evidence/v3/**/*.log -text -whitespace
+evidence/v3/**/*.raw -text -whitespace
+evidence/v3/local-replay/*.json -text
+evidence/v3/public/*.json -text
+evidence/v3/discovery/*.json -text
+evidence/v3/** -text -whitespace
+# V4 archived raw command output retains original bytes.
+evidence/v4/** -text -whitespace

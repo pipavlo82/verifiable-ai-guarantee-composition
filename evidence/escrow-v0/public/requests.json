@@ -1,0 +1,162 @@
+[
+  {
+    "label": "provider0-chain",
+    "url": "https://mainnet.base.org",
+    "method": "eth_chainId",
+    "params": null,
+    "sha256": "395c4282d446999297cdcba9e50c3df13687008bc4eecc206a5d616be7f6d227",
+    "utc": "2026-10-20T22:10:43.846637+00:00"
+  },
+  {
+    "label": "provider0-height",
+    "url": "https://mainnet.base.org",
+    "method": "eth_blockNumber",
+    "params": null,
+    "sha256": "9d97a782b2859fff7be4de77832c3c639fdb3138416da37fd4a28d39a8512592",
+    "utc": "2026-10-20T22:10:43.924181+00:00"
+  },
+  {
+    "label": "provider0-block",
+    "url": "https://mainnet.base.org",
+    "method": "eth_getBlockByNumber",
+    "params": [
+      "0x326c500",
+      false
+    ],
+    "sha256": "428ff4655debd3af676314c2786f2318231d72237427f829a313297e822afc28",
+    "utc": "2026-10-20T22:10:44.001302+00:00"
+  },
+  {
+    "label": "provider0-code",
+    "url": "https://mainnet.base.org",
+    "method": "eth_getCode",
+    "params": [
+      "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+      "0x326c500"
+    ],
+    "sha256": "c0309f1eae65f71f5c39fc6a98125b17bf27d3fccc194d8c77fd9c273b7fdeae",
+    "utc": "2026-10-20T22:10:44.081018+00:00"
+  },
+  {
+    "label": "provider0-token",
+    "url": "https://mainnet.base.org",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+        "data": "0xfc0c546a"
+      },
+      "0x326c500"
+    ],
+    "sha256": "940ddb7059c0b26d7d82862b6ca468b17777a1ab7a5e1208d4012c2d4a804b87",
+    "utc": "2026-10-20T22:10:44.226443+00:00"
+  },
+  {
+    "label": "provider0-verifierPubkey",
+    "url": "https://mainnet.base.org",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+        "data": "0xf4bad970"
+      },
+      "0x326c500"
+    ],
+    "sha256": "f05793d89d1bb39b95d133ef072a8c8f739cdb3a9186cb67844fbd9c926608e8",
+    "utc": "2026-10-20T22:10:44.272102+00:00"
+  },
+  {
+    "label": "provider0-DOMAIN_TAG",
+    "url": "https://mainnet.base.org",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+        "data": "0xe32e13eb"
+      },
+      "0x326c500"
+    ],
+    "sha256": "029b317f300c237e0be5ef4a5e9adad813f8889a6dfe17db7a68e76763bad01a",
+    "utc": "2026-10-20T22:10:44.341559+00:00"
+  },
+  {
+    "label": "provider1-chain",
+    "url": "https://base-rpc.publicnode.com",
+    "method": "eth_chainId",
+    "params": null,
+    "sha256": "60a8e1c6a5247eee8b12ffe2450558e6199f6146acc9caed1be20cd1d373d45e",
+    "utc": "2026-10-20T22:10:44.432142+00:00"
+  },
+  {
+    "label": "provider1-block",
+    "url": "https://base-rpc.publicnode.com",
+    "method": "eth_getBlockByNumber",
+    "params": [
+      "0x326c500",
+      false
+    ],
+    "sha256": "a2384fffa3eb0cec0e72ee5a3d4bd87aaba44c3d1ebbb504a260ccf782907fc0",
+    "utc": "2026-10-20T22:10:44.495854+00:00"
+  },
+  {
+    "label": "provider1-code",
+    "url": "https://base-rpc.publicnode.com",
+    "method": "eth_getCode",
+    "params": [
+      "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+      "0x326c500"
+    ],
+    "sha256": "c0309f1eae65f71f5c39fc6a98125b17bf27d3fccc194d8c77fd9c273b7fdeae",
+    "utc": "2026-10-20T22:10:44.575839+00:00"
+  },
+  {
+    "label": "provider1-token",
+    "url": "https://base-rpc.publicnode.com",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+        "data": "0xfc0c546a"
+      },
+      "0x326c500"
+    ],
+    "sha256": "0a1970dcff36b8325e589977994646c696a6ac4b337f8f3df7e3945b5a1615ab",
+    "utc": "2026-10-20T22:10:44.655089+00:00"
+  },
+  {
+    "label": "provider1-verifierPubkey",
+    "url": "https://base-rpc.publicnode.com",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+        "data": "0xf4bad970"
+      },
+      "0x326c500"
+    ],
+    "sha256": "9022a4052edfe1658587534a68c7b1e4f9ff6001157b2c254bc89a23e9242853",
+    "utc": "2026-10-20T22:10:44.734206+00:00"
+  },
+  {
+    "label": "provider1-DOMAIN_TAG",
+    "url": "https://base-rpc.publicnode.com",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfC4Da1b7C56D46AB23c750c0890025F6335bCA3F",
+        "data": "0xe32e13eb"
+      },
+      "0x326c500"
+    ],
+    "sha256": "e04a55c843847bcf20acf209add5fdb6bfae8efdbe88658a449ed0aaf8ef7234",
+    "utc": "2026-10-20T22:10:44.821181+00:00"
+  },
+  {
+    "label": "published-keys",
+    "url": "https://api.babyblueviper.com/.well-known/verifier-keys.json",
+    "method": null,
+    "params": null,
+    "sha256": "5006c5c783aea0e5cdbb8f824eea6872c7eae74a7968f4741d2c823b041f54db",
+    "utc": "2026-10-20T22:10:45.114421+00:00"
+  }
+]

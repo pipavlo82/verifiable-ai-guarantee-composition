@@ -1,0 +1,118 @@
+[
+  {
+    "name": "v0-tests-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_composition.py",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "6d8665085c1bc04fd2d9bce7a6df9dc7f8609c5a399af3ac63f533de858c6f3f"
+  },
+  {
+    "name": "v0-mutations-normal",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/mutations.py"
+    ],
+    "exit": 0,
+    "stdout_sha256": "5287bb25d63b22d315d8b7512d98dd92363588303a541001d6286498817600d2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v0-tests-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_composition.py",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c1c192dcf66b47378b69a142cd06ea320726933bedc1b71a74177c745e81aca3"
+  },
+  {
+    "name": "v0-mutations-repeat",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/mutations.py"
+    ],
+    "exit": 0,
+    "stdout_sha256": "5287bb25d63b22d315d8b7512d98dd92363588303a541001d6286498817600d2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v0-tests-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_composition.py",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c0bde787ec5181e92078a1033b4627f506ab0122648a2bbd7703078ead10c8f9"
+  },
+  {
+    "name": "v0-mutations-optimized",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-O",
+      "tools/mutations.py"
+    ],
+    "exit": 0,
+    "stdout_sha256": "5287bb25d63b22d315d8b7512d98dd92363588303a541001d6286498817600d2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "v1-complete",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "research/formal-v1/validate.py",
+      "--out",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-22\\referenced-chatgpt-conversation-this-is-an\\outputs\\claim-aware-integration-20261019\\legacy-unrestricted\\v1"
+    ],
+    "exit": 0,
+    "stdout_sha256": "445741b5b80a4d859578538fa2415560901cde2786d55a4317464347c1a4ce29",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

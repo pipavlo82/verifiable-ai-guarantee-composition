@@ -1,0 +1,1 @@
+{"evm/Composition.t.sol:CompositionTest":{"duration":"1m 23s 347ms 287µs 800ns","test_results":{"test_all_vectors()":{"status":"Success","reason":null,"counterexample":null,"logs":[],"decoded_logs":[],"kind":{"Unit":{"gas":7942593}},"traces":[],"labeled_addresses":{},"duration":"1m 23s 61ms 804µs 500ns","breakpoints":{},"gas_snapshots":{}}},"warnings":[]}}

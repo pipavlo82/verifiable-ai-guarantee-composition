@@ -1,0 +1,67 @@
+{
+  "schema": "native-v2-build",
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\research\\chain-v2\\native\\Cargo.toml",
+        "--offline"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1b6b37ddb55b0bb6fc76bf8b780d8ece547171c8bcf48bd0c88cdd930659c522"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::op_shard_matmul_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "36d26346de1a04be2bae9349a22171d7e6d4f2760ca8728fb6ff88724aba6bdf",
+      "stderr_sha256": "f042e346529406456e62877045d65353efd3d0808adeb4dc7ba661d480a3bb3d"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-v3\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::committed_projection_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "7430c2946a9525bbcb6f3a4e0afc1905b4be487a275eb0237b786b717f929cf4",
+      "stderr_sha256": "a87997664f7bdeaf2240b93bac89a7d47fe5090d695a18b085b808725a599be0"
+    }
+  ],
+  "source_clean": true,
+  "adapter_lock_sha256": "5144f1942d1ebc9e744d64807dd8897d602d8122ad483cf5c328851ac02042da",
+  "passed": true
+}

@@ -1,0 +1,165 @@
+{
+  "absent_upstream_guards": {
+    "amount_preimage": "NOT_APPLIED",
+    "claim_scope": "NOT_APPLIED",
+    "expiration": "NOT_APPLIED",
+    "global_nonce_consumption": "NOT_APPLIED",
+    "recipient_preimage": "NOT_APPLIED",
+    "revocation": "NOT_APPLIED"
+  },
+  "counts": {
+    "CRASHED": 0,
+    "KILLED": 5,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "mutations": [
+    {
+      "baseline": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "classification": "KILLED",
+      "id": "chain",
+      "mutant": {
+        "negative_authorized": true,
+        "negative_delta": 1000000,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "mutant_sha256": "a2f842655ac9173079dcdc650efa677c4435f8dd112c42aa1cb1c9cddf627a91",
+      "new": "DOMAIN_TAG, uint256(8453),",
+      "old": "DOMAIN_TAG, block.chainid,",
+      "restored": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "witness": "chain"
+    },
+    {
+      "baseline": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "classification": "KILLED",
+      "id": "escrow_address",
+      "mutant": {
+        "negative_authorized": true,
+        "negative_delta": 1000000,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "mutant_sha256": "84f3bbc6b3fbe4cc1ccd3525dbecef904db191ecbb51d3d96c7b2116a7ad92f7",
+      "new": "address(0x2e234DAe75C793f67A35089C9d99245E1C58470b), address(0x2e234DAe75C793f67A35089C9d99245E1C58470b), id,",
+      "old": "address(this), address(this), id,",
+      "restored": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "witness": "address"
+    },
+    {
+      "baseline": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "classification": "KILLED",
+      "id": "trusted_signer",
+      "mutant": {
+        "negative_authorized": true,
+        "negative_delta": 1000000,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "mutant_sha256": "d357d7df721ab056d5f26eab098b98622663e175e71692abef7e263f6590544f",
+      "new": "(BIP340.verify(verifierPubkey, bytes32(sig[0:32]), bytes32(sig[32:64]), releaseDigest(id, submissionId, decisionRef)) || BIP340.verify(bytes32(0x714fcc4c79f3f0d05908b6b6a4d2776573c9b191fd8bffeed74c682630397028), bytes32(sig[0:32]), bytes32(sig[32:64]), releaseDigest(id, submissionId, decisionRef)))",
+      "old": "BIP340.verify(verifierPubkey, bytes32(sig[0:32]), bytes32(sig[32:64]), releaseDigest(id, submissionId, decisionRef))",
+      "restored": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "witness": "signer"
+    },
+    {
+      "baseline": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "classification": "KILLED",
+      "id": "replay_guard",
+      "mutant": {
+        "negative_authorized": true,
+        "negative_delta": 1000000,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "mutant_sha256": "be076be3ce5fde9324c3a451c85eae09fc494785d87da91242fd462f70fb6e1f",
+      "new": "if (false) revert NotFunded();",
+      "old": "if (e.state != State.Funded) revert NotFunded();",
+      "restored": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "witness": "replay"
+    },
+    {
+      "baseline": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "classification": "KILLED",
+      "id": "state_consumption",
+      "mutant": {
+        "negative_authorized": true,
+        "negative_delta": 1000000,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "mutant_sha256": "0242cc780ecc7ee76af5f106b2b12bd2188e46b185afd56416ce0202272dfda4",
+      "new": "/* state consumption removed */",
+      "old": "e.state = State.Released;",
+      "restored": {
+        "negative_authorized": false,
+        "negative_delta": 0,
+        "positive": true,
+        "positive_delta": 1000000,
+        "primary_address": "0x2e234DAe75C793f67A35089C9d99245E1C58470b"
+      },
+      "witness": "replay"
+    }
+  ],
+  "original_source_unchanged": true
+}

@@ -1,0 +1,187 @@
+{
+  "contract": {
+    "schema": "claim-aware.external.v1",
+    "scenario": "lab-artifact-review-v1",
+    "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+    "scope": "artifact-byte-identity",
+    "domain": {
+      "name": "Claim-Aware External Lab",
+      "version": "1",
+      "chainId": "31337"
+    },
+    "authorized": {
+      "producer": "0x308588eabaa35131587466cb93a813a297590aeb",
+      "judgment": "0x1b6691afd64df792c14c832451dff41b66b5391d"
+    },
+    "identity_namespace": "eip155:31337:secp256k1",
+    "actions": {
+      "producer": "declare-artifact",
+      "judgment": "review-artifact"
+    },
+    "separation": [
+      [
+        "producer",
+        "judgment"
+      ],
+      [
+        "judgment",
+        "unknown-role"
+      ]
+    ],
+    "requirements": {
+      "S01": {
+        "procedure": "signature",
+        "dependencies": []
+      },
+      "S02": {
+        "procedure": "artifact",
+        "dependencies": [
+          "S01"
+        ]
+      },
+      "S03": {
+        "procedure": "subject",
+        "dependencies": [
+          "S01"
+        ]
+      },
+      "S04": {
+        "procedure": "authority",
+        "dependencies": [
+          "S01"
+        ]
+      },
+      "S05": {
+        "procedure": "domain",
+        "dependencies": [
+          "S01"
+        ]
+      },
+      "S06": {
+        "procedure": "judgment",
+        "dependencies": [
+          "S01"
+        ]
+      },
+      "O14": {
+        "procedure": "independence",
+        "dependencies": [
+          "S01",
+          "S04",
+          "S05"
+        ]
+      }
+    },
+    "consumed_fields": [
+      "scenario",
+      "claimType",
+      "scope",
+      "subject",
+      "artifactSha256"
+    ],
+    "unconsumed_policy": "REJECT",
+    "adequacy": "EXTERNAL_ASSUMPTION"
+  },
+  "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweDFiNjY5MWFmZDY0ZGY3OTJjMTRjODMyNDUxZGZmNDFiNjZiNTM5MWQiLCJwcm9kdWNlciI6IjB4MzA4NTg4ZWFiYWEzNTEzMTU4NzQ2NmNiOTNhODEzYTI5NzU5MGFlYiJ9LCJjbGFpbV90eXBlIjoiUkVWSUVXRURfQVJUSUZBQ1RfSURFTlRJVFkiLCJjb25zdW1lZF9maWVsZHMiOlsic2NlbmFyaW8iLCJjbGFpbVR5cGUiLCJzY29wZSIsInN1YmplY3QiLCJhcnRpZmFjdFNoYTI1NiJdLCJkb21haW4iOnsiY2hhaW5JZCI6IjMxMzM3IiwibmFtZSI6IkNsYWltLUF3YXJlIEV4dGVybmFsIExhYiIsInZlcnNpb24iOiIxIn0sImlkZW50aXR5X25hbWVzcGFjZSI6ImVpcDE1NTozMTMzNzpzZWNwMjU2azEiLCJyZXF1aXJlbWVudHMiOnsiTzE0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiLCJTMDQiLCJTMDUiXSwicHJvY2VkdXJlIjoiaW5kZXBlbmRlbmNlIn0sIlMwMSI6eyJkZXBlbmRlbmNpZXMiOltdLCJwcm9jZWR1cmUiOiJzaWduYXR1cmUifSwiUzAyIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXJ0aWZhY3QifSwiUzAzIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoic3ViamVjdCJ9LCJTMDQiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJhdXRob3JpdHkifSwiUzA1Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiZG9tYWluIn0sIlMwNiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6Imp1ZGdtZW50In19LCJzY2VuYXJpbyI6ImxhYi1hcnRpZmFjdC1yZXZpZXctdjEiLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5leHRlcm5hbC52MSIsInNjb3BlIjoiYXJ0aWZhY3QtYnl0ZS1pZGVudGl0eSIsInNlcGFyYXRpb24iOltbInByb2R1Y2VyIiwianVkZ21lbnQiXSxbImp1ZGdtZW50IiwidW5rbm93bi1yb2xlIl1dLCJ1bmNvbnN1bWVkX3BvbGljeSI6IlJFSkVDVCJ9",
+  "claim": {
+    "scenario": "lab-artifact-review-v1",
+    "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+    "scope": "artifact-byte-identity",
+    "subject": "lab:preserved-native-proof-a",
+    "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530"
+  },
+  "context": {
+    "contract_sha256": "0a673ff77a92c70654a7dd4367556702614e827b79ff0f833fee2c4814f703af"
+  },
+  "catalog": {
+    "S01": {
+      "procedure": "signature",
+      "dependencies": []
+    },
+    "S02": {
+      "procedure": "artifact",
+      "dependencies": [
+        "S01"
+      ]
+    },
+    "S03": {
+      "procedure": "subject",
+      "dependencies": [
+        "S01"
+      ]
+    },
+    "S04": {
+      "procedure": "authority",
+      "dependencies": [
+        "S01"
+      ]
+    },
+    "S05": {
+      "procedure": "domain",
+      "dependencies": [
+        "S01"
+      ]
+    },
+    "S06": {
+      "procedure": "judgment",
+      "dependencies": [
+        "S01"
+      ]
+    },
+    "O14": {
+      "procedure": "independence",
+      "dependencies": [
+        "S01",
+        "S04",
+        "S05"
+      ]
+    }
+  },
+  "documents": {
+    "producer": {
+      "type": "LabJudgment",
+      "domain": {
+        "name": "Claim-Aware External Lab",
+        "version": "1",
+        "chainId": "31337"
+      },
+      "message": {
+        "subject": "lab:preserved-native-proof-a",
+        "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "scope": "artifact-byte-identity",
+        "executionId": "NOT_AN_EXECUTION_CLAIM",
+        "policyHash": "0x0a673ff77a92c70654a7dd4367556702614e827b79ff0f833fee2c4814f703af",
+        "nonce": "lab-fixture-v1",
+        "action": "declare-artifact"
+      },
+      "signature": "0x787b7d3e7302c50d0898d4ab5cc57a9eff884f54fcc7b142b035d86a7cb470e845b14199ef4e0f4e23b708c59490c865962bf95887fc142b6090cf56f08d6f851c",
+      "signer": "0x308588eabaa35131587466cb93a813a297590aeb"
+    },
+    "judgment": {
+      "type": "LabJudgment",
+      "domain": {
+        "name": "Claim-Aware External Lab",
+        "version": "1",
+        "chainId": "31337"
+      },
+      "message": {
+        "subject": "lab:preserved-native-proof-a",
+        "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+        "scope": "artifact-byte-identity",
+        "executionId": "NOT_AN_EXECUTION_CLAIM",
+        "policyHash": "0x0a673ff77a92c70654a7dd4367556702614e827b79ff0f833fee2c4814f703af",
+        "nonce": "lab-fixture-v1",
+        "action": "review-artifact"
+      },
+      "signature": "0xd1d2e6e6ab70ba87e67a97229095bc371f29274e21635f851e95692ce60d1caf35f5be5fa4d8fcb4adc0bcc4cf09f7539d3ef98cb831de701f29cf803fce097f1c",
+      "signer": "0x1b6691afd64df792c14c832451dff41b66b5391d"
+    }
+  },
+  "variants": {}
+}

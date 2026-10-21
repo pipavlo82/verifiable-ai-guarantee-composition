@@ -1,0 +1,23 @@
+{
+  "files": {
+    ".github/workflows/coverage-v4_1.yml": "49ad8a88038b84e3b21cf65b4c88ca78935127c0557b2f151bbb41d97f91ea5a",
+    "evidence/v4_1/self-judged/bundle.json": "3a06e6766f74890a0e1ce0d79b67587195c368f82dc4a88ccdeeb140e04213ec",
+    "evidence/v4_1/self-judged/policy.json": "7ce8ff4b8887bf1c91d641ebff94a6e0eaf8cc537387ea05905b3c99b4eb2306",
+    "evidence/v4_1/validation/comparison.stdout.json": "2d6b180be8e132d0852bcfc5762e443f5872223a9701e3fb012552434e0024e1",
+    "evidence/v4_1/validation/mutations-normal.stdout.json": "b96b382023205d0d6a864617f4e48ae91153451b2bb3ec0914f5cf3739ed87c4",
+    "evidence/v4_1/validation/mutations-optimized.stdout.json": "b96b382023205d0d6a864617f4e48ae91153451b2bb3ec0914f5cf3739ed87c4",
+    "evidence/v4_1/validation/tests-normal.log": "c8289e23402f4cf0dc5c4cabc5d6f1fc392a20eaa894edecfc4edff28e359fee",
+    "evidence/v4_1/validation/tests-optimized.log": "0bd9f0b476729b90dd82b14ec79fee7187e6f9df2b8e29b45fb8c14ced5ea7f0",
+    "fixtures/v4_1/catalog.json": "bdc3fb800628c11d085e17849d10b47cea9b7c293e8ca303dad7ebe40a7b71e1",
+    "fixtures/v4_1/contracts/output.json": "72e305d5032264f3bbb0496c60bf59c0662cb89524976ea3622a6599ec54dc6d",
+    "research/v4_1/README.md": "f0b44e9674d8a04f616ea2a16d0c019dc4f1f41abd70da54519eaf5f761c2314",
+    "src/v4_1/__init__.py": "3e0ca9401dbdddd89fe5ad47ae2e0615b2e0362542f7c0ab804e6f52beb9d426",
+    "src/v4_1/model.py": "7c7a6222a23d4d82a99e1b1f7bb20433674c9c3a4791965f6b92b48b33c3f4b5",
+    "src/v4_1/scenarios.py": "6b9b83af725fb7ca922de6b0d6fe57407a9489eed28cb4c3a40033cbd097b04d",
+    "tests/v4_1/test_v4_1.py": "63912fb53005868531a06e9fe551990970b71c7704fb1e2811a9f85cd0a856ba",
+    "tools/v4_1/create_self_judged_fixture.mjs": "32dde7ef05181c7276d01349b464a5e696b514d21f71f7366daf50ba42200cf3",
+    "tools/v4_1/mutations.py": "8e2741de36e149b23cdd1e743efe34e97506c88264d307add78877ae600a44e4",
+    "tools/v4_1/run.py": "46c14f113fd3029a68bfc8b0bb353913ac5ebc923a7d3e9a85fe3b4124bd9e29"
+  },
+  "head": "c14d96b0a63fceba02b2cb4469d5b3228ae46612"
+}

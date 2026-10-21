@@ -1,0 +1,176 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "id": "tests-normal",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "67b0b9d88c996b6d5d661aaa24b8af83e244204220a1615547a01bc9b36f47ee",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "id": "tests-repeat",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "3b2115b9ecb546283bf0974d307739fed409867c70bbb1b005810d03d7618ffd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "id": "tests-optimized",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "9f68189cdefd5299030c6c0bba1cda76b442286ede2dfcf51b7933adc139e76d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/experiment.py"
+      ],
+      "id": "experiment-normal",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8889cc94f5f05715e8d6ca0743a5dd28eb3ecc580da4bf68b9717cd5d0f7fee1"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/experiment.py"
+      ],
+      "id": "experiment-repeat",
+      "pythonhashseed": "29",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8889cc94f5f05715e8d6ca0743a5dd28eb3ecc580da4bf68b9717cd5d0f7fee1"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/experiment.py"
+      ],
+      "id": "experiment-optimized",
+      "pythonhashseed": "71",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8889cc94f5f05715e8d6ca0743a5dd28eb3ecc580da4bf68b9717cd5d0f7fee1"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/mutations.py"
+      ],
+      "id": "mutations-normal",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5287bb25d63b22d315d8b7512d98dd92363588303a541001d6286498817600d2"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-O",
+        "tools/mutations.py"
+      ],
+      "id": "mutations-optimized",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5287bb25d63b22d315d8b7512d98dd92363588303a541001d6286498817600d2"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/build_fixtures.py",
+        "--out",
+        "build/regenerated-fixtures"
+      ],
+      "id": "fixtures-regenerate",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/benchmark.py"
+      ],
+      "id": "benchmark",
+      "pythonhashseed": "0",
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ac271f2c20362d7a40276fd770d498656de7a9162bc19ffb7dec7ea08f68cd7"
+    }
+  ],
+  "committed_results_match": {
+    "experiment-normal": true,
+    "mutations-normal": true
+  },
+  "deterministic_experiment_bytes": true,
+  "deterministic_mutation_bytes": true,
+  "fixture_regeneration_identical": true,
+  "optimized_parent": false,
+  "passed": true,
+  "python": "3.12.14",
+  "schema": "composition-validation-v0",
+  "system": "Windows"
+}

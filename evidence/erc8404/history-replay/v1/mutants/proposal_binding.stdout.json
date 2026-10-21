@@ -1,0 +1,93 @@
+{
+  "schema": "public-nostr-replay-v1",
+  "mode": "REAL_PUBLIC_SIGNATURE_WITH_CONTROLLED_CONSUMER_SUBSTITUTIONS",
+  "event_id": "ff7227c605828f94457f450bc44b4c1dbc11e8f6df27f38f55a4aeb75d0b284a",
+  "pubkey": "6786e18a864893a900bd9858e650f67ccc3513f248fed374b591e2ff6922fbb7",
+  "signature_algorithm": "BIP340/secp256k1",
+  "dependency": "@noble/curves@2.0.1",
+  "cases": [
+    {
+      "name": "original_signature",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "name": "changed_signature",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "passed": true
+    },
+    {
+      "name": "changed_content_stale_id",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "passed": true
+    },
+    {
+      "name": "changed_content_recomputed_id_original_signature",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "passed": true
+    },
+    {
+      "name": "changed_key",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "passed": true
+    },
+    {
+      "name": "changed_id",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "passed": true
+    },
+    {
+      "name": "matching_proposal_digest",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "name": "wrong_proposal_same_authentic_event",
+      "actual": "VERIFIED",
+      "expected": "REFUTED",
+      "passed": false
+    },
+    {
+      "name": "missing_proposal",
+      "actual": "UNVERIFIABLE",
+      "expected": "UNVERIFIABLE",
+      "passed": true
+    },
+    {
+      "name": "boolean_is_not_evidence",
+      "actual": "UNVERIFIABLE",
+      "expected": "UNVERIFIABLE",
+      "passed": true
+    },
+    {
+      "name": "original_event_still_authentic",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    }
+  ],
+  "original_event_unchanged": true,
+  "wrong_subject_control": {
+    "component_authenticity": "VERIFIED",
+    "request_binding": "VERIFIED"
+  },
+  "boundaries": {
+    "signer_identity": "UNVERIFIABLE",
+    "signer_authority": "UNVERIFIABLE",
+    "proposal_preimage": "NOT_CHECKED",
+    "trusted_time": "UNVERIFIABLE",
+    "relay_or_chain_inclusion": "NOT_CHECKED",
+    "execution": "NOT_CHECKED",
+    "wyriwe_eip712_attestation": "NOT_CHECKED",
+    "zkie_link": "NOT_IMPLEMENTED",
+    "downstream_authorization": "UNVERIFIABLE"
+  },
+  "passed": false
+}

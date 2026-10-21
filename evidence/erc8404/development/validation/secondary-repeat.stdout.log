@@ -1,0 +1,178 @@
+{
+  "all_recovered": true,
+  "attribution": "User-reported Federico findings independently reconstructed; no review text present in public PR4 comments snapshot",
+  "passed": true,
+  "scope": "genuine laboratory signatures, same machine second crypto implementation; v4 authorizes its narrow declared replay, not outputHash correctness",
+  "signature_count": 53,
+  "tampered_message_rejected": true,
+  "v4_false_output_under_replay": {
+    "A": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "B": {
+      "authorized": true,
+      "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+      "status": "VERIFIED"
+    },
+    "C": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "all_declared_pass": true,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "components": {
+      "judgment": "VERIFIED",
+      "native": "VERIFIED",
+      "provenance": "VERIFIED",
+      "receipt": "VERIFIED"
+    },
+    "composition": "VERIFIED",
+    "coverage": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "context": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependency_closure": "VERIFIED"
+    },
+    "executed": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12"
+    ],
+    "missing_obligations": [],
+    "required": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12"
+    ],
+    "verification": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O10": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED"
+    }
+  },
+  "v4_self_judgment": {
+    "A": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "B": {
+      "authorized": true,
+      "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+      "status": "VERIFIED"
+    },
+    "C": {
+      "authorized": true,
+      "status": "VERIFIED"
+    },
+    "all_declared_pass": true,
+    "chain_status": "PARTIAL_CHAIN_VERIFIED",
+    "components": {
+      "judgment": "VERIFIED",
+      "native": "VERIFIED",
+      "provenance": "VERIFIED",
+      "receipt": "VERIFIED"
+    },
+    "composition": "VERIFIED",
+    "coverage": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "O13": "VERIFIED",
+      "context": "VERIFIED",
+      "definitions": "VERIFIED",
+      "dependency_closure": "VERIFIED"
+    },
+    "executed": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13"
+    ],
+    "missing_obligations": [],
+    "required": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13"
+    ],
+    "verification": {
+      "O01": "VERIFIED",
+      "O02": "VERIFIED",
+      "O03": "VERIFIED",
+      "O04": "VERIFIED",
+      "O05": "VERIFIED",
+      "O06": "VERIFIED",
+      "O07": "VERIFIED",
+      "O08": "VERIFIED",
+      "O09": "VERIFIED",
+      "O10": "VERIFIED",
+      "O11": "VERIFIED",
+      "O12": "VERIFIED",
+      "O13": "VERIFIED"
+    }
+  }
+}

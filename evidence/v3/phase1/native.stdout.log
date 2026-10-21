@@ -1,0 +1,67 @@
+{
+  "schema": "native-v2-build",
+  "pin": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+  "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\v2s-fresh-653b8e9\\research\\chain-v2\\native\\Cargo.toml",
+        "--offline"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "dfa6c6afe6f6ec3eb2d6f04a2a6b01b04b7e5e9825913c2819637e391bed19cc"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\v2s-fresh-653b8e9\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::op_shard_matmul_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "36d26346de1a04be2bae9349a22171d7e6d4f2760ca8728fb6ff88724aba6bdf",
+      "stderr_sha256": "1f4abe8febf3ad17f291b2c28ec09bd8ab7b43d988f1feb6d4464e34a1fd7456"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "C:\\Users\\msi\\Documents\\Codex\\v2s-fresh-653b8e9\\build\\chain-v2\\zkIE\\Cargo.toml",
+        "-p",
+        "zkie-ops",
+        "compose::tests::committed_projection_roundtrip",
+        "--offline",
+        "--",
+        "--exact",
+        "--nocapture"
+      ],
+      "exit": 0,
+      "executed": true,
+      "stdout_sha256": "38cbc89297af1c49a62158b6aa90f64d321d2cc2547521b8efefe1e13cdba1f0",
+      "stderr_sha256": "8dd4129e97a7590e2c2674543d796f5d2f72217a0f1aa6ebd6b035b591308825"
+    }
+  ],
+  "source_clean": true,
+  "adapter_lock_sha256": "5144f1942d1ebc9e744d64807dd8897d602d8122ad483cf5c328851ac02042da",
+  "passed": true
+}

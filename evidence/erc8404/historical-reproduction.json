@@ -1,0 +1,32 @@
+{
+  "v0": {
+    "reports": [
+      "build\\erc8404\\phase1\\v0\\report.json"
+    ]
+  },
+  "v1": {
+    "reports": [
+      "build\\erc8404\\phase1\\v1\\report.json"
+    ]
+  },
+  "v2": {
+    "reports": [
+      "build\\erc8404\\phase1\\v2\\report.json"
+    ]
+  },
+  "v2-survivors": {
+    "reports": [
+      "build\\erc8404\\phase1\\v2-survivors\\report.json"
+    ]
+  },
+  "v3": {
+    "reports": [
+      "build\\erc8404\\phase1\\v3\\report.json"
+    ]
+  },
+  "v4": {
+    "reports": [
+      "build\\erc8404\\phase1\\v4\\report.json"
+    ]
+  }
+}

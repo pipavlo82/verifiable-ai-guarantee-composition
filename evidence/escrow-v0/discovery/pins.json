@@ -1,0 +1,22 @@
+{
+  "vagc": {
+    "repository": "pipavlo82/verifiable-ai-guarantee-composition",
+    "default_branch": "main",
+    "head": "18a5916098addf6447700ed95441125bfa7079c3"
+  },
+  "escrow": {
+    "repository": "babyblueviper1/invinoveritas",
+    "default_branch": "main",
+    "head": "ce8c504f2ae4d9b389b53823fe16afec7fcf3bb3"
+  },
+  "zkie": {
+    "repository": "trustless-ai/zkIE",
+    "default_branch": "main",
+    "head": "39d8df96877bc3bebf33c69b06907d792b3184b9"
+  },
+  "erc8404": {
+    "repository": "pipavlo82/ERCs",
+    "head": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+    "path": "ERCS/erc-8404.md"
+  }
+}

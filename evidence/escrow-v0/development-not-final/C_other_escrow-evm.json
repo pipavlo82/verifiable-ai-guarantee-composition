@@ -1,0 +1,13 @@
+{
+  "amount": 1000000,
+  "escrow": "0xF62849F9A0B5Bf2913b396098F7c7019b51A820a",
+  "name": "C_other_escrow",
+  "offchain_admitted": false,
+  "offchain_status_code": 1,
+  "onchain_success": false,
+  "recipient": "0x0000000000000000000000000000000000000B0b",
+  "recipient_delta": 0,
+  "release_call_gas": 10018,
+  "return_data": "0x43e43260",
+  "state": 1
+}

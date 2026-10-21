@@ -1,0 +1,8 @@
+file:///C:/Users/msi/Documents/Codex/2026-09-22/referenced-chatgpt-conversation-this-is-an/work/guarantee-composition-v2-20261016/repository/tools/v2/sign_capture.mjs:10
+if(!Object.values(knownAnswers()).every(Boolean)) throw Error('Known answer test failed');
+                                                        ^
+
+Error: Known answer test failed
+    at file:///C:/Users/msi/Documents/Codex/2026-09-22/referenced-chatgpt-conversation-this-is-an/work/guarantee-composition-v2-20261016/repository/tools/v2/sign_capture.mjs:10:57
+
+Node.js v22.15.0

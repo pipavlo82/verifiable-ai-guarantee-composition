@@ -1,0 +1,30 @@
+{
+  "schema": "paired-local-timing-v2",
+  "cases_per_pass": 26,
+  "repeats": 3,
+  "includes": "Python-to-Node and native process startup, real crypto, same evidence",
+  "warning": "exploratory local timing; no statistical or portable performance advantage claimed",
+  "pairs": [
+    {
+      "repeat": 0,
+      "A_ns": 4751102200,
+      "B_ns": 4718854400,
+      "difference_ns": -32247800
+    },
+    {
+      "repeat": 1,
+      "A_ns": 4705725900,
+      "B_ns": 4751761800,
+      "difference_ns": 46035900
+    },
+    {
+      "repeat": 2,
+      "A_ns": 4739204700,
+      "B_ns": 4906510700,
+      "difference_ns": 167306000
+    }
+  ],
+  "median_A_ns": 4739204700,
+  "median_B_ns": 4751761800,
+  "median_paired_difference_ns": 46035900
+}

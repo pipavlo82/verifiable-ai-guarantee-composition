@@ -1,0 +1,8014 @@
+{
+  "cases": [
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_output",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_replay",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "binding": {
+            "claim_type": "LAB_REPLAY_ADMISSIBLE",
+            "contract_sha256": "9e7bcb0a13ae8dd04d56bf7762b66d2149dabfbf48f52cf50764e9ee0ad88b77",
+            "scenario": "lab-replay-v1"
+          },
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ]
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_attestation",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "binding": {
+            "claim_type": "AUTHENTICATED_ATTESTATION",
+            "contract_sha256": "2bcfcf01222c6a4828de7b2839633356ad86112f0dac31b4b7420ff144beb23e",
+            "scenario": "lab-attestation-v1"
+          },
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O08": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ]
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O08",
+          "O11"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O08",
+          "O11"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_provenance",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "binding": {
+            "claim_type": "INPUT_PROVENANCE_ESTABLISHED",
+            "contract_sha256": "5952ef7b7dbd11e522ba52f059b8eb508030f0c538fc0be9d2335d19c3060122",
+            "scenario": "lab-provenance-v1"
+          },
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O03": [],
+          "O04": [],
+          "O08": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ]
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O03",
+          "O04",
+          "O08",
+          "O11"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O03",
+          "O04",
+          "O08",
+          "O11"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O01",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O01",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "REFUTED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "REFUTED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O01",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "UNVERIFIABLE",
+      "kind": "omission",
+      "name": "omitted_O01",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "REFUTED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "REFUTED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O01"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O02",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O02",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "REFUTED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "REFUTED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O02",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O02",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "REFUTED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "REFUTED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O02"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O03",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O03",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "REFUTED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O03",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O03",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "REFUTED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O03"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O04",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O04",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "REFUTED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O04",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O04",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "REFUTED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O04"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O05",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O05",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "REFUTED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O05",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O05",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "REFUTED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O05"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "inputHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O06",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O06",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "REFUTED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O06",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O06",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "REFUTED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O06"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "modelHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O07",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O07",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "REFUTED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O07",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O07",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "REFUTED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O07"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "action",
+          "proofHash",
+          "subject"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O08",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O08",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "REFUTED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O08",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O08",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "REFUTED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O08"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O09",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O09",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "REFUTED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O09",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O09",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "REFUTED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O09"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "executionId"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O10",
+      "expected": "UNVERIFIABLE",
+      "expected_A": "VERIFIED",
+      "expected_B": "UNVERIFIABLE",
+      "kind": "negative",
+      "name": "negative_O10",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "UNVERIFIABLE",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O10",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O10",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "REFUTED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O10"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O11",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O11",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O11",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O11",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O11"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "nonce",
+          "policyHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O12",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O12",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "REFUTED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O12",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O12",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "REFUTED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O12"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "claimKind",
+          "scope"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O13",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O13",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "REFUTED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O13",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O13",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "REFUTED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O13"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "outputHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O01",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O01",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "UNVERIFIABLE",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "UNVERIFIABLE",
+          "O02": "VERIFIED",
+          "O03": "UNVERIFIABLE",
+          "O04": "UNVERIFIABLE",
+          "O05": "UNVERIFIABLE",
+          "O06": "UNVERIFIABLE",
+          "O07": "VERIFIED",
+          "O08": "UNVERIFIABLE",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "VERIFIED",
+          "O13": "UNVERIFIABLE",
+          "O14": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O02",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O02",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "UNVERIFIABLE",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "UNVERIFIABLE",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "UNVERIFIABLE",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O03",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O03",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "UNVERIFIABLE",
+          "O04": "UNVERIFIABLE",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O04",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O04",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "UNVERIFIABLE",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O05",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O05",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "UNVERIFIABLE",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O06",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O06",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "modelHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "UNVERIFIABLE",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O07",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O07",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "UNVERIFIABLE",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "UNVERIFIABLE",
+          "O06": "UNVERIFIABLE",
+          "O07": "UNVERIFIABLE",
+          "O08": "UNVERIFIABLE",
+          "O09": "UNVERIFIABLE",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "UNVERIFIABLE",
+          "O13": "UNVERIFIABLE",
+          "O14": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O08",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O08",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [],
+          "O12": [],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "claimKind",
+          "modelHash",
+          "nonce",
+          "policyHash",
+          "scope"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "UNVERIFIABLE",
+          "O07": "UNVERIFIABLE",
+          "O08": "UNVERIFIABLE",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "UNVERIFIABLE",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O09",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O09",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "UNVERIFIABLE"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "UNVERIFIABLE",
+          "O06": "UNVERIFIABLE",
+          "O07": "UNVERIFIABLE",
+          "O08": "UNVERIFIABLE",
+          "O09": "UNVERIFIABLE",
+          "O10": "UNVERIFIABLE",
+          "O11": "UNVERIFIABLE",
+          "O12": "UNVERIFIABLE",
+          "O13": "UNVERIFIABLE",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O10",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O10",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "UNVERIFIABLE",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O11",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O11",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O12",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O12",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "UNVERIFIABLE",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O13",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O13",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "UNVERIFIABLE",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "UNVERIFIABLE",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "UNVERIFIABLE",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "context",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "stale_scenario",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "REFUTED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "definitions",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "counterfeit_definition",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "REFUTED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "inputHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "composition",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "scope_overclaim",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "REFUTED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "missing_contract",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": null,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "UNVERIFIABLE",
+        "coverage": {
+          "contract": "UNVERIFIABLE"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [],
+        "unconsumed_claim_fields": [
+          "action",
+          "claimKind",
+          "executionId",
+          "inputHash",
+          "modelHash",
+          "nonce",
+          "outputHash",
+          "policyHash",
+          "proofHash",
+          "scope",
+          "subject"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "replay",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "cross_domain",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "mixed_refutation_missing",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "UNVERIFIABLE",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "UNVERIFIABLE",
+          "O04": "UNVERIFIABLE",
+          "O05": "REFUTED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "circular_self_inventory",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "REFUTED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O14"
+        ],
+        "missing_obligations": [
+          "O13"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [
+          "outputHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "removed_dependency_declaration",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "REFUTED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "unknown_required_obligation",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "acbd6f326699d1363ff6aa93a372206781501decb20c04ed367bcce2d4fde811",
+            "scenario": "lab-output-v2"
+          },
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "FUTURE_OBLIGATION": "UNVERIFIABLE",
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [
+          "FUTURE_OBLIGATION"
+        ],
+        "required": [
+          "FUTURE_OBLIGATION",
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "dependency_closure",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "unclosed_dependencies",
+      "origin": "v4",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "fdf68e5adcfd5fc8a84c4cd0291913e1ffc9eb894fcefc98dc9dc4d9b8643317",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "REFUTED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O14",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O14_self_judged",
+      "origin": "v4.1",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ],
+          "O14": []
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "REFUTED"
+        }
+      },
+      "v4_C": {
+        "authorized": true,
+        "status": "VERIFIED"
+      },
+      "v4_expected_C": "VERIFIED"
+    },
+    {
+      "boundary": "O14",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O14",
+      "origin": "v4.1",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+            "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+            "scenario": "lab-output-v2"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "VERIFIED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ],
+          "O13": [
+            "outputHash"
+          ]
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "O14": "REFUTED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O14"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13",
+          "O14"
+        ],
+        "unconsumed_claim_fields": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      },
+      "v4_expected_C": null
+    },
+    {
+      "boundary": "claim_fields",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "unconsumed_output_under_replay",
+      "origin": "v4.1",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "binding": {
+            "claim_type": "LAB_REPLAY_ADMISSIBLE",
+            "contract_sha256": "9e7bcb0a13ae8dd04d56bf7762b66d2149dabfbf48f52cf50764e9ee0ad88b77",
+            "scenario": "lab-replay-v1"
+          },
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "claim_fields": "REFUTED",
+        "claim_reads": {
+          "O01": [],
+          "O02": [],
+          "O03": [],
+          "O04": [],
+          "O05": [
+            "inputHash"
+          ],
+          "O06": [
+            "modelHash"
+          ],
+          "O07": [
+            "action",
+            "proofHash",
+            "subject"
+          ],
+          "O08": [],
+          "O09": [
+            "executionId"
+          ],
+          "O10": [],
+          "O11": [
+            "nonce",
+            "policyHash"
+          ],
+          "O12": [
+            "claimKind",
+            "scope"
+          ]
+        },
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "unconsumed_claim_fields": [
+          "outputHash"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED"
+        }
+      },
+      "v4_C": {
+        "authorized": true,
+        "status": "VERIFIED"
+      },
+      "v4_expected_C": "VERIFIED"
+    }
+  ],
+  "passed": true,
+  "reuse": [
+    {
+      "admitted": true,
+      "edited": false,
+      "expected": true,
+      "name": "control_output_same_contract",
+      "passed": true,
+      "presented_C": {
+        "authorized": true,
+        "binding": {
+          "claim_type": "LAB_OUTPUT_REPLAY_ADMISSIBLE",
+          "contract_sha256": "4ba1b885bec78491b5a23ff68fd912c1f5e1aaeed20d47379993b24fe8077a57",
+          "scenario": "lab-output-v2"
+        },
+        "status": "VERIFIED"
+      },
+      "source_authorized": true
+    }
+  ],
+  "schema": "v4.1-comparison",
+  "summary": {
+    "A": {
+      "false_authorizations": 44,
+      "positive_authorizations": 4
+    },
+    "B": {
+      "false_authorizations": 22,
+      "positive_authorizations": 4
+    },
+    "C": {
+      "false_authorizations": 0,
+      "positive_authorizations": 4
+    },
+    "false_admissions": 0
+  }
+}

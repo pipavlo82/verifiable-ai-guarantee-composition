@@ -1,0 +1,2608 @@
+{
+  "cases": [
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "VERIFIED",
+      "name": "positive_judgment_publication",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": true,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "VERIFIED",
+      "name": "positive_claim_agreement",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "VERIFIED",
+      "name": "positive_native_recomputation",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "native_model"
+        ],
+        "authorized": true,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "native_recomputation",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "native_model": "VERIFIED",
+          "native_proof": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "VERIFIED",
+      "name": "positive_local_receipt_binding",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "receipt_subject"
+        ],
+        "authorized": true,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "local_receipt_binding",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "receipt_root": "VERIFIED",
+          "receipt_subject": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "REFUTED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "REFUTED"
+      },
+      "expected": "REFUTED",
+      "name": "bad_judgment_signature",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "REFUTED"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "VERIFIED",
+          "judgment_signature": "REFUTED"
+        },
+        "refuted": [
+          "judgment_signature"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "wrong_judgment_authority",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "REFUTED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "judgment_authority"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "valid_signature_wrong_artifact_profile",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "REFUTED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "judgment_authority"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "REFUTED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      },
+      "expected": "REFUTED",
+      "name": "bad_cell1_signature",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "REFUTED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "REFUTED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "cell1_signature"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "REFUTED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      },
+      "expected": "REFUTED",
+      "name": "bad_cell2_signature",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "REFUTED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "REFUTED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "cell2_signature"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "wrong_cell_authority",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "REFUTED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "cell_authority"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "cross_subject",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "REFUTED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "decision_binding"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "wrong_claim",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "REFUTED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "claim_binding"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "valid_judgment_wrong_action",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "REFUTED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "judgment_scope"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "cross_domain",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "REFUTED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "domain"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "replay_context",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "REFUTED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "as_of"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "REFUTED"
+        },
+        "details": {
+          "native": {
+            "exit": 1,
+            "proof_sha256": "2393d093f86b4428ab9ffee293b72e476fca5084cfb7c461dc82435a656a3fee",
+            "result": {
+              "native_verified": false,
+              "output_recomputed": true,
+              "statement_bound": false
+            },
+            "status": "REFUTED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "REFUTED"
+      },
+      "expected": "REFUTED",
+      "name": "invalid_native_proof",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "native_model"
+        ],
+        "authorized": false,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "REFUTED"
+        },
+        "details": {
+          "native": {
+            "exit": 1,
+            "proof_sha256": "2393d093f86b4428ab9ffee293b72e476fca5084cfb7c461dc82435a656a3fee",
+            "result": {
+              "native_verified": false,
+              "output_recomputed": true,
+              "statement_bound": false
+            },
+            "status": "REFUTED"
+          }
+        },
+        "guarantee_scope": "native_recomputation",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "native_model": "VERIFIED",
+          "native_proof": "REFUTED"
+        },
+        "refuted": [
+          "native_proof"
+        ],
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "wrong_model",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "native_model"
+        ],
+        "authorized": false,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "native_recomputation",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "native_model": "REFUTED",
+          "native_proof": "VERIFIED"
+        },
+        "refuted": [
+          "native_model"
+        ],
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "REFUTED"
+        },
+        "details": {
+          "receipt": {
+            "native": "REJECTED_MALFORMED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "status": "REFUTED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "REFUTED"
+      },
+      "expected": "REFUTED",
+      "name": "invalid_receipt_root",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "receipt_subject"
+        ],
+        "authorized": false,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "REFUTED"
+        },
+        "details": {
+          "receipt": {
+            "native": "REJECTED_MALFORMED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "status": "REFUTED"
+          }
+        },
+        "guarantee_scope": "local_receipt_binding",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "receipt_root": "REFUTED",
+          "receipt_subject": "VERIFIED"
+        },
+        "refuted": [
+          "receipt_root"
+        ],
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "REFUTED",
+      "name": "valid_receipt_wrong_execution_subject",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "receipt_subject"
+        ],
+        "authorized": false,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "local_receipt_binding",
+        "missing": [],
+        "mode": "explicit_composition",
+        "obligations": {
+          "receipt_root": "VERIFIED",
+          "receipt_subject": "REFUTED"
+        },
+        "refuted": [
+          "receipt_subject"
+        ],
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "REFUTED"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "UNVERIFIABLE"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "UNVERIFIABLE"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_ledger",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "UNVERIFIABLE"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "UNVERIFIABLE",
+          "judgment_signature": "UNVERIFIABLE"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "UNVERIFIABLE",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_cell1",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "UNVERIFIABLE",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "cell1_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "as_of"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "UNVERIFIABLE",
+          "cell1_signature": "UNVERIFIABLE",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "UNVERIFIABLE",
+          "claim_binding": "UNVERIFIABLE",
+          "decision_binding": "UNVERIFIABLE",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_cell2",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "UNVERIFIABLE",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "UNVERIFIABLE",
+          "cell_authority": "UNVERIFIABLE",
+          "claim_binding": "UNVERIFIABLE",
+          "decision_binding": "UNVERIFIABLE",
+          "domain": "UNVERIFIABLE",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "UNVERIFIABLE"
+        },
+        "details": {
+          "native": {
+            "reason": "missing native tuple",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "UNVERIFIABLE"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_native",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "native_model"
+        ],
+        "authorized": false,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "UNVERIFIABLE"
+        },
+        "details": {
+          "native": {
+            "reason": "missing native tuple",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantee_scope": "native_recomputation",
+        "missing": [
+          "native_proof"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "native_model": "VERIFIED",
+          "native_proof": "UNVERIFIABLE"
+        },
+        "refuted": [],
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "UNVERIFIABLE"
+        },
+        "details": {
+          "receipt": {
+            "reason": "missing replay receipt",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "UNVERIFIABLE"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_receipt",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "receipt_subject"
+        ],
+        "authorized": false,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "UNVERIFIABLE"
+        },
+        "details": {
+          "receipt": {
+            "reason": "missing replay receipt",
+            "status": "UNVERIFIABLE"
+          }
+        },
+        "guarantee_scope": "local_receipt_binding",
+        "missing": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "receipt_root": "UNVERIFIABLE",
+          "receipt_subject": "UNVERIFIABLE"
+        },
+        "refuted": [],
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_ledger_key",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority"
+        ],
+        "authorized": false,
+        "claim": "judgment_publication",
+        "components": {
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "judgment_publication",
+        "missing": [
+          "judgment_authority"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "judgment_authority": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_cell2_key",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "cell_authority"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "UNVERIFIABLE",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_decision_ref",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "decision_binding"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "UNVERIFIABLE",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_claim_id",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "claim_binding"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "UNVERIFIABLE",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_verdict",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "judgment_scope"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_domain",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "domain"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "UNVERIFIABLE",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_as_of",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "as_of"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "UNVERIFIABLE",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_model_sha256",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "native_model"
+        ],
+        "authorized": false,
+        "claim": "native_recomputation",
+        "components": {
+          "native_proof": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "native_recomputation",
+        "missing": [
+          "native_model"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "native_model": "UNVERIFIABLE",
+          "native_proof": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "native_proof",
+          "native_model"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "missing_binding_proof_sha256",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "receipt_subject"
+        ],
+        "authorized": false,
+        "claim": "local_receipt_binding",
+        "components": {
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "local_receipt_binding",
+        "missing": [
+          "receipt_subject"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "receipt_root": "VERIFIED",
+          "receipt_subject": "UNVERIFIABLE"
+        },
+        "refuted": [],
+        "required": [
+          "receipt_root",
+          "receipt_subject"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "historical_cell_execution",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of",
+          "historical_input_bytes",
+          "historical_execution"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "historical_execution_unestablished",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of",
+          "historical_input_bytes",
+          "historical_execution"
+        ],
+        "authorized": false,
+        "claim": "historical_cell_execution",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "historical_cell_execution",
+        "missing": [
+          "historical_input_bytes",
+          "historical_execution"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "historical_execution": "UNVERIFIABLE",
+          "historical_input_bytes": "UNVERIFIABLE",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of",
+          "historical_input_bytes",
+          "historical_execution"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": true,
+        "claim": "external_full_chain",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED",
+          "native_proof": "VERIFIED",
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of",
+          "native_proof",
+          "native_model",
+          "receipt_root",
+          "receipt_subject",
+          "wyriwe_provenance",
+          "external_model_authority",
+          "inference_judgment_binding",
+          "external_execution"
+        ],
+        "status": "VERIFIED"
+      },
+      "expected": "UNVERIFIABLE",
+      "name": "full_external_chain_missing",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of",
+          "native_model",
+          "receipt_subject",
+          "wyriwe_provenance",
+          "external_model_authority",
+          "inference_judgment_binding",
+          "external_execution"
+        ],
+        "authorized": false,
+        "claim": "external_full_chain",
+        "components": {
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED",
+          "native_proof": "VERIFIED",
+          "receipt_root": "VERIFIED"
+        },
+        "details": {
+          "native": {
+            "exit": 0,
+            "proof_sha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "result": {
+              "native_verified": true,
+              "output_recomputed": true,
+              "statement_bound": true
+            },
+            "status": "VERIFIED"
+          },
+          "receipt": {
+            "native": "VERIFIED",
+            "recomputed": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "root": "0xf41efbc1c33226aac6cebe620e977637c329d4da49a4bf379ac1522e8462fecf",
+            "status": "VERIFIED"
+          }
+        },
+        "guarantee_scope": "external_full_chain",
+        "missing": [
+          "wyriwe_provenance",
+          "external_model_authority",
+          "inference_judgment_binding",
+          "external_execution"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "VERIFIED",
+          "cell1_signature": "VERIFIED",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "VERIFIED",
+          "claim_binding": "VERIFIED",
+          "decision_binding": "VERIFIED",
+          "domain": "VERIFIED",
+          "external_execution": "UNVERIFIABLE",
+          "external_model_authority": "UNVERIFIABLE",
+          "inference_judgment_binding": "UNVERIFIABLE",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "VERIFIED",
+          "judgment_signature": "VERIFIED",
+          "native_model": "VERIFIED",
+          "native_proof": "VERIFIED",
+          "receipt_root": "VERIFIED",
+          "receipt_subject": "VERIFIED",
+          "wyriwe_provenance": "UNVERIFIABLE"
+        },
+        "refuted": [],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of",
+          "native_proof",
+          "native_model",
+          "receipt_root",
+          "receipt_subject",
+          "wyriwe_provenance",
+          "external_model_authority",
+          "inference_judgment_binding",
+          "external_execution"
+        ],
+        "status": "UNVERIFIABLE"
+      }
+    },
+    {
+      "baseline": {
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "UNVERIFIABLE",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "individual components only",
+        "mode": "component_only",
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "UNVERIFIABLE"
+      },
+      "expected": "REFUTED",
+      "name": "mixed_refuted_and_missing",
+      "passed": true,
+      "result": {
+        "additional_bindings": [
+          "judgment_authority",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "authorized": false,
+        "claim": "claim_agreement",
+        "components": {
+          "cell1_signature": "UNVERIFIABLE",
+          "cell2_signature": "VERIFIED",
+          "judgment_signature": "VERIFIED"
+        },
+        "details": {},
+        "guarantee_scope": "claim_agreement",
+        "missing": [
+          "cell1_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "as_of"
+        ],
+        "mode": "explicit_composition",
+        "obligations": {
+          "as_of": "UNVERIFIABLE",
+          "cell1_signature": "UNVERIFIABLE",
+          "cell2_signature": "VERIFIED",
+          "cell_authority": "UNVERIFIABLE",
+          "claim_binding": "UNVERIFIABLE",
+          "decision_binding": "UNVERIFIABLE",
+          "domain": "REFUTED",
+          "judgment_authority": "VERIFIED",
+          "judgment_scope": "UNVERIFIABLE",
+          "judgment_signature": "VERIFIED"
+        },
+        "refuted": [
+          "domain"
+        ],
+        "required": [
+          "judgment_signature",
+          "judgment_authority",
+          "cell1_signature",
+          "cell2_signature",
+          "cell_authority",
+          "decision_binding",
+          "claim_binding",
+          "judgment_scope",
+          "domain",
+          "as_of"
+        ],
+        "status": "REFUTED"
+      }
+    }
+  ],
+  "schema": "composition-v3-results",
+  "summary": {
+    "baseline_correct_refusals": 11,
+    "baseline_false_authorizations": 21,
+    "baseline_unverifiable": 6,
+    "composition_correct_refusals": 32,
+    "composition_false_authorizations": 0,
+    "composition_unverifiable": 16,
+    "negative_cases": 32,
+    "passed": true,
+    "scenarios": 36
+  }
+}

@@ -1,0 +1,5167 @@
+{
+  "cases": [
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_output",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_replay",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_attestation",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O08",
+          "O11"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O08",
+          "O11"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_provenance",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O03",
+          "O04",
+          "O08",
+          "O11"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O03",
+          "O04",
+          "O08",
+          "O11"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O08": "VERIFIED",
+          "O11": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O01",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O01",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "REFUTED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "REFUTED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O01",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O01",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "REFUTED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "REFUTED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O01"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O02",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O02",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "REFUTED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "REFUTED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O02",
+      "expected": "REFUTED",
+      "expected_A": "REFUTED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O02",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "REFUTED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "REFUTED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O02"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O03",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O03",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "REFUTED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O03",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O03",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "REFUTED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O03"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O04",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O04",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "REFUTED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O04",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O04",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "REFUTED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O04"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O05",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O05",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "REFUTED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O05",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O05",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "REFUTED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O05"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O06",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O06",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "REFUTED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O06",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O06",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "REFUTED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O06"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O07",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O07",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "REFUTED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O07",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O07",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "REFUTED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O07"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O08",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O08",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "REFUTED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O08",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O08",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "REFUTED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O08"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O09",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O09",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "REFUTED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O09",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O09",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "REFUTED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O09"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O10",
+      "expected": "UNVERIFIABLE",
+      "expected_A": "VERIFIED",
+      "expected_B": "UNVERIFIABLE",
+      "kind": "negative",
+      "name": "negative_O10",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "UNVERIFIABLE",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O10",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O10",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "REFUTED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O10"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O11",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O11",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O11",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O11",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O11"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O12",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O12",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "REFUTED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O12",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O12",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "REFUTED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O13"
+        ],
+        "missing_obligations": [
+          "O12"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O13",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "REFUTED",
+      "kind": "negative",
+      "name": "negative_O13",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "REFUTED"
+        }
+      }
+    },
+    {
+      "boundary": "O13",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "omission",
+      "name": "omitted_O13",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "REFUTED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "missing_obligations": [
+          "O13"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O01",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O01",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "UNVERIFIABLE",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "UNVERIFIABLE",
+          "O02": "VERIFIED",
+          "O03": "UNVERIFIABLE",
+          "O04": "UNVERIFIABLE",
+          "O05": "UNVERIFIABLE",
+          "O06": "UNVERIFIABLE",
+          "O07": "VERIFIED",
+          "O08": "UNVERIFIABLE",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "VERIFIED",
+          "O13": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O02",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O02",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "UNVERIFIABLE",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "UNVERIFIABLE",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "UNVERIFIABLE",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O03",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O03",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "UNVERIFIABLE",
+          "O04": "UNVERIFIABLE",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O04",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O04",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "UNVERIFIABLE",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O05",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O05",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "UNVERIFIABLE",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O06",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O06",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "UNVERIFIABLE",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O07",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O07",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "UNVERIFIABLE",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "UNVERIFIABLE",
+          "O06": "UNVERIFIABLE",
+          "O07": "UNVERIFIABLE",
+          "O08": "UNVERIFIABLE",
+          "O09": "UNVERIFIABLE",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "UNVERIFIABLE",
+          "O13": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O08",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O08",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "UNVERIFIABLE",
+          "O07": "UNVERIFIABLE",
+          "O08": "UNVERIFIABLE",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "UNVERIFIABLE",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O09",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O09",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "UNVERIFIABLE"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "UNVERIFIABLE",
+          "O06": "UNVERIFIABLE",
+          "O07": "UNVERIFIABLE",
+          "O08": "UNVERIFIABLE",
+          "O09": "UNVERIFIABLE",
+          "O10": "UNVERIFIABLE",
+          "O11": "UNVERIFIABLE",
+          "O12": "UNVERIFIABLE",
+          "O13": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "O10",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O10",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "UNVERIFIABLE",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O11",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O11",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "UNVERIFIABLE",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O12",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O12",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "UNVERIFIABLE",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "O13",
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "missing",
+      "name": "missing_O13",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "UNVERIFIABLE"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "UNVERIFIABLE",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "UNVERIFIABLE",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "UNVERIFIABLE"
+        }
+      }
+    },
+    {
+      "boundary": "context",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "stale_scenario",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "REFUTED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "definitions",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "counterfeit_definition",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "REFUTED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "composition",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "scope_overclaim",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "REFUTED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "missing_contract",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "UNVERIFIABLE",
+        "coverage": {
+          "contract": "UNVERIFIABLE"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "replay",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "cross_domain",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "REFUTED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "mixed_refutation_missing",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": false,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "REFUTED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": false,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "UNVERIFIABLE",
+          "O04": "UNVERIFIABLE",
+          "O05": "REFUTED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "circular_self_inventory",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "REFUTED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12"
+        ],
+        "missing_obligations": [
+          "O13"
+        ],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "REFUTED",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "removed_dependency_declaration",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "REFUTED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": null,
+      "expected": "UNVERIFIABLE",
+      "expected_A": null,
+      "expected_B": null,
+      "kind": "negative",
+      "name": "unknown_required_obligation",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "UNVERIFIABLE"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "FUTURE_OBLIGATION": "UNVERIFIABLE",
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [
+          "FUTURE_OBLIGATION"
+        ],
+        "required": [
+          "FUTURE_OBLIGATION",
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    },
+    {
+      "boundary": "dependency_closure",
+      "expected": "REFUTED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "negative",
+      "name": "unclosed_dependencies",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": false,
+          "status": "REFUTED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "REFUTED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "schema": "v4-comparison",
+  "summary": {
+    "A": {
+      "correct_refusals": 9,
+      "false_authorizations": 41,
+      "positive_authorizations": 4,
+      "unverifiable": 5
+    },
+    "B": {
+      "correct_refusals": 29,
+      "false_authorizations": 21,
+      "positive_authorizations": 4,
+      "unverifiable": 14
+    },
+    "C": {
+      "correct_refusals": 50,
+      "false_authorizations": 0,
+      "positive_authorizations": 4,
+      "unverifiable": 16
+    },
+    "missing_obligation_detection": {
+      "detected": 13,
+      "total": 13
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "audited_commit": "ba889271bef7cb3d2eed00067a12064689bfb627",
+  "boundaries": [
+    {
+      "actual_signatures_verified": true,
+      "after": {
+        "isolated": {
+          "authorized": true,
+          "components": {
+            "inference": "REFUTED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 1,
+          "non_verified": {},
+          "status": "VERIFIED"
+        },
+        "legacy": {
+          "authorized": false,
+          "components": {
+            "inference": "REFUTED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 1,
+          "non_verified": {
+            "input_binding": "REFUTED",
+            "provenance_preimage": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "positive": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        }
+      },
+      "before": {
+        "isolated": {
+          "authorized": false,
+          "components": {
+            "inference": "REFUTED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 1,
+          "non_verified": {
+            "inference": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "legacy": {
+          "authorized": false,
+          "components": {
+            "inference": "REFUTED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 1,
+          "non_verified": {
+            "inference": "REFUTED",
+            "input_binding": "REFUTED",
+            "provenance_preimage": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "positive": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        }
+      },
+      "boundary": "native_enforcement",
+      "diagnosis": "TEST_GAP_MASKED_WITNESS",
+      "equivalent": false,
+      "isolated": true,
+      "legacy_witness_survives": true,
+      "mutant_source_sha256": "c25ff4efd51b31cea502e60f296988553598aa33c484edef3347a9715d9fc306",
+      "mutation": "KILLED",
+      "passed": true,
+      "replacement": {
+        "from": "Obligation('inference',native_status,",
+        "to": "Obligation('inference',Status.VERIFIED,"
+      },
+      "restored": {
+        "isolated": {
+          "authorized": false,
+          "components": {
+            "inference": "REFUTED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 1,
+          "non_verified": {
+            "inference": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "positive": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        }
+      },
+      "source_restored": true,
+      "target_obligation": "inference"
+    },
+    {
+      "actual_signatures_verified": true,
+      "after": {
+        "isolated": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        },
+        "legacy": {
+          "authorized": false,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {
+            "authority": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "positive": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        }
+      },
+      "before": {
+        "isolated": {
+          "authorized": false,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {
+            "artifact_types": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "legacy": {
+          "authorized": false,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {
+            "artifact_types": "REFUTED",
+            "authority": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "positive": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        }
+      },
+      "boundary": "artifact_types",
+      "diagnosis": "TEST_GAP_MASKED_WITNESS",
+      "equivalent": false,
+      "isolated": true,
+      "legacy_witness_survives": true,
+      "mutant_source_sha256": "96a62435250a26ae42fe91b9f468ad1ba21ae0bf9330b13d9a609b97cac9ff27",
+      "mutation": "KILLED",
+      "passed": true,
+      "replacement": {
+        "from": "add('artifact_types',profile_ok,",
+        "to": "add('artifact_types',True,"
+      },
+      "restored": {
+        "isolated": {
+          "authorized": false,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {
+            "artifact_types": "REFUTED"
+          },
+          "status": "REFUTED"
+        },
+        "positive": {
+          "authorized": true,
+          "components": {
+            "inference": "VERIFIED",
+            "judgment": "VERIFIED",
+            "provenance": "VERIFIED",
+            "receipt": "VERIFIED"
+          },
+          "native_exit": 0,
+          "non_verified": {},
+          "status": "VERIFIED"
+        }
+      },
+      "source_restored": true,
+      "target_obligation": "artifact_types"
+    }
+  ],
+  "mutation_counts": {
+    "CRASHED": 0,
+    "KILLED": 2,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "passed": true,
+  "same_mutant_source_hashes_as_published": true,
+  "schema": "surviving-mutant-audit-v1",
+  "scope": "same-assistant fresh-process experiment, not independent human review; no upstream or verifier logic fix",
+  "source_sha256": "71ad471dcb2f322da56eea20060e9a5c8f0930bb87f7e0549b8cfaf2939ba69c",
+  "source_unchanged": true
+}

@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "commit": "39d8df96877bc3bebf33c69b06907d792b3184b9",
+      "passed": true,
+      "repository": "trustless-ai/zkIE",
+      "verification": "fresh checkout commit and tracked worktree cleanliness"
+    },
+    {
+      "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+      "passed": true,
+      "repository": "trustless-ai/recompute-kit",
+      "verification": "fresh checkout commit and tracked worktree cleanliness"
+    },
+    {
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "passed": true,
+      "repository": "trustless-ai/agent-ercs",
+      "verification": "fresh checkout commit and tracked worktree cleanliness"
+    },
+    {
+      "commit": "396143120f787d2f5534e92c0cf896c029a05775",
+      "passed": true,
+      "repository": "pipavlo82/receiptos-verify",
+      "verification": "fresh checkout commit and tracked worktree cleanliness"
+    },
+    {
+      "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+      "passed": true,
+      "repository": "ethereum/ERCs",
+      "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3",
+      "verification": "preserved exact blob vs independently captured source pin"
+    },
+    {
+      "commit": "3f014d07a0ceac39fe6fb6dec0efdc30640a9653",
+      "passed": true,
+      "repository": "ethereum/ERCs",
+      "sha256": "186b84f7d6d8b063814860b0624400e1055ad548c40c16c81ff3a54f327f17cf",
+      "verification": "preserved exact blob vs independently captured source pin"
+    },
+    {
+      "file": "identity.json",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

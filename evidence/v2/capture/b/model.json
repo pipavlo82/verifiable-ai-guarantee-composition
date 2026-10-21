@@ -1,0 +1,16 @@
+{
+  "circuit": "fixed public one-op MatMul, no trained neural model",
+  "encoding": "canonical-u64-little-endian",
+  "field": 18446744069414584321,
+  "operator": "MatMul",
+  "proof_profile": "VAGCNP2",
+  "schema": "public-linear-model-v2",
+  "shape": [
+    4,
+    8,
+    8
+  ],
+  "version": 1,
+  "weights_sha256": "4b5b44760a10065bab9872777c27a5b42d3cc866f8ae13adc71b98c8be2534c7",
+  "zkie_commit": "39d8df96877bc3bebf33c69b06907d792b3184b9"
+}

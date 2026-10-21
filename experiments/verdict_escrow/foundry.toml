@@ -1,0 +1,13 @@
+[profile.default]
+src = "vendor/invinoveritas/integrations/verdict-escrow/src"
+test = "evm"
+out = "../../build/escrow/joint-out"
+cache_path = "../../build/escrow/joint-cache"
+solc = "0.8.26"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+ffi = true
+fs_permissions = [{access = "read-write", path = "../../build/escrow"}, {access = "read", path = "../../"}]
+remappings = ["forge-std/=../../build/escrow/lib/forge-std/src/"]
+allow_paths = ["../../build/escrow/lib"]

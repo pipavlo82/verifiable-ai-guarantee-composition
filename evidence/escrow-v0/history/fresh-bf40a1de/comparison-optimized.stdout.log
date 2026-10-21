@@ -1,0 +1,537 @@
+{
+  "authorization_comparison_count": 29,
+  "comparison": {
+    "A": {
+      "correct_refusals": 4,
+      "false_authorizations": 24,
+      "missing_obligations": 0,
+      "positive_authorizations": 1,
+      "unverifiable": 0
+    },
+    "B": {
+      "correct_refusals": 26,
+      "false_authorizations": 2,
+      "missing_obligations": 2,
+      "positive_authorizations": 1,
+      "unverifiable": 2
+    },
+    "C": {
+      "correct_refusals": 26,
+      "false_authorizations": 2,
+      "missing_obligations": 2,
+      "positive_authorizations": 1,
+      "unverifiable": 2
+    }
+  },
+  "conditional_on_honest_offchain_gate": true,
+  "execution_only_count": 2,
+  "gas_scope": "Foundry in-process release call with warmed storage; excludes tx intrinsic/calldata, Base L1 data fee and real funds. No actual payment cost incurred.",
+  "guarantee": "LABORATORY_VERIFIED / PARTIAL_CHAIN_VERIFIED",
+  "hypothetical_1_gwei_positive_call_wei": 36654000000000,
+  "passed": true,
+  "raw_chain_accepts_not_full_policy_coverage": 19,
+  "rows": [
+    {
+      "expected_offchain": "VERIFIED",
+      "kind": "positive",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "name": "positive",
+      "observed_recipient_delta": 1000000,
+      "offchain": "VERIFIED",
+      "onchain": "VERIFIED",
+      "release_call_gas": 36654,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "A_wrong_scope",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36651,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [
+        "J07"
+      ],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "B_missing_obligation",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36603,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "C_other_escrow",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 9991,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "D_other_chain",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 10004,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "E_other_recipient",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36715,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "F_other_amount",
+      "observed_recipient_delta": 2000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36728,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "G_other_payment",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 10045,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "H_replay",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 1619,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "I_expired",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36650,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "name": "J_unauthorized",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 10010,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "J_revoked",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36789,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "K_evidence_digest",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36802,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "UNVERIFIABLE",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "L_no_contract",
+      "observed_recipient_delta": 1000000,
+      "offchain": "UNVERIFIABLE",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36738,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "M_unverified_field",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36827,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "N_self_judgment",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36764,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "O_duplicate",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 1718,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [
+        "J01"
+      ],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "P_incorrect_authorization",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36789,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "Q_record_tamper",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36802,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "R_other_profile",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36890,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "nonce_reused_other_job",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36902,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "changed_scenario_digest",
+      "observed_recipient_delta": 1000000,
+      "offchain": "REFUTED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36915,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "UNVERIFIABLE",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "missing_profile",
+      "observed_recipient_delta": 1000000,
+      "offchain": "UNVERIFIABLE",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36928,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "VERIFIED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "name": "expired_after_signing",
+      "observed_recipient_delta": 1000000,
+      "offchain": "VERIFIED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36941,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "VERIFIED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "name": "revoked_after_signing",
+      "observed_recipient_delta": 1000000,
+      "offchain": "VERIFIED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 36953,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "VERIFIED",
+      "kind": "execution-only",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": true,
+        "C": false
+      },
+      "name": "false_returning_token",
+      "observed_recipient_delta": 0,
+      "offchain": "VERIFIED",
+      "onchain": "REFUTED",
+      "release_call_gas": 11870,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "name": "high_s",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 3955,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "name": "invalid_signature",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 3939,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": false,
+        "C": false
+      },
+      "name": "refund_then_release",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 1912,
+      "release_succeeded": false
+    },
+    {
+      "expected_offchain": "VERIFIED",
+      "kind": "execution-only",
+      "missing_obligations": [],
+      "modes": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "name": "lying_token",
+      "observed_recipient_delta": 0,
+      "offchain": "VERIFIED",
+      "onchain": "NOT_COVERED",
+      "release_call_gas": 13901,
+      "release_succeeded": true
+    },
+    {
+      "expected_offchain": "REFUTED",
+      "kind": "negative",
+      "missing_obligations": [],
+      "modes": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "name": "negated_s",
+      "observed_recipient_delta": 0,
+      "offchain": "REFUTED",
+      "onchain": "REFUTED",
+      "release_call_gas": 10365,
+      "release_succeeded": false
+    }
+  ],
+  "scenario_count": 31,
+  "verdict": "PARTIALLY_COMPATIBLE"
+}

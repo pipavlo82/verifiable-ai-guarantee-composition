@@ -1,0 +1,102 @@
+{
+  "documents": {
+    "provenance": {
+      "type": "WyriweAttestation",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "registry": "0x0000000000000000000000000000000000000000",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "rawInputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "timestamp": 0
+      },
+      "signature": "0x6029ea011eb635cf8b0a09845a15988ddd000d3db608298895bc1493658803094c6815b5d8faa639144c6000836da868a3a7deb4622eee7ae7e249a4a54543841b",
+      "signer": "0x308588eabaa35131587466cb93a813a297590aeb"
+    },
+    "judgment": {
+      "type": "LabJudgment",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "subject": "lab-subject-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "action": "materialize-matmul-output",
+        "scope": "public-matmul-recomputation",
+        "executionId": "lab-execution-a",
+        "policyHash": "0xcaa234f264645ae2d872e5b844f253903f82b48ebfcd95222d090f30261dc2ac",
+        "nonce": "lab-request-a"
+      },
+      "signature": "0x7ef651634ba223cbbdd54a9a8233c18e55372e17ab60db4954272fdf88b6f1ce09d918640750daa93c87a5bc33d3cf5fe2885821a81cf195c37c3478f535d00c1b",
+      "signer": "0x308588eabaa35131587466cb93a813a297590aeb"
+    },
+    "receipt": {
+      "type": "LabReceipt",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "subject": "lab-subject-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "action": "materialize-matmul-output",
+        "scope": "public-matmul-recomputation",
+        "executionId": "lab-execution-a",
+        "policyHash": "0xcaa234f264645ae2d872e5b844f253903f82b48ebfcd95222d090f30261dc2ac",
+        "nonce": "lab-request-a",
+        "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819"
+      },
+      "signature": "0x37b793ce8307f33f28c1dd1e53ac1158b0fd5bccfc9755466e3fc42e8693bded2ed9cb5aadad866dae3efdb51b2a662c10ce7fb044dd20bda54bbbf9f8cc12f41c",
+      "signer": "0x308588eabaa35131587466cb93a813a297590aeb"
+    }
+  },
+  "claim": {
+    "subject": "lab-subject-a",
+    "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+    "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+    "action": "materialize-matmul-output",
+    "scope": "public-matmul-recomputation",
+    "executionId": "lab-execution-a",
+    "policyHash": "0xcaa234f264645ae2d872e5b844f253903f82b48ebfcd95222d090f30261dc2ac",
+    "nonce": "lab-request-a",
+    "claimKind": "recompute-output"
+  },
+  "policy": {
+    "schema": "v4-lab-policy",
+    "version": 4,
+    "domain": {
+      "name": "ERC8004AttestationGateway",
+      "version": "1",
+      "chainId": 31337
+    },
+    "domain_status": "DECLARED_OFFLINE_LAB_DOMAIN_NO_CHAIN_OBSERVATION",
+    "scope": "public-matmul-recomputation",
+    "action": "materialize-matmul-output",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "authorized": {
+      "provenance": "0x308588eabaa35131587466cb93a813a297590aeb",
+      "judgment": "0x308588eabaa35131587466cb93a813a297590aeb",
+      "receipt": "0x308588eabaa35131587466cb93a813a297590aeb"
+    },
+    "historicalExecutionAuthority": null
+  }
+}

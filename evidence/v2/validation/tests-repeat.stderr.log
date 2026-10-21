@@ -1,0 +1,25 @@
+test_actual_other_native_component (test_real_artifacts.RealArtifacts.test_actual_other_native_component) ... ok
+test_authentic_cross_domain (test_real_artifacts.RealArtifacts.test_authentic_cross_domain) ... ok
+test_authentic_wrong_action (test_real_artifacts.RealArtifacts.test_authentic_wrong_action) ... ok
+test_authentic_wrong_authority (test_real_artifacts.RealArtifacts.test_authentic_wrong_authority) ... ok
+test_authentic_wrong_execution (test_real_artifacts.RealArtifacts.test_authentic_wrong_execution) ... ok
+test_declared_scenarios (test_real_artifacts.RealArtifacts.test_declared_scenarios) ... ok
+test_external_signature_known_answer (test_real_artifacts.RealArtifacts.test_external_signature_known_answer) ... ok
+test_fixture_mode_honesty (test_real_artifacts.RealArtifacts.test_fixture_mode_honesty) ... ok
+test_independent_python_output_recomputation (test_real_artifacts.RealArtifacts.test_independent_python_output_recomputation) ... ok
+test_missing_is_not_refuted (test_real_artifacts.RealArtifacts.test_missing_is_not_refuted) ... ok
+test_mixed_refutation_keeps_unknowns (test_real_artifacts.RealArtifacts.test_mixed_refutation_keeps_unknowns) ... ok
+test_native_proof_wrong_input (test_real_artifacts.RealArtifacts.test_native_proof_wrong_input) ... ok
+test_native_wire_rejects_trailing_bytes (test_real_artifacts.RealArtifacts.test_native_wire_rejects_trailing_bytes) ... ok
+test_no_historical_execution_inference (test_real_artifacts.RealArtifacts.test_no_historical_execution_inference) ... ok
+test_no_producer_boolean_evidence (test_real_artifacts.RealArtifacts.test_no_producer_boolean_evidence) ... ok
+test_public_statement_extraction (test_real_artifacts.RealArtifacts.test_public_statement_extraction) ... ok
+test_real_native_invocation (test_real_artifacts.RealArtifacts.test_real_native_invocation) ... ok
+test_tri_state_refutation_precedence (test_real_artifacts.RealArtifacts.test_tri_state_refutation_precedence) ... ok
+test_trusted_policy_is_required (test_real_artifacts.RealArtifacts.test_trusted_policy_is_required) ... ok
+test_type_and_authority_are_independent (test_real_artifacts.RealArtifacts.test_type_and_authority_are_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 4.908s
+
+OK

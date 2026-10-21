@@ -1,0 +1,73 @@
+{
+  "classification": "LABORATORY_VERIFIED; same machine, independent signature library",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\src\\v2\\crypto.mjs"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"known_answers\":{\"keccak_empty\":true,\"ether_mail_recovery\":true},\"signatures\":{\"provenance\":{\"status\":\"VERIFIED\",\"signer\":\"0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87\",\"digest\":\"0x550335a02e17bf3db672c164fa0058dfe25f65eacdf1b7c3b3aad65154ca66b3\"},\"judgment\":{\"status\":\"VERIFIED\",\"signer\":\"0xf81d25049b09ed5edbbad6b6fa623552e275d6d8\",\"digest\":\"0x11c701635385fcfc9f56b0781eb04a41d63fbb8418da7b9a3106e3bf124da4b6\"},\"receipt\":{\"status\":\"VERIFIED\",\"signer\":\"0xd6566ec8c06737b38138853294003abb45c19c5d\",\"digest\":\"0xd5fc1bcc89671c5fa2f92170147e273c5b08d193b8ec81c01fafff77b564ad82\"}},\"hashes\":{\"raw_input\":\"0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2\",\"input\":\"0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2\",\"weights\":\"0x2cb66214cb062a907296f4e2d9abb674212addcab808f0d5d23235b918820c12\",\"output\":\"0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96\",\"proof\":\"0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796\",\"model\":\"0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d\",\"result\":\"0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96\",\"observation\":\"0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819\",\"policy\":\"0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311\",\"transform\":\"0x98c9fa7a929f84194f70722237aca055034ad0e1759962f2820eff396aa41ec4\",\"identity_pipeline\":\"0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144\"}}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\build\\chain-v2\\cargo-target\\debug\\composition-native-capture.exe",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\evidence\\v2\\capture\\a\\input.bin",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\evidence\\v2\\capture\\a\\weights.bin",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\evidence\\v2\\capture\\a\\output.bin",
+        "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\evidence\\v2\\capture\\a\\proof.bin"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"native_verified\":true,\"output_recomputed\":true,\"statement_bound\":true}\n"
+    }
+  ],
+  "native": {
+    "native_verified": true,
+    "output_recomputed": true,
+    "statement_bound": true,
+    "status": "VERIFIED"
+  },
+  "passed": false,
+  "signature_count": 7,
+  "signatures": [
+    {
+      "passed": true,
+      "recovered": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87",
+      "signer": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87"
+    },
+    {
+      "passed": true,
+      "recovered": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8",
+      "signer": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8"
+    },
+    {
+      "passed": true,
+      "recovered": "0xd6566ec8c06737b38138853294003abb45c19c5d",
+      "signer": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+    },
+    {
+      "passed": true,
+      "recovered": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+      "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789"
+    },
+    {
+      "passed": true,
+      "recovered": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+      "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7"
+    },
+    {
+      "passed": true,
+      "recovered": "0x87069377a89298f96a76ba85a186d940933a2196",
+      "signer": "0x87069377a89298f96a76ba85a186d940933a2196"
+    },
+    {
+      "passed": true,
+      "recovered": "0x80e5cb872fe6f1c995026f9aff026a7b0ceb8a17",
+      "signer": "0x80e5cb872fe6f1c995026f9aff026a7b0ceb8a17"
+    }
+  ],
+  "tampered_subject_rejected": false
+}

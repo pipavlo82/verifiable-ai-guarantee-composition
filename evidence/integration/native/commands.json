@@ -1,0 +1,15 @@
+[
+  {
+    "name": "native-prepare-complete-cache",
+    "command": [
+      "C:\\Users\\msi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/v3/prepare.py",
+      "--cargo-home",
+      "C:\\Users\\msi\\Documents\\Codex\\vagc-integration-20261019\\build\\cargo-home"
+    ],
+    "exit": 0
+  }
+]

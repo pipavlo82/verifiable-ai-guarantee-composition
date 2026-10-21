@@ -1,0 +1,19 @@
+{
+  "schema": "lab-recompute-policy-v2",
+  "version": 1,
+  "domain": {
+    "name": "ERC8004AttestationGateway",
+    "version": "1",
+    "chainId": 31337
+  },
+  "domain_status": "DECLARED_OFFLINE_LAB_DOMAIN_NO_CHAIN_OBSERVATION",
+  "scope": "public-matmul-recomputation",
+  "action": "materialize-matmul-output",
+  "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+  "authorized": {
+    "provenance": "0xf71efa4454c46faf637406377f48eca89d9d6bc0",
+    "judgment": "0x9eceec62279e39e50f8f3943ae7799af017c4b16",
+    "receipt": "0xa23666edfbadee8b378a08fae79f364ece3f7600"
+  },
+  "historicalExecutionAuthority": null
+}

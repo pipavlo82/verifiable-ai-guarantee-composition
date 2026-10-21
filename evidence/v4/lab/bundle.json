@@ -1,0 +1,278 @@
+{
+  "schema": "v4-laboratory-crypto-capture",
+  "classification": "LAB_CRYPTOGRAPHIC_CONTROLLED_ASSERTIONS",
+  "producer": "local experiment; ephemeral role keys",
+  "chain_origin": "UNVERIFIABLE: no observed chain",
+  "historical_execution": "NOT CLAIMED",
+  "policy": {
+    "schema": "v4-lab-policy",
+    "version": 4,
+    "domain": {
+      "name": "ERC8004AttestationGateway",
+      "version": "1",
+      "chainId": 31337
+    },
+    "domain_status": "DECLARED_OFFLINE_LAB_DOMAIN_NO_CHAIN_OBSERVATION",
+    "scope": "public-matmul-recomputation",
+    "action": "materialize-matmul-output",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "authorized": {
+      "provenance": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87",
+      "judgment": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8",
+      "receipt": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+    },
+    "historicalExecutionAuthority": null
+  },
+  "claim": {
+    "subject": "lab-subject-a",
+    "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+    "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+    "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+    "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+    "action": "materialize-matmul-output",
+    "scope": "public-matmul-recomputation",
+    "executionId": "lab-execution-a",
+    "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+    "nonce": "lab-request-a",
+    "claimKind": "recompute-output"
+  },
+  "documents": {
+    "provenance": {
+      "type": "WyriweAttestation",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "registry": "0x0000000000000000000000000000000000000000",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "rawInputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "timestamp": 0
+      },
+      "signature": "0xdf865d887a91b03e7ca65528d2c59b4b210dd338f8b735be7cc400c73a0d8567053ad523fa318c8f336962b412132049511d5294d543a5a2a705b080d625c3471c",
+      "signer": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87"
+    },
+    "judgment": {
+      "type": "LabJudgment",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "subject": "lab-subject-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "action": "materialize-matmul-output",
+        "scope": "public-matmul-recomputation",
+        "executionId": "lab-execution-a",
+        "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+        "nonce": "lab-request-a"
+      },
+      "signature": "0xd7385be226c0d901cef114c2ae9a435501661c21a49b4221dec1a905564f54d03aba557f1763f0db4c3a7625ee48c3b049f8f3204b3da0b5969594e5872566071b",
+      "signer": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8"
+    },
+    "receipt": {
+      "type": "LabReceipt",
+      "domain": {
+        "name": "ERC8004AttestationGateway",
+        "version": "1",
+        "chainId": 31337
+      },
+      "message": {
+        "subject": "lab-subject-a",
+        "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+        "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+        "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+        "action": "materialize-matmul-output",
+        "scope": "public-matmul-recomputation",
+        "executionId": "lab-execution-a",
+        "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+        "nonce": "lab-request-a",
+        "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+        "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819"
+      },
+      "signature": "0x77e91b04f7f6afa9ce0a33f95491689e96b9efb1c3952387addda1840d1e3b282247bb903bbeb37bcea110dd6fe2a9c6bfcab75d90cacc1521f8868376ca06951c",
+      "signer": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+    }
+  },
+  "variants": {
+    "O02": {
+      "judgment": {
+        "type": "LabJudgment",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "subject": "lab-subject-a",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "proofHash": "0xff4b7e20247842352f8cdeb719a6a805258e63c65efa2efbeb281176c3cc2789",
+          "action": "materialize-matmul-output",
+          "scope": "public-matmul-recomputation",
+          "executionId": "lab-execution-a",
+          "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+          "nonce": "lab-request-a"
+        },
+        "signature": "0x37b6b737932164cd5e9b0341ecc1dc0c8b35fd6f4a9482518c4d30e41ed4194a5d76980edacbd94eb7f4854cf1114afdd88831acc109d7ecc5c97b82e0be07111b",
+        "signer": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8"
+      },
+      "receipt": {
+        "type": "LabReceipt",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "subject": "lab-subject-a",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "proofHash": "0xff4b7e20247842352f8cdeb719a6a805258e63c65efa2efbeb281176c3cc2789",
+          "action": "materialize-matmul-output",
+          "scope": "public-matmul-recomputation",
+          "executionId": "lab-execution-a",
+          "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+          "nonce": "lab-request-a",
+          "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819"
+        },
+        "signature": "0x610fda2646691a6c02503ffc338fa757ce81a3ef7372e9f342b0eb2d8752134d1fd41c43f07798886c33614a96aa0289aa400c6ed0b2b8db9f6610ba9588459c1c",
+        "signer": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+      }
+    },
+    "O03": {
+      "provenance": {
+        "type": "WyriweAttestation",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "registry": "0x0000000000000000000000000000000000000000",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "rawInputHash": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "timestamp": 0
+        },
+        "signature": "0x7d1702ba573b19555ece286348f8aa8ceac49ef1fe59e86e47f93dc5308289802017f037f1afe2fb1ff32118cfaa85249c9ab27929d439e45e6773ff36617dba1b",
+        "signer": "0x882f33e0c9beb8b6a164e4c0dfd08c27fe1c3c87"
+      }
+    },
+    "O07": {
+      "judgment": {
+        "type": "LabJudgment",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "subject": "lab-subject-a",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "proofHash": "0x681171e1cc11fef74c5321a7a1634f21577eaff54a09eb40b8e937cb5c37eb7a",
+          "action": "materialize-matmul-output",
+          "scope": "public-matmul-recomputation",
+          "executionId": "lab-execution-a",
+          "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+          "nonce": "lab-request-a"
+        },
+        "signature": "0x699102b3fa326c2bb8caf8d3ccf7c0952268860d529572dbcb1cf6231f67e8ca13f4a9e34aee6b96a39707c32295d85bc56e7c8368303dc4c610eb1a013e0e061b",
+        "signer": "0xf81d25049b09ed5edbbad6b6fa623552e275d6d8"
+      }
+    },
+    "O08": {
+      "provenance": {
+        "type": "WyriweAttestation",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "agentId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "registry": "0x0000000000000000000000000000000000000000",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "rawInputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "sanitizationPipelineHash": "0x34bb9e14d76f3d5cfcf3d7cb598ea3db6572e2d4e5c6678bd9253d935e151144",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "timestamp": 0
+        },
+        "signature": "0xd79a91569cef0757ce88189167090121dfbfbe4638bacedfbafa0fe206b15e313fcccb2159d23e0e17460c9e01ff95e1df835cf4280af64cf3fffb4ffeb32cef1c",
+        "signer": "0xf06f5722f7abc8664edccbb8101b680a3f9f6d20"
+      }
+    },
+    "O09": {
+      "receipt": {
+        "type": "LabReceipt",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "subject": "lab-subject-a",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+          "action": "materialize-matmul-output",
+          "scope": "public-matmul-recomputation",
+          "executionId": "unrelated-execution",
+          "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+          "nonce": "lab-request-a",
+          "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819"
+        },
+        "signature": "0xe8cf6e6016b8b90214fac7b54492c3ad5e4c735359d0af17c5b50df9df443a7304673d402552478d96a679417b5dd2835122a5f2616042c80d83314b32440e0f1c",
+        "signer": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+      }
+    },
+    "O12": {
+      "receipt": {
+        "type": "LabReceipt",
+        "domain": {
+          "name": "ERC8004AttestationGateway",
+          "version": "1",
+          "chainId": 31337
+        },
+        "message": {
+          "subject": "lab-subject-a",
+          "inputHash": "0xb241a848a43738cc3108d2f895ccbe31a2d3b2841443016fe77df082e03dd7b2",
+          "outputHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "modelHash": "0xf6091d0cfe12de9187107277ea799dc86c75eee529eb0d9c72f086307c4cae6d",
+          "proofHash": "0x45565abb0cf6b827821bc81e04206c04e276f9340e934831326ae87bbd1c7796",
+          "action": "materialize-matmul-output",
+          "scope": "unrelated-scope",
+          "executionId": "lab-execution-a",
+          "policyHash": "0x68a3ac135dddce6002899cc1e5a48deedfb26a5ae94c2876207bdb15796ad311",
+          "nonce": "lab-request-a",
+          "resultHash": "0xb789fcfdc3d5a42b7185baab93ed2b76dbd9fc4b184f318c24e0b4b7e7f1ae96",
+          "observationHash": "0x313a96c3fc93778ac57e9cb2dae968447d81dd7cf9325a3d6e7980bb3cd96819"
+        },
+        "signature": "0x2be202e1a20fb9af0aa678c99a9f6d840c582a94c1e4a82d1fad1fbfcc5fd9784533e8de8447b9355a2928ffac8b0b02b3111787008efcd6bdc0b1082ce1ec2e1b",
+        "signer": "0xd6566ec8c06737b38138853294003abb45c19c5d"
+      }
+    }
+  },
+  "badProofHash": "0xff4b7e20247842352f8cdeb719a6a805258e63c65efa2efbeb281176c3cc2789"
+}

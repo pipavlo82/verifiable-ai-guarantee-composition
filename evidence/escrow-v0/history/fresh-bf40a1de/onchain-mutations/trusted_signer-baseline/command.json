@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:/Users/msi/.foundry/bin/forge.exe",
+    "test",
+    "--root",
+    "C:\\Users\\msi\\Documents\\Codex\\vagc-escrow-fresh-20261020\\build\\escrow\\fresh-validation-resumed\\onchain-mutations\\trusted_signer-baseline",
+    "--json"
+  ],
+  "exit": 0,
+  "witness": "signer"
+}

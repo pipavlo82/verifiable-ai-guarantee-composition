@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "boundary": null,
+      "expected": "VERIFIED",
+      "expected_A": "VERIFIED",
+      "expected_B": "VERIFIED",
+      "kind": "positive",
+      "name": "positive_output",
+      "passed": true,
+      "result": {
+        "A": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "B": {
+          "authorized": true,
+          "claimed_coverage": "IMPLEMENTATION_INVENTORY_ONLY",
+          "status": "VERIFIED"
+        },
+        "C": {
+          "authorized": true,
+          "status": "VERIFIED"
+        },
+        "all_declared_pass": true,
+        "chain_status": "PARTIAL_CHAIN_VERIFIED",
+        "components": {
+          "judgment": "VERIFIED",
+          "native": "VERIFIED",
+          "provenance": "VERIFIED",
+          "receipt": "VERIFIED"
+        },
+        "composition": "VERIFIED",
+        "coverage": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED",
+          "context": "VERIFIED",
+          "definitions": "VERIFIED",
+          "dependency_closure": "VERIFIED"
+        },
+        "executed": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "missing_obligations": [],
+        "required": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05",
+          "O06",
+          "O07",
+          "O08",
+          "O09",
+          "O10",
+          "O11",
+          "O12",
+          "O13"
+        ],
+        "verification": {
+          "O01": "VERIFIED",
+          "O02": "VERIFIED",
+          "O03": "VERIFIED",
+          "O04": "VERIFIED",
+          "O05": "VERIFIED",
+          "O06": "VERIFIED",
+          "O07": "VERIFIED",
+          "O08": "VERIFIED",
+          "O09": "VERIFIED",
+          "O10": "VERIFIED",
+          "O11": "VERIFIED",
+          "O12": "VERIFIED",
+          "O13": "VERIFIED"
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "schema": "v4-comparison",
+  "summary": {
+    "A": {
+      "correct_refusals": 0,
+      "false_authorizations": 0,
+      "positive_authorizations": 1,
+      "unverifiable": 0
+    },
+    "B": {
+      "correct_refusals": 0,
+      "false_authorizations": 0,
+      "positive_authorizations": 1,
+      "unverifiable": 0
+    },
+    "C": {
+      "correct_refusals": 0,
+      "false_authorizations": 0,
+      "positive_authorizations": 1,
+      "unverifiable": 0
+    },
+    "missing_obligation_detection": {
+      "detected": 0,
+      "total": 0
+    }
+  }
+}

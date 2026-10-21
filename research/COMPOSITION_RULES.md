@@ -1,3 +1,9 @@
+# Current v2 status
+
+V2 requires exact preimages, identity transform, model/weights/source, subject, proof, action, authorized role, execution id, output/result, domain, scope, policy, nonce and artifact-type bindings. Claims stronger than public recomputation cannot be authorized. REFUTED dominates aggregate UNVERIFIABLE while every missing obligation is retained. See [typed obligations](chain-v2/FORMAL_MODEL.md) and [executable verifier](../src/v2/composition.py). The rules below document the prior synthetic stage.
+
+---
+
 # Composition rules
 
 Let R be the caller request, P the independently selected policy, E the supplied evidence, C_i the component checks and B_i the boundary predicates. Define `meet` on checked conjunctions: REFUTED if any premise is refuted; otherwise UNVERIFIABLE if any is unknown or the premise set is empty; otherwise VERIFIED. Missing evidence cannot by itself produce REFUTED.

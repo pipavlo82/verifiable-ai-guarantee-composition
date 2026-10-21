@@ -1,0 +1,53 @@
+{
+  "schema": "public-capture-v3",
+  "requests": [
+    {
+      "id": "router-identity",
+      "url": "https://ccip-router-production.up.railway.app/identity",
+      "method": "GET",
+      "observed_at": "2026-10-16T22:47:25.236594+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://ccip-router-production.up.railway.app/identity",
+      "file": "router-identity.raw",
+      "sha256": "5e8b262203b0a2d85e673a4a60f948de286942947fe9cbdf878ce03a146393f2",
+      "bytes": 265
+    },
+    {
+      "id": "router-records",
+      "url": "https://ccip-router-production.up.railway.app/records?namespace=agent-attestations%3Awyriwe&limit=2",
+      "method": "GET",
+      "observed_at": "2026-10-16T22:47:25.488774+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://ccip-router-production.up.railway.app/records?namespace=agent-attestations%3Awyriwe&limit=2",
+      "file": "router-records.raw",
+      "sha256": "3ef9f3a7504e50dd3d8db5ee837b3b44d5c2fafad1f8a7a533c291ae587ed243",
+      "bytes": 3324
+    },
+    {
+      "id": "nas-identity",
+      "url": "https://gateway.gen-plasma.com/identity",
+      "method": "GET",
+      "observed_at": "2026-10-16T22:47:25.608075+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://gateway.gen-plasma.com/identity",
+      "file": "nas-identity.raw",
+      "sha256": "18df9eb0f57bf4ea1809faf8889a7ba3d1ed89cc32f4a183cfb33a4b395268c1",
+      "bytes": 265
+    },
+    {
+      "id": "nas-records",
+      "url": "https://gateway.gen-plasma.com/records?namespace=agent-attestations%3Awyriwe&limit=2",
+      "method": "GET",
+      "observed_at": "2026-10-16T22:47:26.217020+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://gateway.gen-plasma.com/records?namespace=agent-attestations%3Awyriwe&limit=2",
+      "file": "nas-records.raw",
+      "sha256": "d27ae1b75db23e99ca58e337720834f88e530b0ca00219d62fefa461037da3ae",
+      "bytes": 3024
+    }
+  ]
+}
