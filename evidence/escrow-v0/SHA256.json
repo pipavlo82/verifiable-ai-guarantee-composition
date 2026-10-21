@@ -1,4 +1,6 @@
 {
+  ".github/workflows/verdict-escrow.yml": "9aca25c5e6f96fa947a08508131d8b3d56baef2599d51a57a84659180d8dd189",
+  "evidence/escrow-ci-repair/baseline.json": "190684a6210f7241ea96bedd29a66fbf2e3edb26081788eea7ee51bd6abb2333",
   "evidence/escrow-v0/.gitattributes": "44de1c400fbf981689257d46e4ff3fe6a7796292dd5551642680fb7822f2dd97",
   "evidence/escrow-v0/ERC-8404-current-draft.md": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
   "evidence/escrow-v0/compiler/BIP340.json": "1c91fe0848c7fe97c4fbe1f2ff792205efc4eb12138154d322a67d5b8e907745",
@@ -109,7 +111,9 @@
   "evidence/escrow-v0/discovery/zkie-main.stdout.log": "5e42062b55fd034084bc81229f46616397a141f0e67ecc883caf797a7be827ab",
   "evidence/escrow-v0/discovery/zkie-repo.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "evidence/escrow-v0/discovery/zkie-repo.stdout.log": "c6449493a0858923564b349860afdf4b40e0a2a716c636ab553776d2179254e0",
+  "evidence/escrow-v0/history/SHA256-ac30419d.json": "ff86363080a4e6173429476bad9acc4940fcbef9e67475f4a13ce8aed4f0b574",
   "evidence/escrow-v0/history/SHA256-bf40a1de.json": "be6ba837562da053711bdd22ea69fc0d9b8ce7e88b7681be60690509973b3c4b",
+  "evidence/escrow-v0/history/artifacts-sha256-ac30419d.json": "0b120207691fbc2a13178089fdaa67b3248de0930611db1fe3c2048874f51a8f",
   "evidence/escrow-v0/history/fresh-bf40a1de-supplement.json": "8b880f661a79caa40cc0f3c5d34af75d69e8ca73a49d3d026b326b89dd7b9acf",
   "evidence/escrow-v0/history/fresh-bf40a1de/baseline-integrity-after.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "evidence/escrow-v0/history/fresh-bf40a1de/baseline-integrity-after.stdout.log": "c35fc7abcd0fe64b974726b0bb9a694b1f11ba684c1acf45f5d05dab17e289e2",
@@ -1117,7 +1121,7 @@
   "experiments/verdict_escrow/bridge.py": "f56d4e23f785ad54db9be66ebf1e5ec67793b71764a6978ea69eb7538a2422c6",
   "experiments/verdict_escrow/evm/Composition.t.sol": "9f3f2d3d9f8a15d849c0fba57d18d8261aaef5a39a088811ab4c3be12283b489",
   "experiments/verdict_escrow/foundry.toml": "17f0c81939441708ec53ab848253150bca308be06e2bf04b8d563172442c66dc",
-  "experiments/verdict_escrow/integrity.py": "6ba1d48092293eb0aaf648bc0e35e648825c2835fc5c1b5ac3dbbd5cbd9fa5c0",
+  "experiments/verdict_escrow/integrity.py": "a779c160b45182ba40d56d9aee3c34020d87174a96df9cdab16ad9c5448be411",
   "experiments/verdict_escrow/mutation_harness.sol": "7a6846791b20c39d22dd53662044a6373c48416eed0e831090da30d62eb356e2",
   "experiments/verdict_escrow/mutations.py": "7899467e17e28157f0524e341fa3892766c7ac0ecf76ab95dd8711698ef25306",
   "experiments/verdict_escrow/onchain_mutations.py": "f10ed3707e33883e5699991da0df92cbb5b7d738e40774de5f667553511d46d7",
@@ -1140,6 +1144,7 @@
   "experiments/verdict_escrow/vendor/invinoveritas/integrations/verdict-escrow/test/sign.py": "5bc3baf031ad95753d80f1d53fb5a4fa615f723829fd18363925acce3c3be296",
   "fixtures/escrow-v0/runtime-lock.json": "2b9dedf187bd5ce9868ac058518d940bac5346c3b81fcd63c0d263737e3cbe2b",
   "research/escrow-v0/ARCHITECTURE.md": "da57cd796777a44f20405e07023544779e0ce40282b673c8244eaca31def2da9",
+  "research/escrow-v0/CI_INVENTORY_REPAIR.md": "16b7d972391bc33f49f98e390fcc527afc1079f8c2b7c2c1cc2158f515f8224d",
   "research/escrow-v0/COMPATIBILITY_MATRIX.md": "50c9d9121a5f0dd0a1deba92afbe76fa39a21e57856cee7eb034db29f4b83f59",
   "research/escrow-v0/EXPERIMENT_RESULTS.md": "216e1767a1ed732d9e182a582ba8149ae695804ecdde2f6d683b5a728c879aec",
   "research/escrow-v0/GUARANTEES.md": "9f933765937968131596b182665e286af60ce34e528e1d0ba1a834979bb5f66b",
@@ -1150,6 +1155,8 @@
   "research/escrow-v0/REPRODUCIBILITY_CORRECTION.md": "3185f41ccfbe76bd52ada67d071928a4c28912cf03c8e62b138fc0183adedfbc",
   "research/escrow-v0/REPRODUCTION.md": "2d47710aa78a33b6c09c5cb6ce87769c84e6633970815ebc683df911b9cc2264",
   "tools/escrow_bytecode.py": "885af76a276f78fc295a48db6b656830109e487855d27042683543ba63f5e144",
+  "tools/escrow_ci.py": "af0c07f34e4de0c0ad86c67d1bfc5232ebef2d961e7d7d15fea58de40dca9e57",
+  "tools/escrow_ci_controls.py": "8e2b98fd0954ab4344790798aa5e4a3ba21c34d57dd3f9b43eba783fe1be5466",
   "tools/escrow_inventory.py": "aa0783389a977af7e27df37e8a86f12f76c934c19729f7f42f653f60f544a8ef",
   "tools/escrow_prepare.py": "cd53964f5082aa19a3c0d125e46be9b128e97230f0b57bfcec59463f7b92eabb"
 }
