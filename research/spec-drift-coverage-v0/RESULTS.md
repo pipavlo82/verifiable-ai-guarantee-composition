@@ -62,5 +62,31 @@ their tests pass. Normative, implementation and research-policy entries remain d
 Raw command receipts, stdout/stderr, new native-profile reports and exact runtimes
 are retained in `evidence/spec-drift-coverage-v0/RAW.zip`. SUMMARY.json describes
 the local uncommitted validation phase with its exact research source seal, not a
-retroactive claim of testing a later commit. Fresh-checkout and CI closure will be
-recorded separately before publication. No independent reviewer result is inferred.
+retroactive claim of testing a later commit. Fresh-checkout closure is recorded separately below. Exact-head CI is reported in
+the new Draft PR and publication receipts, without changing the executed source to
+embed a self-referential CI result. No independent reviewer result is inferred.
+
+
+## Fresh committed checkout
+
+An isolated full clone executed commit `c135a4b2997c94ee68214f920de5d2e498cc4cfd` with freshly downloaded,
+hash-verified pinned recompute-kit files. All 32 research controls and 13 transport
+controls pass in normal and -O; all three output files match local normal/repeat/-O
+SHA-256 values exactly. Frozen inventory, Core/history and the external PR11 archive
+checks pass. The fresh checkout was clean at execution. Dependency preparation and
+all gate commands have retained exit codes and raw logs.
+
+The closure commit adds only this documentation, fresh evidence and refreshed seals;
+`FRESH-SOURCE-PROOF.json` binds every executed new code/config/test/workflow byte.
+Fresh replay is author reproducibility, **not independent human/organizational review**.
+
+### Exact output identities
+
+- COVERAGE.json: `a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2`
+- SOURCE_DRIFT.json: `56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e`
+- OBLIGATION_COVERAGE.md: `836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174`
+
+Initial commit packaging correctly stopped at a whitespace check on the original
+ERC-8004 draft. Exact normative bytes are now stored in NORMATIVE.zip, preserving
+their hashes; no whitespace gate was disabled and no normative content was edited.
+Original plain copies remain in the initial workspace's ignored build evidence.

@@ -12,7 +12,7 @@
     "research/spec-drift-coverage-v0/LIMITATIONS.md": "74481c6fcd216c3e84594f6a65485869a878dfd23705d78c4fe8b77b679bf27c",
     "research/spec-drift-coverage-v0/OBLIGATION_COVERAGE.md": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174",
     "research/spec-drift-coverage-v0/README.md": "d95e8e6aa237fd01fe95edf82a28dae42e281d9cb9129fe68b03f6ba9618e7c5",
-    "research/spec-drift-coverage-v0/RESULTS.md": "93a744a5b1412969a8ee187c6edde9f5b0a11a9491f2497bfeb3363f1d8f343b",
+    "research/spec-drift-coverage-v0/RESULTS.md": "b4b6c65a08621baba62806c99e3f4b2760ad2ce98d8079089ce4100e37b8fc07",
     "research/spec-drift-coverage-v0/SOURCE_PINS.md": "7859be83f1e07d2e4ea321acf40637a796f6533dffbc9f8aac9fafd3f2f90fe8",
     "tests/spec_drift_coverage/test_controls.py": "b7d6eefcd84cf4830f0a6654761b862b41d74228fe1cbd16db562c143cb1647c",
     "tools/spec_drift_coverage/common.py": "ef9db8540e7ddfc78fe9ca655ddf603c15fbc84c38d2f1fd765ca384a3d1808b",
