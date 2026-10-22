@@ -1,4 +1,5 @@
 {
+  ".gitattributes": "c7e94288d19e4434e8ca803b32396754412c9226f7766fea7bb0c5e29f345138",
   "audit/agent-ercs.json": "74795ecd982c02bbc63a5c2e7d4260ad658bb4f39e6eb7c9d4af35fdc428b004",
   "audit/agent-ercs.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "audit/main-ci.json": "e8695cf39ff5c76fc371cd1e561ca1182c4daba089c0137dda8fe510fbe8ec83",

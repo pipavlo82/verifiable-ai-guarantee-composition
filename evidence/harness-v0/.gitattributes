@@ -1,0 +1,3 @@
+# Raw process captures retain exact observed bytes and are treated as binary evidence.
+*.stdout -text -diff
+*.stderr -text -diff
