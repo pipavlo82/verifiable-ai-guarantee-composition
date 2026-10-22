@@ -18,6 +18,18 @@ flowchart LR
 
 Run from the repository root with Python 3.12 and Node 22.15.0:
 
+Use a **full Git clone**. Historical integrity verification reads
+`2e329fffbee103047d034b97056aea9e49cf1c58:artifacts.sha256.json`; a depth-one
+checkout of the PR head does not contain that object. In an existing shallow
+clone, fetch the required base explicitly before running validation:
+
+```sh
+git fetch origin 2e329fffbee103047d034b97056aea9e49cf1c58
+```
+
+GitHub Actions already uses `fetch-depth: 0`. Missing history is a reproduction
+prerequisite failure, not a backend-conformance failure.
+
 ```sh
 python -B tools/agent_harness.py prepare
 python -B research/formal-v1/prepare_crypto.py
@@ -36,6 +48,7 @@ The CLI returns **0** only for a completed matching suite, **1** for a witnessed
 - [Source-pinned coverage](../../research/harness-v0/COVERAGE.md)
 - [Results and physical mutations](../../research/harness-v0/RESULTS.md)
 - [Limitations and review checklist](../../research/harness-v0/LIMITATIONS.md)
+- [Supplemental reviewer controls and reproduction](../agent-harness-review-v0/README.md)
 - [Exact source lock](source-lock.json)
 - [Independent obligations](erc8404/obligations.json)
 - [Preserved evidence](../../evidence/harness-v0/)
