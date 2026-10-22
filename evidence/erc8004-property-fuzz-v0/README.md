@@ -59,3 +59,12 @@ python -B tools/erc8004_fuzz/integrity.py
 Fresh-checkout results, when added, are a separate evidence phase and do not replace
 the preserved historical runs. See ../../research/erc8004-property-fuzz-v0/RESULTS.md
 for interpretation, limitations, recommendation and independently reviewed scope.
+
+## Completed fresh replay
+
+FRESH-REPLAY.json records actual passing execution at `d0d1a4cb1bda7d1217da99a2f6a010859cdf8ad5`.
+FRESH-SOURCE-PROOF.json binds the final publication to the same executed code/fixtures.
+EVIDENCE.zip preserves all previous members and adds newly executed raw reports under
+`fresh-checkout/`, plus dependency setup receipts. Extraction deliberately leaves
+these supplemental captures inspectable in the archive instead of overwriting a
+caller's fresh run. See the research FRESH_REPLAY.md for the precise evidence boundary.

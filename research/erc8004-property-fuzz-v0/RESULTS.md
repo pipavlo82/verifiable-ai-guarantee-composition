@@ -23,8 +23,10 @@ and the isolated research workflow. All 12,667 historical entries remain unchang
 Historical workflows and check logic remain byte-identical. The separate research
 source seal and existing complete repository inventory both remain enforced.
 
-Fresh committed-checkout replay is a separate publication gate. Its executed result
-will be recorded separately; historical success alone is not a fresh replay claim.
+Fresh committed-checkout replay passed on commit `d0d1a4cb1bda7d1217da99a2f6a010859cdf8ad5`. See
+[FRESH_REPLAY.md](FRESH_REPLAY.md) for exact execution identity, dependency preparation,
+new raw evidence and the unchanged-code proof for the publication closure. All three
+300-case runs, six new mutants, the original 29-case/17-mutant pilot and Core checks passed.
 
 ### Reuse for ERC-8299 and ERC-8274
 
@@ -53,10 +55,10 @@ portable behavioral projections. **Six physical source mutants were killed**, wi
 fresh replay-based minimization and byte-exact restoration passing in every case.
 No counterexample to the unmodified implementation was found in this bounded domain.
 
-## Identity and preserved work
+## Historical local execution identity and preserved work
 
 - Repository: `trustless-ai/verifiable-execution-claim-authorization`.
-- Existing branch: `research/erc8004-property-fuzz-v0`; unchanged base/HEAD `80c91a09095eca362dbfb69d39d0c01fc31130cf`.
+- Historical execution branch: `research/erc8004-property-fuzz-v0`; then-current base/HEAD `80c91a09095eca362dbfb69d39d0c01fc31130cf`.
 - Workspace: `D:/PAVLO HQ/Workspaces/veca-erc8004-property-fuzz-20261022`.
 - Specification: `ethereum/ERCs@503591a6e80e6e1affdd6403341e25269141f046`, Draft ERC-8004.
 - Implementation: `erc-8004/erc-8004-contracts@b9e466c250744a7e06b13dff9d3c2844ed64f825`.
@@ -67,9 +69,10 @@ No counterexample to the unmodified implementation was found in this bounded dom
 All prior tracked files, frozen Core, harness protocol, grader pin, authorization
 projection, original profiles and source inventory remain unchanged. The fourteen
 inherited uncommitted research files were backed up before edits. The original
-baseline and smoke evidence remain preserved. No reset, clean, reinitialization,
-commit, push, new PR, merge or network-provider execution was performed by this
-continuation. Changes remain in the same three untracked research directories.
+baseline and smoke evidence remain preserved. During that historical local phase,
+no reset, clean, reinitialization, commit, push, new PR, merge or network-provider
+execution was performed. The new research directories were then untracked; the
+subsequent publication phase commits them and its separately recorded evidence.
 
 ## What was completed
 
@@ -234,5 +237,6 @@ or external-provider command is part of this continuation.
   the six test-only mutant witnesses.
 - `EVIDENCE.zip`: research sources and retained execution evidence with member hashes.
 
-The source tree remains uncommitted on the existing branch; no publication has been
-performed. Remote review status and later upstream changes are outside this local closure.
+At the historical local closure, the source tree was uncommitted. The subsequent
+publication and fresh replay are documented above. Independent reviewer approval
+and later upstream changes are not implied by either execution phase.
