@@ -1,0 +1,197 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/commits/main"
+      ],
+      "exit": 0,
+      "stdout_sha256": "986d7d251bf89dcea72a3cce26e40349b6b5506ed600fa3c638ea805b229c06b"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/1"
+      ],
+      "exit": 0,
+      "stdout_sha256": "80d7c0f5635820bb5b8ba03adeb88c99842793b856f22c4bc977cb3c2e30b2e5"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/2"
+      ],
+      "exit": 0,
+      "stdout_sha256": "5147807b427df84aab9b6154139662489c91e4bf36a1d2fdf07b6eadece873cb"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/3"
+      ],
+      "exit": 0,
+      "stdout_sha256": "0767833b75c066bf0e597dd9f9bcf36fbf502c6beb62ddeb13132b182549b1fb"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/4"
+      ],
+      "exit": 0,
+      "stdout_sha256": "56db2b0ca4caae4b692a74e3bad77659b2a45f772917dac8f69c82cbabec543b"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/5"
+      ],
+      "exit": 0,
+      "stdout_sha256": "4b25a55ba452d096828566960ff18b32fc68cf59c367b13ec34087e45229f5ff"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/6"
+      ],
+      "exit": 0,
+      "stdout_sha256": "db6e2343f0f18a85a98cd7e9069b6ab47aa48a95863372099e5f12ded74c7a16"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/7"
+      ],
+      "exit": 0,
+      "stdout_sha256": "4ada585d40ca789df33da31fd2a5664c5152a4d4436ef0f2370301c85409aae0"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/pulls/8"
+      ],
+      "exit": 0,
+      "stdout_sha256": "08a9af48cd8b8cdab6fc43a1bc431385ebb63a541b2ca827daa8a479906da74a"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/verifiable-execution-claim-authorization/actions/runs?head_sha=2e329fffbee103047d034b97056aea9e49cf1c58&per_page=100"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e8695cf39ff5c76fc371cd1e561ca1182c4daba089c0137dda8fe510fbe8ec83"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/agent-ercs/commits/01283ca57305f915afb560d23359a27fd748eb5a"
+      ],
+      "exit": 0,
+      "stdout_sha256": "74795ecd982c02bbc63a5c2e7d4260ad658bb4f39e6eb7c9d4af35fdc428b004"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/recompute-kit/commits/f7308cdd5ba55ac8229103e82ebc5fc14f81b88b"
+      ],
+      "exit": 0,
+      "stdout_sha256": "cc9312b088add4506324f375bed2c58dafe325d20a31fddcc3c2995cdf5ff62f"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/pipavlo82/relational-security-invariants/commits/3d3038f90c3dd98e79f948398167c5cc3ef2fdd8"
+      ],
+      "exit": 0,
+      "stdout_sha256": "fd31b63ea17e8ef12a61f2754154ef43dff7506e0d7da5fb2d69beac97252159"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/trustless-ai/semantic-abi/commits/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee"
+      ],
+      "exit": 0,
+      "stdout_sha256": "8a7248c15e81c9fa75c3dbb04ee1d632b8bd9c658d9bda6fd44161a436164f0e"
+    }
+  ],
+  "main": "2e329fffbee103047d034b97056aea9e49cf1c58",
+  "prs": [
+    {
+      "base": "905767f8696afe4cee612c8248f9d5d76f81f81b",
+      "head": "ea89871064e98a67b6ba01c836d498bee89aa437",
+      "head_ancestor_of_main": true,
+      "merge_commit": "18a5916098addf6447700ed95441125bfa7079c3",
+      "merged": true,
+      "number": 1
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "head_ancestor_of_main": true,
+      "merge_commit": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+      "merged": true,
+      "number": 2
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "98ffba16730030c797c47766e13a5314181ba2f6",
+      "head_ancestor_of_main": true,
+      "merge_commit": "98ffba16730030c797c47766e13a5314181ba2f6",
+      "merged": true,
+      "number": 3
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+      "head_ancestor_of_main": true,
+      "merge_commit": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+      "merged": true,
+      "number": 4
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "c14d96b0a63fceba02b2cb4469d5b3228ae46612",
+      "head_ancestor_of_main": true,
+      "merge_commit": "ed298cc6a3d0215343be04b490b8f6343b05c098",
+      "merged": true,
+      "number": 5
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "b0e894db53d58370df0d9959e070a1302f4a5787",
+      "head_ancestor_of_main": true,
+      "merge_commit": "b0e894db53d58370df0d9959e070a1302f4a5787",
+      "merged": true,
+      "number": 6
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "c93087f06bd14c45a1d12b0c068195e3bef05dae",
+      "head_ancestor_of_main": true,
+      "merge_commit": "c93087f06bd14c45a1d12b0c068195e3bef05dae",
+      "merged": true,
+      "number": 7
+    },
+    {
+      "base": "18a5916098addf6447700ed95441125bfa7079c3",
+      "head": "ed298cc6a3d0215343be04b490b8f6343b05c098",
+      "head_ancestor_of_main": true,
+      "merge_commit": "3d55a8456dddb3cb981c91b143761e87e31d7531",
+      "merged": true,
+      "number": 8
+    }
+  ]
+}

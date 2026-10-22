@@ -1,0 +1,64 @@
+{
+  "permitted_review": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+        "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+        "limits": [
+          "artifact identity and authenticated review only",
+          "no inference truth, external execution or judgment correctness"
+        ],
+        "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+        "scenario": "lab-artifact-review-v1",
+        "unconsumed_claim_fields": [],
+        "verified_claim_scope": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        }
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "VERIFIED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "wrong_signed_policy": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+        "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+        "limits": [
+          "artifact identity and authenticated review only",
+          "no inference truth, external execution or judgment correctness"
+        ],
+        "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+        "scenario": "lab-artifact-review-v1",
+        "unconsumed_claim_fields": [],
+        "verified_claim_scope": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        }
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "VERIFIED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  }
+}

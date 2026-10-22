@@ -1,0 +1,11 @@
+{
+  "id": "agent-harness-rvr-reviewed-artifact-v0",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "fb1c72a2e66b572d6ee2c785c0249240c15d39d054477f534293db7f9b458a1d"
+  }
+}

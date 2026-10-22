@@ -1,0 +1,11 @@
+{
+  "id": "field_policy",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "a3be6f7d3eacf8d4ad6a494d2483236821d10acfaefe232f96ba161397881642"
+  }
+}

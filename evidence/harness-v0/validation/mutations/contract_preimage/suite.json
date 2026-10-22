@@ -1,0 +1,11 @@
+{
+  "id": "contract_preimage",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "96131563258c0966c40671564403bb5c21f55924472f9f1cabd9704955a79fb3"
+  }
+}

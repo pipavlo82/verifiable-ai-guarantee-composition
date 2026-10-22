@@ -1,0 +1,11 @@
+{
+  "id": "independence",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "447b013078785030151d94eb664ba02eeba42032f1c99b58caafdceb0b8740e4"
+  }
+}

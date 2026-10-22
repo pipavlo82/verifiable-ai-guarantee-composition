@@ -1,0 +1,114 @@
+{
+  "POL-ADMISSION": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Admission recomputes authorization and compares the entire presented scope.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-ARTIFACT": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Both signed artifact hashes, the requested artifact, and the RVR claim must align.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-AUTHORITY": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Recovered judgment and producer keys must be authorized by the supplied contract.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-CLAIM": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Only REVIEWED_ARTIFACT_IDENTITY with the exact scenario and artifact-byte-identity scope is admitted.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-CONTRACT": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Recomputed canonical contract SHA-256 must match the requested context.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-COVERAGE": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Contract-required O14 must be present even if all declared checks pass.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-FIELDS": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "This REJECT contract cannot promote an unconsumed payment field into authorization.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-O14": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Distinct recovered keys are required only when this scenario contract requires role separation.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-POLICY": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Signed policyHash must bind that exact contract, not another policy.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-PREIMAGE": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Without canonical contract bytes, contract binding is UNVERIFIABLE.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-SCOPE": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Signed review scope and action must match the supplied contract.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-SIGNATURE": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Both laboratory EIP-712 signatures must verify; missing is UNVERIFIABLE.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "POL-SUBJECT": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Signed subjects must match the exact requested subject.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "RVR-AVAILABLE": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "An unresolved PRESENT payload causes CANNOT_RECOMPUTE; no verification outcome is inferred.",
+    "source": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/9dd36e882dd372f264b77b179130948aa5adcbde/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+    "version": "RVR v0 frozen 9dd36e8"
+  },
+  "RVR-IDENTITY": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "A reproduced VERIFIED SHA256_EQUALS result establishes the exact declared byte-digest equality.",
+    "source": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/9dd36e882dd372f264b77b179130948aa5adcbde/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md#8-generic-sha256_equals-profile",
+    "version": "RVR v0 frozen 9dd36e8"
+  },
+  "RVR-PROJECTION": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Contradictory receipt projections must be rejected even with an otherwise committed result.",
+    "source": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/9dd36e882dd372f264b77b179130948aa5adcbde/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+    "version": "RVR v0 frozen 9dd36e8"
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "adapter_argv": [
+    "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "C:\\Users\\msi\\Documents\\Codex\\veca-harness-20261021/tools/harness_v0/erc8404_adapter.py",
+    "--implementation-root",
+    "C:\\Users\\msi\\Documents\\Codex\\veca-harness-20261021\\build\\agent-harness-v0\\final-validation\\mutations\\physical-dgmcr7ra"
+  ],
+  "adapter_config_sha256": "d48043b269261c0b3307ae6f7e248c893e77469db4acf6507a10f15f547ea3bd",
+  "adapter_exit_code": 0,
+  "authorization_credential": false,
+  "backend_conformance": "PASS",
+  "exit_code": 0,
+  "grader": {
+    "detail": "2/2 reproduced (runner-graded reporter)",
+    "kind": "SUITE"
+  },
+  "observation_sha256": "cab932eede69cf1c6070632f264ab37a050803966430a1980d4fe368eeb7783c",
+  "request_sha256": "ffdfe3da68095abf60efb18e24532f3a49162e7cf4726f5deb93c148b4d8bd2b",
+  "rows": [
+    {
+      "backend_conformance": "PASS",
+      "evidence": {
+        "core_profile_sha256": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+        "decision": {
+          "authorization_scope": {
+            "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+            "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "limits": [
+              "artifact identity and authenticated review only",
+              "no inference truth, external execution or judgment correctness"
+            ],
+            "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+            "scenario": "lab-artifact-review-v1",
+            "unconsumed_claim_fields": [],
+            "verified_claim_scope": {
+              "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+              "scenario": "lab-artifact-review-v1",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            }
+          },
+          "authorized": true,
+          "checks": {
+            "O14": "VERIFIED",
+            "S01": "VERIFIED",
+            "S02": "VERIFIED",
+            "S03": "VERIFIED",
+            "S04": "VERIFIED",
+            "S05": "VERIFIED",
+            "S06": "VERIFIED",
+            "claim_type": "VERIFIED",
+            "consumed_semantics": "VERIFIED",
+            "contract_commitment": "VERIFIED",
+            "coverage": "VERIFIED",
+            "definitions": "VERIFIED",
+            "dependency_closure": "VERIFIED",
+            "field_policy": "VERIFIED",
+            "receipt": "VERIFIED",
+            "scenario": "VERIFIED",
+            "scope": "VERIFIED",
+            "signed_contract": "VERIFIED",
+            "supported_contract": "VERIFIED"
+          },
+          "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+          "missing_obligations": [],
+          "mode": "C",
+          "rvr": {
+            "canonicalResultDigest": "7dd332e5186d12405a1cf19b7fabc5f1983a3b77169cf209cb0937c6d93eaa24",
+            "claim": {
+              "evidenceMember": "artifact",
+              "expectedDigest": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "operation": "SHA256_EQUALS",
+              "schema": "rvr.claim.sha256-equals.v0"
+            },
+            "consumer_status": "VERIFIED",
+            "evaluationPerformed": true,
+            "gate": "ACCEPTED",
+            "reasonCode": "rvr.recompute.identical",
+            "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+            "recomputationStatus": "REPRODUCED",
+            "verificationOutcome": "VERIFIED",
+            "verificationReasonCode": "rvr.v0.digest_match"
+          },
+          "status": "VERIFIED",
+          "unconsumed_claim_fields": []
+        },
+        "implementation_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "input_sha256": "3f9c5adff8b3be6b27a3b074ee81631f234e237bb5bb9ded9d9db4e095100341",
+        "level": "LABORATORY_VERIFIED",
+        "limits": [
+          "No native inference verification is performed by this adapter.",
+          "Key separation does not establish controller independence.",
+          "No external execution or judgment truth is established."
+        ],
+        "signature_verification": {
+          "judgment": {
+            "digest": "0x9678d2a0a85337527d08fab9e25aa4c2025d77952fc52911743c4c815ae98f69",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "status": "VERIFIED"
+          },
+          "producer": {
+            "digest": "0x54aad7280b80b12a94e7036e7c0fc391de7e7098444de8366e4c0c87b328aee6",
+            "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+            "status": "VERIFIED"
+          }
+        }
+      },
+      "evidence_supported_authorization": {
+        "authorized": true,
+        "scope": {
+          "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+          "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+          "limits": [
+            "artifact identity and authenticated review only",
+            "no inference truth, external execution or judgment correctness"
+          ],
+          "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+          "scenario": "lab-artifact-review-v1",
+          "unconsumed_claim_fields": [],
+          "verified_claim_scope": {
+            "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+            "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+            "scenario": "lab-artifact-review-v1",
+            "scope": "artifact-byte-identity",
+            "subject": "lab:preserved-native-proof-a"
+          }
+        },
+        "status": "VERIFIED"
+      },
+      "expected_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+            "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "limits": [
+              "artifact identity and authenticated review only",
+              "no inference truth, external execution or judgment correctness"
+            ],
+            "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+            "scenario": "lab-artifact-review-v1",
+            "unconsumed_claim_fields": [],
+            "verified_claim_scope": {
+              "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+              "scenario": "lab-artifact-review-v1",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            }
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "VERIFIED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "id": "permitted_review",
+      "observed_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+            "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "limits": [
+              "artifact identity and authenticated review only",
+              "no inference truth, external execution or judgment correctness"
+            ],
+            "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+            "scenario": "lab-artifact-review-v1",
+            "unconsumed_claim_fields": [],
+            "verified_claim_scope": {
+              "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+              "scenario": "lab-artifact-review-v1",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            }
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "VERIFIED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "requirements": {
+        "POL-CLAIM": {
+          "coverage": "Finite witness coverage only; not specification completeness.",
+          "kind": "RESEARCH_POLICY",
+          "requirement": "Only REVIEWED_ARTIFACT_IDENTITY with the exact scenario and artifact-byte-identity scope is admitted.",
+          "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+          "version": "rvr-reviewed-artifact-v0"
+        },
+        "RVR-IDENTITY": {
+          "coverage": "Finite witness coverage only; not specification completeness.",
+          "kind": "NORMATIVE_SPECIFICATION",
+          "requirement": "A reproduced VERIFIED SHA256_EQUALS result establishes the exact declared byte-digest equality.",
+          "source": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/9dd36e882dd372f264b77b179130948aa5adcbde/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md#8-generic-sha256_equals-profile",
+          "version": "RVR v0 frozen 9dd36e8"
+        }
+      }
+    },
+    {
+      "backend_conformance": "PASS",
+      "evidence": {
+        "core_profile_sha256": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+        "decision": {
+          "authorization_scope": null,
+          "authorized": false,
+          "checks": {
+            "S01": "VERIFIED",
+            "S02": "VERIFIED",
+            "S03": "VERIFIED",
+            "S04": "VERIFIED",
+            "S05": "VERIFIED",
+            "S06": "VERIFIED",
+            "claim_type": "VERIFIED",
+            "consumed_semantics": "VERIFIED",
+            "contract_commitment": "VERIFIED",
+            "coverage": "REFUTED",
+            "definitions": "VERIFIED",
+            "dependency_closure": "VERIFIED",
+            "field_policy": "VERIFIED",
+            "receipt": "VERIFIED",
+            "scenario": "VERIFIED",
+            "scope": "VERIFIED",
+            "signed_contract": "VERIFIED",
+            "supported_contract": "VERIFIED"
+          },
+          "contract_sha256": "650ea1bd520b400033de22d5de33d979061d7639bb40405978deca06c2f42dcf",
+          "missing_obligations": [
+            "O14"
+          ],
+          "mode": "C",
+          "rvr": {
+            "canonicalResultDigest": "7dd332e5186d12405a1cf19b7fabc5f1983a3b77169cf209cb0937c6d93eaa24",
+            "claim": {
+              "evidenceMember": "artifact",
+              "expectedDigest": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "operation": "SHA256_EQUALS",
+              "schema": "rvr.claim.sha256-equals.v0"
+            },
+            "consumer_status": "VERIFIED",
+            "evaluationPerformed": true,
+            "gate": "ACCEPTED",
+            "reasonCode": "rvr.recompute.identical",
+            "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+            "recomputationStatus": "REPRODUCED",
+            "verificationOutcome": "VERIFIED",
+            "verificationReasonCode": "rvr.v0.digest_match"
+          },
+          "status": "REFUTED",
+          "unconsumed_claim_fields": []
+        },
+        "implementation_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "input_sha256": "cb4d4d35fdeaac0b34e7740c9b32843a9d3cc745c3995e9c20d468ed4276d868",
+        "level": "LABORATORY_VERIFIED",
+        "limits": [
+          "No native inference verification is performed by this adapter.",
+          "Key separation does not establish controller independence.",
+          "No external execution or judgment truth is established."
+        ],
+        "signature_verification": {
+          "judgment": {
+            "digest": "0xc85fa18dd18f6ca08f74a2cb324c1f12c8f0d07a584835e2d3f0b4f986bf0fe9",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "status": "VERIFIED"
+          },
+          "producer": {
+            "digest": "0x230650400606b6fed9bb6b519d0cfca310c2ced6c19e3efd6f964a958513d53e",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "status": "VERIFIED"
+          }
+        }
+      },
+      "evidence_supported_authorization": {
+        "authorized": false,
+        "scope": null,
+        "status": "REFUTED"
+      },
+      "expected_behavior": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "REFUTED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "id": "missing_independence_coverage",
+      "observed_behavior": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "REFUTED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "requirements": {
+        "POL-COVERAGE": {
+          "coverage": "Finite witness coverage only; not specification completeness.",
+          "kind": "RESEARCH_POLICY",
+          "requirement": "Contract-required O14 must be present even if all declared checks pass.",
+          "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+          "version": "rvr-reviewed-artifact-v0"
+        }
+      }
+    }
+  ],
+  "schema": "agent-harness.report.v0",
+  "suite_sha256": "bfc102197c33a523913aedf42888db3de2e2c110ce4ba0c8c4c88b7ff378af22",
+  "vectors_sha256": "6000c79cab6436ec9d144eab5cf5d718e41fe39d66d6441a905a54a41f45205e"
+}

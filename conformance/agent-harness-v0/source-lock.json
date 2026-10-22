@@ -1,0 +1,67 @@
+{
+  "agent-ercs": {
+    "audited_files": {
+      "conformance/attester-diversity-v0/gate.ts": "bb05ada0466d1befcab1a785798b8d287af604c110aebcfc4410b879525572b7",
+      "contracts/verify/ERC8274/IAgentVerifier.sol": "115942e5c66f76e8447f9cae51f80d6820a09c22609022bcd8443455b49baa36",
+      "contracts/verify/ERC8274/IProofVerifier.sol": "feac0bb1af88c8ca07b17a6fdfb2a15b3c1c8604037b87a0df7a9563d2b3290c",
+      "contracts/verify/ERC8299/IWyriweAttestation.sol": "00ab1f852536cf3d8532be7fa6d78f6c2fe5e2e511ff343ba6df8aa41b4f54bc"
+    },
+    "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "repository": "trustless-ai/agent-ercs"
+  },
+  "erc8404-frozen": {
+    "commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+    "draft_commit": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+    "draft_path": "ERCS/erc-8404.md",
+    "draft_repository": "pipavlo82/ERCs",
+    "file_lock": "fixtures/erc8404/core-lock.json",
+    "repository": "pipavlo82/recomputable-verification-receipts"
+  },
+  "recompute-kit": {
+    "audited_files": {
+      "LICENSE": "405d0af6743b62b00a440d519b85fd9c3f159ff85b3bcfcd8c683e6372b4a7aa",
+      "bin/conformance-suite": "2215081e780cb250cbfd1eb19aff2dc845e41b9df6ee503400f9f5d9832c5ebe",
+      "tools/run_conformance.py": "84041862cf1c250d55b0378d70de968bee21df768ba2d1f21ee5d8017b265080"
+    },
+    "commit": "f7308cdd5ba55ac8229103e82ebc5fc14f81b88b",
+    "repository": "trustless-ai/recompute-kit",
+    "runtime_files": {
+      "LICENSE": "405d0af6743b62b00a440d519b85fd9c3f159ff85b3bcfcd8c683e6372b4a7aa",
+      "bin/conformance-suite": "2215081e780cb250cbfd1eb19aff2dc845e41b9df6ee503400f9f5d9832c5ebe",
+      "tools/run_conformance.py": "84041862cf1c250d55b0378d70de968bee21df768ba2d1f21ee5d8017b265080"
+    }
+  },
+  "relational-security-invariants": {
+    "audited_files": {
+      "runner/adapter_registry.py": "7a96ed768563ed6f8e7b067108d855d1e06178abe7556957772dc964546c9af5",
+      "runner/execution.py": "c7234c885eef97e24a89b3b54041cff77de88311e4521e74f1a9f208dd82feb7",
+      "runner/expectation_contract.py": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+      "runner/expectation_registry.py": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67"
+    },
+    "commit": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+    "repository": "pipavlo82/relational-security-invariants"
+  },
+  "research-base": {
+    "audited_files": {
+      "experiments/verdict_escrow/adapter.py": "f5735bd91b110043a1cf5e38fb1ce67ceda38b96612eb2675771c43e569a9e9a",
+      "research/formal-v1/model.py": "483402e554fa0d1ca4c48364059a9f38711ec44c78bb4b26f568d2ac9b9798f0",
+      "src/composition.py": "6eff12ecf943729f3484c7ed624b26c091d455c5335ecd71c9d8d66ddd7f22dc",
+      "src/erc8404/engine.py": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "src/integration/engine.py": "81707638fa076486e71e18df981cc7daaf0e91870f53d457870c0af09fd8fc3c",
+      "src/v3/evidence.py": "8d170840fa62815e64548323aba29bd23ea2b1ab155f85631eecd148660cb423",
+      "src/v4/model.py": "527c89eaea12ac977ca7dc74fd3c6f4fa571878eea2c31ad153a064ab7717734",
+      "src/v4_1/model.py": "7c7a6222a23d4d82a99e1b1f7bb20433674c9c3a4791965f6b92b48b33c3f4b5"
+    },
+    "commit": "2e329fffbee103047d034b97056aea9e49cf1c58",
+    "repository": "trustless-ai/verifiable-execution-claim-authorization"
+  },
+  "semantic-abi": {
+    "audited_files": {
+      "runner/src/adapters.mjs": "c52ac33b73dd05d5add1131ed050182e81489b917da7889e497f550102c735c6",
+      "runner/src/evaluate.mjs": "a2f1c3caaaeeb37b7067618f7ee0b98bddece859baee7dfbfc68a44be58699b0",
+      "runner/src/linker.mjs": "bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391"
+    },
+    "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+    "repository": "trustless-ai/semantic-abi"
+  }
+}

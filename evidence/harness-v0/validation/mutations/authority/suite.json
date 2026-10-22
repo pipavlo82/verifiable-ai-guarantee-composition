@@ -1,0 +1,11 @@
+{
+  "id": "authority",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "7fcc8dc2eaba0b45b81d6744d27da866e7c47bb86162d36429f5b2288b2c1f73"
+  }
+}

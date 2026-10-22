@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "frozen_core": {
+      "files": 13,
+      "mismatches": [],
+      "passed": true
+    },
+    "pr5_import": {
+      "files": 18,
+      "mismatches": [],
+      "passed": true
+    },
+    "pr6_preserved": {
+      "files": 9251,
+      "mismatches": [],
+      "passed": true
+    }
+  },
+  "passed": true,
+  "source_shas": {
+    "main": "18a5916098addf6447700ed95441125bfa7079c3",
+    "pr2": "653b8e92e56afb99797c04b1c616a6d7fb3555e9",
+    "pr3": "98ffba16730030c797c47766e13a5314181ba2f6",
+    "pr4": "ee1143f2b8f669a88f36c736d20bb86c2ade950a",
+    "pr5": "c14d96b0a63fceba02b2cb4469d5b3228ae46612",
+    "pr6": "b0e894db53d58370df0d9959e070a1302f4a5787"
+  }
+}

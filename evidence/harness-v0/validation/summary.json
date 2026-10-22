@@ -1,0 +1,197 @@
+{
+  "authorization_counts": {
+    "REFUTED": 13,
+    "UNVERIFIABLE": 3,
+    "VERIFIED": 2
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/harness_v0/build_vectors.py"
+      ],
+      "exit_code": 0,
+      "name": "vector-reconstruction",
+      "seconds": 0.14304170000832528,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b947d9c1daab9d0cca3d3b633ba3cc76e45b36b697b4eeed5e805a698ad3f5bd"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "core-conformance",
+      "seconds": 0.20368630002485588,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "core-conformance-optimized",
+      "seconds": 0.20137100003194064,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8404/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "core-history-integrity",
+      "seconds": 0.8462915999698453,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "09391ddddc954708012075072c0cdccbad736cc6b765bc0519c2530060e5a9e2"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/integration/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "integration-history-integrity",
+      "seconds": 2.146237500011921,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ba5d855f04210451bced1bae708e2004c8621416aed3bc0b08382ec3829df1a6"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/harness_v0",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "transport-normal",
+      "seconds": 1.0176084999693558,
+      "stderr_sha256": "7ba99919446b0813ac3c932ba5c45528479d6994f7f25d360e558a2efd2e37de",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "run",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\veca-harness-20261021\\build\\agent-harness-v0\\final-validation\\normal"
+      ],
+      "exit_code": 0,
+      "name": "pilot-normal",
+      "seconds": 8.110587699979078,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/harness_v0",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "transport-repeat",
+      "seconds": 0.9978920000139624,
+      "stderr_sha256": "c15eb97cc9e8a8a0383b72959c2c0423efee79378db97cd92d6b2f39a1def205",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "run",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\veca-harness-20261021\\build\\agent-harness-v0\\final-validation\\repeat"
+      ],
+      "exit_code": 0,
+      "name": "pilot-repeat",
+      "seconds": 8.144547100004274,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/harness_v0",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "transport-optimized",
+      "seconds": 1.0616675000055693,
+      "stderr_sha256": "ae50c9d1215497f917b6c98a23006c51a1ef9e08c2ecfd909ac552197956cdd6",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "tools/agent_harness.py",
+        "run",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\veca-harness-20261021\\build\\agent-harness-v0\\final-validation\\optimized"
+      ],
+      "exit_code": 0,
+      "name": "pilot-optimized",
+      "seconds": 8.416475799982436,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/harness_v0/mutations.py",
+        "--out",
+        "C:\\Users\\msi\\Documents\\Codex\\veca-harness-20261021\\build\\agent-harness-v0\\final-validation\\mutations"
+      ],
+      "exit_code": 0,
+      "name": "physical-mutations",
+      "seconds": 44.88052679999964,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "919cc8640ced6953611d49538d92ccb8ffe9a384512f4a3ed28a286ed6ecaa4a"
+    }
+  ],
+  "conformant_scenarios": 18,
+  "deterministic_normal_repeat_optimized": true,
+  "mutations": {
+    "KILLED": 12
+  },
+  "node": "v22.15.0",
+  "passed": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "scenario_count": 18,
+  "schema": "agent-harness.validation.v0",
+  "source_lock_sha256": "bf559d4b1a2433ce5b9913b6ec5fffb2e436bbf3c14e274b95c69b1f9a15bbe6",
+  "unchanged_baseline_files": 11872
+}

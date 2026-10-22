@@ -1,0 +1,11 @@
+{
+  "id": "judgment",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "31de4f0a9f7a93500006214443f02940f5f67bd5f23b3c0fcefa729c222d0056"
+  }
+}
