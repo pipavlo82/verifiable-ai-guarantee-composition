@@ -1,0 +1,11 @@
+{
+  "id": "admission",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "9f51c28d244c4d7a09d5bd0ef3cbf672e2978c87190ed04dd30baab550678021"
+  }
+}

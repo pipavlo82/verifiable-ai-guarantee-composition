@@ -1,0 +1,11 @@
+{
+  "id": "artifact",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "0a404168e0a9c2076d301f84bf19dacec174888f0dea5c2b5623175230074800"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "coverage",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "6000c79cab6436ec9d144eab5cf5d718e41fe39d66d6441a905a54a41f45205e"
+  }
+}

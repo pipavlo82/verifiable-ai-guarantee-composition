@@ -1,0 +1,11 @@
+{
+  "id": "claim_type",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "89611d5e4b00af6ed41a8927a96519702a20f19b8e67f2c634bee211db96bc24"
+  }
+}

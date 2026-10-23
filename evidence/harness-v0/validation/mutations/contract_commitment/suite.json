@@ -1,0 +1,11 @@
+{
+  "id": "contract_commitment",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "84494a8b6c8f71ac78abcf736a29ee80b28ed12df944aab51b8e578247e0d73a"
+  }
+}

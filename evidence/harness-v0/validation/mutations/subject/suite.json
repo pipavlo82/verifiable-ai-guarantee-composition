@@ -1,0 +1,11 @@
+{
+  "id": "subject",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "866c2b672d4848c0bccefd5ffcc9995f0b38eacb63af00f3c98027aa77004fbb"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "20a2faee42e5612f3391ab39b4584aff4bec274bd1aade2f080536d03d7f483c"
+  }
+}

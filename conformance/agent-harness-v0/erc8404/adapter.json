@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "{python}",
+    "-B",
+    "{repo}/tools/harness_v0/erc8404_adapter.py",
+    "--implementation-root",
+    "{implementation}"
+  ]
+}
