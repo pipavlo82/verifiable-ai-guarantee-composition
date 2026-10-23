@@ -8,6 +8,7 @@
 - The harness trusts local executable code, its runtime, filesystem, supplied adapter configuration and adequacy of the independently selected scenario contract. It is not a sandbox, a remote-attestation protocol, or a defense against an adapter author hardcoding public expectations.
 - The dependency uses pinned **private** recompute-kit functions; compatibility beyond that exact revision is unverified. No change to its upstream API is requested or assumed.
 - Twelve physical consumer mutations target explicit policy boundaries. They do not cover every normative Core rule, every transport branch or every possible mutant. The unchanged Core's own semantic mutant/witness audit is separate and is not added to this physical mutation count.
+- The original 18 vectors do not distinguish deletion of the separate `scope`, `scenario`, `definitions`, or `supported_contract` checks. [Supplemental review controls](../../conformance/agent-harness-review-v0/README.md) preserve that survival result and provide one isolated counterexample per check. These checks are not redundant over the expanded finite domain. The original 12-kill report is historical and is not rewritten or presented as complete guard coverage.
 - No benchmark or general performance/security improvement is claimed. Command timings are reproduction diagnostics, not comparative performance results.
 
 ## Independent review
