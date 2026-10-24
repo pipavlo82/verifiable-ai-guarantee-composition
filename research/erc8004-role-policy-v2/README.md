@@ -33,6 +33,7 @@ block hash are preserved. Policy checks bind each call to the deployed Identity
 Registry address, agent, validator, chain, request and request receipt block, then
 compare exact ABI-encoded results with the role snapshot. The response block has a
 separate capture for temporal controls; it cannot replace request-time roles.
+`wallet_becomes_validator_after` remains `VERIFIED` when the validator signs an EIP-712 update to become `agentWallet` between request and response, because v2 checks request-time roles only and does not evaluate that later role change as a possible collusion signal.
 These are observations from the trusted local EVM and adapter. A proof from an
 untrusted remote RPC is not authenticated by this format or a `capture` label.
 
